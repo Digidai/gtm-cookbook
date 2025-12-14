@@ -20,6 +20,21 @@
 请阅读 agent.md，然后开始写作 [文件名]
 ```
 
+## 部署到 Cloudflare Workers
+
+本项目是 VitePress 静态站点，已包含 `wrangler.toml` 和 `src/index.ts`，可用 Cloudflare Workers（Assets）部署。
+
+### 部署
+1. 构建并部署：`npm run deploy`
+2. （首次）登录 Cloudflare：`wrangler login`
+
+### 绑定自定义域名
+1. 确保域名在 Cloudflare（已接入并使用 Cloudflare DNS）
+2. DNS 中为站点准备一个解析（如 `docs.example.com`，并开启代理橙云）
+3. Cloudflare Dashboard → Workers → 选择 `gtm-cookbook` → Triggers → 添加 Route / Custom Domain（如 `docs.example.com/*`）
+
+> 如果希望部署在子路径（例如 `https://example.com/gtm/`），需要在 `.vitepress/config.mts:118` 增加 `base: '/gtm/'` 并相应调整路由。
+
 ## 项目结构
 
 ```

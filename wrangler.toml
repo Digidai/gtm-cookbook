@@ -1,0 +1,7 @@
+name = "gtm-cookbook"
+main = "src/index.ts"
+compatibility_date = "2025-12-13"
+
+[assets]
+directory = ".vitepress/dist"
+binding = "ASSETS"
