@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "GTM Documentation Site",
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
-    "worker:dev": "npm run docs:build && wrangler dev",
-    "deploy": "npm run docs:build && wrangler deploy"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "keywords": [],
   "author": "",

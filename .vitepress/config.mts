@@ -120,6 +120,7 @@ export default defineConfig({
   description: "Go-To-Market 市场进入战略完整教程",
   srcDir: 'docs',
   lang: 'zh-CN',
+  base: '/gtm-cookbook/',
 
   head: [
     ['meta', { name: 'author', content: 'GTM Team' }],
