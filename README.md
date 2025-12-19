@@ -20,20 +20,42 @@
 请阅读 agent.md，然后开始写作 [文件名]
 ```
 
-## 部署到 Cloudflare Workers
+## 部署到 GitHub Pages
 
-本项目是 VitePress 静态站点，已包含 `wrangler.toml` 和 `src/index.ts`，可用 Cloudflare Workers（Assets）部署。
+本项目是 VitePress 静态站点，已提供 GitHub Actions 工作流 `./.github/workflows/deploy-gh-pages.yml`。
 
-### 部署
-1. 构建并部署：`npm run deploy`
-2. （首次）登录 Cloudflare：`wrangler login`
+### 从头部署
+1. 新建 GitHub 仓库并推送代码（默认分支为 `main`）。
+2. GitHub → Settings → Pages → Source 选择 `GitHub Actions`。
+3. 推送后自动触发构建与发布。
+
+### 项目站点 vs 用户/组织站点
+- 项目站点（`https://<user>.github.io/<repo>/`）：工作流已设置 `VITEPRESS_BASE=/<repo>/`。
+- 用户/组织站点（`https://<user>.github.io/`）：将工作流中的 `VITEPRESS_BASE` 改为 `/`。
+
+本地验证示例（项目站点）：
+```
+VITEPRESS_BASE=/你的仓库名/ npm run build
+```
+
+## 部署到 Cloudflare Pages
+
+已包含 `wrangler.toml` 和 `wrangler.pages.json`，输出目录为 `.vitepress/dist`。
+
+### 从头部署（Cloudflare Dashboard）
+1. Cloudflare → Pages → Create a project → 连接 Git 仓库。
+2. Build command：`npm ci && npm run build`
+3. Build output directory：`.vitepress/dist`
+4. 环境变量（可选）：`VITEPRESS_BASE=/` 或 `VITEPRESS_BASE=/子路径/`
+
+### 使用 Wrangler 部署
+1. 登录：`npx wrangler login`
+2. 构建：`npm run build`
+3. 部署：`npx wrangler pages deploy .vitepress/dist --project-name gtm-cookbook`
 
 ### 绑定自定义域名
-1. 确保域名在 Cloudflare（已接入并使用 Cloudflare DNS）
-2. DNS 中为站点准备一个解析（如 `docs.example.com`，并开启代理橙云）
-3. Cloudflare Dashboard → Workers → 选择 `gtm-cookbook` → Triggers → 添加 Route / Custom Domain（如 `docs.example.com/*`）
-
-> 如果希望部署在子路径（例如 `https://example.com/gtm/`），需要在 `.vitepress/config.mts:118` 增加 `base: '/gtm/'` 并相应调整路由。
+1. 确保域名已托管到 Cloudflare DNS。
+2. Cloudflare → Pages → 选择项目 → Custom Domains → 添加域名（如 `docs.example.com`）。
 
 ## 项目结构
 

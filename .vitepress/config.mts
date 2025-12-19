@@ -2,6 +2,14 @@ import { defineConfig } from 'vitepress'
 import fs from 'fs'
 import path from 'path'
 
+function normalizeBase(value?: string): string {
+  if (!value || value.trim() === '') return '/'
+  let base = value.trim()
+  if (!base.startsWith('/')) base = `/${base}`
+  if (!base.endsWith('/')) base = `${base}/`
+  return base
+}
+
 // 模块名称中文映射
 const moduleNames: Record<string, string> = {
   'module-01': '模块一：GTM 基础认知',
@@ -116,9 +124,13 @@ function getSidebar() {
 }
 
 // 根据环境变量设置 base 路径
-// GitHub Pages: /gtm-cookbook/
-// Cloudflare Workers: /
-const base = process.env.DEPLOY_TARGET === 'cloudflare' ? '/' : '/gtm-cookbook/'
+// VITEPRESS_BASE 优先，例如：/gtm-cookbook/
+// Cloudflare Pages 会自动设置 CF_PAGES
+// 兼容旧的 DEPLOY_TARGET=cloudflare
+const base = normalizeBase(
+  process.env.VITEPRESS_BASE ||
+  (process.env.CF_PAGES ? '/' : process.env.DEPLOY_TARGET === 'cloudflare' ? '/' : '/gtm-cookbook/')
+)
 
 export default defineConfig({
   title: "GTM 市场战略指南",
