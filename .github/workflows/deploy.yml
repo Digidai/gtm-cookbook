@@ -39,12 +39,12 @@ jobs:
       - name: Build for Cloudflare
         run: DEPLOY_TARGET=cloudflare npm run build
 
-      - name: Deploy to Cloudflare Workers
+      - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+          command: pages deploy .vitepress/dist --project-name=gtm-cookbook
 
   deploy-pages:
     environment:
