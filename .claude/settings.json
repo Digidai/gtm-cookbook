@@ -5,19 +5,19 @@
   },
   "permissions": {
     "allow": [
-      "Edit(*)",
-      "Read(*)",
-      "Bash(*)",
-      "WebFetch(*)",
-      "Write(*)",
-      "Glob(*)",
-      "Grep(*)"
+      "Edit",
+      "Read",
+      "Bash",
+      "WebFetch",
+      "Write",
+      "Glob",
+      "Grep"
     ],
     "deny": [
-      "Bash(rm -rf *)",
-      "Bash(sudo *)",
+      "Bash(rm -rf :*)",
+      "Bash(sudo :*)",
       "Bash(reboot)",
-      "Bash(shutdown *)",
+      "Bash(shutdown :*)",
       "Edit(.env*)",
       "Read(.env)",
       "Read(.env.*)",

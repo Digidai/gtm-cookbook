@@ -115,12 +115,17 @@ function getSidebar() {
   return sidebar
 }
 
+// 根据环境变量设置 base 路径
+// GitHub Pages: /gtm-cookbook/
+// Cloudflare Workers: /
+const base = process.env.DEPLOY_TARGET === 'cloudflare' ? '/' : '/gtm-cookbook/'
+
 export default defineConfig({
   title: "GTM 市场战略指南",
   description: "Go-To-Market 市场进入战略完整教程",
   srcDir: 'docs',
   lang: 'zh-CN',
-  base: '/gtm-cookbook/',
+  base,
 
   head: [
     ['meta', { name: 'author', content: 'GTM Team' }],
