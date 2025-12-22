@@ -1,46 +1,23 @@
-<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="icp-essence-title icp-essence-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="icp-essence-title">ICP 的本质</title>
-  <desc id="icp-essence-desc">ICP 位于 TAM 与 SAM 的核心圈层，代表最易成交、最能获益、最具扩展潜力的客户群。</desc>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="icp-essence-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <filter id="icp-essence-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
-    </filter>
     <style>
-      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .label { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
-      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .circle-base { stroke-width: 2; fill-opacity: 0.2; }
+      .text-label { font-family: system-ui, sans-serif; font-weight: 800; font-size: 24px; text-anchor: middle; dominant-baseline: middle; }
+      .text-sub { font-family: system-ui, sans-serif; font-size: 14px; text-anchor: middle; fill: #64748B; }
     </style>
   </defs>
 
-  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#icp-essence-bg)" stroke="#E2E8F0" />
-  <text x="480" y="48" text-anchor="middle" class="title">ICP 的本质</text>
+  <!-- TAM -->
+  <circle cx="300" cy="200" r="180" class="circle-base" fill="#94A3B8" stroke="#94A3B8" />
+  <text x="300" y="50" class="text-label" font-size="16" fill="#64748B">TAM</text>
 
-  <g filter="url(#icp-essence-shadow)">
-    <circle cx="280" cy="220" r="140" fill="#F1F5F9" stroke="#CBD5E1" />
-    <text x="280" y="110" text-anchor="middle" class="label">TAM</text>
-    <text x="280" y="130" text-anchor="middle" class="note">总体可触达市场</text>
+  <!-- SAM -->
+  <circle cx="300" cy="220" r="120" class="circle-base" fill="#60A5FA" stroke="#60A5FA" />
+  <text x="300" y="130" class="text-label" font-size="16" fill="#3B82F6">SAM</text>
 
-    <circle cx="280" cy="220" r="95" fill="#E0F2FE" stroke="#93C5FD" />
-    <text x="280" y="190" text-anchor="middle" class="label">SAM</text>
-    <text x="280" y="210" text-anchor="middle" class="note">可服务市场</text>
+  <!-- ICP -->
+  <circle cx="300" cy="240" r="60" class="circle-base" fill="#F59E0B" stroke="#F59E0B" fill-opacity="0.4" />
+  <text x="300" y="240" class="text-label" fill="#B45309">ICP</text>
+  <text x="300" y="265" class="text-sub" font-weight="bold" fill="#B45309">最佳客户</text>
 
-    <circle cx="280" cy="220" r="50" fill="#DBEAFE" stroke="#2563EB" />
-    <text x="280" y="220" text-anchor="middle" class="label">ICP</text>
-    <text x="280" y="238" text-anchor="middle" class="note">理想客户</text>
-  </g>
-
-  <g filter="url(#icp-essence-shadow)">
-    <rect x="500" y="110" width="400" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="520" y="140" class="label">ICP 是 TAM 中的核心圈层</text>
-    <text x="520" y="170" class="sub">• 最容易成交的客户</text>
-    <text x="520" y="194" class="sub">• 最能从产品中获益的客户</text>
-    <text x="520" y="218" class="sub">• 服务成本最低的客户</text>
-    <text x="520" y="242" class="sub">• 最有可能推荐的客户</text>
-    <text x="520" y="266" class="sub">• 最有扩展潜力的客户</text>
-  </g>
 </svg>

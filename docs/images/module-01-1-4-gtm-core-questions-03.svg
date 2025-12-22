@@ -1,66 +1,64 @@
-<svg width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="journey-title journey-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="journey-title">客户旅程与渠道</title>
-  <desc id="journey-desc">客户旅程三阶段：触达、转化、交付与成功；每个阶段对应典型渠道与动作。</desc>
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="journey-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <filter id="journey-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
-    </filter>
-    <marker id="journey-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
-    </marker>
     <style>
-      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .card-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
-      .item { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
-      .accent-blue { fill: #2563EB; }
-      .accent-amber { fill: #F59E0B; }
-      .accent-green { fill: #10B981; }
+      .phase-bg { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; rx: 8; }
+      .phase-header { font-family: system-ui, sans-serif; font-weight: 700; font-size: 14px; fill: #FFFFFF; text-anchor: middle; dominant-baseline: middle; }
+      .item-text { font-family: system-ui, sans-serif; font-size: 12px; fill: #475569; }
+      .arrow-connect { stroke: #CBD5E1; stroke-width: 2; fill: none; }
     </style>
   </defs>
 
-  <rect x="16" y="16" width="928" height="268" rx="18" fill="url(#journey-bg)" stroke="#E2E8F0" />
-  <text x="480" y="48" text-anchor="middle" class="title">客户旅程与渠道</text>
-
-  <g filter="url(#journey-shadow)">
-    <rect x="60" y="80" width="240" height="170" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="60" y="80" width="6" height="170" rx="6" class="accent-blue" />
-    <text x="78" y="106" class="card-title accent-blue">触达</text>
-    <circle cx="84" cy="130" r="3" fill="#2563EB" />
-    <text x="96" y="134" class="item">内容 / SEO / 广告</text>
-    <circle cx="84" cy="152" r="3" fill="#2563EB" />
-    <text x="96" y="156" class="item">社区 / 活动 / PR</text>
-    <circle cx="84" cy="174" r="3" fill="#2563EB" />
-    <text x="96" y="178" class="item">行业口碑与推荐</text>
+  <!-- 1. Reach -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="200" height="200" class="phase-bg" />
+    <path d="M0,8 A8,8 0 0 1 8,0 H192 A8,8 0 0 1 200,8 V40 H0 Z" fill="#3B82F6" />
+    <text x="100" y="25" class="phase-header">1. 触达 (Reach)</text>
+    
+    <g transform="translate(20, 60)">
+      <circle cx="5" cy="5" r="3" fill="#3B82F6"/> <text x="15" y="9" class="item-text">SEO / 内容营销</text>
+      <circle cx="5" cy="35" r="3" fill="#3B82F6"/> <text x="15" y="39" class="item-text">广告投放 (Ads)</text>
+      <circle cx="5" cy="65" r="3" fill="#3B82F6"/> <text x="15" y="69" class="item-text">公关 (PR)</text>
+      <circle cx="5" cy="95" r="3" fill="#3B82F6"/> <text x="15" y="99" class="item-text">社区运营</text>
+    </g>
   </g>
 
-  <g filter="url(#journey-shadow)">
-    <rect x="360" y="80" width="240" height="170" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="360" y="80" width="6" height="170" rx="6" class="accent-amber" />
-    <text x="378" y="106" class="card-title accent-amber">转化</text>
-    <circle cx="384" cy="130" r="3" fill="#F59E0B" />
-    <text x="396" y="134" class="item">试用 / 演示 / 评估</text>
-    <circle cx="384" cy="152" r="3" fill="#F59E0B" />
-    <text x="396" y="156" class="item">销售跟进与方案</text>
-    <circle cx="384" cy="174" r="3" fill="#F59E0B" />
-    <text x="396" y="178" class="item">合作伙伴协作</text>
+  <!-- Arrow -->
+  <path d="M250,150 H290" class="arrow-connect" marker-end="url(#arrow)" />
+
+  <!-- 2. Convert -->
+  <g transform="translate(290, 50)">
+    <rect x="0" y="0" width="200" height="200" class="phase-bg" />
+    <path d="M0,8 A8,8 0 0 1 8,0 H192 A8,8 0 0 1 200,8 V40 H0 Z" fill="#F59E0B" />
+    <text x="100" y="25" class="phase-header">2. 转化 (Convert)</text>
+
+    <g transform="translate(20, 60)">
+      <circle cx="5" cy="5" r="3" fill="#F59E0B"/> <text x="15" y="9" class="item-text">免费试用 / Demo</text>
+      <circle cx="5" cy="35" r="3" fill="#F59E0B"/> <text x="15" y="39" class="item-text">销售跟进</text>
+      <circle cx="5" cy="65" r="3" fill="#F59E0B"/> <text x="15" y="69" class="item-text">解决方案提案</text>
+      <circle cx="5" cy="95" r="3" fill="#F59E0B"/> <text x="15" y="99" class="item-text">合同谈判</text>
+    </g>
   </g>
 
-  <g filter="url(#journey-shadow)">
-    <rect x="660" y="80" width="240" height="170" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="660" y="80" width="6" height="170" rx="6" class="accent-green" />
-    <text x="678" y="106" class="card-title accent-green">交付与成功</text>
-    <circle cx="684" cy="130" r="3" fill="#10B981" />
-    <text x="696" y="134" class="item">实施 / 培训 / 支持</text>
-    <circle cx="684" cy="152" r="3" fill="#10B981" />
-    <text x="696" y="156" class="item">客户成功与续约</text>
-    <circle cx="684" cy="174" r="3" fill="#10B981" />
-    <text x="696" y="178" class="item">扩展与口碑传播</text>
+  <!-- Arrow -->
+  <path d="M490,150 H530" class="arrow-connect" marker-end="url(#arrow)" />
+
+  <!-- 3. Success -->
+  <g transform="translate(530, 50)">
+    <rect x="0" y="0" width="200" height="200" class="phase-bg" />
+    <path d="M0,8 A8,8 0 0 1 8,0 H192 A8,8 0 0 1 200,8 V40 H0 Z" fill="#10B981" />
+    <text x="100" y="25" class="phase-header">3. 成功 (Success)</text>
+
+    <g transform="translate(20, 60)">
+      <circle cx="5" cy="5" r="3" fill="#10B981"/> <text x="15" y="9" class="item-text">实施与交付</text>
+      <circle cx="5" cy="35" r="3" fill="#10B981"/> <text x="15" y="39" class="item-text">客户培训</text>
+      <circle cx="5" cy="65" r="3" fill="#10B981"/> <text x="15" y="69" class="item-text">续约 (Renewal)</text>
+      <circle cx="5" cy="95" r="3" fill="#10B981"/> <text x="15" y="99" class="item-text">口碑推荐</text>
+    </g>
   </g>
 
-  <line x1="300" y1="165" x2="360" y2="165" stroke="#64748B" stroke-width="2" marker-end="url(#journey-arrow)" />
-  <line x1="600" y1="165" x2="660" y2="165" stroke="#64748B" stroke-width="2" marker-end="url(#journey-arrow)" />
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#CBD5E1" />
+    </marker>
+  </defs>
 </svg>

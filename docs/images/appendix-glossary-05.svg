@@ -1,32 +1,63 @@
-<svg width="352" height="76" viewBox="0 0 352 76" role="img" aria-labelledby="title desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="title">WHO WHAT HOW WHY NOW</title>
-  <desc id="desc">WHO WHAT HOW WHY NOW（由文本图示转为 SVG）</desc>
+<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
-    </marker>
     <style>
-      .line { stroke: #64748B; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
-      .text { font: 500 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step-bg { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; }
+      .header-bg { fill: #F8FAFC; }
+      .text-title { font-family: system-ui, sans-serif; font-size: 14px; font-weight: 700; fill: #1E293B; text-anchor: middle; }
+      .text-zh { font-family: system-ui, sans-serif; font-size: 12px; fill: #64748B; text-anchor: middle; }
+      .arrow { stroke: #CBD5E1; stroke-width: 2; fill: none; }
     </style>
   </defs>
-  <rect x="8" y="8" width="336" height="60" rx="14" fill="url(#bg)" stroke="#E2E8F0" />
-  <line class="line" x1="68.00" y1="29.00" x2="80.00" y2="29.00" marker-end="url(#arrow)" />
-  <line class="line" x1="152.00" y1="29.00" x2="164.00" y2="29.00" marker-end="url(#arrow)" />
-  <line class="line" x1="224.00" y1="29.00" x2="236.00" y2="29.00" marker-end="url(#arrow)" />
-  <line class="line" x1="56.00" y1="47.00" x2="68.00" y2="47.00" marker-end="url(#arrow)" />
-  <line class="line" x1="116.00" y1="47.00" x2="128.00" y2="47.00" marker-end="url(#arrow)" />
-  <line class="line" x1="176.00" y1="47.00" x2="188.00" y2="47.00" marker-end="url(#arrow)" />
-  <text class="text" x="20.00" y="29.00" dominant-baseline="middle">WHO</text>
-  <text class="text" x="92.00" y="29.00" dominant-baseline="middle">WHAT</text>
-  <text class="text" x="176.00" y="29.00" dominant-baseline="middle">HOW</text>
-  <text class="text" x="248.00" y="29.00" dominant-baseline="middle">WHY NOW</text>
-  <text class="text" x="20.00" y="47.00" dominant-baseline="middle">谁</text>
-  <text class="text" x="80.00" y="47.00" dominant-baseline="middle">什么</text>
-  <text class="text" x="140.00" y="47.00" dominant-baseline="middle">如何</text>
-  <text class="text" x="200.00" y="47.00" dominant-baseline="middle">为何是现在</text>
+
+  <!-- WHO -->
+  <g transform="translate(40, 30)">
+    <rect x="0" y="0" width="140" height="60" rx="8" class="step-bg" />
+    <path d="M0,0 H140 V24 H0 Z" fill="#EFF6FF" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="70" y="17" class="text-title" style="fill: #1D4ED8">WHO</text>
+    <text x="70" y="45" class="text-zh">谁是客户？</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M190,60 H220" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- WHAT -->
+  <g transform="translate(230, 30)">
+    <rect x="0" y="0" width="140" height="60" rx="8" class="step-bg" />
+    <path d="M0,0 H140 V24 H0 Z" fill="#F0FDF4" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="70" y="17" class="text-title" style="fill: #15803D">WHAT</text>
+    <text x="70" y="45" class="text-zh">价值是什么？</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M380,60 H410" class="arrow" />
+
+  <!-- HOW -->
+  <g transform="translate(420, 30)">
+    <rect x="0" y="0" width="140" height="60" rx="8" class="step-bg" />
+    <path d="M0,0 H140 V24 H0 Z" fill="#FFF7ED" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="70" y="17" class="text-title" style="fill: #C2410C">HOW</text>
+    <text x="70" y="45" class="text-zh">如何触达？</text>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M570,60 H600" class="arrow" />
+
+  <!-- WHY NOW -->
+  <g transform="translate(610, 30)">
+    <rect x="0" y="0" width="140" height="60" rx="8" class="step-bg" />
+    <path d="M0,0 H140 V24 H0 Z" fill="#FAF5FF" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="70" y="17" class="text-title" style="fill: #7E22CE">WHY NOW</text>
+    <text x="70" y="45" class="text-zh">为何现在？</text>
+  </g>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#CBD5E1" />
+    </marker>
+  </defs>
+  <!-- Draw arrows manually to ensure marker usage -->
+  <path d="M185,60 H225" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M375,60 H415" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M565,60 H605" stroke="#CBD5E1" stroke-width="2" marker-end="url(#arrowhead)" />
+
 </svg>

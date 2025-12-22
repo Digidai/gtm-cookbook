@@ -1,77 +1,58 @@
-<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="motion-overview-title motion-overview-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="motion-overview-title">GTM Motion 类型全景</title>
-  <desc id="motion-overview-desc">按主要增长驱动力划分：PLG、SLG、MLG、CLG，并展示 Hybrid Motion（PLS）。</desc>
+<svg width="900" height="350" viewBox="0 0 900 350" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="motion-overview-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <filter id="motion-overview-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
-    </filter>
-    <marker id="motion-overview-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
-    </marker>
     <style>
-      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .subtitle { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
-      .card-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
-      .card-sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
-      .pill { font: 600 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .accent-blue { fill: #2563EB; }
-      .accent-amber { fill: #F59E0B; }
-      .accent-teal { fill: #0EA5A4; }
-      .accent-green { fill: #10B981; }
+      .card-base { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; rx: 12; }
+      .card-header { font-family: system-ui, sans-serif; font-weight: 800; font-size: 24px; text-anchor: middle; }
+      .card-desc { font-family: system-ui, sans-serif; font-size: 13px; fill: #64748B; text-anchor: middle; }
+      .tag-plg { fill: #EFF6FF; stroke: #3B82F6; }
+      .tag-slg { fill: #FFF7ED; stroke: #F97316; }
+      .tag-mlg { fill: #F0FDF4; stroke: #22C55E; }
+      .tag-clg { fill: #FAF5FF; stroke: #A855F7; }
     </style>
   </defs>
 
-  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#motion-overview-bg)" stroke="#E2E8F0" />
-  <text x="480" y="48" text-anchor="middle" class="title">GTM Motion 类型全景</text>
-  <text x="480" y="70" text-anchor="middle" class="subtitle">按主要增长驱动力分类</text>
-
-  <g filter="url(#motion-overview-shadow)">
-    <rect x="40" y="100" width="210" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="40" y="100" width="6" height="150" rx="6" class="accent-blue" />
-    <text x="58" y="126" class="card-title accent-blue">PLG</text>
-    <text x="58" y="146" class="card-sub">Product-Led Growth</text>
-    <text x="58" y="174" class="card-sub">产品即增长引擎</text>
-    <text x="58" y="196" class="card-sub">自助体验与转化</text>
+  <!-- PLG -->
+  <g transform="translate(20, 50)">
+    <rect x="0" y="0" width="200" height="250" class="card-base tag-plg" stroke-width="2" />
+    <text x="100" y="50" class="card-header" fill="#1D4ED8">PLG</text>
+    <text x="100" y="80" class="card-desc" font-weight="bold">Product-Led</text>
+    <line x1="40" y1="100" x2="160" y2="100" stroke="#BFDBFE" />
+    <text x="100" y="130" class="card-desc">产品即增长引擎</text>
+    <text x="100" y="150" class="card-desc">低客单价 / 自助服务</text>
+    <text x="100" y="170" class="card-desc">快速价值验证</text>
   </g>
 
-  <g filter="url(#motion-overview-shadow)">
-    <rect x="260" y="100" width="210" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="260" y="100" width="6" height="150" rx="6" class="accent-amber" />
-    <text x="278" y="126" class="card-title accent-amber">SLG</text>
-    <text x="278" y="146" class="card-sub">Sales-Led Growth</text>
-    <text x="278" y="174" class="card-sub">销售团队驱动</text>
-    <text x="278" y="196" class="card-sub">顾问式成交</text>
+  <!-- MLG -->
+  <g transform="translate(240, 50)">
+    <rect x="0" y="0" width="200" height="250" class="card-base tag-mlg" stroke-width="2" />
+    <text x="100" y="50" class="card-header" fill="#15803D">MLG</text>
+    <text x="100" y="80" class="card-desc" font-weight="bold">Marketing-Led</text>
+    <line x1="40" y1="100" x2="160" y2="100" stroke="#BBF7D0" />
+    <text x="100" y="130" class="card-desc">内容驱动获客</text>
+    <text x="100" y="150" class="card-desc">SEO / 广告 / 品牌</text>
+    <text x="100" y="170" class="card-desc">产生 MQL 交给销售</text>
   </g>
 
-  <g filter="url(#motion-overview-shadow)">
-    <rect x="480" y="100" width="210" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="480" y="100" width="6" height="150" rx="6" class="accent-teal" />
-    <text x="498" y="126" class="card-title accent-teal">MLG</text>
-    <text x="498" y="146" class="card-sub">Marketing-Led Growth</text>
-    <text x="498" y="174" class="card-sub">内容吸引获客</text>
-    <text x="498" y="196" class="card-sub">Inbound 转化</text>
+  <!-- SLG -->
+  <g transform="translate(460, 50)">
+    <rect x="0" y="0" width="200" height="250" class="card-base tag-slg" stroke-width="2" />
+    <text x="100" y="50" class="card-header" fill="#C2410C">SLG</text>
+    <text x="100" y="80" class="card-desc" font-weight="bold">Sales-Led</text>
+    <line x1="40" y1="100" x2="160" y2="100" stroke="#FED7AA" />
+    <text x="100" y="130" class="card-desc">销售团队驱动</text>
+    <text x="100" y="150" class="card-desc">高客单价 / 复杂决策</text>
+    <text x="100" y="170" class="card-desc">顾问式销售</text>
   </g>
 
-  <g filter="url(#motion-overview-shadow)">
-    <rect x="700" y="100" width="210" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="700" y="100" width="6" height="150" rx="6" class="accent-green" />
-    <text x="718" y="126" class="card-title accent-green">CLG</text>
-    <text x="718" y="146" class="card-sub">Community-Led Growth</text>
-    <text x="718" y="174" class="card-sub">社区生态驱动</text>
-    <text x="718" y="196" class="card-sub">口碑与推荐</text>
+  <!-- CLG -->
+  <g transform="translate(680, 50)">
+    <rect x="0" y="0" width="200" height="250" class="card-base tag-clg" stroke-width="2" />
+    <text x="100" y="50" class="card-header" fill="#7E22CE">CLG</text>
+    <text x="100" y="80" class="card-desc" font-weight="bold">Community-Led</text>
+    <line x1="40" y1="100" x2="160" y2="100" stroke="#E9D5FF" />
+    <text x="100" y="130" class="card-desc">社区与生态</text>
+    <text x="100" y="150" class="card-desc">用户口碑 / 贡献者</text>
+    <text x="100" y="170" class="card-desc">网络效应</text>
   </g>
 
-  <line x1="480" y1="255" x2="480" y2="290" stroke="#64748B" stroke-width="2" marker-end="url(#motion-overview-arrow)" />
-
-  <g filter="url(#motion-overview-shadow)">
-    <rect x="210" y="300" width="540" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="230" y="330" class="card-title">Hybrid Motion</text>
-    <text x="230" y="350" class="card-sub">Product-Led Sales (PLS)：产品引流 + 销售收割</text>
-    <rect x="640" y="316" width="88" height="28" rx="14" fill="#E0F2FE" stroke="#BAE6FD" />
-    <text x="684" y="335" text-anchor="middle" class="pill">2025 主流</text>
-  </g>
 </svg>

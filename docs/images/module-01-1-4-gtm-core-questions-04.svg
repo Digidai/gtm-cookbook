@@ -1,43 +1,67 @@
-<svg width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="motion-title motion-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="motion-title">GTM Motion 选择框架</title>
-  <desc id="motion-desc">以 ACV 高低和产品复杂度划分，形成四象限的 GTM Motion 选择。</desc>
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="motion-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <filter id="motion-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
-    </filter>
     <style>
-      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .axis { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
-      .cell-title { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .cell-sub { font: 12px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .quadrant-bg { fill: #F8FAFC; opacity: 0.5; }
+      .axis-line { stroke: #64748B; stroke-width: 2; marker-end: url(#arrow); }
+      .label-axis { font-family: system-ui, sans-serif; font-weight: 700; font-size: 14px; fill: #475569; text-anchor: middle; }
+      .label-quadrant { font-family: system-ui, sans-serif; font-weight: 700; font-size: 16px; fill: #1E293B; text-anchor: middle; }
+      .desc-quadrant { font-family: system-ui, sans-serif; font-size: 13px; fill: #64748B; text-anchor: middle; }
     </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748B" />
+    </marker>
   </defs>
 
-  <rect x="16" y="16" width="928" height="328" rx="18" fill="url(#motion-bg)" stroke="#E2E8F0" />
-  <text x="480" y="46" text-anchor="middle" class="title">GTM Motion 选择框架</text>
+  <!-- Backgrounds for Quadrants -->
+  <rect x="50" y="50" width="250" height="250" fill="#EFF6FF" rx="8" /> <!-- Q2: High ACV, Simple -->
+  <rect x="300" y="50" width="250" height="250" fill="#F0FDF4" rx="8" /> <!-- Q1: High ACV, Complex -->
+  <rect x="50" y="300" width="250" height="250" fill="#FFF7ED" rx="8" /> <!-- Q3: Low ACV, Simple -->
+  <rect x="300" y="300" width="250" height="250" fill="#FAF5FF" rx="8" /> <!-- Q4: Low ACV, Complex -->
 
-  <g filter="url(#motion-shadow)">
-    <rect x="140" y="80" width="680" height="220" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
-    <line x1="480" y1="80" x2="480" y2="300" stroke="#CBD5E1" stroke-width="2" />
-    <line x1="140" y1="190" x2="820" y2="190" stroke="#CBD5E1" stroke-width="2" />
+  <!-- Axes -->
+  <line x1="300" y1="580" x2="300" y2="20" class="axis-line" /> <!-- Y Axis -->
+  <line x1="20" y1="300" x2="580" y2="300" class="axis-line" /> <!-- X Axis -->
 
-    <text x="180" y="118" class="cell-title">低 ACV + 简单产品</text>
-    <text x="180" y="140" class="cell-sub">PLG</text>
+  <!-- Labels -->
+  <text x="300" y="595" class="label-axis">产品复杂度 (Complex)</text>
+  <text x="300" y="15" class="label-axis" dominant-baseline="hanging">产品简单度 (Simple)</text> <!-- Wait, logic check: Usually Y is ACV, X is Complexity -->
+  
+  <!-- Let's follow standard: X = Complexity (Low -> High), Y = ACV (Low -> High) -->
+  <!-- Correcting Axes Logic -->
+  <!-- Center is origin. -->
+  <!-- X-Right: High Complexity. X-Left: Low Complexity. -->
+  <!-- Y-Top: High ACV. Y-Bottom: Low ACV. -->
 
-    <text x="520" y="118" class="cell-title">低 ACV + 复杂产品</text>
-    <text x="520" y="140" class="cell-sub">PLG + 轻销售</text>
+  <!-- Redraw Labels correctly -->
+  <text x="550" y="320" class="label-axis" text-anchor="end">产品复杂度 (高)</text>
+  <text x="50" y="320" class="label-axis" text-anchor="start">产品复杂度 (低)</text>
+  
+  <text x="310" y="40" class="label-axis" text-anchor="start">ACV (高)</text>
+  <text x="310" y="560" class="label-axis" text-anchor="start">ACV (低)</text>
 
-    <text x="180" y="228" class="cell-title">高 ACV + 简单产品</text>
-    <text x="180" y="250" class="cell-sub">SLG + 快速成交</text>
 
-    <text x="520" y="228" class="cell-title">高 ACV + 复杂产品</text>
-    <text x="520" y="250" class="cell-sub">SLG + 长周期</text>
+  <!-- Q1: Top Right (High ACV, High Complex) -->
+  <g transform="translate(425, 175)">
+    <text y="-10" class="label-quadrant">Enterprise / Field Sales</text>
+    <text y="15" class="desc-quadrant">SLG + 长周期</text>
   </g>
 
-  <text x="100" y="188" text-anchor="middle" class="axis" transform="rotate(-90 100 188)">ACV 低 → 高</text>
-  <text x="480" y="330" text-anchor="middle" class="axis">产品复杂度：简单 → 复杂</text>
+  <!-- Q2: Top Left (High ACV, Low Complex) -->
+  <g transform="translate(175, 175)">
+    <text y="-10" class="label-quadrant">Inside Sales / High Velocity</text>
+    <text y="15" class="desc-quadrant">SLG + 快速成交</text>
+  </g>
+
+  <!-- Q3: Bottom Left (Low ACV, Low Complex) -->
+  <g transform="translate(175, 425)">
+    <text y="-10" class="label-quadrant">PLG (Self-Serve)</text>
+    <text y="15" class="desc-quadrant">自助服务 + 病毒式增长</text>
+  </g>
+
+  <!-- Q4: Bottom Right (Low ACV, High Complex) -->
+  <g transform="translate(425, 425)">
+    <text y="-10" class="label-quadrant">PLG + Sales Assist</text>
+    <text y="15" class="desc-quadrant">产品主导 + 销售辅助</text>
+  </g>
+
 </svg>

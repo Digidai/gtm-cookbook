@@ -1,80 +1,78 @@
-<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="vp-canvas-title vp-canvas-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="vp-canvas-title">价值主张画布</title>
-  <desc id="vp-canvas-desc">价值地图与客户画像左右对应，通过三层要素实现匹配。</desc>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="vp-canvas-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <filter id="vp-canvas-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
-    </filter>
-    <marker id="vp-canvas-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
-    </marker>
     <style>
-      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .subtitle { font: 12px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
-      .card-title { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .card-sub { font: 12px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
-      .fit { font: 700 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+      .container { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 2; rx: 8; }
+      .header { font-family: system-ui, sans-serif; font-weight: 700; font-size: 14px; text-anchor: middle; fill: #1E293B; }
+      .sub-head { font-family: system-ui, sans-serif; font-weight: 600; font-size: 12px; fill: #475569; }
+      .item { font-family: system-ui, sans-serif; font-size: 11px; fill: #64748B; }
+      .fit-icon { fill: #E0F2FE; stroke: #3B82F6; }
     </style>
   </defs>
 
-  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#vp-canvas-bg)" stroke="#E2E8F0" />
-  <text x="480" y="48" text-anchor="middle" class="title">价值主张画布</text>
+  <rect width="800" height="500" fill="#F8FAFC" rx="12" />
 
-  <text x="210" y="90" text-anchor="middle" class="section">价值地图</text>
-  <text x="210" y="110" text-anchor="middle" class="subtitle">Value Map</text>
+  <!-- Value Map (Left) -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="300" height="400" class="container" />
+    <text x="150" y="30" class="header">价值地图 (Product)</text>
+    
+    <!-- Products -->
+    <rect x="20" y="50" width="260" height="80" rx="4" fill="#F1F5F9" />
+    <text x="30" y="70" class="sub-head">产品与服务</text>
+    <text x="30" y="90" class="item">• 功能特性</text>
+    <text x="30" y="110" class="item">• 服务内容</text>
 
-  <text x="750" y="90" text-anchor="middle" class="section">客户画像</text>
-  <text x="750" y="110" text-anchor="middle" class="subtitle">Customer Profile</text>
+    <!-- Pain Relievers -->
+    <rect x="20" y="150" width="260" height="80" rx="4" fill="#FEF2F2" stroke="#FECACA" />
+    <text x="30" y="170" class="sub-head" fill="#B91C1C">解痛方案</text>
+    <text x="30" y="190" class="item" fill="#B91C1C">• 如何消除风险</text>
+    <text x="30" y="210" class="item" fill="#B91C1C">• 如何减少阻碍</text>
 
-  <g filter="url(#vp-canvas-shadow)">
-    <rect x="80" y="140" width="260" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="210" y="170" text-anchor="middle" class="card-title">产品与服务</text>
-    <text x="210" y="195" text-anchor="middle" class="card-sub">你提供什么？</text>
+    <!-- Gain Creators -->
+    <rect x="20" y="250" width="260" height="80" rx="4" fill="#F0FDF4" stroke="#86EFAC" />
+    <text x="30" y="270" class="sub-head" fill="#15803D">创益方案</text>
+    <text x="30" y="290" class="item" fill="#15803D">• 如何增加收益</text>
+    <text x="30" y="310" class="item" fill="#15803D">• 如何超出预期</text>
   </g>
 
-  <g filter="url(#vp-canvas-shadow)">
-    <rect x="620" y="140" width="260" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="750" y="170" text-anchor="middle" class="card-title">客户任务</text>
-    <text x="750" y="195" text-anchor="middle" class="card-sub">客户要完成什么任务？</text>
+  <!-- Customer Profile (Right) -->
+  <g transform="translate(450, 50)">
+    <rect x="0" y="0" width="300" height="400" class="container" />
+    <text x="150" y="30" class="header">客户画像 (Customer)</text>
+
+    <!-- Jobs -->
+    <rect x="20" y="50" width="260" height="80" rx="4" fill="#F1F5F9" />
+    <text x="30" y="70" class="sub-head">客户任务 (Jobs)</text>
+    <text x="30" y="90" class="item">• 功能性任务</text>
+    <text x="30" y="110" class="item">• 社交/情感任务</text>
+
+    <!-- Pains -->
+    <rect x="20" y="150" width="260" height="80" rx="4" fill="#FEF2F2" stroke="#FECACA" />
+    <text x="30" y="170" class="sub-head" fill="#B91C1C">痛点 (Pains)</text>
+    <text x="30" y="190" class="item" fill="#B91C1C">• 糟糕的结果</text>
+    <text x="30" y="210" class="item" fill="#B91C1C">• 风险与障碍</text>
+
+    <!-- Gains -->
+    <rect x="20" y="250" width="260" height="80" rx="4" fill="#F0FDF4" stroke="#86EFAC" />
+    <text x="30" y="270" class="sub-head" fill="#15803D">收益 (Gains)</text>
+    <text x="30" y="290" class="item" fill="#15803D">• 期望的利益</text>
+    <text x="30" y="310" class="item" fill="#15803D">• 意外的惊喜</text>
   </g>
 
-  <g filter="url(#vp-canvas-shadow)">
-    <rect x="80" y="260" width="260" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="210" y="290" text-anchor="middle" class="card-title">痛点解药</text>
-    <text x="210" y="315" text-anchor="middle" class="card-sub">如何消除客户痛点？</text>
+  <!-- Fit Icons -->
+  <g transform="translate(400, 190)">
+    <circle r="20" class="fit-icon" />
+    <text x="0" y="5" text-anchor="middle" font-size="10" font-weight="bold" fill="#1D4ED8">FIT</text>
+  </g>
+  <g transform="translate(400, 290)">
+    <circle r="20" class="fit-icon" />
+    <text x="0" y="5" text-anchor="middle" font-size="10" font-weight="bold" fill="#1D4ED8">FIT</text>
   </g>
 
-  <g filter="url(#vp-canvas-shadow)">
-    <rect x="620" y="260" width="260" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="750" y="290" text-anchor="middle" class="card-title">痛点</text>
-    <text x="750" y="315" text-anchor="middle" class="card-sub">客户担心什么？</text>
-  </g>
+  <line x1="350" y1="190" x2="380" y2="190" stroke="#CBD5E1" stroke-width="2" />
+  <line x1="420" y1="190" x2="450" y2="190" stroke="#CBD5E1" stroke-width="2" />
 
-  <g filter="url(#vp-canvas-shadow)">
-    <rect x="80" y="380" width="260" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="210" y="410" text-anchor="middle" class="card-title">收益创造者</text>
-    <text x="210" y="435" text-anchor="middle" class="card-sub">如何为客户创造收益？</text>
-  </g>
+  <line x1="350" y1="290" x2="380" y2="290" stroke="#CBD5E1" stroke-width="2" />
+  <line x1="420" y1="290" x2="450" y2="290" stroke="#CBD5E1" stroke-width="2" />
 
-  <g filter="url(#vp-canvas-shadow)">
-    <rect x="620" y="380" width="260" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="750" y="410" text-anchor="middle" class="card-title">收益</text>
-    <text x="750" y="435" text-anchor="middle" class="card-sub">客户期望什么？</text>
-  </g>
-
-  <line x1="340" y1="185" x2="620" y2="185" class="line" marker-end="url(#vp-canvas-arrow)" />
-  <line x1="340" y1="305" x2="620" y2="305" class="line" marker-end="url(#vp-canvas-arrow)" />
-  <line x1="340" y1="425" x2="620" y2="425" class="line" marker-end="url(#vp-canvas-arrow)" />
-
-  <text x="480" y="205" text-anchor="middle" class="fit">匹配</text>
-  <text x="480" y="325" text-anchor="middle" class="fit">匹配</text>
-  <text x="480" y="445" text-anchor="middle" class="fit">匹配</text>
-
-  <text x="480" y="520" text-anchor="middle" class="subtitle">目标：实现两侧的完美匹配（Fit）</text>
 </svg>

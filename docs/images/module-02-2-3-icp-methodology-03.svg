@@ -1,69 +1,53 @@
-<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="decision-chain-title decision-chain-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="decision-chain-title">典型 B2B 决策链</title>
-  <desc id="decision-chain-desc">从发起者到使用者的决策链角色及其职责说明。</desc>
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="decision-chain-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <filter id="decision-chain-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
-    </filter>
-    <marker id="decision-chain-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
-    </marker>
     <style>
-      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .role { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .desc { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .role-node { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 2; rx: 20; }
+      .role-text { font-family: system-ui, sans-serif; font-weight: 700; font-size: 13px; text-anchor: middle; fill: #1E293B; }
+      .desc-text { font-family: system-ui, sans-serif; font-size: 11px; text-anchor: middle; fill: #64748B; }
+      .arrow { stroke: #94A3B8; stroke-width: 2; marker-end: url(#arrow); }
     </style>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94A3B8" />
+    </marker>
   </defs>
 
-  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#decision-chain-bg)" stroke="#E2E8F0" />
-  <text x="480" y="48" text-anchor="middle" class="title">典型 B2B 决策链</text>
+  <g transform="translate(50, 80)">
+    <!-- Initiator -->
+    <rect x="0" y="0" width="100" height="40" class="role-node" />
+    <text x="50" y="25" class="role-text">发起者</text>
+    <text x="50" y="55" class="desc-text">提出需求</text>
 
-  <g filter="url(#decision-chain-shadow)">
-    <rect x="140" y="80" width="680" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="170" y="112" class="role">发起者 (Initiator)</text>
-    <text x="420" y="112" class="desc">提出需求的人</text>
+    <!-- Arrow -->
+    <path d="M100,20 H140" class="arrow" />
+
+    <!-- Influencer -->
+    <rect x="140" y="0" width="100" height="40" class="role-node" />
+    <text x="190" y="25" class="role-text">影响者</text>
+    <text x="190" y="55" class="desc-text">评估建议</text>
+
+    <!-- Arrow -->
+    <path d="M240,20 H280" class="arrow" />
+
+    <!-- Gatekeeper -->
+    <rect x="280" y="0" width="100" height="40" class="role-node" stroke="#F59E0B" />
+    <text x="330" y="25" class="role-text">守门人</text>
+    <text x="330" y="55" class="desc-text">控制流程</text>
+
+    <!-- Arrow -->
+    <path d="M380,20 H420" class="arrow" />
+
+    <!-- Decider -->
+    <rect x="420" y="-10" width="120" height="60" class="role-node" stroke="#2563EB" stroke-width="3" />
+    <text x="480" y="25" class="role-text" font-size="14">决策者</text>
+    <text x="480" y="65" class="desc-text" font-weight="bold" fill="#2563EB">最终拍板</text>
+
+    <!-- Arrow -->
+    <path d="M540,20 H580" class="arrow" />
+
+    <!-- User -->
+    <rect x="580" y="0" width="100" height="40" class="role-node" stroke="#10B981" />
+    <text x="630" y="25" class="role-text">使用者</text>
+    <text x="630" y="55" class="desc-text">实际落地</text>
   </g>
 
-  <line x1="480" y1="140" x2="480" y2="160" stroke="#64748B" stroke-width="2" marker-end="url(#decision-chain-arrow)" />
-
-  <g filter="url(#decision-chain-shadow)">
-    <rect x="140" y="160" width="680" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="170" y="192" class="role">影响者 (Influencer)</text>
-    <text x="420" y="192" class="desc">参与评估，提供建议</text>
-  </g>
-
-  <line x1="480" y1="220" x2="480" y2="240" stroke="#64748B" stroke-width="2" marker-end="url(#decision-chain-arrow)" />
-
-  <g filter="url(#decision-chain-shadow)">
-    <rect x="140" y="240" width="680" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="170" y="272" class="role">守门者 (Gatekeeper)</text>
-    <text x="420" y="272" class="desc">控制信息流通（如采购）</text>
-  </g>
-
-  <line x1="480" y1="300" x2="480" y2="320" stroke="#64748B" stroke-width="2" marker-end="url(#decision-chain-arrow)" />
-
-  <g filter="url(#decision-chain-shadow)">
-    <rect x="140" y="320" width="680" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="170" y="352" class="role">决策者 (Decider)</text>
-    <text x="420" y="352" class="desc">做出最终决定</text>
-  </g>
-
-  <line x1="300" y1="360" x2="300" y2="380" stroke="#94A3B8" stroke-width="2" marker-end="url(#decision-chain-arrow)" />
-  <line x1="660" y1="360" x2="660" y2="380" stroke="#94A3B8" stroke-width="2" marker-end="url(#decision-chain-arrow)" />
-
-  <g filter="url(#decision-chain-shadow)">
-    <rect x="80" y="380" width="360" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="110" y="410" class="role">批准者 (Approver)</text>
-    <text x="300" y="410" class="desc">签字批准预算</text>
-  </g>
-
-  <g filter="url(#decision-chain-shadow)">
-    <rect x="520" y="380" width="360" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="550" y="410" class="role">使用者 (User)</text>
-    <text x="700" y="410" class="desc">实际使用产品</text>
-  </g>
 </svg>

@@ -1,49 +1,41 @@
-<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="figma-early-title figma-early-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="figma-early-title">Figma 早期理想客户画像</title>
-  <desc id="figma-early-desc">Figma 早期 ICP 的用户画像与购买触发因素双栏总结。</desc>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="figma-early-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <filter id="figma-early-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
-    </filter>
     <style>
-      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .section { font: 700 13px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
-      .muted { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .card { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; rx: 8; }
+      .header-bg { fill: #FAF5FF; }
+      .header-text { font-family: system-ui, sans-serif; font-weight: 800; font-size: 16px; fill: #7E22CE; text-anchor: middle; }
+      .item-text { font-family: system-ui, sans-serif; font-size: 12px; fill: #475569; }
     </style>
   </defs>
 
-  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#figma-early-bg)" stroke="#E2E8F0" />
-  <text x="480" y="48" text-anchor="middle" class="title">Figma 早期理想客户画像</text>
+  <rect width="800" height="400" fill="#F8FAFC" rx="12" />
 
-  <g filter="url(#figma-early-shadow)">
-    <rect x="60" y="90" width="380" height="280" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="84" y="110" width="120" height="24" rx="12" fill="#EDE9FE" stroke="#DDD6FE" />
-    <text x="144" y="127" text-anchor="middle" class="section">用户画像</text>
-
-    <text x="84" y="150" class="body">• 用户类型：独立设计师、小型设计团队</text>
-    <text x="84" y="174" class="body">• 行业：科技创业公司、设计机构</text>
-    <text x="84" y="198" class="body">• 团队规模：1-5 名设计师</text>
-    <text x="84" y="222" class="body">• 公司规模：10-100 人</text>
-    <text x="84" y="246" class="body">• 技术特征：Web 原生，无需安装</text>
+  <!-- Left Column: User Profile -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="320" height="300" class="card" />
+    <rect x="0" y="0" width="320" height="50" rx="8 8 0 0" class="header-bg" />
+    <text x="160" y="30" class="header-text">用户画像 (User Persona)</text>
+    
+    <text x="20" y="80" class="item-text">• 角色: UI/UX 设计师</text>
+    <text x="20" y="110" class="item-text">• 场景: 界面设计, 原型制作</text>
+    <text x="20" y="140" class="item-text">• 工具痛点: 版本冲突, 无法协作</text>
+    <text x="20" y="170" class="item-text">• 技术偏好: 喜欢尝试新工具</text>
+    <text x="20" y="200" class="item-text">• 工作流: Sketch + Dropbox + InVision</text>
   </g>
 
-  <g filter="url(#figma-early-shadow)">
-    <rect x="520" y="90" width="380" height="280" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="544" y="110" width="140" height="24" rx="12" fill="#FCE7F3" stroke="#FBCFE8" />
-    <text x="614" y="127" text-anchor="middle" class="section">触发与购买</text>
+  <!-- Right Column: Buyer Profile -->
+  <g transform="translate(430, 50)">
+    <rect x="0" y="0" width="320" height="300" class="card" />
+    <rect x="0" y="0" width="320" height="50" rx="8 8 0 0" class="header-bg" fill="#E0F2FE" />
+    <text x="160" y="30" class="header-text" fill="#0369A1">购买触发 (Triggers)</text>
 
-    <text x="544" y="150" class="body">• 核心痛点：设计协作困难</text>
-    <text x="564" y="170" class="muted">Sketch 仅支持 Mac</text>
-    <text x="544" y="194" class="body">• 现有方案：Sketch + InVision</text>
-    <text x="564" y="214" class="muted">版本混乱</text>
-    <text x="544" y="238" class="body">• 购买信号：设计师抱怨协作效率</text>
-    <text x="544" y="262" class="body">• Champion：设计师个人</text>
-    <text x="544" y="286" class="body">• 决策模式：设计师自主注册使用</text>
-    <text x="544" y="310" class="body">• ACV：免费 → $12-15/用户/月</text>
+    <text x="20" y="80" class="item-text">• 团队协作混乱, 文件丢失</text>
+    <text x="20" y="110" class="item-text">• 设计师与开发者交接困难</text>
+    <text x="20" y="140" class="item-text">• 远程办公需求增加</text>
+    <text x="20" y="170" class="item-text">• 预算: 愿意为效率付费</text>
+    <text x="20" y="200" class="item-text">• 决策: 体验驱动, 口碑传播</text>
   </g>
+
+  <text x="400" y="380" text-anchor="middle" font-family="system-ui" font-weight="bold" font-size="18">Figma 早期 ICP 案例</text>
+
 </svg>

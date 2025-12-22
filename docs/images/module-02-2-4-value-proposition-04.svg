@@ -1,51 +1,27 @@
-<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="fit-level-title fit-level-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="fit-level-title">Fit 的三个层次</title>
-  <desc id="fit-level-desc">从问题-方案匹配到市场匹配，再到规模匹配的三层递进。</desc>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="fit-level-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <filter id="fit-level-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
-    </filter>
-    <marker id="fit-level-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
-    </marker>
     <style>
-      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .level { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
-      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+      .pyramid-layer { stroke: #FFFFFF; stroke-width: 2; }
+      .text-layer { font-family: system-ui, sans-serif; font-weight: 700; font-size: 14px; text-anchor: middle; fill: #FFFFFF; }
+      .text-sub { font-family: system-ui, sans-serif; font-size: 12px; text-anchor: middle; fill: #F8FAFC; }
     </style>
   </defs>
 
-  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#fit-level-bg)" stroke="#E2E8F0" />
-  <text x="480" y="48" text-anchor="middle" class="title">Fit 的三个层次</text>
+  <g transform="translate(300, 50)">
+    <!-- Top: Scale Fit -->
+    <path d="M0,0 L100,80 H-100 Z" class="pyramid-layer" fill="#3B82F6" />
+    <text x="0" y="50" class="text-layer">3. Scale Fit</text>
+    <text x="0" y="65" class="text-sub">规模化增长</text>
 
-  <g filter="url(#fit-level-shadow)">
-    <rect x="200" y="110" width="560" height="110" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="240" y="140" class="level">Level 3: Scale Fit（规模匹配）</text>
-    <text x="240" y="166" class="sub">价值主张在规模化中持续有效</text>
-    <text x="240" y="188" class="sub">• 不同客户群体都认可</text>
-    <text x="240" y="208" class="sub">• 销售与营销可高效传递</text>
+    <!-- Middle: Product-Market Fit -->
+    <path d="M-100,80 H100 L180,180 H-180 Z" class="pyramid-layer" fill="#60A5FA" />
+    <text x="0" y="130" class="text-layer">2. Product-Market Fit</text>
+    <text x="0" y="145" class="text-sub">市场认可与付费</text>
+
+    <!-- Bottom: Problem-Solution Fit -->
+    <path d="M-180,180 H180 L260,280 H-260 Z" class="pyramid-layer" fill="#93C5FD" />
+    <text x="0" y="230" class="text-layer">1. Problem-Solution Fit</text>
+    <text x="0" y="245" class="text-sub">解决特定痛点</text>
   </g>
 
-  <g filter="url(#fit-level-shadow)">
-    <rect x="170" y="250" width="620" height="110" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="210" y="280" class="level">Level 2: Market Fit（市场匹配）</text>
-    <text x="210" y="306" class="sub">有客户愿意付费购买</text>
-    <text x="210" y="328" class="sub">• 价值主张经过市场验证</text>
-    <text x="210" y="348" class="sub">• 客户能清晰说明选择理由</text>
-  </g>
-
-  <g filter="url(#fit-level-shadow)">
-    <rect x="140" y="390" width="680" height="120" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
-    <text x="180" y="420" class="level">Level 1: Problem-Solution Fit（问题-方案匹配）</text>
-    <text x="180" y="446" class="sub">你的方案确实解决客户痛点</text>
-    <text x="180" y="468" class="sub">• 逻辑成立，访谈验证</text>
-    <text x="180" y="488" class="sub">• 早期用户给予正面反馈</text>
-  </g>
-
-  <line x1="800" y1="450" x2="800" y2="230" class="line" marker-end="url(#fit-level-arrow)" />
 </svg>

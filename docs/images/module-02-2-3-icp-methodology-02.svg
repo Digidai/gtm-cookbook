@@ -1,85 +1,66 @@
-<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="icp-dim-title icp-dim-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="icp-dim-title">ICP 六大核心维度</title>
-  <desc id="icp-dim-desc">Firmographics、Technographics、Psychographics、Pain Points、Buying Signals、Decision Makers 六大维度。</desc>
+<svg width="900" height="400" viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="icp-dim-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#F8FAFC" />
-      <stop offset="100%" stop-color="#EEF2F7" />
-    </linearGradient>
-    <filter id="icp-dim-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
-    </filter>
     <style>
-      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .card-title { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
-      .card-sub { font: 11px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
-      .item { font: 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
-      .accent-blue { fill: #2563EB; }
-      .accent-teal { fill: #0EA5A4; }
-      .accent-amber { fill: #F59E0B; }
-      .accent-green { fill: #10B981; }
-      .accent-slate { fill: #64748B; }
-      .accent-rose { fill: #F43F5E; }
+      .card { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; rx: 8; }
+      .header { font-family: system-ui, sans-serif; font-weight: 700; font-size: 14px; text-anchor: middle; fill: #FFFFFF; }
+      .header-bg { rx: 8 8 0 0; }
+      .item { font-family: system-ui, sans-serif; font-size: 12px; fill: #475569; }
     </style>
   </defs>
 
-  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#icp-dim-bg)" stroke="#E2E8F0" />
-  <text x="480" y="48" text-anchor="middle" class="title">ICP 六大核心维度</text>
+  <g transform="translate(50, 50)">
+    <!-- Firmographics -->
+    <rect x="0" y="0" width="250" height="140" class="card" />
+    <path d="M0,0 H250 V30 H0 Z" fill="#3B82F6" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="125" y="20" class="header">1. Firmographics (企业特征)</text>
+    <text x="20" y="50" class="item">• 行业 (Industry)</text>
+    <text x="20" y="70" class="item">• 规模 (Size/Revenue)</text>
+    <text x="20" y="90" class="item">• 地理位置 (Location)</text>
+    <text x="20" y="110" class="item">• 发展阶段 (Stage)</text>
 
-  <g filter="url(#icp-dim-shadow)">
-    <rect x="40" y="80" width="280" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="40" y="80" width="6" height="180" rx="6" class="accent-blue" />
-    <text x="58" y="104" class="card-title accent-blue">Firmographics</text>
-    <text x="58" y="122" class="card-sub">企业特征</text>
-    <text x="58" y="146" class="item">• 行业 / 规模 / 地理</text>
-    <text x="58" y="166" class="item">• 年收入 / 阶段</text>
-    <text x="58" y="186" class="item">• 所有制类型</text>
-  </g>
+    <!-- Technographics -->
+    <rect x="275" y="0" width="250" height="140" class="card" />
+    <path d="M275,0 H525 V30 H275 Z" fill="#10B981" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="400" y="20" class="header">2. Technographics (技术特征)</text>
+    <text x="295" y="50" class="item">• 现有技术栈</text>
+    <text x="295" y="70" class="item">• 云服务使用情况</text>
+    <text x="295" y="90" class="item">• 竞品使用情况</text>
+    <text x="295" y="110" class="item">• 技术成熟度</text>
 
-  <g filter="url(#icp-dim-shadow)">
-    <rect x="340" y="80" width="280" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="340" y="80" width="6" height="180" rx="6" class="accent-teal" />
-    <text x="358" y="104" class="card-title accent-teal">Technographics</text>
-    <text x="358" y="122" class="card-sub">技术特征</text>
-    <text x="358" y="146" class="item">• 技术栈 / 成熟度</text>
-    <text x="358" y="166" class="item">• 集成需求 / 安全</text>
-    <text x="358" y="186" class="item">• IT 决策权</text>
-  </g>
+    <!-- Psychographics -->
+    <rect x="550" y="0" width="250" height="140" class="card" />
+    <path d="M550,0 H800 V30 H550 Z" fill="#F59E0B" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="675" y="20" class="header">3. Psychographics (心理特征)</text>
+    <text x="570" y="50" class="item">• 创新意愿</text>
+    <text x="570" y="70" class="item">• 风险偏好</text>
+    <text x="570" y="90" class="item">• 决策风格</text>
+    <text x="570" y="110" class="item">• 价值观/文化</text>
 
-  <g filter="url(#icp-dim-shadow)">
-    <rect x="640" y="80" width="280" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="640" y="80" width="6" height="180" rx="6" class="accent-amber" />
-    <text x="658" y="104" class="card-title accent-amber">Psychographics</text>
-    <text x="658" y="122" class="card-sub">心理特征</text>
-    <text x="658" y="146" class="item">• 创新倾向 / 风险偏好</text>
-    <text x="658" y="166" class="item">• 决策风格 / 文化</text>
-    <text x="658" y="186" class="item">• 购买行为</text>
-  </g>
+    <!-- Pain Points -->
+    <rect x="0" y="160" width="250" height="140" class="card" />
+    <path d="M0,160 H250 V190 H0 Z" fill="#EF4444" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="125" y="180" class="header">4. Pain Points (核心痛点)</text>
+    <text x="20" y="210" class="item">• 效率低下</text>
+    <text x="20" y="230" class="item">• 成本过高</text>
+    <text x="20" y="250" class="item">• 合规风险</text>
+    <text x="20" y="270" class="item">• 增长瓶颈</text>
 
-  <g filter="url(#icp-dim-shadow)">
-    <rect x="40" y="280" width="280" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="40" y="280" width="6" height="180" rx="6" class="accent-rose" />
-    <text x="58" y="304" class="card-title accent-rose">Pain Points</text>
-    <text x="58" y="322" class="card-sub">痛点</text>
-    <text x="58" y="346" class="item">• 核心痛点 / 紧迫度</text>
-    <text x="58" y="366" class="item">• 影响范围 / 现有方案</text>
-  </g>
+    <!-- Buying Signals -->
+    <rect x="275" y="160" width="250" height="140" class="card" />
+    <path d="M275,160 H525 V190 H275 Z" fill="#8B5CF6" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="400" y="180" class="header">5. Buying Signals (购买信号)</text>
+    <text x="295" y="210" class="item">• 关键岗位招聘</text>
+    <text x="295" y="230" class="item">• 融资新闻</text>
+    <text x="295" y="250" class="item">• 网站技术变更</text>
+    <text x="295" y="270" class="item">• 高管变动</text>
 
-  <g filter="url(#icp-dim-shadow)">
-    <rect x="340" y="280" width="280" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="340" y="280" width="6" height="180" rx="6" class="accent-slate" />
-    <text x="358" y="304" class="card-title accent-slate">Buying Signals</text>
-    <text x="358" y="322" class="card-sub">购买信号</text>
-    <text x="358" y="346" class="item">• 意图数据 / 触发事件</text>
-    <text x="358" y="366" class="item">• 行为信号 / 竞品动态</text>
-  </g>
-
-  <g filter="url(#icp-dim-shadow)">
-    <rect x="640" y="280" width="280" height="180" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
-    <rect x="640" y="280" width="6" height="180" rx="6" class="accent-green" />
-    <text x="658" y="304" class="card-title accent-green">Decision Makers</text>
-    <text x="658" y="322" class="card-sub">决策者</text>
-    <text x="658" y="346" class="item">• 决策链 / 关键角色</text>
-    <text x="658" y="366" class="item">• 采购流程 / 预算结构</text>
+    <!-- Decision Makers -->
+    <rect x="550" y="160" width="250" height="140" class="card" />
+    <path d="M550,160 H800 V190 H550 Z" fill="#64748B" clip-path="inset(0 0 0 0 round 8px 8px 0 0)" />
+    <text x="675" y="180" class="header">6. Decision Makers (决策链)</text>
+    <text x="570" y="210" class="item">• 经济决策者 (Budget)</text>
+    <text x="570" y="230" class="item">• 技术决策者 (Tech)</text>
+    <text x="570" y="250" class="item">• 最终用户 (User)</text>
+    <text x="570" y="270" class="item">• Champion (支持者)</text>
   </g>
 </svg>
