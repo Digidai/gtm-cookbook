@@ -1,0 +1,52 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="head2head-title head2head-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="head2head-title">Head-to-Head 正面竞争</title>
+  <desc id="head2head-desc">在既有品类中挑战领导者，靠更好、更快或更低价的差异化胜出。</desc>
+  <defs>
+    <linearGradient id="head2head-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="head2head-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="head2head-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#head2head-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Head-to-Head 正面竞争</text>
+
+  <text x="80" y="92" class="label">核心信息：</text>
+  <text x="160" y="92" class="sub">“我们是更好的 [品类]”</text>
+
+  <g filter="url(#head2head-shadow)">
+    <rect x="100" y="140" width="760" height="200" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="168" text-anchor="middle" class="label">现有品类市场</text>
+
+    <rect x="160" y="190" width="240" height="110" rx="14" fill="#F1F5F9" stroke="#CBD5E1" />
+    <text x="280" y="222" text-anchor="middle" class="label">领导者 A</text>
+    <text x="280" y="244" text-anchor="middle" class="note">市场份额大</text>
+
+    <rect x="560" y="190" width="240" height="110" rx="14" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="680" y="222" text-anchor="middle" class="label">你的产品</text>
+    <text x="680" y="244" text-anchor="middle" class="note">挑战者</text>
+
+    <line x1="400" y1="245" x2="560" y2="245" class="line" marker-end="url(#head2head-arrow)" />
+    <text x="480" y="230" text-anchor="middle" class="note">正面竞争</text>
+    <text x="480" y="268" text-anchor="middle" class="sub">“更快 / 更便宜 / 更好用 / 更现代”</text>
+  </g>
+
+  <g filter="url(#head2head-shadow)">
+    <rect x="100" y="370" width="760" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="130" y="402" class="sub">优势：品类已被市场认可，客户理解你是什么</text>
+    <text x="130" y="430" class="sub">风险：领导者具备资源、品牌与客户基础优势</text>
+  </g>
+</svg>

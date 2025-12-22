@@ -1,0 +1,53 @@
+<svg width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="chasm-13-title chasm-13-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-13-title">有赞 GTM 战略</title>
+  <desc id="chasm-13-desc">有赞通过内容教育、行业突破、服务商生态与产品进化跨越鸿沟。</desc>
+  <defs>
+    <linearGradient id="chasm-13-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-13-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="568" rx="18" fill="url(#chasm-13-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">有赞 GTM 战略</text>
+
+  <g filter="url(#chasm-13-shadow)">
+    <rect x="60" y="80" width="840" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="108" class="section">1. 内容教育：定义“新零售”</text>
+    <text x="80" y="136" class="body">• 白鸦大量公开演讲，传播理念</text>
+    <text x="80" y="158" class="body">• 发布《私域流量白皮书》等内容</text>
+    <text x="80" y="180" class="body">• 有赞学堂培训商家运营能力</text>
+  </g>
+
+  <g filter="url(#chasm-13-shadow)">
+    <rect x="60" y="200" width="840" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="228" class="section">2. 垂直行业突破</text>
+    <text x="80" y="256" class="body">• 先攻美妆、母婴等高复购行业</text>
+    <text x="80" y="278" class="body">• 再扩展到餐饮、零售、教育</text>
+    <text x="80" y="300" class="body">• 打造行业标杆案例</text>
+  </g>
+
+  <g filter="url(#chasm-13-shadow)">
+    <rect x="60" y="320" width="840" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="348" class="section">3. 服务商生态</text>
+    <text x="80" y="376" class="body">• 发展代理服务商网络</text>
+    <text x="80" y="398" class="body">• 服务商负责销售和实施</text>
+    <text x="80" y="420" class="body">• 降低有赞直接服务成本</text>
+  </g>
+
+  <g filter="url(#chasm-13-shadow)">
+    <rect x="60" y="440" width="840" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="468" class="section">4. 产品持续进化</text>
+    <text x="80" y="496" class="body">• 从工具到解决方案</text>
+    <text x="80" y="518" class="body">• 从线上到线上线下一体</text>
+    <text x="80" y="540" class="body">• 从单店到连锁</text>
+  </g>
+</svg>

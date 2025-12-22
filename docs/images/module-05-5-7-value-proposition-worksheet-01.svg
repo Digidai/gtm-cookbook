@@ -1,0 +1,59 @@
+<svg width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="vp-01-title vp-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="vp-01-title">价值主张工作表的价值</title>
+  <desc id="vp-01-desc">价值主张连接 ICP 与市场定位，并驱动销售与营销输出。</desc>
+  <defs>
+    <linearGradient id="vp-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="vp-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="vp-01-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94A3B8" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .line { stroke: #94A3B8; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="408" rx="18" fill="url(#vp-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">价值主张工作表的价值</text>
+
+  <g filter="url(#vp-01-shadow)">
+    <rect x="80" y="80" width="220" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="370" y="80" width="220" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="660" y="80" width="220" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="190" y="110" text-anchor="middle" class="section">ICP</text>
+    <text x="190" y="132" text-anchor="middle" class="note">卖给谁？</text>
+
+    <text x="480" y="110" text-anchor="middle" class="section">价值主张</text>
+    <text x="480" y="132" text-anchor="middle" class="note">为什么买？</text>
+
+    <text x="770" y="110" text-anchor="middle" class="section">市场定位</text>
+    <text x="770" y="132" text-anchor="middle" class="note">如何被记住？</text>
+
+    <rect x="250" y="190" width="460" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="270" y="220" class="section">输出到各场景</text>
+    <text x="270" y="246" class="body">• 销售话术</text>
+    <text x="420" y="246" class="body">• 网站文案</text>
+    <text x="570" y="246" class="body">• 营销内容</text>
+    <text x="720" y="246" class="body">• 产品设计</text>
+
+    <rect x="80" y="320" width="800" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="350" class="section">本工作表帮助你</text>
+    <text x="100" y="374" class="body">• 系统化梳理客户需求和痛点</text>
+    <text x="340" y="374" class="body">• 设计与客户需求匹配的价值主张</text>
+    <text x="640" y="374" class="body">• 创建可在各场景使用的消息框架</text>
+    <text x="100" y="396" class="body">• 验证和优化价值主张</text>
+  </g>
+
+  <path d="M300 120 L360 120" class="line" marker-end="url(#vp-01-arrow)" />
+  <path d="M590 120 L650 120" class="line" marker-end="url(#vp-01-arrow)" />
+  <path d="M480 160 L480 182" class="line" marker-end="url(#vp-01-arrow)" />
+</svg>

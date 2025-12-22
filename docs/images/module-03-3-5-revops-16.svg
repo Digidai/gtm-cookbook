@@ -1,0 +1,47 @@
+<svg width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="revops-16-title revops-16-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-16-title">Stripe RevOps 最佳实践</title>
+  <desc id="revops-16-desc">Stripe 的三项 RevOps 最佳实践：统一客户视图、自动化线索评分与预测性销售分析。</desc>
+  <defs>
+    <linearGradient id="revops-16-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-16-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .muted { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="568" rx="18" fill="url(#revops-16-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Stripe RevOps 最佳实践</text>
+
+  <g filter="url(#revops-16-shadow)">
+    <rect x="60" y="80" width="840" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="108" class="section">1. 统一客户视图（Unified Customer View）</text>
+    <text x="80" y="136" class="body">• 产品数据 / 支付数据 / CRM 数据 / 支持数据 → 统一 CDP</text>
+    <text x="80" y="158" class="body">• 360° 客户画像用于跨团队协作</text>
+    <text x="80" y="182" class="muted">效果：销售能看到客户完整使用情况与支付历史</text>
+  </g>
+
+  <g filter="url(#revops-16-shadow)">
+    <rect x="60" y="250" width="840" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="278" class="section">2. 自动化线索评分（Automated Lead Scoring）</text>
+    <text x="80" y="306" class="body">• 产品使用行为（API 调用量、活跃度）</text>
+    <text x="80" y="328" class="body">• 公司特征（规模、行业、融资）</text>
+    <text x="80" y="350" class="body">• 网站行为（页面访问、内容下载）</text>
+    <text x="80" y="372" class="muted">输出：PQL 自动路由给销售</text>
+  </g>
+
+  <g filter="url(#revops-16-shadow)">
+    <rect x="60" y="420" width="840" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="448" class="section">3. 预测性销售分析（Predictive Sales Analytics）</text>
+    <text x="80" y="476" class="body">• ML 模型预测成交概率</text>
+    <text x="80" y="498" class="body">• 用量趋势预测收入（Consumption 模式）</text>
+    <text x="80" y="520" class="body">• 流失风险早期预警</text>
+  </g>
+</svg>

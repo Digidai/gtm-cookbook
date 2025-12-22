@@ -1,0 +1,56 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="slg-01-title slg-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-01-title">Salesforce 颠覆性定位</title>
+  <desc id="slg-01-desc">对比传统软件与 Salesforce 的交付模式差异，并强调“软件终结者、云的开创者”。</desc>
+  <defs>
+    <linearGradient id="slg-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .highlight { font: 600 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0EA5A4; }
+      .row { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#slg-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Salesforce 颠覆性定位</text>
+
+  <g filter="url(#slg-01-shadow)">
+    <rect x="60" y="80" width="840" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="480" y1="80" x2="480" y2="320" class="row" />
+    <line x1="60" y1="120" x2="900" y2="120" class="row" />
+    <line x1="60" y1="160" x2="900" y2="160" class="row" />
+    <line x1="60" y1="200" x2="900" y2="200" class="row" />
+    <line x1="60" y1="240" x2="900" y2="240" class="row" />
+    <line x1="60" y1="280" x2="900" y2="280" class="row" />
+
+    <text x="270" y="108" text-anchor="middle" class="header">传统软件（Siebel / SAP）</text>
+    <text x="690" y="108" text-anchor="middle" class="header">Salesforce</text>
+
+    <text x="270" y="148" text-anchor="middle" class="cell">购买软件许可证</text>
+    <text x="690" y="148" text-anchor="middle" class="cell">按月订阅</text>
+
+    <text x="270" y="188" text-anchor="middle" class="cell">本地安装部署</text>
+    <text x="690" y="188" text-anchor="middle" class="cell">浏览器访问</text>
+
+    <text x="270" y="228" text-anchor="middle" class="cell">需要 IT 团队维护</text>
+    <text x="690" y="228" text-anchor="middle" class="cell">无需 IT 支持</text>
+
+    <text x="270" y="268" text-anchor="middle" class="cell">大额前期投入</text>
+    <text x="690" y="268" text-anchor="middle" class="cell">低门槛起步</text>
+
+    <text x="270" y="308" text-anchor="middle" class="cell">升级痛苦</text>
+    <text x="690" y="308" text-anchor="middle" class="cell">自动更新</text>
+  </g>
+
+  <g filter="url(#slg-01-shadow)">
+    <rect x="200" y="340" width="560" height="46" rx="12" fill="#ECFDF3" stroke="#86EFAC" />
+    <text x="480" y="368" text-anchor="middle" class="highlight">核心信息：软件终结者，云的开创者</text>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="mp-02-title mp-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="mp-02-title">GTM 项目典型阶段</title>
+  <desc id="mp-02-desc">GTM 项目从 Pre-Launch 到 Scale 的四个阶段及核心任务与时长。</desc>
+  <defs>
+    <linearGradient id="mp-02-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="mp-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .phase { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .chip { font: 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#mp-02-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">GTM 项目典型阶段</text>
+
+  <g filter="url(#mp-02-shadow)">
+    <rect x="50" y="90" width="200" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="270" y="90" width="200" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="490" y="90" width="200" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="710" y="90" width="200" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="70" y="118" class="phase">Phase 1</text>
+    <text x="70" y="138" class="sub">Pre-Launch</text>
+    <text x="70" y="158" class="body">发布前准备</text>
+    <text x="70" y="184" class="body">• 市场调研</text>
+    <text x="70" y="206" class="body">• 战略确定</text>
+    <text x="70" y="228" class="body">• 准备工作</text>
+    <rect x="70" y="250" width="160" height="28" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="80" y="270" class="chip">M1-M3 · 4-8周</text>
+
+    <text x="290" y="118" class="phase">Phase 2</text>
+    <text x="290" y="138" class="sub">Launch</text>
+    <text x="290" y="158" class="body">发布</text>
+    <text x="290" y="184" class="body">• 软发布</text>
+    <text x="290" y="206" class="body">• 正式发布</text>
+    <text x="290" y="228" class="body">• PR/营销</text>
+    <rect x="290" y="250" width="160" height="28" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="300" y="270" class="chip">M4-M5 · 2-4周</text>
+
+    <text x="510" y="118" class="phase">Phase 3</text>
+    <text x="510" y="138" class="sub">Early Traction</text>
+    <text x="510" y="158" class="body">早期牵引力</text>
+    <text x="510" y="184" class="body">• 首批客户</text>
+    <text x="510" y="206" class="body">• PMF 验证</text>
+    <text x="510" y="228" class="body">• 案例收集</text>
+    <rect x="510" y="250" width="160" height="28" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="520" y="270" class="chip">M6-M7 · 8-12周</text>
+
+    <text x="730" y="118" class="phase">Phase 4</text>
+    <text x="730" y="138" class="sub">Scale</text>
+    <text x="730" y="158" class="body">规模化</text>
+    <text x="730" y="184" class="body">• 流程优化</text>
+    <text x="730" y="206" class="body">• 团队扩张</text>
+    <text x="730" y="228" class="body">• 增长加速</text>
+    <rect x="730" y="250" width="160" height="28" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="740" y="270" class="chip">M8-M9 · 持续</text>
+  </g>
+</svg>

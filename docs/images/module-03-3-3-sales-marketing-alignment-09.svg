@@ -1,0 +1,64 @@
+<svg width="960" height="700" viewBox="0 0 960 700" role="img" aria-labelledby="feedback-loop-title feedback-loop-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="feedback-loop-title">反馈循环机制</title>
+  <desc id="feedback-loop-desc">营销产生线索，经销售跟进并反馈，形成闭环优化。</desc>
+  <defs>
+    <linearGradient id="feedback-loop-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="feedback-loop-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="feedback-loop-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .node { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="668" rx="18" fill="url(#feedback-loop-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">反馈循环机制</text>
+
+  <g filter="url(#feedback-loop-shadow)">
+    <rect x="140" y="100" width="240" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="260" y="132" text-anchor="middle" class="node">营销</text>
+    <text x="260" y="154" text-anchor="middle" class="body">产生线索</text>
+  </g>
+
+  <g filter="url(#feedback-loop-shadow)">
+    <rect x="580" y="100" width="240" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="700" y="132" text-anchor="middle" class="node">线索</text>
+    <text x="700" y="154" text-anchor="middle" class="body">交接 &amp; 跟进</text>
+  </g>
+
+  <g filter="url(#feedback-loop-shadow)">
+    <rect x="580" y="260" width="240" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="700" y="292" text-anchor="middle" class="node">销售</text>
+    <text x="700" y="314" text-anchor="middle" class="body">跟进 &amp; 转化</text>
+  </g>
+
+  <g filter="url(#feedback-loop-shadow)">
+    <rect x="140" y="260" width="240" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="260" y="292" text-anchor="middle" class="node">反馈</text>
+    <text x="260" y="314" text-anchor="middle" class="body">线索质量 / 成交原因</text>
+  </g>
+
+  <line x1="380" y1="140" x2="580" y2="140" class="line" marker-end="url(#feedback-loop-arrow)" />
+  <line x1="700" y1="180" x2="700" y2="260" class="line" marker-end="url(#feedback-loop-arrow)" />
+  <line x1="580" y1="300" x2="380" y2="300" class="line" marker-end="url(#feedback-loop-arrow)" />
+  <line x1="260" y1="260" x2="260" y2="180" class="line" marker-end="url(#feedback-loop-arrow)" />
+
+  <g filter="url(#feedback-loop-shadow)">
+    <rect x="140" y="380" width="680" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="180" y="410" class="node">反馈内容</text>
+    <text x="180" y="434" class="body">• 线索质量</text>
+    <text x="180" y="456" class="body">• 成交 / 流失原因</text>
+    <text x="180" y="478" class="body">• 内容需求</text>
+    <text x="180" y="510" class="note">关键：反馈必须结构化、定期化、可追踪</text>
+  </g>
+</svg>

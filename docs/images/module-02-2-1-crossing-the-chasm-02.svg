@@ -1,0 +1,66 @@
+<svg width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="beachhead-title beachhead-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="beachhead-title">滩头阵地战略</title>
+  <desc id="beachhead-desc">在主流市场的多个细分中选择一个滩头阵地集中资源突破，跨越鸿沟后再扩展。</desc>
+  <defs>
+    <linearGradient id="beachhead-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="beachhead-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="beachhead-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .muted { fill: #64748B; }
+      .line { stroke: #CBD5E1; stroke-width: 2; stroke-dasharray: 6 6; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="448" rx="18" fill="url(#beachhead-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">滩头阵地战略</text>
+
+  <g filter="url(#beachhead-shadow)">
+    <rect x="40" y="80" width="580" height="160" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="60" y="108" class="section">主流市场（多个细分市场）</text>
+
+    <rect x="70" y="130" width="110" height="80" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="125" y="176" text-anchor="middle" class="label">细分 A</text>
+
+    <rect x="195" y="130" width="110" height="80" rx="10" fill="#DBEAFE" stroke="#93C5FD" />
+    <text x="250" y="176" text-anchor="middle" class="label">细分 B</text>
+
+    <rect x="320" y="130" width="110" height="80" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="375" y="176" text-anchor="middle" class="label">细分 C</text>
+
+    <rect x="445" y="130" width="110" height="80" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="500" y="176" text-anchor="middle" class="label">细分 D</text>
+  </g>
+
+  <line x1="40" y1="255" x2="620" y2="255" class="line" />
+  <text x="60" y="280" class="label muted">鸿沟</text>
+
+  <g filter="url(#beachhead-shadow)">
+    <rect x="40" y="300" width="580" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="60" y="332" class="section">早期市场</text>
+    <text x="60" y="354" class="label">愿景者与技术发烧友的早期需求</text>
+  </g>
+
+  <line x1="250" y1="300" x2="250" y2="220" stroke="#64748B" stroke-width="2" marker-end="url(#beachhead-arrow)" />
+  <text x="280" y="240" class="label">选择一个滩头阵地</text>
+  <text x="280" y="260" class="label muted">（例如：细分市场 B）</text>
+
+  <g filter="url(#beachhead-shadow)">
+    <rect x="660" y="100" width="260" height="320" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="680" y="130" class="section">关键原则</text>
+
+    <text x="680" y="160" class="label">• 市场足够小，小到能主导</text>
+    <text x="680" y="186" class="label">• 痛点足够急迫，必须解决</text>
+    <text x="680" y="212" class="label">• 参考性强，同行业/同规模</text>
+    <text x="680" y="238" class="label">• 成为类别之王后再扩展</text>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="chasm-08-title chasm-08-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-08-title">Zoom GTM 战略</title>
+  <desc id="chasm-08-desc">Zoom 通过极致体验、底层渗透与病毒传播设计跨越鸿沟。</desc>
+  <defs>
+    <linearGradient id="chasm-08-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-08-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#chasm-08-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Zoom GTM 战略</text>
+
+  <g filter="url(#chasm-08-shadow)">
+    <rect x="60" y="80" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="220" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="360" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="108" class="section">1. 产品极致体验</text>
+    <text x="80" y="134" class="body">• 一键入会（无需下载客户端即可参会）</text>
+    <text x="80" y="156" class="body">• 稳定可靠（即使网络差也能用）</text>
+    <text x="80" y="178" class="body">• 简洁界面（任何人都会用）</text>
+
+    <text x="80" y="248" class="section">2. 底层渗透策略</text>
+    <text x="80" y="274" class="body">• 从员工个人使用开始</text>
+    <text x="80" y="296" class="body">• Freemium 降低门槛</text>
+    <text x="80" y="318" class="body">• 自下而上渗透到 IT 采购</text>
+
+    <text x="80" y="388" class="section">3. 病毒传播设计</text>
+    <text x="80" y="414" class="body">• 参会者无需账户</text>
+    <text x="80" y="436" class="body">• 每次会议都是产品展示</text>
+    <text x="80" y="458" class="body">• “用 Zoom 开会”成为动词</text>
+  </g>
+</svg>

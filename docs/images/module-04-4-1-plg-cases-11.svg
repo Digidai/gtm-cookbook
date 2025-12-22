@@ -1,0 +1,57 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="plg-11-title plg-11-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="plg-11-title">PLG 成功要素模型</title>
+  <desc id="plg-11-desc">产品价值驱动易于试用、病毒设计与自然扩展，形成增长引擎。</desc>
+  <defs>
+    <linearGradient id="plg-11-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="plg-11-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="plg-11-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#plg-11-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">PLG 成功要素模型</text>
+
+  <g filter="url(#plg-11-shadow)">
+    <rect x="280" y="70" width="400" height="70" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="100" text-anchor="middle" class="section">Product Value</text>
+    <text x="480" y="122" text-anchor="middle" class="body">产品价值</text>
+  </g>
+
+  <line x1="480" y1="140" x2="480" y2="170" stroke="#64748B" stroke-width="2" marker-end="url(#plg-11-arrow)" />
+
+  <g filter="url(#plg-11-shadow)">
+    <rect x="140" y="180" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="380" y="180" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="620" y="180" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="240" y="210" text-anchor="middle" class="section">Easy to Try</text>
+    <text x="240" y="232" text-anchor="middle" class="body">易于试用</text>
+
+    <text x="480" y="210" text-anchor="middle" class="section">Viral Design</text>
+    <text x="480" y="232" text-anchor="middle" class="body">病毒设计</text>
+
+    <text x="720" y="210" text-anchor="middle" class="section">Natural Expansion</text>
+    <text x="720" y="232" text-anchor="middle" class="body">自然扩展</text>
+  </g>
+
+  <line x1="240" y1="270" x2="240" y2="300" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#plg-11-arrow)" />
+  <line x1="480" y1="270" x2="480" y2="300" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#plg-11-arrow)" />
+  <line x1="720" y1="270" x2="720" y2="300" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#plg-11-arrow)" />
+
+  <g filter="url(#plg-11-shadow)">
+    <rect x="280" y="310" width="400" height="70" rx="16" fill="#ECFDF3" stroke="#86EFAC" />
+    <text x="480" y="340" text-anchor="middle" class="section">Growth</text>
+    <text x="480" y="362" text-anchor="middle" class="body">增长引擎</text>
+  </g>
+</svg>

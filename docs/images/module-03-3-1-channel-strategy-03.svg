@@ -1,0 +1,59 @@
+<svg width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="channel-types-title channel-types-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="channel-types-title">四大渠道类型</title>
+  <desc id="channel-types-desc">直销、渠道销售、战略合作与 Marketplace 的对比，以及控制力、规模化和成本取舍。</desc>
+  <defs>
+    <linearGradient id="channel-types-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="channel-types-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .axis { font: 12px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .line { stroke: #CBD5E1; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="448" rx="18" fill="url(#channel-types-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">四大渠道类型</text>
+
+  <g filter="url(#channel-types-shadow)">
+    <rect x="80" y="80" width="360" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="112" class="card-title">1. Direct Sales 直销</text>
+    <text x="110" y="136" class="card-sub">自建销售团队，直接销售</text>
+  </g>
+
+  <g filter="url(#channel-types-shadow)">
+    <rect x="520" y="80" width="360" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="550" y="112" class="card-title">2. Channel Sales 渠道销售</text>
+    <text x="550" y="136" class="card-sub">通过经销商/代理商销售</text>
+  </g>
+
+  <g filter="url(#channel-types-shadow)">
+    <rect x="80" y="200" width="360" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="232" class="card-title">3. Partnerships 战略合作</text>
+    <text x="110" y="256" class="card-sub">与其他公司联合 GTM</text>
+  </g>
+
+  <g filter="url(#channel-types-shadow)">
+    <rect x="520" y="200" width="360" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="550" y="232" class="card-title">4. Marketplace</text>
+    <text x="550" y="256" class="card-sub">AWS / Azure / Salesforce 生态市场</text>
+  </g>
+
+  <line x1="120" y1="340" x2="840" y2="340" class="line" />
+  <text x="120" y="330" class="axis">控制力 高</text>
+  <text x="840" y="330" text-anchor="end" class="axis">低</text>
+
+  <line x1="120" y1="375" x2="840" y2="375" class="line" />
+  <text x="120" y="365" class="axis">规模化 慢</text>
+  <text x="840" y="365" text-anchor="end" class="axis">快</text>
+
+  <line x1="120" y1="410" x2="840" y2="410" class="line" />
+  <text x="120" y="400" class="axis">成本 高固定成本</text>
+  <text x="840" y="400" text-anchor="end" class="axis">高可变成本</text>
+</svg>

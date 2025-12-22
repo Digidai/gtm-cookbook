@@ -1,0 +1,45 @@
+<svg width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="plg-10-title plg-10-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="plg-10-title">传统模式 vs 飞书模式</title>
+  <desc id="plg-10-desc">对比传统文档流程与飞书一体化协作模式。</desc>
+  <defs>
+    <linearGradient id="plg-10-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="plg-10-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="plg-10-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .header { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .chip { font: 600 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="288" rx="18" fill="url(#plg-10-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#plg-10-shadow)">
+    <rect x="60" y="60" width="400" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="60" width="400" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="92" class="header">传统模式</text>
+    <rect x="90" y="110" width="90" height="26" rx="13" fill="#E0F2FE" />
+    <rect x="200" y="110" width="70" height="26" rx="13" fill="#E0F2FE" />
+    <rect x="290" y="110" width="90" height="26" rx="13" fill="#E0F2FE" />
+    <text x="135" y="127" text-anchor="middle" class="chip">写文档</text>
+    <text x="235" y="127" text-anchor="middle" class="chip">导出</text>
+    <text x="335" y="127" text-anchor="middle" class="chip">发邮件</text>
+    <line x1="180" y1="123" x2="200" y2="123" stroke="#64748B" stroke-width="1.5" marker-end="url(#plg-10-arrow)" />
+    <line x1="270" y1="123" x2="290" y2="123" stroke="#64748B" stroke-width="1.5" marker-end="url(#plg-10-arrow)" />
+    <text x="90" y="162" class="body">收反馈</text>
+    <text x="90" y="186" class="body">整合</text>
+
+    <text x="520" y="92" class="header">飞书模式</text>
+    <text x="520" y="122" class="body">写文档 = 在线协作 = 即时沟通</text>
+    <text x="520" y="146" class="body">所有人实时编辑、评论、@</text>
+    <text x="520" y="170" class="body">版本自动保存，历史可追溯</text>
+  </g>
+</svg>

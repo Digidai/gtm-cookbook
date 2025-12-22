@@ -1,0 +1,61 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="slg-08-title slg-08-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-08-title">ServiceNow 扩展路径</title>
+  <desc id="slg-08-desc">从 ITSM 单一产品扩展到多产品组合，再升级为统一的 Now Platform。</desc>
+  <defs>
+    <linearGradient id="slg-08-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-08-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .phase { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .chip { font: 600 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#slg-08-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">ServiceNow 扩展路径</text>
+
+  <g filter="url(#slg-08-shadow)">
+    <rect x="70" y="80" width="260" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="350" y="80" width="260" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="630" y="80" width="260" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="90" y="108" class="phase">2004 - 2012</text>
+    <text x="90" y="134" class="body">ITSM</text>
+    <text x="90" y="156" class="body">IT 服务管理</text>
+
+    <text x="370" y="108" class="phase">2012 - 2018</text>
+    <text x="370" y="134" class="body">ITSM</text>
+    <text x="370" y="156" class="body">+ ITOM</text>
+    <text x="370" y="178" class="body">+ HR 服务</text>
+    <text x="370" y="200" class="body">+ CSM</text>
+
+    <text x="650" y="108" class="phase">2018 - 今</text>
+    <text x="650" y="134" class="body">Now Platform</text>
+    <rect x="650" y="156" width="90" height="24" rx="12" fill="#E0F2FE" />
+    <rect x="750" y="156" width="70" height="24" rx="12" fill="#E0F2FE" />
+    <rect x="830" y="156" width="70" height="24" rx="12" fill="#E0F2FE" />
+    <rect x="650" y="186" width="70" height="24" rx="12" fill="#E0F2FE" />
+    <rect x="730" y="186" width="70" height="24" rx="12" fill="#E0F2FE" />
+    <rect x="810" y="186" width="70" height="24" rx="12" fill="#E0F2FE" />
+    <text x="695" y="172" text-anchor="middle" class="chip">ITSM</text>
+    <text x="785" y="172" text-anchor="middle" class="chip">HR</text>
+    <text x="865" y="172" text-anchor="middle" class="chip">CSM</text>
+    <text x="685" y="202" text-anchor="middle" class="chip">ITOM</text>
+    <text x="765" y="202" text-anchor="middle" class="chip">安全</text>
+    <text x="845" y="202" text-anchor="middle" class="chip">采购</text>
+    <text x="650" y="236" class="body">统一平台</text>
+  </g>
+
+  <g filter="url(#slg-08-shadow)">
+    <rect x="190" y="320" width="580" height="60" rx="30" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="240" y="356" class="chip">单一产品</text>
+    <text x="420" y="356" class="chip">多产品组合</text>
+    <text x="620" y="356" class="chip">统一平台</text>
+  </g>
+</svg>

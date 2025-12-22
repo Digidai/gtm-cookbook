@@ -1,0 +1,56 @@
+<svg width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="gbb-title gbb-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="gbb-title">典型 Good-Better-Best 套餐设计</title>
+  <desc id="gbb-desc">Basic、Pro、Enterprise 三档套餐的价格、权益与目标用户。</desc>
+  <defs>
+    <linearGradient id="gbb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="gbb-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .plan { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .price { font: 700 16px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="448" rx="18" fill="url(#gbb-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">典型 Good-Better-Best 套餐设计</text>
+
+  <g filter="url(#gbb-shadow)">
+    <rect x="60" y="80" width="260" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="190" y="110" text-anchor="middle" class="plan">Basic / Starter</text>
+    <text x="190" y="134" text-anchor="middle" class="price">$29/月</text>
+    <text x="90" y="166" class="body">• 核心功能</text>
+    <text x="90" y="188" class="body">• 有限额度</text>
+    <text x="90" y="210" class="body">• 自助支持</text>
+    <text x="90" y="250" class="note">目标：个人用户</text>
+    <text x="90" y="272" class="note">占比：60% · 收入：15%</text>
+  </g>
+
+  <g filter="url(#gbb-shadow)">
+    <rect x="350" y="80" width="260" height="260" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="110" text-anchor="middle" class="plan">Pro / Team</text>
+    <text x="480" y="134" text-anchor="middle" class="price">$99/月</text>
+    <text x="380" y="166" class="body">• 全部功能</text>
+    <text x="380" y="188" class="body">• 更大额度</text>
+    <text x="380" y="210" class="body">• 优先支持</text>
+    <text x="380" y="250" class="note">目标：团队</text>
+    <text x="380" y="272" class="note">占比：30% · 收入：35%</text>
+  </g>
+
+  <g filter="url(#gbb-shadow)">
+    <rect x="640" y="80" width="260" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="770" y="110" text-anchor="middle" class="plan">Enterprise</text>
+    <text x="770" y="134" text-anchor="middle" class="price">联系销售</text>
+    <text x="670" y="166" class="body">• 定制功能</text>
+    <text x="670" y="188" class="body">• 无限额度</text>
+    <text x="670" y="210" class="body">• 专属支持 / SLA</text>
+    <text x="670" y="250" class="note">目标：大企业</text>
+    <text x="670" y="272" class="note">占比：10% · 收入：50%</text>
+  </g>
+</svg>

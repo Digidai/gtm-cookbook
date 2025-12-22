@@ -1,0 +1,62 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="clg-title clg-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="clg-title">CLG 社区飞轮</title>
+  <desc id="clg-desc">社区成员增长带来 UGC、互帮互助、口碑传播，最终放大产品价值并回流增长。</desc>
+  <defs>
+    <linearGradient id="clg-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="clg-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="clg-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#10B981" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .node-title { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .node-sub { font: 11px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .ring { stroke: #BBF7D0; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#clg-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">CLG 社区飞轮</text>
+
+  <circle cx="480" cy="220" r="120" class="ring" />
+
+  <path d="M480 100 A120 120 0 0 1 610 170" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#clg-arrow)" />
+  <path d="M640 220 A120 120 0 0 1 610 310" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#clg-arrow)" />
+  <path d="M480 340 A120 120 0 0 1 350 310" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#clg-arrow)" />
+  <path d="M320 220 A120 120 0 0 1 350 130" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#clg-arrow)" />
+
+  <g filter="url(#clg-shadow)">
+    <rect x="400" y="80" width="160" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="104" text-anchor="middle" class="node-title">社区成员增长</text>
+    <text x="480" y="120" text-anchor="middle" class="node-sub">用户加入社区</text>
+  </g>
+
+  <g filter="url(#clg-shadow)">
+    <rect x="620" y="160" width="160" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="700" y="184" text-anchor="middle" class="node-title">UGC 内容</text>
+    <text x="700" y="200" text-anchor="middle" class="node-sub">模板 / 插件 / 资源</text>
+  </g>
+
+  <g filter="url(#clg-shadow)">
+    <rect x="620" y="250" width="160" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="700" y="274" text-anchor="middle" class="node-title">互帮互助</text>
+    <text x="700" y="290" text-anchor="middle" class="node-sub">问答 / 教程 / 实践</text>
+  </g>
+
+  <g filter="url(#clg-shadow)">
+    <rect x="400" y="320" width="160" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="344" text-anchor="middle" class="node-title">口碑传播</text>
+    <text x="480" y="360" text-anchor="middle" class="node-sub">推荐 / 社交分享</text>
+  </g>
+
+  <g filter="url(#clg-shadow)">
+    <rect x="180" y="250" width="160" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="260" y="274" text-anchor="middle" class="node-title">产品价值放大</text>
+    <text x="260" y="290" text-anchor="middle" class="node-sub">生态丰富 / 支持成本降</text>
+  </g>
+</svg>

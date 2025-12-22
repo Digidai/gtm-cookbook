@@ -1,0 +1,59 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="slg-cycle-title slg-cycle-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-cycle-title">企业级 SLG 销售周期（典型 6-12 个月）</title>
+  <desc id="slg-cycle-desc">四个阶段：发现、评估、POC、签约，每阶段标注典型活动，并给出关键活动提醒。</desc>
+  <defs>
+    <linearGradient id="slg-cycle-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-cycle-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .stage-title { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
+      .stage-sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .caption { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#slg-cycle-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">企业级 SLG 销售周期（典型 6-12 个月）</text>
+
+  <g filter="url(#slg-cycle-shadow)">
+    <rect x="40" y="80" width="880" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="60" y="100" width="200" height="140" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="80" y="126" class="stage-title">第 1-2 个月 · 发现</text>
+    <text x="80" y="150" class="stage-sub">• 初次会议</text>
+    <text x="80" y="170" class="stage-sub">• 需求发现</text>
+    <text x="80" y="190" class="stage-sub">• 决策链识别</text>
+
+    <rect x="280" y="100" width="200" height="140" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="300" y="126" class="stage-title">第 3-4 个月 · 评估</text>
+    <text x="300" y="150" class="stage-sub">• 深度 Demo</text>
+    <text x="300" y="170" class="stage-sub">• 技术评估</text>
+    <text x="300" y="190" class="stage-sub">• 竞品对比</text>
+
+    <rect x="500" y="100" width="200" height="140" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="520" y="126" class="stage-title">第 5-8 个月 · POC</text>
+    <text x="520" y="150" class="stage-sub">• 试点项目</text>
+    <text x="520" y="170" class="stage-sub">• 价值验证</text>
+    <text x="520" y="190" class="stage-sub">• ROI 计算</text>
+
+    <rect x="720" y="100" width="180" height="140" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="740" y="126" class="stage-title">第 9-12 个月 · 签约</text>
+    <text x="740" y="150" class="stage-sub">• 法务审核</text>
+    <text x="740" y="170" class="stage-sub">• 预算批准</text>
+    <text x="740" y="190" class="stage-sub">• 合同签署</text>
+  </g>
+
+  <g filter="url(#slg-cycle-shadow)">
+    <rect x="60" y="280" width="840" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="310" class="stage-title">关键活动</text>
+    <text x="80" y="336" class="caption">• Champion 培养：识别和培养内部支持者</text>
+    <text x="80" y="358" class="caption">• 多线程触达：同时接触技术、业务、采购多个角色</text>
+    <text x="80" y="380" class="caption">• 价值证明：POC 数据化展示 ROI</text>
+    <text x="80" y="402" class="caption">• 异议处理：预算、时机、竞品、变革阻力</text>
+  </g>
+</svg>

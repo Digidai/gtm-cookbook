@@ -1,0 +1,42 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="smarketing-title smarketing-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="smarketing-title">HubSpot Smarketing 核心原则</title>
+  <desc id="smarketing-desc">共同收入目标、数据透明与定期沟通三大原则。</desc>
+  <defs>
+    <linearGradient id="smarketing-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="smarketing-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .principle { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#smarketing-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">HubSpot Smarketing 核心原则</text>
+
+  <g filter="url(#smarketing-shadow)">
+    <rect x="80" y="80" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="110" class="principle">原则 1：共同的收入目标</text>
+    <text x="110" y="134" class="body">• 营销不只看 MQL，更看 Pipeline 和 Revenue</text>
+    <text x="110" y="156" class="body">• 销售参与线索定义，双方共同拥有收入数字</text>
+  </g>
+
+  <g filter="url(#smarketing-shadow)">
+    <rect x="80" y="220" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="250" class="principle">原则 2：数据透明</text>
+    <text x="110" y="274" class="body">• 同一个 CRM、同一套仪表板</text>
+    <text x="110" y="296" class="body">• 实时可见的漏斗数据与归因数据</text>
+  </g>
+
+  <g filter="url(#smarketing-shadow)">
+    <rect x="80" y="360" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="390" class="principle">原则 3：定期沟通仪式</text>
+    <text x="110" y="414" class="body">• 每周 Smarketing 会议 · 每月 Pipeline Review</text>
+    <text x="110" y="436" class="body">• 每季度 SLA Review 与调整</text>
+  </g>
+</svg>

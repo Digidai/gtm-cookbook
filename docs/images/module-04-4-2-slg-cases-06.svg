@@ -1,0 +1,28 @@
+<svg width="960" height="280" viewBox="0 0 960 280" role="img" aria-labelledby="slg-06-title slg-06-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-06-title">高 ACV 支撑高服务模式</title>
+  <desc id="slg-06-desc">Workday 的高 ACV 与销售成本结构解释了企业级 SLG 模式的可持续性。</desc>
+  <defs>
+    <linearGradient id="slg-06-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-06-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .headline { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .highlight { font: 600 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0EA5A4; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="248" rx="18" fill="url(#slg-06-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#slg-06-shadow)">
+    <rect x="60" y="50" width="840" height="160" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="86" class="headline">平均 ACV：$500K - $2M+</text>
+    <text x="80" y="116" class="body">销售团队成本：约 $500K/年（AE + SE + 支持）</text>
+    <text x="80" y="140" class="body">销售周期：6 - 12 个月</text>
+    <text x="80" y="170" class="highlight">每个 AE 一年签 2-4 个大单即可覆盖成本，高 ACV 让高服务模式可持续</text>
+  </g>
+</svg>

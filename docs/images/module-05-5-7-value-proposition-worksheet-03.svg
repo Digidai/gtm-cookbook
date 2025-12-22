@@ -1,0 +1,68 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="vp-03-title vp-03-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="vp-03-title">价值主张画布</title>
+  <desc id="vp-03-desc">价值地图与客户画像的对应关系，用于梳理价值主张。</desc>
+  <defs>
+    <linearGradient id="vp-03-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="vp-03-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="vp-03-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94A3B8" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .line { stroke: #CBD5F5; stroke-width: 1.5; }
+      .label { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#vp-03-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">价值主张画布</text>
+
+  <g filter="url(#vp-03-shadow)">
+    <rect x="60" y="90" width="400" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="90" width="400" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="120" class="section">价值地图</text>
+    <text x="80" y="140" class="sub">(Value Map)</text>
+
+    <text x="80" y="176" class="section">产品与服务</text>
+    <line x1="80" y1="196" x2="420" y2="196" class="line" />
+    <line x1="80" y1="220" x2="420" y2="220" class="line" />
+    <line x1="80" y1="244" x2="420" y2="244" class="line" />
+
+    <text x="80" y="278" class="section">痛点解药</text>
+    <line x1="80" y1="298" x2="420" y2="298" class="line" />
+    <line x1="80" y1="322" x2="420" y2="322" class="line" />
+    <line x1="80" y1="346" x2="420" y2="346" class="line" />
+
+    <text x="80" y="380" class="section">收益创造者</text>
+    <line x1="80" y1="400" x2="420" y2="400" class="line" />
+    <line x1="80" y1="424" x2="420" y2="424" class="line" />
+
+    <text x="520" y="120" class="section">客户画像</text>
+    <text x="520" y="140" class="sub">(Customer Profile)</text>
+
+    <text x="520" y="176" class="section">客户任务</text>
+    <line x1="520" y1="196" x2="860" y2="196" class="line" />
+    <line x1="520" y1="220" x2="860" y2="220" class="line" />
+    <line x1="520" y1="244" x2="860" y2="244" class="line" />
+
+    <text x="520" y="278" class="section">痛点</text>
+    <line x1="520" y1="298" x2="860" y2="298" class="line" />
+    <line x1="520" y1="322" x2="860" y2="322" class="line" />
+    <line x1="520" y1="346" x2="860" y2="346" class="line" />
+
+    <text x="520" y="380" class="section">收益</text>
+    <line x1="520" y1="400" x2="860" y2="400" class="line" />
+    <line x1="520" y1="424" x2="860" y2="424" class="line" />
+  </g>
+
+  <text x="470" y="320" class="label">匹配</text>
+  <path d="M460 316 L500 316" class="line" marker-end="url(#vp-03-arrow)" />
+</svg>

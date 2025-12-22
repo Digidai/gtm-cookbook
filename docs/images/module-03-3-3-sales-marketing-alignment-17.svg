@@ -1,0 +1,52 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="event-funnel-title event-funnel-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="event-funnel-title">中国 B2B 活动营销漏斗</title>
+  <desc id="event-funnel-desc">活动前、活动中、活动后的三阶段漏斗与指标。</desc>
+  <defs>
+    <linearGradient id="event-funnel-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="event-funnel-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .stage { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#event-funnel-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">中国 B2B 活动营销漏斗</text>
+
+  <g filter="url(#event-funnel-shadow)">
+    <rect x="60" y="90" width="260" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="118" class="stage">活动前：邀约</text>
+    <text x="90" y="142" class="body">• 定向邀请</text>
+    <text x="90" y="164" class="body">• 销售带人</text>
+    <text x="90" y="186" class="body">• 老客转介</text>
+    <text x="90" y="220" class="note">营销负责</text>
+    <text x="90" y="242" class="note">邀约率 ≥ 60%</text>
+  </g>
+
+  <g filter="url(#event-funnel-shadow)">
+    <rect x="350" y="90" width="260" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="380" y="118" class="stage">活动中：签到</text>
+    <text x="380" y="142" class="body">• 现场互动</text>
+    <text x="380" y="164" class="body">• 1v1 交流</text>
+    <text x="380" y="186" class="body">• 需求收集</text>
+    <text x="380" y="220" class="note">营销 + 销售</text>
+    <text x="380" y="242" class="note">签到率/互动率 ≥ 80%</text>
+  </g>
+
+  <g filter="url(#event-funnel-shadow)">
+    <rect x="640" y="90" width="260" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="670" y="118" class="stage">活动后：跟进</text>
+    <text x="670" y="142" class="body">• 24h 内首联</text>
+    <text x="670" y="164" class="body">• 分层跟进</text>
+    <text x="670" y="186" class="body">• 转化推进</text>
+    <text x="670" y="220" class="note">销售负责</text>
+    <text x="670" y="242" class="note">转化率 ≥ 20%</text>
+  </g>
+</svg>

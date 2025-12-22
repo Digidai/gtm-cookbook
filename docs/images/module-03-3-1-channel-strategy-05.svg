@@ -1,0 +1,51 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="sales-econ-title sales-econ-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="sales-econ-title">直销团队经济学示例</title>
+  <desc id="sales-econ-desc">以 AE 成本与产出为例，展示直销团队的经济模型与健康区间。</desc>
+  <defs>
+    <linearGradient id="sales-econ-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="sales-econ-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .metric { font: 700 22px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .metric-label { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#sales-econ-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">直销团队经济学示例</text>
+
+  <g filter="url(#sales-econ-shadow)">
+    <rect x="60" y="80" width="420" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="110" class="section">假设</text>
+    <text x="90" y="134" class="body">• AE 年薪（含 OTE）：$150K</text>
+    <text x="90" y="156" class="body">• 配套成本（福利、工具、管理）：$50K</text>
+    <text x="90" y="178" class="body">• 目标配额：$750K ARR</text>
+    <text x="90" y="200" class="body">• 配额完成率：80%</text>
+    <text x="90" y="222" class="body">• AE 平均产出：$600K ARR</text>
+
+    <text x="90" y="254" class="section">计算</text>
+    <text x="90" y="278" class="body">• 每 AE 成本：$200K</text>
+    <text x="90" y="300" class="body">• 每 AE 产出：$600K</text>
+  </g>
+
+  <g filter="url(#sales-econ-shadow)">
+    <rect x="520" y="80" width="380" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="710" y="120" text-anchor="middle" class="metric">3x</text>
+    <text x="710" y="142" text-anchor="middle" class="metric-label">销售效率</text>
+    <text x="560" y="176" class="body">• 每投入 $1 产出 $3 收入</text>
+    <text x="560" y="200" class="body">• 销售占收入比：33%</text>
+  </g>
+
+  <g filter="url(#sales-econ-shadow)">
+    <rect x="60" y="320" width="840" height="70" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="348" class="section">基准参考</text>
+    <text x="200" y="348" class="body">健康 SaaS：3-5x · 早期公司可能 &lt; 2x · 成熟公司 &gt; 4x</text>
+  </g>
+</svg>

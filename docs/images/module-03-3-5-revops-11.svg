@@ -1,0 +1,61 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="revops-11-title revops-11-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-11-title">RevOps 组织架构（服务所有部门）</title>
+  <desc id="revops-11-desc">CEO 之下为 CRO/CMO/CCO，RevOps 作为独立团队服务所有部门，并包含数据、系统与流程岗位。</desc>
+  <defs>
+    <linearGradient id="revops-11-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-11-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="revops-11-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 16px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 11px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#revops-11-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#revops-11-shadow)">
+    <rect x="410" y="50" width="140" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="80" text-anchor="middle" class="section">CEO</text>
+  </g>
+
+  <line x1="480" y1="100" x2="480" y2="130" stroke="#64748B" stroke-width="2" marker-end="url(#revops-11-arrow)" />
+
+  <g filter="url(#revops-11-shadow)">
+    <rect x="200" y="140" width="160" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="400" y="140" width="160" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="600" y="140" width="160" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="280" y="168" text-anchor="middle" class="section">CRO</text>
+    <text x="280" y="188" text-anchor="middle" class="body">(Sales)</text>
+    <text x="480" y="168" text-anchor="middle" class="section">CMO</text>
+    <text x="480" y="188" text-anchor="middle" class="body">(Marketing)</text>
+    <text x="680" y="168" text-anchor="middle" class="section">CCO</text>
+    <text x="680" y="188" text-anchor="middle" class="body">(CS)</text>
+  </g>
+
+  <line x1="480" y1="200" x2="480" y2="225" stroke="#64748B" stroke-width="2" marker-end="url(#revops-11-arrow)" />
+
+  <g filter="url(#revops-11-shadow)">
+    <rect x="330" y="230" width="300" height="70" rx="14" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="260" text-anchor="middle" class="section">RevOps Lead</text>
+    <text x="480" y="282" text-anchor="middle" class="body">独立团队，服务所有部门</text>
+  </g>
+
+  <line x1="480" y1="300" x2="480" y2="320" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#revops-11-arrow)" />
+
+  <g filter="url(#revops-11-shadow)">
+    <rect x="220" y="330" width="160" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="400" y="330" width="160" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="580" y="330" width="160" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="300" y="358" text-anchor="middle" class="section">Data Analyst</text>
+    <text x="480" y="358" text-anchor="middle" class="section">Systems Admin</text>
+    <text x="660" y="358" text-anchor="middle" class="section">Process Design</text>
+  </g>
+</svg>

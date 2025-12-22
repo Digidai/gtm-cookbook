@@ -1,0 +1,73 @@
+<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="metrics-dashboard-title metrics-dashboard-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-dashboard-title">GTM 核心仪表板示例</title>
+  <desc id="metrics-dashboard-desc">展示北极星指标、获客效率、漏斗效率与客户成功的核心仪表板布局示例。</desc>
+  <defs>
+    <linearGradient id="metrics-dashboard-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-dashboard-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .metric { font: 600 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .muted { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .badge { font: 600 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#metrics-dashboard-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">GTM 核心仪表板示例</text>
+
+  <g filter="url(#metrics-dashboard-shadow)">
+    <rect x="60" y="80" width="840" height="70" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="108" class="section">北极星指标</text>
+    <rect x="220" y="92" width="240" height="44" rx="22" fill="#E0F2FE" />
+    <rect x="480" y="92" width="240" height="44" rx="22" fill="#ECFDF3" />
+    <text x="340" y="118" text-anchor="middle" class="badge">ARR: $12.5M (+45% YoY)</text>
+    <text x="600" y="118" text-anchor="middle" class="badge">MRR: $1.04M (+3.8% MoM)</text>
+  </g>
+
+  <g filter="url(#metrics-dashboard-shadow)">
+    <rect x="60" y="170" width="260" height="250" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="170" width="6" height="250" rx="6" fill="#2563EB" />
+    <text x="80" y="198" class="section">获客效率</text>
+    <text x="80" y="226" class="metric">CAC: $8,500</text>
+    <text x="80" y="248" class="metric">LTV: $32,000</text>
+    <text x="80" y="270" class="metric">LTV:CAC: 3.8x</text>
+    <text x="80" y="292" class="metric">Payback: 11mo</text>
+    <text x="80" y="314" class="metric">Magic #: 0.85</text>
+  </g>
+
+  <g filter="url(#metrics-dashboard-shadow)">
+    <rect x="350" y="170" width="260" height="250" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="350" y="170" width="6" height="250" rx="6" fill="#0EA5A4" />
+    <text x="370" y="198" class="section">漏斗效率</text>
+    <text x="370" y="226" class="metric">MQL: 450</text>
+    <text x="370" y="248" class="metric">SQL: 162</text>
+    <text x="370" y="270" class="metric">Opp: 98</text>
+    <text x="370" y="292" class="metric">Won: 28</text>
+    <text x="370" y="314" class="metric">Win Rate: 29%</text>
+    <text x="370" y="336" class="metric">Cycle: 68 days</text>
+  </g>
+
+  <g filter="url(#metrics-dashboard-shadow)">
+    <rect x="640" y="170" width="260" height="250" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="640" y="170" width="6" height="250" rx="6" fill="#F59E0B" />
+    <text x="660" y="198" class="section">客户成功</text>
+    <text x="660" y="226" class="metric">NRR: 115%</text>
+    <text x="660" y="248" class="metric">GRR: 92%</text>
+    <text x="660" y="270" class="metric">Churn: 1.8%</text>
+    <text x="660" y="292" class="metric">Expansion: 23%</text>
+  </g>
+
+  <g filter="url(#metrics-dashboard-shadow)">
+    <rect x="60" y="440" width="840" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="468" class="section">趋势和异常</text>
+    <text x="80" y="494" class="muted">• 警告：MQL → SQL 转化率下降 5%</text>
+    <text x="80" y="516" class="muted">• 亮点：NRR 连续 3 个月 &gt; 110%</text>
+    <text x="520" y="494" class="muted">• 警告：Enterprise 销售周期延长 15%</text>
+  </g>
+</svg>

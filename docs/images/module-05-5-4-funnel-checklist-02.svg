@@ -1,0 +1,71 @@
+<svg width="960" height="720" viewBox="0 0 960 720" role="img" aria-labelledby="fc-02-title fc-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="fc-02-title">B2B SaaS 典型漏斗</title>
+  <desc id="fc-02-desc">从 AWARENESS 到 NRR 的典型 B2B SaaS 漏斗阶段与转化率。</desc>
+  <defs>
+    <linearGradient id="fc-02-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="fc-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="fc-02-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94A3B8" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .stage { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .rate { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .line { stroke: #94A3B8; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="688" rx="18" fill="url(#fc-02-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">B2B SaaS 典型漏斗</text>
+
+  <g filter="url(#fc-02-shadow)">
+    <rect x="130" y="90" width="700" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="160" y="162" width="640" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="190" y="234" width="580" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="220" y="306" width="520" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="250" y="378" width="460" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="280" y="450" width="400" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="310" y="522" width="340" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="480" y="120" text-anchor="middle" class="stage">AWARENESS</text>
+    <text x="480" y="140" text-anchor="middle" class="sub">(网站访客、品牌触达)</text>
+
+    <text x="480" y="192" text-anchor="middle" class="stage">LEAD</text>
+    <text x="480" y="212" text-anchor="middle" class="sub">(表单填写、注册)</text>
+
+    <text x="480" y="264" text-anchor="middle" class="stage">MQL</text>
+    <text x="480" y="284" text-anchor="middle" class="sub">(市场合格线索)</text>
+
+    <text x="480" y="336" text-anchor="middle" class="stage">SQL</text>
+    <text x="480" y="356" text-anchor="middle" class="sub">(销售合格线索)</text>
+
+    <text x="480" y="408" text-anchor="middle" class="stage">OPP</text>
+    <text x="480" y="428" text-anchor="middle" class="sub">(商机)</text>
+
+    <text x="480" y="480" text-anchor="middle" class="stage">WON</text>
+    <text x="480" y="500" text-anchor="middle" class="sub">(成交)</text>
+
+    <text x="480" y="552" text-anchor="middle" class="stage">NRR</text>
+    <text x="480" y="572" text-anchor="middle" class="sub">(留存/扩展)</text>
+  </g>
+
+  <path d="M480 150 L480 162" class="line" marker-end="url(#fc-02-arrow)" />
+  <path d="M480 222 L480 234" class="line" marker-end="url(#fc-02-arrow)" />
+  <path d="M480 294 L480 306" class="line" marker-end="url(#fc-02-arrow)" />
+  <path d="M480 366 L480 378" class="line" marker-end="url(#fc-02-arrow)" />
+  <path d="M480 438 L480 450" class="line" marker-end="url(#fc-02-arrow)" />
+  <path d="M480 510 L480 522" class="line" marker-end="url(#fc-02-arrow)" />
+
+  <text x="720" y="158" class="rate">Visitor → Lead 转化率</text>
+  <text x="720" y="230" class="rate">Lead → MQL 转化率</text>
+  <text x="720" y="302" class="rate">MQL → SQL 转化率</text>
+  <text x="720" y="374" class="rate">SQL → Opp 转化率</text>
+  <text x="720" y="446" class="rate">成交率</text>
+  <text x="720" y="518" class="rate">留存/扩展</text>
+</svg>

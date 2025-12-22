@@ -1,0 +1,52 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="youzan-title youzan-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="youzan-title">有赞 2018 年定价体系</title>
+  <desc id="youzan-desc">基础版、专业版、旗舰版的价格与功能定位。</desc>
+  <defs>
+    <linearGradient id="youzan-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="youzan-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .plan { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .price { font: 700 16px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#youzan-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">有赞 2018 年定价体系</text>
+
+  <g filter="url(#youzan-shadow)">
+    <rect x="60" y="80" width="260" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="190" y="110" text-anchor="middle" class="plan">基础版</text>
+    <text x="190" y="134" text-anchor="middle" class="price">¥6,800/年</text>
+    <text x="90" y="166" class="body">• 基础店铺</text>
+    <text x="90" y="188" class="body">• 订单管理</text>
+    <text x="90" y="210" class="body">• 会员管理</text>
+  </g>
+
+  <g filter="url(#youzan-shadow)">
+    <rect x="350" y="80" width="260" height="240" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="110" text-anchor="middle" class="plan">专业版</text>
+    <text x="480" y="134" text-anchor="middle" class="price">¥12,800/年</text>
+    <text x="380" y="166" class="body">• 营销工具</text>
+    <text x="380" y="188" class="body">• 数据分析</text>
+    <text x="380" y="210" class="body">• 客服系统</text>
+  </g>
+
+  <g filter="url(#youzan-shadow)">
+    <rect x="640" y="80" width="260" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="770" y="110" text-anchor="middle" class="plan">旗舰版</text>
+    <text x="770" y="134" text-anchor="middle" class="price">¥26,800/年</text>
+    <text x="670" y="166" class="body">• 全部功能</text>
+    <text x="670" y="188" class="body">• 多店管理</text>
+    <text x="670" y="210" class="body">• 定制开发</text>
+  </g>
+
+  <text x="480" y="370" text-anchor="middle" class="note">目标客户：个人商家 · 中小商家 · 品牌商家</text>
+</svg>

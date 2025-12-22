@@ -1,0 +1,66 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="module2-title module2-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="module2-title">模块二核心框架总结</title>
+  <desc id="module2-desc">市场阶段判断驱动 ICP、价值主张与市场定位，最终形成 GTM Motion。</desc>
+  <defs>
+    <linearGradient id="module2-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="module2-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="module2-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#module2-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">模块二核心框架总结</text>
+
+  <g filter="url(#module2-shadow)">
+    <rect x="280" y="80" width="400" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="112" text-anchor="middle" class="card-title">2.1 市场阶段判断</text>
+    <text x="480" y="134" text-anchor="middle" class="card-sub">你在哪里？</text>
+  </g>
+
+  <g filter="url(#module2-shadow)">
+    <rect x="90" y="200" width="220" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="200" y="232" text-anchor="middle" class="card-title">2.3 ICP</text>
+    <text x="200" y="254" text-anchor="middle" class="card-sub">卖给谁？</text>
+  </g>
+
+  <g filter="url(#module2-shadow)">
+    <rect x="370" y="200" width="220" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="232" text-anchor="middle" class="card-title">2.4 价值主张</text>
+    <text x="480" y="254" text-anchor="middle" class="card-sub">卖什么？</text>
+  </g>
+
+  <g filter="url(#module2-shadow)">
+    <rect x="650" y="200" width="220" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="760" y="232" text-anchor="middle" class="card-title">2.5 市场定位</text>
+    <text x="760" y="254" text-anchor="middle" class="card-sub">在哪竞争？</text>
+  </g>
+
+  <g filter="url(#module2-shadow)">
+    <rect x="300" y="320" width="360" height="80" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="352" text-anchor="middle" class="card-title">2.2 GTM Motion</text>
+    <text x="480" y="374" text-anchor="middle" class="card-sub">怎么去？</text>
+  </g>
+
+  <line x1="480" y1="160" x2="200" y2="200" class="line" marker-end="url(#module2-arrow)" />
+  <line x1="480" y1="160" x2="480" y2="200" class="line" marker-end="url(#module2-arrow)" />
+  <line x1="480" y1="160" x2="760" y2="200" class="line" marker-end="url(#module2-arrow)" />
+
+  <line x1="200" y1="280" x2="480" y2="320" class="line" marker-end="url(#module2-arrow)" />
+  <line x1="480" y1="280" x2="480" y2="320" class="line" marker-end="url(#module2-arrow)" />
+  <line x1="760" y1="280" x2="480" y2="320" class="line" marker-end="url(#module2-arrow)" />
+
+  <text x="480" y="420" text-anchor="middle" class="note">这五个问题的答案共同构成你的 GTM 战略基础</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="revops-21-title revops-21-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-21-title">中国企业 RevOps 挑战</title>
+  <desc id="revops-21-desc">从组织、数据与工具三个维度总结中国企业 RevOps 的主要挑战。</desc>
+  <defs>
+    <linearGradient id="revops-21-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-21-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#revops-21-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">中国企业 RevOps 挑战</text>
+
+  <g filter="url(#revops-21-shadow)">
+    <rect x="60" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="350" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="640" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="124" class="section">组织挑战</text>
+    <text x="80" y="154" class="body">• 部门墙严重，协作困难</text>
+    <text x="80" y="176" class="body">• 缺乏 RevOps 概念认知</text>
+    <text x="80" y="198" class="body">• 高管层支持不足</text>
+    <text x="80" y="220" class="body">• RevOps 人才稀缺</text>
+
+    <text x="370" y="124" class="section">数据挑战</text>
+    <text x="370" y="154" class="body">• 数据质量差，录入不规范</text>
+    <text x="370" y="176" class="body">• 系统分散，数据难打通</text>
+    <text x="370" y="198" class="body">• 缺乏数据治理意识</text>
+    <text x="370" y="220" class="body">• 指标定义不统一</text>
+
+    <text x="660" y="124" class="section">工具挑战</text>
+    <text x="660" y="154" class="body">• 工具选型困难（国际 vs 本土）</text>
+    <text x="660" y="176" class="body">• 系统集成复杂</text>
+    <text x="660" y="198" class="body">• 微信生态数据难打通</text>
+    <text x="660" y="220" class="body">• 定制开发成本高</text>
+  </g>
+</svg>

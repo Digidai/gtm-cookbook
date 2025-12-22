@@ -1,0 +1,76 @@
+<svg width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="icp-flow-title icp-flow-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="icp-flow-title">ICP 构建五步流程</title>
+  <desc id="icp-flow-desc">五个连续步骤：分析最佳客户、识别共同特征、验证假设、文档化 ICP、持续迭代，并形成循环。</desc>
+  <defs>
+    <linearGradient id="icp-flow-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="icp-flow-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="icp-flow-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step-pill { font: 700 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+      .loop { stroke: #94A3B8; stroke-width: 1.5; fill: none; stroke-dasharray: 6 6; }
+      .note { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="288" rx="18" fill="url(#icp-flow-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">ICP 构建五步流程</text>
+
+  <g filter="url(#icp-flow-shadow)">
+    <rect x="48" y="90" width="150" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="104" width="56" height="20" rx="10" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="88" y="119" text-anchor="middle" class="step-pill">Step 1</text>
+    <text x="123" y="154" text-anchor="middle" class="label">分析</text>
+    <text x="123" y="174" text-anchor="middle" class="sub">最佳客户</text>
+  </g>
+
+  <g filter="url(#icp-flow-shadow)">
+    <rect x="218" y="90" width="150" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="230" y="104" width="56" height="20" rx="10" fill="#DCFCE7" stroke="#86EFAC" />
+    <text x="258" y="119" text-anchor="middle" class="step-pill">Step 2</text>
+    <text x="293" y="154" text-anchor="middle" class="label">识别</text>
+    <text x="293" y="174" text-anchor="middle" class="sub">共同特征</text>
+  </g>
+
+  <g filter="url(#icp-flow-shadow)">
+    <rect x="388" y="90" width="150" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="400" y="104" width="56" height="20" rx="10" fill="#FEF3C7" stroke="#FCD34D" />
+    <text x="428" y="119" text-anchor="middle" class="step-pill">Step 3</text>
+    <text x="463" y="154" text-anchor="middle" class="label">验证</text>
+    <text x="463" y="174" text-anchor="middle" class="sub">ICP 假设</text>
+  </g>
+
+  <g filter="url(#icp-flow-shadow)">
+    <rect x="558" y="90" width="150" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="570" y="104" width="56" height="20" rx="10" fill="#EDE9FE" stroke="#C4B5FD" />
+    <text x="598" y="119" text-anchor="middle" class="step-pill">Step 4</text>
+    <text x="633" y="154" text-anchor="middle" class="label">文档化</text>
+    <text x="633" y="174" text-anchor="middle" class="sub">ICP</text>
+  </g>
+
+  <g filter="url(#icp-flow-shadow)">
+    <rect x="728" y="90" width="150" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="740" y="104" width="56" height="20" rx="10" fill="#FFE4E6" stroke="#FDA4AF" />
+    <text x="768" y="119" text-anchor="middle" class="step-pill">Step 5</text>
+    <text x="803" y="154" text-anchor="middle" class="label">持续</text>
+    <text x="803" y="174" text-anchor="middle" class="sub">迭代</text>
+  </g>
+
+  <line x1="198" y1="150" x2="218" y2="150" class="line" marker-end="url(#icp-flow-arrow)" />
+  <line x1="368" y1="150" x2="388" y2="150" class="line" marker-end="url(#icp-flow-arrow)" />
+  <line x1="538" y1="150" x2="558" y2="150" class="line" marker-end="url(#icp-flow-arrow)" />
+  <line x1="708" y1="150" x2="728" y2="150" class="line" marker-end="url(#icp-flow-arrow)" />
+
+  <path d="M878 150 L900 150 L900 260 L30 260 L30 150 L48 150" class="loop" marker-end="url(#icp-flow-arrow)" />
+  <text x="465" y="250" text-anchor="middle" class="note">持续迭代，反馈到 Step 1</text>
+</svg>

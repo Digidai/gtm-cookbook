@@ -1,0 +1,53 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="three-pack-title three-pack-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="three-pack-title">三套餐策略的心理机制</title>
+  <desc id="three-pack-desc">通过低端与高端锚点突出中间套餐，形成折中效应。</desc>
+  <defs>
+    <linearGradient id="three-pack-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="three-pack-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .plan { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .price { font: 700 16px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .badge { font: 700 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#three-pack-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">三套餐策略的心理机制</text>
+
+  <g filter="url(#three-pack-shadow)">
+    <rect x="70" y="80" width="240" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="190" y="112" text-anchor="middle" class="plan">Basic</text>
+    <text x="190" y="136" text-anchor="middle" class="price">$29/月</text>
+  </g>
+
+  <g filter="url(#three-pack-shadow)">
+    <rect x="360" y="70" width="240" height="160" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <rect x="430" y="86" width="100" height="22" rx="11" fill="#FDE68A" stroke="#FCD34D" />
+    <text x="480" y="101" text-anchor="middle" class="badge">推荐</text>
+    <text x="480" y="126" text-anchor="middle" class="plan">Pro</text>
+    <text x="480" y="150" text-anchor="middle" class="price">$99/月</text>
+  </g>
+
+  <g filter="url(#three-pack-shadow)">
+    <rect x="650" y="80" width="240" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="770" y="112" text-anchor="middle" class="plan">Enterprise</text>
+    <text x="770" y="136" text-anchor="middle" class="price">$299/月</text>
+  </g>
+
+  <g filter="url(#three-pack-shadow)">
+    <rect x="70" y="240" width="820" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="270" class="body">心理机制：</text>
+    <text x="100" y="294" class="body">• Basic：设置低端锚点，让 Pro 显得合理</text>
+    <text x="100" y="316" class="body">• Pro：多数人选择中间选项（折中效应）</text>
+    <text x="100" y="338" class="body">• Enterprise：高端锚点让 Pro 显得便宜</text>
+    <text x="100" y="368" class="note">常见结果：60% 选 Pro，25% 选 Basic，15% 选 Enterprise</text>
+  </g>
+</svg>

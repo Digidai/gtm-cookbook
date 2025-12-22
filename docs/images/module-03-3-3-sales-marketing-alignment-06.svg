@@ -1,0 +1,39 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="sla-value-title sla-value-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="sla-value-title">SLA 的价值</title>
+  <desc id="sla-value-desc">对比没有 SLA 与有 SLA 的差异。</desc>
+  <defs>
+    <linearGradient id="sla-value-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="sla-value-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#sla-value-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">SLA 的价值</text>
+
+  <g filter="url(#sla-value-shadow)">
+    <rect x="60" y="80" width="400" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="110" class="section">没有 SLA</text>
+    <text x="90" y="136" class="body">• 营销不知道销售需要多少线索</text>
+    <text x="90" y="158" class="body">• 销售不知道何时能收到线索</text>
+    <text x="90" y="180" class="body">• 出了问题互相指责</text>
+    <text x="90" y="202" class="body">• 无法客观评估双方表现</text>
+  </g>
+
+  <g filter="url(#sla-value-shadow)">
+    <rect x="500" y="80" width="400" height="260" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="530" y="110" class="section">有 SLA</text>
+    <text x="530" y="136" class="body">• 明确数量与质量承诺</text>
+    <text x="530" y="158" class="body">• 可衡量的绩效标准</text>
+    <text x="530" y="180" class="body">• 问题归因清晰</text>
+    <text x="530" y="202" class="body">• 持续优化的基础</text>
+  </g>
+</svg>

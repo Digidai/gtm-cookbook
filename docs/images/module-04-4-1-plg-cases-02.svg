@@ -1,0 +1,40 @@
+<svg width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="plg-02-title plg-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="plg-02-title">传统邮件 vs Slack</title>
+  <desc id="plg-02-desc">对比传统邮件与 Slack 在沟通方式、信息透明、搜索与集成上的差异。</desc>
+  <defs>
+    <linearGradient id="plg-02-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="plg-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .header { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .row { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="228" rx="18" fill="url(#plg-02-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#plg-02-shadow)">
+    <rect x="80" y="50" width="800" height="160" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="480" y1="50" x2="480" y2="210" class="row" />
+    <line x1="80" y1="90" x2="880" y2="90" class="row" />
+    <line x1="80" y1="130" x2="880" y2="130" class="row" />
+    <line x1="80" y1="170" x2="880" y2="170" class="row" />
+
+    <text x="280" y="78" text-anchor="middle" class="header">传统邮件</text>
+    <text x="680" y="78" text-anchor="middle" class="header">Slack</text>
+
+    <text x="280" y="116" text-anchor="middle" class="cell">异步、正式</text>
+    <text x="680" y="116" text-anchor="middle" class="cell">实时、随意</text>
+
+    <text x="280" y="156" text-anchor="middle" class="cell">信息孤岛</text>
+    <text x="680" y="156" text-anchor="middle" class="cell">信息透明</text>
+
+    <text x="280" y="196" text-anchor="middle" class="cell">难以搜索 / 无法集成</text>
+    <text x="680" y="196" text-anchor="middle" class="cell">全局搜索 / 开放集成</text>
+  </g>
+</svg>

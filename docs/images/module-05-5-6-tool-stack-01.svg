@@ -1,0 +1,57 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="ts-01-title ts-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ts-01-title">GTM 工具栈的价值</title>
+  <desc id="ts-01-desc">正确的工具栈带来的四个好处与错误选择的代价。</desc>
+  <defs>
+    <linearGradient id="ts-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ts-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .num { font: 700 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .q { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#ts-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">GTM 工具栈的价值</text>
+
+  <g filter="url(#ts-01-shadow)">
+    <rect x="80" y="90" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="90" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="190" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="190" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <circle cx="110" cy="120" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="110" y="124" text-anchor="middle" class="num">1</text>
+    <text x="135" y="118" class="q">效率提升</text>
+    <text x="135" y="142" class="body">自动化重复工作，释放团队时间</text>
+
+    <circle cx="530" cy="120" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="530" y="124" text-anchor="middle" class="num">2</text>
+    <text x="555" y="118" class="q">数据驱动决策</text>
+    <text x="555" y="142" class="body">统一数据源，准确的洞察</text>
+
+    <circle cx="110" cy="220" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="110" y="224" text-anchor="middle" class="num">3</text>
+    <text x="135" y="218" class="q">规模化能力</text>
+    <text x="135" y="242" class="body">支撑团队和业务增长</text>
+
+    <circle cx="530" cy="220" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="530" y="224" text-anchor="middle" class="num">4</text>
+    <text x="555" y="218" class="q">客户体验</text>
+    <text x="555" y="242" class="body">无缝的客户旅程，个性化触达</text>
+
+    <rect x="80" y="290" width="800" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="320" class="section">错误选择的代价</text>
+    <text x="100" y="344" class="body">• 工具孤岛，数据不通</text>
+    <text x="300" y="344" class="body">• 功能重叠，浪费预算</text>
+    <text x="500" y="344" class="body">• 过度复杂，团队不用</text>
+    <text x="700" y="344" class="body">• 频繁更换，迁移成本高</text>
+  </g>
+</svg>

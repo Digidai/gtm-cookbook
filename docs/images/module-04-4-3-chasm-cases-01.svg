@@ -1,0 +1,55 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="chasm-01-title chasm-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-01-title">HubSpot 的鸿沟挑战</title>
+  <desc id="chasm-01-desc">对比早期市场与主流市场的用户画像与购买动机，并标示“鸿沟”。</desc>
+  <defs>
+    <linearGradient id="chasm-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="chasm-01-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .chasm { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#chasm-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">HubSpot 的鸿沟挑战</text>
+
+  <g filter="url(#chasm-01-shadow)">
+    <rect x="60" y="80" width="380" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="520" y="80" width="380" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="110" class="header">早期市场（2006-2010）</text>
+    <text x="80" y="140" class="header">用户画像</text>
+    <text x="80" y="164" class="body">• 技术先锋型营销人员</text>
+    <text x="80" y="186" class="body">• 小型创业公司</text>
+    <text x="80" y="208" class="body">• 愿意尝试新理念</text>
+    <text x="80" y="230" class="body">• 自己动手能力强</text>
+    <text x="80" y="262" class="header">购买动机</text>
+    <text x="80" y="286" class="body">• “新概念很酷”</text>
+    <text x="80" y="308" class="body">• 愿意为愿景买单</text>
+    <text x="80" y="330" class="body">• 可以容忍不完善</text>
+
+    <text x="540" y="110" class="header">主流市场（2012+）</text>
+    <text x="540" y="140" class="header">用户画像</text>
+    <text x="540" y="164" class="body">• 传统营销部门负责人</text>
+    <text x="540" y="186" class="body">• 中小型成熟企业</text>
+    <text x="540" y="208" class="body">• 需要验证效果再决策</text>
+    <text x="540" y="230" class="body">• 需要服务和支持</text>
+    <text x="540" y="262" class="header">购买动机</text>
+    <text x="540" y="286" class="body">• “能带来多少线索？”</text>
+    <text x="540" y="308" class="body">• ROI 必须可量化</text>
+    <text x="540" y="330" class="body">• 功能必须完整</text>
+  </g>
+
+  <line x1="440" y1="380" x2="520" y2="380" stroke="#64748B" stroke-width="2" marker-end="url(#chasm-01-arrow)" marker-start="url(#chasm-01-arrow)" />
+  <text x="480" y="374" text-anchor="middle" class="chasm">鸿沟 / Chasm</text>
+</svg>

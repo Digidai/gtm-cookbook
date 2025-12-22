@@ -1,0 +1,52 @@
+<svg width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="cm-08-title cm-08-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cm-08-title">竞品情报 ▶ 谁需要知道？</title>
+  <desc id="cm-08-desc">竞品情报分发给销售、产品、营销与管理层的使用场景。</desc>
+  <defs>
+    <linearGradient id="cm-08-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="cm-08-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="cm-08-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94A3B8" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #94A3B8; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="288" rx="18" fill="url(#cm-08-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">竞品情报 ▶ 谁需要知道？</text>
+
+  <g filter="url(#cm-08-shadow)">
+    <rect x="80" y="110" width="180" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="170" y="150" text-anchor="middle" class="section">竞品情报</text>
+
+    <rect x="320" y="80" width="560" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="320" y="140" width="560" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="320" y="200" width="560" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="320" y="260" width="560" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="340" y="112" class="section">销售团队</text>
+    <text x="440" y="112" class="body">Battle Cards、培训</text>
+
+    <text x="340" y="172" class="section">产品团队</text>
+    <text x="440" y="172" class="body">功能差距、路线图</text>
+
+    <text x="340" y="232" class="section">营销团队</text>
+    <text x="440" y="232" class="body">定位、内容策略</text>
+
+    <text x="340" y="292" class="section">管理层</text>
+    <text x="420" y="292" class="body">战略决策、资源分配</text>
+  </g>
+
+  <path d="M260 135 L300 105" class="line" marker-end="url(#cm-08-arrow)" />
+  <path d="M260 155 L300 165" class="line" marker-end="url(#cm-08-arrow)" />
+  <path d="M260 175 L300 225" class="line" marker-end="url(#cm-08-arrow)" />
+  <path d="M260 195 L300 285" class="line" marker-end="url(#cm-08-arrow)" />
+</svg>

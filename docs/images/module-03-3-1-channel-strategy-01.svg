@@ -1,0 +1,57 @@
+<svg width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="channel-essence-title channel-essence-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="channel-essence-title">渠道的本质</title>
+  <desc id="channel-essence-desc">渠道是从产品到目标客户的路径，覆盖认知、兴趣、评估、购买与使用。</desc>
+  <defs>
+    <linearGradient id="channel-essence-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="channel-essence-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="channel-essence-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .stage { font: 700 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .bullet { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .line { stroke: #64748B; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="328" rx="18" fill="url(#channel-essence-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">渠道的本质</text>
+
+  <text x="80" y="110" class="label">你的产品</text>
+  <text x="840" y="110" text-anchor="end" class="label">目标客户</text>
+  <line x1="150" y1="120" x2="810" y2="120" class="line" marker-end="url(#channel-essence-arrow)" />
+
+  <g filter="url(#channel-essence-shadow)">
+    <rect x="200" y="85" width="90" height="30" rx="14" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="245" y="105" text-anchor="middle" class="stage">认知</text>
+  </g>
+  <g filter="url(#channel-essence-shadow)">
+    <rect x="310" y="85" width="90" height="30" rx="14" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="355" y="105" text-anchor="middle" class="stage">兴趣</text>
+  </g>
+  <g filter="url(#channel-essence-shadow)">
+    <rect x="420" y="85" width="90" height="30" rx="14" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="465" y="105" text-anchor="middle" class="stage">评估</text>
+  </g>
+  <g filter="url(#channel-essence-shadow)">
+    <rect x="530" y="85" width="90" height="30" rx="14" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="575" y="105" text-anchor="middle" class="stage">购买</text>
+  </g>
+  <g filter="url(#channel-essence-shadow)">
+    <rect x="640" y="85" width="90" height="30" rx="14" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="685" y="105" text-anchor="middle" class="stage">使用</text>
+  </g>
+
+  <text x="80" y="185" class="label">渠道决定了：</text>
+  <text x="100" y="210" class="bullet">• 客户如何发现你</text>
+  <text x="100" y="232" class="bullet">• 客户如何了解和评估你</text>
+  <text x="100" y="254" class="bullet">• 客户如何购买</text>
+  <text x="100" y="276" class="bullet">• 客户如何获得支持</text>
+</svg>

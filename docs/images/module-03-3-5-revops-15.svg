@@ -1,0 +1,45 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="revops-15-title revops-15-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-15-title">Stripe 数据驱动 RevOps 原则</title>
+  <desc id="revops-15-desc">Stripe 的数据驱动 RevOps 三大原则：数据民主化、实时数据、单一数据源。</desc>
+  <defs>
+    <linearGradient id="revops-15-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-15-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#revops-15-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Stripe 数据驱动 RevOps 原则</text>
+
+  <g filter="url(#revops-15-shadow)">
+    <rect x="60" y="80" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="108" class="section">原则 1：数据民主化（Data Democratization）</text>
+    <text x="80" y="136" class="body">• 每个团队成员都能访问关键数据</text>
+    <text x="80" y="158" class="body">• 自助式数据查询工具（内部工具 Mode）</text>
+    <text x="80" y="180" class="body">• 数据素养是招聘和培训的核心</text>
+  </g>
+
+  <g filter="url(#revops-15-shadow)">
+    <rect x="60" y="220" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="248" class="section">原则 2：实时数据（Real-time Data）</text>
+    <text x="80" y="276" class="body">• 交易数据实时更新</text>
+    <text x="80" y="298" class="body">• 漏斗指标每小时刷新</text>
+    <text x="80" y="320" class="body">• 异常检测自动告警</text>
+  </g>
+
+  <g filter="url(#revops-15-shadow)">
+    <rect x="60" y="360" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="388" class="section">原则 3：单一数据源（Single Source of Truth）</text>
+    <text x="80" y="416" class="body">• 统一的数据仓库架构</text>
+    <text x="80" y="438" class="body">• 严格的数据定义和治理</text>
+    <text x="80" y="460" class="body">• 所有报告从同一数据源生成</text>
+  </g>
+</svg>

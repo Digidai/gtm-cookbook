@@ -1,0 +1,45 @@
+<svg width="960" height="280" viewBox="0 0 960 280" role="img" aria-labelledby="vp-02-title vp-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="vp-02-title">痛点严重程度分级</title>
+  <desc id="vp-02-desc">痛点分为极端、重度、中度、轻微，并强调聚焦高严重度痛点。</desc>
+  <defs>
+    <linearGradient id="vp-02-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="vp-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .level { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="248" rx="18" fill="url(#vp-02-bg)" stroke="#E2E8F0" />
+  <text x="80" y="48" class="title">痛点严重程度分级</text>
+
+  <g filter="url(#vp-02-shadow)">
+    <rect x="80" y="70" width="800" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="100" y="90" width="80" height="26" rx="10" fill="#FEE2E2" stroke="#FECACA" />
+    <text x="140" y="108" text-anchor="middle" class="level">极端</text>
+    <text x="200" y="108" class="body">导致业务停滞或严重损失，客户会不惜代价解决</text>
+
+    <rect x="100" y="120" width="80" height="26" rx="10" fill="#FFECC7" stroke="#FCD34D" />
+    <text x="140" y="138" text-anchor="middle" class="level">重度</text>
+    <text x="200" y="138" class="body">显著影响效率或成本，客户愿意付费解决</text>
+
+    <rect x="100" y="150" width="80" height="26" rx="10" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="140" y="168" text-anchor="middle" class="level">中度</text>
+    <text x="200" y="168" class="body">造成不便但可忍受，如果有好方案会考虑</text>
+
+    <rect x="100" y="180" width="80" height="26" rx="10" fill="#E2E8F0" stroke="#CBD5E1" />
+    <text x="140" y="198" text-anchor="middle" class="level">轻微</text>
+    <text x="200" y="198" class="body">轻微不适，不会主动寻找解决方案</text>
+
+    <rect x="80" y="226" width="800" height="32" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="100" y="248" class="note">关键原则：只针对极端和重度痛点设计价值主张</text>
+  </g>
+</svg>

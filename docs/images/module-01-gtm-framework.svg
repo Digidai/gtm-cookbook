@@ -1,0 +1,91 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="gtm-framework-title gtm-framework-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="gtm-framework-title">GTM 战略框架</title>
+  <desc id="gtm-framework-desc">五大核心组成部分：目标市场、价值主张、渠道策略、定价与商业模式、执行计划与指标。</desc>
+  <defs>
+    <linearGradient id="gtm-framework-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+    <filter id="gtm-framework-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 22px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
+      .card-sub { font: 600 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
+      .item { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .muted { fill: #64748B; }
+      .accent-blue { fill: #2563EB; }
+      .accent-teal { fill: #0EA5A4; }
+      .accent-amber { fill: #F59E0B; }
+      .accent-orange { fill: #F97316; }
+      .accent-green { fill: #10B981; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#gtm-framework-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">GTM 战略框架</text>
+
+  <g filter="url(#gtm-framework-shadow)">
+    <rect x="40" y="90" width="270" height="170" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="40" y="90" width="6" height="170" rx="6" fill="#2563EB" />
+    <text x="58" y="115" class="card-title accent-blue">1. 目标市场</text>
+    <text x="58" y="133" class="card-sub muted">(WHO)</text>
+    <circle cx="64" cy="156" r="3" fill="#2563EB" />
+    <text x="74" y="160" class="item">ICP 定义</text>
+    <circle cx="64" cy="178" r="3" fill="#2563EB" />
+    <text x="74" y="182" class="item">市场规模</text>
+    <circle cx="64" cy="200" r="3" fill="#2563EB" />
+    <text x="74" y="204" class="item">细分策略</text>
+  </g>
+
+  <g filter="url(#gtm-framework-shadow)">
+    <rect x="330" y="90" width="270" height="170" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="330" y="90" width="6" height="170" rx="6" fill="#0EA5A4" />
+    <text x="348" y="115" class="card-title accent-teal">2. 价值主张</text>
+    <text x="348" y="133" class="card-sub muted">(WHAT)</text>
+    <circle cx="354" cy="156" r="3" fill="#0EA5A4" />
+    <text x="364" y="160" class="item">核心价值</text>
+    <circle cx="354" cy="178" r="3" fill="#0EA5A4" />
+    <text x="364" y="182" class="item">差异化点</text>
+    <circle cx="354" cy="200" r="3" fill="#0EA5A4" />
+    <text x="364" y="204" class="item">定位声明</text>
+  </g>
+
+  <g filter="url(#gtm-framework-shadow)">
+    <rect x="620" y="90" width="270" height="170" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="620" y="90" width="6" height="170" rx="6" fill="#F59E0B" />
+    <text x="638" y="115" class="card-title accent-amber">3. 渠道策略</text>
+    <text x="638" y="133" class="card-sub muted">(HOW)</text>
+    <circle cx="644" cy="156" r="3" fill="#F59E0B" />
+    <text x="654" y="160" class="item">GTM Motion</text>
+    <circle cx="644" cy="178" r="3" fill="#F59E0B" />
+    <text x="654" y="182" class="item">销售模式</text>
+    <circle cx="644" cy="200" r="3" fill="#F59E0B" />
+    <text x="654" y="204" class="item">渠道组合</text>
+  </g>
+
+  <g filter="url(#gtm-framework-shadow)">
+    <rect x="40" y="290" width="430" height="170" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="40" y="290" width="6" height="170" rx="6" fill="#F97316" />
+    <text x="58" y="315" class="card-title accent-orange">4. 定价与商业模式</text>
+    <circle cx="64" cy="346" r="3" fill="#F97316" />
+    <text x="74" y="350" class="item">定价策略</text>
+    <circle cx="64" cy="368" r="3" fill="#F97316" />
+    <text x="74" y="372" class="item">收入模式</text>
+    <circle cx="64" cy="390" r="3" fill="#F97316" />
+    <text x="74" y="394" class="item">打包与分层</text>
+  </g>
+
+  <g filter="url(#gtm-framework-shadow)">
+    <rect x="490" y="290" width="430" height="170" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="490" y="290" width="6" height="170" rx="6" fill="#10B981" />
+    <text x="508" y="315" class="card-title accent-green">5. 执行计划与指标</text>
+    <circle cx="514" cy="346" r="3" fill="#10B981" />
+    <text x="524" y="350" class="item">关键里程碑</text>
+    <circle cx="514" cy="368" r="3" fill="#10B981" />
+    <text x="524" y="372" class="item">资源配置</text>
+    <circle cx="514" cy="390" r="3" fill="#10B981" />
+    <text x="524" y="394" class="item">成功指标（KPIs）</text>
+  </g>
+</svg>

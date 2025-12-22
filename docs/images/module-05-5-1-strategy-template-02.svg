@@ -1,0 +1,58 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="st-02-title st-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="st-02-title">GTM Motion 选择矩阵</title>
+  <desc id="st-02-desc">根据 ACV 与产品复杂度选择 PLG/SLG/Hybrid 的矩阵。</desc>
+  <defs>
+    <linearGradient id="st-02-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="st-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .axis { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell-title { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell-sub { font: 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#st-02-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">GTM Motion 选择矩阵</text>
+
+  <text x="480" y="84" text-anchor="middle" class="axis">ACV（年合同价值）</text>
+  <text x="280" y="108" text-anchor="middle" class="label">低（&lt;$5K）</text>
+  <text x="480" y="108" text-anchor="middle" class="label">中（$5K-$50K）</text>
+  <text x="680" y="108" text-anchor="middle" class="label">高（&gt;$50K）</text>
+
+  <text x="90" y="190" class="axis">简单</text>
+  <text x="90" y="300" class="axis">复杂度高</text>
+
+  <g filter="url(#st-02-shadow)">
+    <rect x="180" y="140" width="220" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="400" y="140" width="220" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="620" y="140" width="220" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="180" y="250" width="220" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="400" y="250" width="220" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="620" y="250" width="220" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="290" y="175" text-anchor="middle" class="cell-title">PLG</text>
+    <text x="290" y="198" text-anchor="middle" class="cell-sub">Self-serve</text>
+
+    <text x="510" y="175" text-anchor="middle" class="cell-title">PLG + SLG</text>
+    <text x="510" y="198" text-anchor="middle" class="cell-sub">Product-Led Sales</text>
+
+    <text x="730" y="175" text-anchor="middle" class="cell-title">SLG</text>
+    <text x="730" y="198" text-anchor="middle" class="cell-sub">Sales-Led</text>
+
+    <text x="290" y="285" text-anchor="middle" class="cell-title">PLG/MLG</text>
+    <text x="290" y="308" text-anchor="middle" class="cell-sub">Hybrid</text>
+
+    <text x="510" y="285" text-anchor="middle" class="cell-title">SLG + PLG</text>
+    <text x="510" y="308" text-anchor="middle" class="cell-sub">Enterprise</text>
+
+    <text x="730" y="285" text-anchor="middle" class="cell-title">SLG</text>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<svg width="960" height="500" viewBox="0 0 960 500" role="img" aria-labelledby="chasm-06-title chasm-06-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-06-title">HubSpot 跨越鸿沟路径</title>
+  <desc id="chasm-06-desc">Early Market、Bowling Alley 与 Main Street 三阶段的目标客户、策略与证明。</desc>
+  <defs>
+    <linearGradient id="chasm-06-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-06-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 11px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .label { font: 600 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .grid { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="468" rx="18" fill="url(#chasm-06-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">HubSpot 跨越鸿沟路径</text>
+
+  <g filter="url(#chasm-06-shadow)">
+    <rect x="60" y="80" width="840" height="370" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="340" y1="80" x2="340" y2="450" class="grid" />
+    <line x1="620" y1="80" x2="620" y2="450" class="grid" />
+    <line x1="60" y1="140" x2="900" y2="140" class="grid" />
+    <line x1="60" y1="250" x2="900" y2="250" class="grid" />
+    <line x1="60" y1="340" x2="900" y2="340" class="grid" />
+
+    <text x="90" y="110" class="header">Early Market</text>
+    <text x="90" y="130" class="sub">创新者 + 愿景者 / 2006-2010</text>
+
+    <text x="370" y="110" class="header">Bowling Alley</text>
+    <text x="370" y="130" class="sub">跨越鸿沟 / 2010-2014</text>
+
+    <text x="650" y="110" class="header">Main Street</text>
+    <text x="650" y="130" class="sub">主流市场 / 2014+</text>
+
+    <text x="90" y="170" class="cell">• 技术先锋</text>
+    <text x="90" y="192" class="cell">• 创业公司</text>
+    <text x="90" y="214" class="cell">• 个人博客</text>
+
+    <text x="370" y="170" class="cell">• 营销机构</text>
+    <text x="370" y="192" class="cell">• 科技 SMB</text>
+    <text x="370" y="214" class="cell">• 服务公司</text>
+
+    <text x="650" y="170" class="cell">• 成熟 SMB</text>
+    <text x="650" y="192" class="cell">• 中型企业</text>
+    <text x="650" y="214" class="cell">• 传统行业</text>
+
+    <text x="90" y="270" class="label">策略</text>
+    <text x="90" y="292" class="cell">• 概念传播</text>
+    <text x="90" y="314" class="cell">• 内容教育</text>
+    <text x="90" y="336" class="cell">• 工具体验</text>
+
+    <text x="370" y="270" class="label">策略</text>
+    <text x="370" y="292" class="cell">• 细分市场深耕</text>
+    <text x="370" y="314" class="cell">• 案例积累</text>
+    <text x="370" y="336" class="cell">• 口碑传播</text>
+
+    <text x="650" y="270" class="label">策略</text>
+    <text x="650" y="292" class="cell">• 产品平台化</text>
+    <text x="650" y="314" class="cell">• 销售团队扩张</text>
+    <text x="650" y="336" class="cell">• 服务能力建设</text>
+
+    <text x="90" y="360" class="label">证明</text>
+    <text x="90" y="384" class="cell">“概念可行”</text>
+
+    <text x="370" y="360" class="label">证明</text>
+    <text x="370" y="384" class="cell">“适合这类公司”</text>
+
+    <text x="650" y="360" class="label">证明</text>
+    <text x="650" y="384" class="cell">“适合所有公司”</text>
+  </g>
+</svg>

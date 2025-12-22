@@ -1,0 +1,44 @@
+<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="ali-ecosystem-title ali-ecosystem-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ali-ecosystem-title">阿里云渠道生态架构</title>
+  <desc id="ali-ecosystem-desc">战略合作伙伴、区域服务商、云市场 ISV 三层渠道生态。</desc>
+  <defs>
+    <linearGradient id="ali-ecosystem-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ali-ecosystem-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .tier { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#ali-ecosystem-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">阿里云渠道生态架构</text>
+
+  <g filter="url(#ali-ecosystem-shadow)">
+    <rect x="120" y="90" width="720" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="160" y="120" class="tier">第一层：战略合作伙伴（Top Partners）</text>
+    <text x="160" y="144" class="body">• 神州数码、东软、软通动力等大型 SI</text>
+    <text x="160" y="166" class="body">• 年合作规模亿元级 · 联合解决方案/联合销售</text>
+    <text x="160" y="188" class="body">• 共同参与大型项目招标</text>
+  </g>
+
+  <g filter="url(#ali-ecosystem-shadow)">
+    <rect x="120" y="230" width="720" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="160" y="260" class="tier">第二层：区域服务商（Regional Partners）</text>
+    <text x="160" y="284" class="body">• 省级/城市级代理商 · 本地化销售与服务</text>
+    <text x="160" y="306" class="body">• 政企客户关系维护 · 实施与运维服务</text>
+  </g>
+
+  <g filter="url(#ali-ecosystem-shadow)">
+    <rect x="120" y="370" width="720" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="160" y="400" class="tier">第三层：云市场 ISV（Marketplace Partners）</text>
+    <text x="160" y="424" class="body">• 数千家 SaaS 厂商在云市场上架</text>
+    <text x="160" y="446" class="body">• 与阿里云产品集成 · 共享客户资源</text>
+    <text x="160" y="468" class="body">• 联合营销和推广</text>
+  </g>
+</svg>

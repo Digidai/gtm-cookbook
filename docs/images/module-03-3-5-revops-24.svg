@@ -1,0 +1,53 @@
+<svg width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="revops-24-title revops-24-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-24-title">中国企业 RevOps 成功要素</title>
+  <desc id="revops-24-desc">总结中国企业落地 RevOps 的四个关键成功要素。</desc>
+  <defs>
+    <linearGradient id="revops-24-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-24-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="588" rx="18" fill="url(#revops-24-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">中国企业 RevOps 成功要素</text>
+
+  <g filter="url(#revops-24-shadow)">
+    <rect x="60" y="80" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="108" class="section">1. 高管支持是前提</text>
+    <text x="80" y="136" class="body">• RevOps 需要跨部门权限，必须有高管背书</text>
+    <text x="80" y="158" class="body">• CEO 或 COO 直接支持效果最好</text>
+    <text x="80" y="180" class="body">• 定期向高管汇报进展和成果</text>
+  </g>
+
+  <g filter="url(#revops-24-shadow)">
+    <rect x="60" y="220" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="248" class="section">2. 从痛点切入，快速见效</text>
+    <text x="80" y="276" class="body">• 不要一开始就追求完美体系</text>
+    <text x="80" y="298" class="body">• 找到最痛的问题，快速解决</text>
+    <text x="80" y="320" class="body">• 用小胜利建立信任和影响力</text>
+  </g>
+
+  <g filter="url(#revops-24-shadow)">
+    <rect x="60" y="360" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="388" class="section">3. 数据质量优先于分析</text>
+    <text x="80" y="416" class="body">• 垃圾进垃圾出，数据质量是基础</text>
+    <text x="80" y="438" class="body">• 先解决数据录入问题，再谈分析</text>
+    <text x="80" y="460" class="body">• 建立数据质量监控机制</text>
+  </g>
+
+  <g filter="url(#revops-24-shadow)">
+    <rect x="60" y="500" width="840" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="528" class="section">4. 工具是手段，不是目的</text>
+    <text x="80" y="556" class="body">• 不要为了工具而工具</text>
+    <text x="320" y="556" class="body">• 先跑通流程，再考虑工具升级</text>
+    <text x="650" y="556" class="body">• 能用现有工具解决就不买新的</text>
+  </g>
+</svg>

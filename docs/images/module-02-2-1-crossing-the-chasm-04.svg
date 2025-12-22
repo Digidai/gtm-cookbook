@@ -1,0 +1,52 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="whole-title whole-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="whole-title">整体产品模型</title>
+  <desc id="whole-desc">从核心产品到期望产品、增强产品、潜在产品的四层结构，强调完整解决方案的重要性。</desc>
+  <defs>
+    <linearGradient id="whole-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="whole-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .layer-title { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .layer-sub { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .label { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#whole-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">整体产品模型</text>
+
+  <g filter="url(#whole-shadow)">
+    <rect x="80" y="110" width="420" height="260" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="120" y="300" width="340" height="48" rx="12" fill="#DBEAFE" stroke="#93C5FD" />
+    <text x="290" y="328" text-anchor="middle" class="layer-title">核心产品</text>
+    <text x="290" y="346" text-anchor="middle" class="layer-sub">（功能）</text>
+
+    <rect x="110" y="250" width="360" height="48" rx="12" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="290" y="278" text-anchor="middle" class="layer-title">期望产品</text>
+    <text x="290" y="296" text-anchor="middle" class="layer-sub">（必须有的）</text>
+
+    <rect x="100" y="200" width="380" height="48" rx="12" fill="#FEF3C7" stroke="#FDE68A" />
+    <text x="290" y="228" text-anchor="middle" class="layer-title">增强产品</text>
+    <text x="290" y="246" text-anchor="middle" class="layer-sub">（超出预期）</text>
+
+    <rect x="90" y="150" width="400" height="48" rx="12" fill="#FCE7F3" stroke="#FBCFE8" />
+    <text x="290" y="178" text-anchor="middle" class="layer-title">潜在产品</text>
+    <text x="290" y="196" text-anchor="middle" class="layer-sub">（未来可能增加的能力）</text>
+  </g>
+
+  <g filter="url(#whole-shadow)">
+    <rect x="540" y="110" width="340" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="560" y="140" class="layer-title">各层含义</text>
+
+    <text x="560" y="172" class="label">• 核心产品：交付的软件功能</text>
+    <text x="560" y="198" class="label">• 期望产品：文档、培训、支持、集成</text>
+    <text x="560" y="224" class="label">• 增强产品：咨询、定制、社区</text>
+    <text x="560" y="250" class="label">• 潜在产品：未来可能提供的能力</text>
+  </g>
+</svg>

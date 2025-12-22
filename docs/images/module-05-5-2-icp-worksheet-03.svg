@@ -1,0 +1,57 @@
+<svg width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="icp-03-title icp-03-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="icp-03-title">紧迫程度 × 影响范围</title>
+  <desc id="icp-03-desc">根据紧迫程度与影响范围确定优先级的矩阵。</desc>
+  <defs>
+    <linearGradient id="icp-03-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="icp-03-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .cell { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="328" rx="18" fill="url(#icp-03-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">紧迫程度 × 影响范围</text>
+
+  <text x="480" y="78" text-anchor="middle" class="label">紧迫程度</text>
+  <text x="330" y="100" text-anchor="middle" class="label">高</text>
+  <text x="510" y="100" text-anchor="middle" class="label">中</text>
+  <text x="690" y="100" text-anchor="middle" class="label">低</text>
+
+  <text x="160" y="170" text-anchor="middle" class="label">影响范围</text>
+  <text x="180" y="140" text-anchor="middle" class="label">高</text>
+  <text x="180" y="210" text-anchor="middle" class="label">中</text>
+  <text x="180" y="280" text-anchor="middle" class="label">低</text>
+
+  <g filter="url(#icp-03-shadow)">
+    <rect x="240" y="110" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="420" y="110" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="600" y="110" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="240" y="180" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="420" y="180" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="600" y="180" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="240" y="250" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="420" y="250" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="600" y="250" width="180" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="330" y="150" text-anchor="middle" class="cell">P0</text>
+    <text x="510" y="150" text-anchor="middle" class="cell">P1</text>
+    <text x="690" y="150" text-anchor="middle" class="cell">P2</text>
+
+    <text x="330" y="220" text-anchor="middle" class="cell">P1</text>
+    <text x="510" y="220" text-anchor="middle" class="cell">P2</text>
+    <text x="690" y="220" text-anchor="middle" class="cell">P3</text>
+
+    <text x="330" y="290" text-anchor="middle" class="cell">P2</text>
+    <text x="510" y="290" text-anchor="middle" class="cell">P3</text>
+    <text x="690" y="290" text-anchor="middle" class="cell">--</text>
+  </g>
+</svg>

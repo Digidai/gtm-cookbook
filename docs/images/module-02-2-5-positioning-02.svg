@@ -1,0 +1,65 @@
+<svg width="960" height="500" viewBox="0 0 960 500" role="img" aria-labelledby="pos-strategies-title pos-strategies-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="pos-strategies-title">三大定位策略</title>
+  <desc id="pos-strategies-desc">Head-to-Head、Category Creation、Niche Focus 三类定位策略的对比。</desc>
+  <defs>
+    <linearGradient id="pos-strategies-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="pos-strategies-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .quote { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1F2937; }
+      .meta { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .examples { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="468" rx="18" fill="url(#pos-strategies-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">三大定位策略</text>
+
+  <g filter="url(#pos-strategies-shadow)">
+    <rect x="60" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="190" y="120" text-anchor="middle" class="card-title">Head-to-Head</text>
+    <text x="190" y="140" text-anchor="middle" class="meta">正面竞争</text>
+    <text x="80" y="170" class="quote">“我们比领导者做得更好”</text>
+    <text x="80" y="202" class="meta">适用：成熟市场</text>
+    <text x="80" y="224" class="meta">风险：高竞争</text>
+    <text x="80" y="246" class="meta">回报：快速增长</text>
+    <text x="80" y="282" class="meta">代表案例：</text>
+    <text x="80" y="304" class="examples">ClickUp vs Asana</text>
+    <text x="80" y="326" class="examples">Notion vs Confluence</text>
+    <text x="80" y="348" class="examples">Figma vs Sketch</text>
+  </g>
+
+  <g filter="url(#pos-strategies-shadow)">
+    <rect x="350" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="120" text-anchor="middle" class="card-title">Category Creation</text>
+    <text x="480" y="140" text-anchor="middle" class="meta">品类创造</text>
+    <text x="370" y="170" class="quote">“我们创造了一个全新品类”</text>
+    <text x="370" y="202" class="meta">适用：创新产品</text>
+    <text x="370" y="224" class="meta">风险：教育成本</text>
+    <text x="370" y="246" class="meta">回报：品类主导</text>
+    <text x="370" y="282" class="meta">代表案例：</text>
+    <text x="370" y="304" class="examples">Segment (CDP)</text>
+    <text x="370" y="326" class="examples">HubSpot (Inbound)</text>
+    <text x="370" y="348" class="examples">Drift (对话式营销)</text>
+  </g>
+
+  <g filter="url(#pos-strategies-shadow)">
+    <rect x="640" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="770" y="120" text-anchor="middle" class="card-title">Niche Focus</text>
+    <text x="770" y="140" text-anchor="middle" class="meta">垂直聚焦</text>
+    <text x="660" y="170" class="quote">“我们是细分市场的最佳选择”</text>
+    <text x="660" y="202" class="meta">适用：细分需求</text>
+    <text x="660" y="224" class="meta">风险：增长天花板</text>
+    <text x="660" y="246" class="meta">回报：高利润</text>
+    <text x="660" y="282" class="meta">代表案例：</text>
+    <text x="660" y="304" class="examples">Veeva (医疗 SaaS)</text>
+    <text x="660" y="326" class="examples">Toast (餐饮 POS)</text>
+    <text x="660" y="348" class="examples">Procore (建筑)</text>
+  </g>
+</svg>

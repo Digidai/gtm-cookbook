@@ -1,0 +1,58 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="metrics-ltv-cac-title metrics-ltv-cac-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-ltv-cac-title">LTV:CAC 健康区间</title>
+  <desc id="metrics-ltv-cac-desc">LTV:CAC 比率从亏损到过于保守的区间划分，并标注健康区间 3:1-5:1。</desc>
+  <defs>
+    <linearGradient id="metrics-ltv-cac-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-ltv-cac-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .tick { stroke: #64748B; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#metrics-ltv-cac-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">LTV:CAC 健康区间</text>
+
+  <g filter="url(#metrics-ltv-cac-shadow)">
+    <rect x="120" y="140" width="80" height="26" rx="6" fill="#FCA5A5" />
+    <rect x="200" y="140" width="80" height="26" rx="6" fill="#FDBA74" />
+    <rect x="280" y="140" width="160" height="26" rx="6" fill="#86EFAC" />
+    <rect x="440" y="140" width="400" height="26" rx="6" fill="#93C5FD" />
+  </g>
+
+  <text x="360" y="120" text-anchor="middle" class="label">健康区间 3:1 - 5:1</text>
+
+  <line x1="120" y1="168" x2="120" y2="178" class="tick" />
+  <line x1="200" y1="168" x2="200" y2="178" class="tick" />
+  <line x1="280" y1="168" x2="280" y2="178" class="tick" />
+  <line x1="360" y1="168" x2="360" y2="178" class="tick" />
+  <line x1="440" y1="168" x2="440" y2="178" class="tick" />
+  <line x1="840" y1="168" x2="840" y2="178" class="tick" />
+
+  <text x="120" y="198" text-anchor="middle" class="body">1:1</text>
+  <text x="200" y="198" text-anchor="middle" class="body">2:1</text>
+  <text x="280" y="198" text-anchor="middle" class="body">3:1</text>
+  <text x="360" y="198" text-anchor="middle" class="body">4:1</text>
+  <text x="440" y="198" text-anchor="middle" class="body">5:1</text>
+  <text x="840" y="198" text-anchor="middle" class="body">10:1</text>
+
+  <text x="160" y="228" text-anchor="middle" class="body">亏损</text>
+  <text x="240" y="228" text-anchor="middle" class="body">低效</text>
+  <text x="360" y="228" text-anchor="middle" class="body">最优目标</text>
+  <text x="520" y="228" text-anchor="middle" class="body">保守</text>
+  <text x="760" y="228" text-anchor="middle" class="body">过于保守</text>
+
+  <g filter="url(#metrics-ltv-cac-shadow)">
+    <rect x="80" y="260" width="800" height="110" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="290" class="body">• &lt; 3:1：需要关注，优化 CAC 或提升 LTV</text>
+    <text x="100" y="314" class="body">• 3:1 - 5:1：健康，可规模化投入</text>
+    <text x="100" y="338" class="body">• &gt; 5:1：可能过于保守，考虑加大投入</text>
+  </g>
+</svg>

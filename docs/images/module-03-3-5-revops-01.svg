@@ -1,0 +1,46 @@
+<svg width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="revops-01-title revops-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-01-title">传统模式 vs RevOps 模式</title>
+  <desc id="revops-01-desc">对比传统的 Sales Ops/Mkt Ops/CS Ops 孤岛运营与 RevOps 统一数据流程工具的协同运营。</desc>
+  <defs>
+    <linearGradient id="revops-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="revops-01-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .label { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="328" rx="18" fill="url(#revops-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">传统模式 vs RevOps 模式</text>
+
+  <g filter="url(#revops-01-shadow)">
+    <rect x="80" y="90" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="160" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="230" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="125" class="section">Sales Ops</text>
+    <text x="110" y="195" class="section">Mkt Ops</text>
+    <text x="110" y="265" class="section">CS Ops</text>
+  </g>
+
+  <line x1="320" y1="180" x2="420" y2="180" stroke="#64748B" stroke-width="2" marker-end="url(#revops-01-arrow)" />
+  <text x="370" y="160" text-anchor="middle" class="label">整合为</text>
+
+  <g filter="url(#revops-01-shadow)">
+    <rect x="460" y="120" width="360" height="140" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="640" y="160" text-anchor="middle" class="section">RevOps</text>
+    <text x="640" y="190" text-anchor="middle" class="body">统一数据 + 流程 + 工具</text>
+  </g>
+
+  <text x="190" y="312" text-anchor="middle" class="label">孤岛运营</text>
+  <text x="640" y="312" text-anchor="middle" class="label">协同运营</text>
+</svg>

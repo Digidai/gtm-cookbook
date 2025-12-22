@@ -1,0 +1,59 @@
+<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="revops-19-title revops-19-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-19-title">HubSpot RevOps 组织架构</title>
+  <desc id="revops-19-desc">CRO 下辖 Sales、RevOps、Customer Success，RevOps 内含 Revenue Analytics、Business Systems、Systems & Process。</desc>
+  <defs>
+    <linearGradient id="revops-19-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-19-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="revops-19-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#revops-19-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">HubSpot RevOps 组织架构</text>
+
+  <g filter="url(#revops-19-shadow)">
+    <rect x="380" y="70" width="200" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="100" text-anchor="middle" class="section">CRO</text>
+    <text x="480" y="120" text-anchor="middle" class="body">Chief Revenue Officer</text>
+  </g>
+
+  <line x1="480" y1="140" x2="480" y2="170" stroke="#64748B" stroke-width="2" marker-end="url(#revops-19-arrow)" />
+
+  <g filter="url(#revops-19-shadow)">
+    <rect x="120" y="180" width="200" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="380" y="180" width="200" height="70" rx="12" fill="#E0F2FE" stroke="#7DD3FC" />
+    <rect x="640" y="180" width="200" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="220" y="210" text-anchor="middle" class="section">Sales</text>
+    <text x="480" y="210" text-anchor="middle" class="section">RevOps</text>
+    <text x="740" y="210" text-anchor="middle" class="section">Customer Success</text>
+  </g>
+
+  <line x1="480" y1="250" x2="480" y2="280" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#revops-19-arrow)" />
+
+  <g filter="url(#revops-19-shadow)">
+    <rect x="120" y="290" width="220" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="370" y="290" width="220" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="620" y="290" width="220" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="230" y="320" text-anchor="middle" class="section">Revenue Analytics</text>
+    <text x="480" y="320" text-anchor="middle" class="section">Business Systems</text>
+    <text x="730" y="320" text-anchor="middle" class="section">Systems &amp; Process</text>
+  </g>
+
+  <g filter="url(#revops-19-shadow)">
+    <rect x="80" y="380" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="410" class="body">Revenue Analytics：预测、报告、洞察</text>
+    <text x="100" y="436" class="body">Business Systems：CRM、MAP、集成</text>
+    <text x="100" y="462" class="body">Systems &amp; Process：流程设计、自动化、治理</text>
+  </g>
+</svg>

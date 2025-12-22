@@ -1,0 +1,50 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="channel-conflict-title channel-conflict-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="channel-conflict-title">常见渠道冲突</title>
+  <desc id="channel-conflict-desc">直销与渠道、渠道之间、线上线下、Marketplace 与直销的冲突与解决方式。</desc>
+  <defs>
+    <linearGradient id="channel-conflict-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="channel-conflict-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .conflict { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #B91C1C; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .solution { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#channel-conflict-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">常见渠道冲突</text>
+
+  <g filter="url(#channel-conflict-shadow)">
+    <rect x="80" y="80" width="800" height="95" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="110" class="conflict">1. 直销 vs 渠道</text>
+    <text x="110" y="134" class="body">直销团队与渠道争夺同一客户</text>
+    <text x="110" y="156" class="solution">解决：明确客户划分规则（规模/地区/行业）</text>
+  </g>
+
+  <g filter="url(#channel-conflict-shadow)">
+    <rect x="80" y="190" width="800" height="95" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="220" class="conflict">2. 渠道 vs 渠道</text>
+    <text x="110" y="244" class="body">多个渠道争夺同一客户</text>
+    <text x="110" y="266" class="solution">解决：Deal Registration 机制，先注册先得</text>
+  </g>
+
+  <g filter="url(#channel-conflict-shadow)">
+    <rect x="80" y="300" width="800" height="95" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="330" class="conflict">3. 线上 vs 线下</text>
+    <text x="110" y="354" class="body">客户线上了解、线下购买</text>
+    <text x="110" y="376" class="solution">解决：多触点归因，合理分配激励</text>
+  </g>
+
+  <g filter="url(#channel-conflict-shadow)">
+    <rect x="80" y="410" width="800" height="95" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="440" class="conflict">4. Marketplace vs 直销</text>
+    <text x="110" y="464" class="body">客户倾向 Marketplace 使用云预算</text>
+    <text x="110" y="486" class="solution">解决：支持 Marketplace 交易，但保持销售关系</text>
+  </g>
+</svg>

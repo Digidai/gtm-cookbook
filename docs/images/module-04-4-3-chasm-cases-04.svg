@@ -1,0 +1,66 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="chasm-04-title chasm-04-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-04-title">HubSpot 免费 CRM 战略</title>
+  <desc id="chasm-04-desc">通过免费 CRM 作为入口，培育用户并推动营销、销售与服务产品的向上销售。</desc>
+  <defs>
+    <linearGradient id="chasm-04-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-04-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="chasm-04-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .chip { font: 600 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#chasm-04-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">HubSpot 免费 CRM 战略</text>
+
+  <g filter="url(#chasm-04-shadow)">
+    <rect x="60" y="80" width="420" height="160" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="110" class="section">问题</text>
+    <text x="80" y="136" class="body">• 营销自动化产品需要 CRM 配合</text>
+    <text x="80" y="160" class="body">• 很多 SMB 没有 CRM 或用简单工具</text>
+    <text x="80" y="184" class="body">• CRM 是客户数据的中心</text>
+  </g>
+
+  <line x1="480" y1="160" x2="520" y2="160" stroke="#64748B" stroke-width="2" marker-end="url(#chasm-04-arrow)" />
+
+  <g filter="url(#chasm-04-shadow)">
+    <rect x="540" y="80" width="360" height="160" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="560" y="110" class="section">解法</text>
+    <text x="560" y="136" class="body">免费 CRM 作为入口</text>
+    <text x="560" y="160" class="body">培育用户 → 向上销售营销 / 销售工具</text>
+  </g>
+
+  <g filter="url(#chasm-04-shadow)">
+    <rect x="60" y="260" width="840" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="90" y="285" width="160" height="50" rx="12" fill="#ECFDF3" stroke="#86EFAC" />
+    <rect x="280" y="285" width="160" height="50" rx="12" fill="#E0F2FE" stroke="#BAE6FD" />
+    <rect x="470" y="285" width="160" height="50" rx="12" fill="#E0F2FE" stroke="#BAE6FD" />
+    <rect x="660" y="285" width="160" height="50" rx="12" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="170" y="307" text-anchor="middle" class="chip">免费 CRM</text>
+    <text x="170" y="328" text-anchor="middle" class="chip">入口 / $0</text>
+    <text x="360" y="307" text-anchor="middle" class="chip">Marketing Hub</text>
+    <text x="360" y="328" text-anchor="middle" class="chip">付费</text>
+    <text x="550" y="307" text-anchor="middle" class="chip">Sales Hub</text>
+    <text x="550" y="328" text-anchor="middle" class="chip">付费</text>
+    <text x="740" y="307" text-anchor="middle" class="chip">Service Hub</text>
+    <text x="740" y="328" text-anchor="middle" class="chip">付费</text>
+  </g>
+
+  <g filter="url(#chasm-04-shadow)">
+    <rect x="60" y="390" width="840" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="420" class="section">结果</text>
+    <text x="80" y="444" class="body">• 降低获客门槛</text>
+    <text x="240" y="444" class="body">• 客户数据锁定</text>
+    <text x="420" y="444" class="body">• 交叉销售基础</text>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="vp-04-title vp-04-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="vp-04-title">April Dunford 定位公式</title>
+  <desc id="vp-04-desc">用于填写的 April Dunford 定位公式模板。</desc>
+  <defs>
+    <linearGradient id="vp-04-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="vp-04-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .line { stroke: #CBD5F5; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#vp-04-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">April Dunford 定位公式</text>
+
+  <g filter="url(#vp-04-shadow)">
+    <rect x="60" y="80" width="840" height="430" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="110" class="label">For [目标客户]</text>
+    <line x1="80" y1="130" x2="860" y2="130" class="line" />
+    <line x1="80" y1="152" x2="860" y2="152" class="line" />
+
+    <text x="80" y="178" class="label">Who [面临的问题/需求]</text>
+    <line x1="80" y1="198" x2="860" y2="198" class="line" />
+    <line x1="80" y1="220" x2="860" y2="220" class="line" />
+
+    <text x="80" y="246" class="label">Our [产品/服务]</text>
+    <line x1="80" y1="266" x2="860" y2="266" class="line" />
+
+    <text x="80" y="292" class="label">Is a [品类]</text>
+    <line x1="80" y1="312" x2="860" y2="312" class="line" />
+
+    <text x="80" y="338" class="label">That [关键利益/差异化]</text>
+    <line x1="80" y1="358" x2="860" y2="358" class="line" />
+    <line x1="80" y1="380" x2="860" y2="380" class="line" />
+
+    <text x="80" y="406" class="label">Unlike [竞争替代品]</text>
+    <line x1="80" y1="426" x2="860" y2="426" class="line" />
+
+    <text x="80" y="452" class="label">We [独特差异点]</text>
+    <line x1="80" y1="472" x2="860" y2="472" class="line" />
+  </g>
+</svg>

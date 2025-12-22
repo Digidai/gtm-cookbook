@@ -1,0 +1,59 @@
+<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="metrics-zoom-title metrics-zoom-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-zoom-title">Zoom 不同阶段的 Rule of 40 策略</title>
+  <desc id="metrics-zoom-desc">展示 Zoom 在 FY2021、FY2022-2023 与 FY2024 不同阶段的增长率、利润率与 Rule of 40 策略。</desc>
+  <defs>
+    <linearGradient id="metrics-zoom-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-zoom-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .metric { font: 600 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .pill { font: 600 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#metrics-zoom-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Zoom 不同阶段的 Rule of 40 策略</text>
+
+  <g filter="url(#metrics-zoom-shadow)">
+    <rect x="60" y="80" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="108" class="section">疫情爆发期（FY2021）：极致增长</text>
+    <text x="80" y="136" class="metric">增长率：326%</text>
+    <text x="240" y="136" class="metric">利润率：25%</text>
+    <text x="380" y="136" class="metric">Rule of 40：351%</text>
+    <text x="80" y="160" class="body">策略：全力满足爆发式需求，快速扩张</text>
+  </g>
+
+  <g filter="url(#metrics-zoom-shadow)">
+    <rect x="60" y="220" width="840" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="248" class="section">增长放缓期（FY2022-2023）：平衡转型</text>
+    <rect x="80" y="266" width="360" height="28" rx="14" fill="#E0F2FE" />
+    <rect x="460" y="266" width="360" height="28" rx="14" fill="#E0F2FE" />
+    <text x="260" y="284" text-anchor="middle" class="pill">FY2022</text>
+    <text x="640" y="284" text-anchor="middle" class="pill">FY2023</text>
+    <text x="100" y="312" class="metric">增长率：55%</text>
+    <text x="240" y="312" class="metric">利润率：37%</text>
+    <text x="380" y="312" class="metric">Rule of 40：92%</text>
+    <text x="480" y="312" class="metric">增长率：7%</text>
+    <text x="610" y="312" class="metric">利润率：34%</text>
+    <text x="740" y="312" class="metric">Rule of 40：41%</text>
+    <text x="80" y="340" class="body">策略：保持高利润率，弥补增长放缓</text>
+  </g>
+
+  <g filter="url(#metrics-zoom-shadow)">
+    <rect x="60" y="390" width="840" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="418" class="section">成熟期（FY2024）：效率优先</text>
+    <text x="80" y="446" class="metric">增长率：3%</text>
+    <text x="200" y="446" class="metric">利润率：35%</text>
+    <text x="340" y="446" class="metric">Rule of 40：38%</text>
+    <text x="80" y="470" class="body">策略：优化成本结构，维持健康利润</text>
+  </g>
+
+  <text x="480" y="530" text-anchor="middle" class="body">启示：Rule of 40 允许在增长和利润之间动态平衡</text>
+</svg>

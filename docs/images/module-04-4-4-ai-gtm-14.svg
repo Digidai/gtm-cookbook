@@ -1,0 +1,71 @@
+<svg width="960" height="430" viewBox="0 0 960 430" role="img" aria-labelledby="ai-14-title ai-14-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ai-14-title">GTM AI 能力成熟度</title>
+  <desc id="ai-14-desc">GTM 团队 AI 能力从探索期到原生期的四级成熟度模型。</desc>
+  <defs>
+    <linearGradient id="ai-14-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ai-14-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .level { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .stage { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .section { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 11px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="398" rx="18" fill="url(#ai-14-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">GTM AI 能力成熟度</text>
+
+  <g filter="url(#ai-14-shadow)">
+    <rect x="50" y="90" width="200" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="270" y="90" width="200" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="490" y="90" width="200" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="710" y="90" width="200" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="50" y="90" width="200" height="6" rx="3" fill="#CBD5F5" />
+    <rect x="270" y="90" width="200" height="6" rx="3" fill="#A5B4FC" />
+    <rect x="490" y="90" width="200" height="6" rx="3" fill="#7C93FF" />
+    <rect x="710" y="90" width="200" height="6" rx="3" fill="#4F6EF7" />
+
+    <text x="70" y="125" class="level">Level 1</text>
+    <text x="70" y="145" class="stage">探索期</text>
+    <text x="70" y="175" class="body">• 个别工具试用</text>
+    <text x="70" y="195" class="body">• 个人使用</text>
+    <text x="70" y="215" class="body">• 效率提升</text>
+    <text x="70" y="245" class="section">重点</text>
+    <text x="70" y="265" class="body">• 工具选型</text>
+    <text x="70" y="285" class="body">• 技能培训</text>
+
+    <text x="290" y="125" class="level">Level 2</text>
+    <text x="290" y="145" class="stage">应用期</text>
+    <text x="290" y="175" class="body">• 部分流程 AI 化</text>
+    <text x="290" y="195" class="body">• 团队标准化</text>
+    <text x="290" y="215" class="body">• 流程优化</text>
+    <text x="290" y="245" class="section">重点</text>
+    <text x="290" y="265" class="body">• 流程改造</text>
+    <text x="290" y="285" class="body">• 最佳实践</text>
+
+    <text x="510" y="125" class="level">Level 3</text>
+    <text x="510" y="145" class="stage">整合期</text>
+    <text x="510" y="175" class="body">• AI 整合到流程</text>
+    <text x="510" y="195" class="body">• 跨部门协同</text>
+    <text x="510" y="215" class="body">• 决策辅助</text>
+    <text x="510" y="245" class="section">重点</text>
+    <text x="510" y="265" class="body">• 数据整合</text>
+    <text x="510" y="285" class="body">• 模型优化</text>
+
+    <text x="730" y="125" class="level">Level 4</text>
+    <text x="730" y="145" class="stage">原生期</text>
+    <text x="730" y="175" class="body">• AI 原生运营</text>
+    <text x="730" y="195" class="body">• 全面智能化</text>
+    <text x="730" y="215" class="body">• 战略驱动</text>
+    <text x="730" y="245" class="section">重点</text>
+    <text x="730" y="265" class="body">• 组织变革</text>
+    <text x="730" y="285" class="body">• 文化转型</text>
+  </g>
+</svg>

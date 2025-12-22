@@ -1,0 +1,49 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="plg-07-title plg-07-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="plg-07-title">Figma 组织内扩散路径</title>
+  <desc id="plg-07-desc">从入口设计师扩散到产品经理、开发者、其他设计师与管理层，最终影响整个公司。</desc>
+  <defs>
+    <linearGradient id="plg-07-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="plg-07-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="plg-07-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .pill { font: 600 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#plg-07-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Figma 组织内扩散路径</text>
+
+  <g filter="url(#plg-07-shadow)">
+    <rect x="70" y="90" width="220" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="180" y="128" text-anchor="middle" class="section">设计师</text>
+    <text x="180" y="150" text-anchor="middle" class="body">入口用户</text>
+  </g>
+
+  <line x1="290" y1="135" x2="360" y2="135" stroke="#64748B" stroke-width="2" marker-end="url(#plg-07-arrow)" />
+
+  <g filter="url(#plg-07-shadow)">
+    <rect x="380" y="90" width="480" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="400" y="122" class="section">扩散到角色</text>
+    <text x="400" y="148" class="body">• 产品经理（需要查看设计）</text>
+    <text x="400" y="172" class="body">• 开发者（需要查看标注）</text>
+    <text x="400" y="196" class="body">• 其他设计师（需要协作）</text>
+    <text x="400" y="220" class="body">• 管理层（需要审批）</text>
+  </g>
+
+  <g filter="url(#plg-07-shadow)">
+    <rect x="160" y="300" width="640" height="60" rx="30" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="220" y="336" class="pill">一个设计师</text>
+    <text x="420" y="336" class="pill">整个产品团队</text>
+    <text x="640" y="336" class="pill">整个公司</text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="metrics-consumption-title metrics-consumption-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-consumption-title">Consumption vs Subscription 模式对比</title>
+  <desc id="metrics-consumption-desc">对比传统订阅模式与 Consumption 模式的收入曲线与 NRR 水平。</desc>
+  <defs>
+    <linearGradient id="metrics-consumption-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-consumption-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .axis { stroke: #CBD5F5; stroke-width: 1.2; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#metrics-consumption-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Consumption vs Subscription 模式对比</text>
+
+  <g filter="url(#metrics-consumption-shadow)">
+    <rect x="60" y="90" width="400" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="122" class="section">传统订阅模式（如 Salesforce）</text>
+    <rect x="90" y="150" width="340" height="120" rx="12" fill="#F8FAFF" stroke="#DBEAFE" />
+    <line x1="110" y1="250" x2="110" y2="170" class="axis" />
+    <line x1="110" y1="250" x2="410" y2="250" class="axis" />
+    <path d="M110 235 L180 235 L180 215 L260 215 L260 195 L340 195 L340 175" fill="none" stroke="#2563EB" stroke-width="2" />
+    <text x="90" y="290" class="body">签约时确定收入，续约时才能增长</text>
+    <text x="90" y="312" class="body">NRR 典型值：105-115%</text>
+  </g>
+
+  <g filter="url(#metrics-consumption-shadow)">
+    <rect x="500" y="90" width="400" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="520" y="122" class="section">Consumption 模式（如 Snowflake）</text>
+    <rect x="530" y="150" width="340" height="120" rx="12" fill="#F0FDFA" stroke="#99F6E4" />
+    <line x1="550" y1="250" x2="550" y2="170" class="axis" />
+    <line x1="550" y1="250" x2="850" y2="250" class="axis" />
+    <path d="M550 240 C620 235, 680 220, 740 200 C790 185, 820 170, 850 160" fill="none" stroke="#0EA5A4" stroke-width="2" />
+    <text x="530" y="290" class="body">Commit 设定基线，实际消费可远超</text>
+    <text x="530" y="312" class="body">NRR 可以 &gt; 150%</text>
+  </g>
+
+  <text x="480" y="436" text-anchor="middle" class="note">关键差异：Consumption 模式的收入上限取决于客户业务增长</text>
+</svg>

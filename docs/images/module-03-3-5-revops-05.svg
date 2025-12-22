@@ -1,0 +1,69 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="revops-05-title revops-05-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-05-title">收入漏斗全流程</title>
+  <desc id="revops-05-desc">从获客到扩展的收入漏斗全流程，包含角色分工与阶段产出。</desc>
+  <defs>
+    <linearGradient id="revops-05-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-05-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="revops-05-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .stage { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .pill { font: 600 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#revops-05-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">收入漏斗全流程</text>
+
+  <g filter="url(#revops-05-shadow)">
+    <rect x="60" y="90" width="150" height="140" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="230" y="90" width="150" height="140" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="400" y="90" width="150" height="140" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="570" y="90" width="150" height="140" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="740" y="90" width="150" height="140" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="135" y="122" text-anchor="middle" class="stage">获客</text>
+    <text x="135" y="150" text-anchor="middle" class="body">市场</text>
+    <text x="135" y="174" text-anchor="middle" class="body">获客</text>
+
+    <text x="305" y="122" text-anchor="middle" class="stage">转化</text>
+    <text x="305" y="150" text-anchor="middle" class="body">SDR + AE</text>
+    <text x="305" y="174" text-anchor="middle" class="body">跟进 + 成交</text>
+
+    <text x="475" y="122" text-anchor="middle" class="stage">交付</text>
+    <text x="475" y="150" text-anchor="middle" class="body">实施</text>
+    <text x="475" y="174" text-anchor="middle" class="body">交付</text>
+
+    <text x="645" y="122" text-anchor="middle" class="stage">留存</text>
+    <text x="645" y="150" text-anchor="middle" class="body">CSM</text>
+    <text x="645" y="174" text-anchor="middle" class="body">运营</text>
+
+    <text x="815" y="122" text-anchor="middle" class="stage">扩展</text>
+    <text x="815" y="150" text-anchor="middle" class="body">扩展</text>
+    <text x="815" y="174" text-anchor="middle" class="body">增购</text>
+  </g>
+
+  <line x1="210" y1="160" x2="230" y2="160" stroke="#64748B" stroke-width="2" marker-end="url(#revops-05-arrow)" />
+  <line x1="380" y1="160" x2="400" y2="160" stroke="#64748B" stroke-width="2" marker-end="url(#revops-05-arrow)" />
+  <line x1="550" y1="160" x2="570" y2="160" stroke="#64748B" stroke-width="2" marker-end="url(#revops-05-arrow)" />
+  <line x1="720" y1="160" x2="740" y2="160" stroke="#64748B" stroke-width="2" marker-end="url(#revops-05-arrow)" />
+
+  <g filter="url(#revops-05-shadow)">
+    <rect x="120" y="250" width="720" height="60" rx="30" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="160" y="287" class="pill">Visitor</text>
+    <text x="300" y="287" class="pill">MQL</text>
+    <text x="430" y="287" class="pill">SQL / SAL</text>
+    <text x="590" y="287" class="pill">Customer</text>
+    <text x="730" y="287" class="pill">Advocate</text>
+  </g>
+
+  <text x="480" y="352" text-anchor="middle" class="body">数据与流程统一管理</text>
+</svg>

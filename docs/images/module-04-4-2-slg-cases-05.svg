@@ -1,0 +1,51 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="slg-05-title slg-05-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-05-title">Workday 目标市场</title>
+  <desc id="slg-05-desc">按员工规模划分目标市场等级，并说明聚焦大企业的原因。</desc>
+  <defs>
+    <linearGradient id="slg-05-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-05-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .row { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#slg-05-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Workday 目标市场</text>
+
+  <g filter="url(#slg-05-shadow)">
+    <rect x="60" y="80" width="840" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="60" y1="120" x2="900" y2="120" class="row" />
+    <line x1="60" y1="160" x2="900" y2="160" class="row" />
+    <line x1="240" y1="80" x2="240" y2="230" class="row" />
+
+    <text x="90" y="108" class="header">员工规模</text>
+    <text x="260" y="108" class="header">目标级别</text>
+
+    <text x="90" y="148" class="cell">10K+</text>
+    <text x="260" y="148" class="cell">★★★★★ 核心目标：大型企业</text>
+
+    <text x="90" y="188" class="cell">1K - 10K</text>
+    <text x="260" y="188" class="cell">★★★☆☆ 次要目标：中大型企业</text>
+
+    <text x="90" y="220" class="cell">&lt; 1K</text>
+    <text x="260" y="220" class="cell">☆☆☆☆☆ 不是目标：小企业（给其他玩家）</text>
+  </g>
+
+  <g filter="url(#slg-05-shadow)">
+    <rect x="60" y="250" width="840" height="170" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="282" class="header">为什么聚焦大企业</text>
+    <text x="80" y="310" class="note">• 高 ACV（$1M+）支撑高服务成本</text>
+    <text x="80" y="334" class="note">• 大企业有明确的 HR / Finance 痛点</text>
+    <text x="80" y="358" class="note">• 替换周期长，一旦签约就是长期客户</text>
+    <text x="80" y="382" class="note">• 品牌效应：大客户带来公信力</text>
+  </g>
+</svg>

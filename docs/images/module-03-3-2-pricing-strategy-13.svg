@@ -1,0 +1,51 @@
+<svg width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="value-waterfall-title value-waterfall-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="value-waterfall-title">价值瀑布分析</title>
+  <desc id="value-waterfall-desc">以招聘软件为例拆解价值贡献，并映射到定价策略。</desc>
+  <defs>
+    <linearGradient id="value-waterfall-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="value-waterfall-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .value { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="408" rx="18" fill="url(#value-waterfall-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">价值瀑布分析</text>
+
+  <g filter="url(#value-waterfall-shadow)">
+    <rect x="60" y="80" width="420" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="110" class="section">以招聘软件为例</text>
+    <text x="90" y="136" class="body">总价值创造：$10,000</text>
+
+    <rect x="90" y="160" width="128" height="16" rx="8" fill="#60A5FA" />
+    <rect x="218" y="160" width="96" height="16" rx="8" fill="#93C5FD" />
+    <rect x="314" y="160" width="64" height="16" rx="8" fill="#BFDBFE" />
+    <rect x="378" y="160" width="32" height="16" rx="8" fill="#DBEAFE" />
+
+    <text x="90" y="190" class="body">减少招聘时间</text>
+    <text x="250" y="190" class="value">$4,000</text>
+    <text x="90" y="214" class="body">提高候选人质量</text>
+    <text x="250" y="214" class="value">$3,000</text>
+    <text x="90" y="238" class="body">改善候选人体验</text>
+    <text x="250" y="238" class="value">$2,000</text>
+    <text x="90" y="262" class="body">合规风险降低</text>
+    <text x="250" y="262" class="value">$1,000</text>
+  </g>
+
+  <g filter="url(#value-waterfall-shadow)">
+    <rect x="520" y="80" width="380" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="550" y="110" class="section">定价策略</text>
+    <text x="550" y="136" class="body">• 总价值 $10,000</text>
+    <text x="550" y="158" class="body">• 获取 10-20% 价值 = $1,000-2,000/月</text>
+    <text x="550" y="180" class="body">• 实际定价 $999/月（客户 10x ROI）</text>
+    <text x="550" y="210" class="body">原则：让客户获得大部分价值</text>
+  </g>
+</svg>

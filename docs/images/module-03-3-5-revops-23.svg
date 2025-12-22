@@ -1,0 +1,61 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="revops-23-title revops-23-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-23-title">中国 SaaS RevOps 推荐工具栈</title>
+  <desc id="revops-23-desc">按数据层、应用层、集成层与协作层划分的中国 SaaS RevOps 推荐工具栈。</desc>
+  <defs>
+    <linearGradient id="revops-23-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-23-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .layer { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .pill { font: 600 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#revops-23-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">中国 SaaS RevOps 推荐工具栈</text>
+
+  <g filter="url(#revops-23-shadow)">
+    <rect x="60" y="80" width="840" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="108" class="layer">数据层</text>
+    <text x="200" y="108" class="body">数据仓库：阿里云 MaxCompute / ClickHouse</text>
+    <text x="200" y="130" class="body">ETL：DataX / Kettle</text>
+    <text x="200" y="152" class="body">BI：帆软 FineBI / 观远数据</text>
+  </g>
+
+  <g filter="url(#revops-23-shadow)">
+    <rect x="60" y="210" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="238" class="layer">应用层</text>
+    <rect x="200" y="234" width="120" height="26" rx="13" fill="#E0F2FE" />
+    <rect x="330" y="234" width="120" height="26" rx="13" fill="#E0F2FE" />
+    <rect x="460" y="234" width="120" height="26" rx="13" fill="#E0F2FE" />
+    <rect x="590" y="234" width="120" height="26" rx="13" fill="#E0F2FE" />
+    <text x="260" y="251" text-anchor="middle" class="pill">CRM</text>
+    <text x="390" y="251" text-anchor="middle" class="pill">MAP</text>
+    <text x="520" y="251" text-anchor="middle" class="pill">SCRM</text>
+    <text x="650" y="251" text-anchor="middle" class="pill">CSM</text>
+    <text x="200" y="280" class="body">纷享 / 销售易</text>
+    <text x="330" y="280" class="body">致趣百川</text>
+    <text x="460" y="280" class="body">企业微信</text>
+    <text x="590" y="280" class="body">自研 / 集成</text>
+  </g>
+
+  <g filter="url(#revops-23-shadow)">
+    <rect x="60" y="350" width="840" height="70" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="378" class="layer">集成层</text>
+    <text x="200" y="378" class="body">集简云 / 轻流 / 自研 API 集成</text>
+  </g>
+
+  <g filter="url(#revops-23-shadow)">
+    <rect x="60" y="440" width="840" height="60" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="466" class="layer">协作层</text>
+    <text x="200" y="466" class="body">飞书</text>
+    <text x="260" y="466" class="body">钉钉</text>
+    <text x="320" y="466" class="body">企业微信</text>
+  </g>
+</svg>

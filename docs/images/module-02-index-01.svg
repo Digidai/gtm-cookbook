@@ -1,0 +1,75 @@
+<svg width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="method-title method-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="method-title">GTM 核心方法论体系</title>
+  <desc id="method-desc">中心为 GTM 方法论，周围五个核心方法论相互支撑：跨越鸿沟、ICP 定义、价值主张、市场定位、GTM Motion。</desc>
+  <defs>
+    <linearGradient id="method-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="method-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-title { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
+      .card-sub { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .center { font: 700 15px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #FFFFFF; }
+      .accent-blue { fill: #2563EB; }
+      .accent-teal { fill: #0EA5A4; }
+      .accent-amber { fill: #F59E0B; }
+      .accent-green { fill: #10B981; }
+      .accent-indigo { fill: #6366F1; }
+      .line { stroke: #CBD5E1; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="328" rx="18" fill="url(#method-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">GTM 核心方法论体系</text>
+
+  <g filter="url(#method-shadow)">
+    <circle cx="480" cy="190" r="52" fill="#2563EB" />
+    <text x="480" y="190" text-anchor="middle" dominant-baseline="middle" class="center">GTM</text>
+    <text x="480" y="210" text-anchor="middle" class="center">方法论</text>
+  </g>
+
+  <line x1="480" y1="138" x2="480" y2="110" class="line" />
+  <line x1="410" y1="190" x2="250" y2="190" class="line" />
+  <line x1="550" y1="190" x2="710" y2="190" class="line" />
+  <line x1="440" y1="240" x2="320" y2="290" class="line" />
+  <line x1="520" y1="240" x2="640" y2="290" class="line" />
+
+  <g filter="url(#method-shadow)">
+    <rect x="390" y="78" width="180" height="56" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="390" y="78" width="6" height="56" rx="6" class="accent-indigo" />
+    <text x="408" y="102" class="card-title accent-indigo">2.1 跨越鸿沟</text>
+    <text x="408" y="120" class="card-sub">市场阶段判断</text>
+  </g>
+
+  <g filter="url(#method-shadow)">
+    <rect x="110" y="162" width="180" height="56" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="110" y="162" width="6" height="56" rx="6" class="accent-teal" />
+    <text x="128" y="186" class="card-title accent-teal">2.3 ICP 定义</text>
+    <text x="128" y="204" class="card-sub">目标客户画像</text>
+  </g>
+
+  <g filter="url(#method-shadow)">
+    <rect x="670" y="162" width="180" height="56" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="670" y="162" width="6" height="56" rx="6" class="accent-amber" />
+    <text x="688" y="186" class="card-title accent-amber">2.4 价值主张</text>
+    <text x="688" y="204" class="card-sub">价值表达</text>
+  </g>
+
+  <g filter="url(#method-shadow)">
+    <rect x="240" y="276" width="200" height="56" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="240" y="276" width="6" height="56" rx="6" class="accent-green" />
+    <text x="258" y="300" class="card-title accent-green">2.5 市场定位</text>
+    <text x="258" y="318" class="card-sub">心智占位</text>
+  </g>
+
+  <g filter="url(#method-shadow)">
+    <rect x="520" y="276" width="200" height="56" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="520" y="276" width="6" height="56" rx="6" class="accent-blue" />
+    <text x="538" y="300" class="card-title accent-blue">2.2 GTM Motion</text>
+    <text x="538" y="318" class="card-sub">增长引擎选择</text>
+  </g>
+</svg>

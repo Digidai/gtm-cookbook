@@ -1,0 +1,73 @@
+<svg width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="ts-02-title ts-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ts-02-title">GTM 工具栈全景</title>
+  <desc id="ts-02-desc">数据层向下支撑 Marketing、Sales、CS、RevOps 的工具栈全景。</desc>
+  <defs>
+    <linearGradient id="ts-02-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ts-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="ts-02-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94A3B8" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .chip { font: 11px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #94A3B8; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="448" rx="18" fill="url(#ts-02-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">GTM 工具栈全景</text>
+
+  <g filter="url(#ts-02-shadow)">
+    <rect x="80" y="80" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="110" class="section">数据层 Data Layer</text>
+
+    <rect x="100" y="126" width="170" height="44" rx="10" fill="#F1F5F9" />
+    <rect x="290" y="126" width="170" height="44" rx="10" fill="#F1F5F9" />
+    <rect x="480" y="126" width="170" height="44" rx="10" fill="#F1F5F9" />
+    <rect x="670" y="126" width="190" height="44" rx="10" fill="#F1F5F9" />
+
+    <text x="185" y="154" text-anchor="middle" class="chip">CDP</text>
+    <text x="375" y="154" text-anchor="middle" class="chip">Data Warehouse</text>
+    <text x="565" y="154" text-anchor="middle" class="chip">BI/Analytics</text>
+    <text x="765" y="154" text-anchor="middle" class="chip">Attribution</text>
+
+    <rect x="80" y="230" width="200" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="300" y="230" width="200" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="520" y="230" width="200" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="740" y="230" width="200" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="100" y="260" class="section">Marketing Tools</text>
+    <text x="100" y="286" class="body">• MA</text>
+    <text x="100" y="306" class="body">• ABM</text>
+    <text x="100" y="326" class="body">• Content</text>
+    <text x="100" y="346" class="body">• Social</text>
+
+    <text x="320" y="260" class="section">Sales Tools</text>
+    <text x="320" y="286" class="body">• CRM</text>
+    <text x="320" y="306" class="body">• SEP</text>
+    <text x="320" y="326" class="body">• CPQ</text>
+    <text x="320" y="346" class="body">• Gong</text>
+
+    <text x="540" y="260" class="section">CS Tools</text>
+    <text x="540" y="286" class="body">• CS 平台</text>
+    <text x="540" y="306" class="body">• 支持</text>
+    <text x="540" y="326" class="body">• NPS</text>
+    <text x="540" y="346" class="body">• 培训</text>
+
+    <text x="760" y="260" class="section">RevOps Tools</text>
+    <text x="760" y="286" class="body">• BI</text>
+    <text x="760" y="306" class="body">• 集成</text>
+    <text x="760" y="326" class="body">• 自动化</text>
+    <text x="760" y="346" class="body">• 报表</text>
+  </g>
+
+  <path d="M480 190 L480 218" class="line" marker-end="url(#ts-02-arrow)" />
+  <text x="495" y="212" class="body">数据流</text>
+</svg>

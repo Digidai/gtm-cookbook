@@ -1,0 +1,67 @@
+<svg width="960" height="860" viewBox="0 0 960 860" role="img" aria-labelledby="mql-score-title mql-score-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="mql-score-title">MQL 评分模型</title>
+  <desc id="mql-score-desc">人口统计学评分与行为评分的示例，并给出 MQL 阈值。</desc>
+  <defs>
+    <linearGradient id="mql-score-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="mql-score-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="828" rx="18" fill="url(#mql-score-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">MQL 评分模型</text>
+
+  <g filter="url(#mql-score-shadow)">
+    <rect x="60" y="80" width="400" height="680" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="110" class="section">人口统计学评分</text>
+
+    <text x="90" y="140" class="sub">公司规模</text>
+    <text x="90" y="164" class="body">• 1-50 员工：5 分</text>
+    <text x="90" y="186" class="body">• 51-200 员工：15 分</text>
+    <text x="90" y="208" class="body">• 201-1000 员工：25 分</text>
+    <text x="90" y="230" class="body">• 1000+ 员工：30 分</text>
+
+    <text x="90" y="270" class="sub">职位级别</text>
+    <text x="90" y="294" class="body">• C-Level：30 分</text>
+    <text x="90" y="316" class="body">• VP/Director：25 分</text>
+    <text x="90" y="338" class="body">• Manager：15 分</text>
+    <text x="90" y="360" class="body">• Individual：5 分</text>
+
+    <text x="90" y="400" class="sub">行业匹配</text>
+    <text x="90" y="424" class="body">• 核心目标行业：20 分</text>
+    <text x="90" y="446" class="body">• 相关行业：10 分</text>
+    <text x="90" y="468" class="body">• 其他行业：0 分</text>
+  </g>
+
+  <g filter="url(#mql-score-shadow)">
+    <rect x="500" y="80" width="400" height="680" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="530" y="110" class="section">行为评分</text>
+
+    <text x="530" y="140" class="sub">高意向行为</text>
+    <text x="530" y="164" class="body">• 预约 Demo：+30 分</text>
+    <text x="530" y="186" class="body">• 访问定价页：+20 分</text>
+    <text x="530" y="208" class="body">• 查看案例研究：+15 分</text>
+
+    <text x="530" y="248" class="sub">参与行为</text>
+    <text x="530" y="272" class="body">• 下载白皮书：+10 分</text>
+    <text x="530" y="294" class="body">• 参加 Webinar：+10 分</text>
+    <text x="530" y="316" class="body">• 多次访问网站：+5 分</text>
+
+    <text x="530" y="356" class="sub">负面信号</text>
+    <text x="530" y="380" class="body">• 退订邮件：-10 分</text>
+    <text x="530" y="402" class="body">• 长期不活跃：-15 分</text>
+    <text x="530" y="424" class="body">• 个人邮箱：-10 分</text>
+  </g>
+
+  <text x="480" y="810" text-anchor="middle" class="note">MQL 阈值：总分 ≥ 70 分</text>
+</svg>

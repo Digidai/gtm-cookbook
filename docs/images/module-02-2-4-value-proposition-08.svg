@@ -1,0 +1,60 @@
+<svg width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="vp-cycle-title vp-cycle-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="vp-cycle-title">价值主张迭代循环</title>
+  <desc id="vp-cycle-desc">设计、测试、学习、优化四步循环，持续迭代直至达到市场匹配。</desc>
+  <defs>
+    <linearGradient id="vp-cycle-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="vp-cycle-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="vp-cycle-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="408" rx="18" fill="url(#vp-cycle-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">价值主张迭代循环</text>
+
+  <circle cx="480" cy="210" r="110" fill="#FFFFFF" stroke="#E2E8F0" />
+
+  <g filter="url(#vp-cycle-shadow)">
+    <circle cx="480" cy="120" r="46" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="115" text-anchor="middle" class="step">1. 设计</text>
+    <text x="480" y="132" text-anchor="middle" class="sub">Design</text>
+  </g>
+
+  <g filter="url(#vp-cycle-shadow)">
+    <circle cx="590" cy="210" r="46" fill="#DCFCE7" stroke="#86EFAC" />
+    <text x="590" y="205" text-anchor="middle" class="step">2. 测试</text>
+    <text x="590" y="222" text-anchor="middle" class="sub">Test</text>
+  </g>
+
+  <g filter="url(#vp-cycle-shadow)">
+    <circle cx="480" cy="300" r="46" fill="#FEF3C7" stroke="#FCD34D" />
+    <text x="480" y="295" text-anchor="middle" class="step">3. 学习</text>
+    <text x="480" y="312" text-anchor="middle" class="sub">Learn</text>
+  </g>
+
+  <g filter="url(#vp-cycle-shadow)">
+    <circle cx="370" cy="210" r="46" fill="#FCE7F3" stroke="#FBCFE8" />
+    <text x="370" y="205" text-anchor="middle" class="step">4. 优化</text>
+    <text x="370" y="222" text-anchor="middle" class="sub">Optimize</text>
+  </g>
+
+  <path d="M480 166 C540 166 560 186 560 210" class="line" marker-end="url(#vp-cycle-arrow)" />
+  <path d="M560 210 C560 260 540 280 480 280" class="line" marker-end="url(#vp-cycle-arrow)" />
+  <path d="M480 280 C420 280 400 260 400 210" class="line" marker-end="url(#vp-cycle-arrow)" />
+  <path d="M400 210 C400 160 420 140 480 140" class="line" marker-end="url(#vp-cycle-arrow)" />
+
+  <text x="80" y="360" class="note">迭代周期：2-4 周</text>
+  <text x="80" y="382" class="note">迭代次数：直到达到 Market Fit</text>
+</svg>

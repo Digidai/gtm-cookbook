@@ -1,0 +1,67 @@
+<svg width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="mp-03-title mp-03-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="mp-03-title">关键路径依赖关系</title>
+  <desc id="mp-03-desc">从 M1 到 M5 的关键路径与主要依赖关系。</desc>
+  <defs>
+    <linearGradient id="mp-03-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="mp-03-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="mp-03-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94A3B8" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .node { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #94A3B8; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="328" rx="18" fill="url(#mp-03-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">关键路径依赖关系</text>
+
+  <g filter="url(#mp-03-shadow)">
+    <rect x="100" y="80" width="120" height="40" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="240" y="80" width="120" height="40" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="380" y="80" width="120" height="40" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="520" y="80" width="120" height="40" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="660" y="80" width="120" height="40" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="160" y="105" text-anchor="middle" class="node">M1</text>
+    <text x="300" y="105" text-anchor="middle" class="node">M2</text>
+    <text x="440" y="105" text-anchor="middle" class="node">M3</text>
+    <text x="580" y="105" text-anchor="middle" class="node">M4</text>
+    <text x="720" y="105" text-anchor="middle" class="node">M5</text>
+
+    <text x="160" y="130" text-anchor="middle" class="sub">调研</text>
+    <text x="300" y="130" text-anchor="middle" class="sub">战略</text>
+    <text x="440" y="130" text-anchor="middle" class="sub">准备</text>
+    <text x="580" y="130" text-anchor="middle" class="sub">软发布</text>
+    <text x="720" y="130" text-anchor="middle" class="sub">正式发布</text>
+
+    <line x1="220" y1="100" x2="240" y2="100" class="line" marker-end="url(#mp-03-arrow)" />
+    <line x1="360" y1="100" x2="380" y2="100" class="line" marker-end="url(#mp-03-arrow)" />
+    <line x1="500" y1="100" x2="520" y2="100" class="line" marker-end="url(#mp-03-arrow)" />
+    <line x1="640" y1="100" x2="660" y2="100" class="line" marker-end="url(#mp-03-arrow)" />
+
+    <rect x="210" y="180" width="140" height="36" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="370" y="180" width="140" height="36" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="280" y="203" text-anchor="middle" class="body">ICP/定位</text>
+    <text x="440" y="203" text-anchor="middle" class="body">销售培训</text>
+    <line x1="350" y1="198" x2="370" y2="198" class="line" marker-end="url(#mp-03-arrow)" />
+
+    <rect x="520" y="220" width="140" height="36" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="360" y="220" width="140" height="36" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="590" y="243" text-anchor="middle" class="body">产品开发</text>
+    <text x="430" y="243" text-anchor="middle" class="body">产品就绪</text>
+    <line x1="520" y1="238" x2="500" y2="238" class="line" marker-end="url(#mp-03-arrow)" />
+
+    <rect x="100" y="270" width="780" height="50" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="120" y="300" class="body">关键路径：M1 → M2 → M3 → M4 → M5</text>
+    <text x="520" y="300" class="body">最大风险：产品就绪、ICP 定义</text>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="plg-01-title plg-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="plg-01-title">Slack Freemium 设计</title>
+  <desc id="plg-01-desc">对比 Slack 免费版与付费版的功能差异，并强调消息搜索限制驱动升级。</desc>
+  <defs>
+    <linearGradient id="plg-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="plg-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .highlight { font: 600 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0EA5A4; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#plg-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Slack Freemium 设计</text>
+
+  <g filter="url(#plg-01-shadow)">
+    <rect x="60" y="80" width="400" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="80" width="400" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="112" class="section">免费版（足够日常使用）</text>
+    <text x="80" y="142" class="body">• 无限用户</text>
+    <text x="80" y="164" class="body">• 无限频道</text>
+    <text x="80" y="186" class="body">• 10 个应用集成</text>
+    <text x="80" y="208" class="body">• 最近 10,000 条消息可搜索</text>
+
+    <text x="520" y="112" class="section">付费版（解决增长痛点）</text>
+    <text x="520" y="142" class="body">• 无限消息历史</text>
+    <text x="520" y="164" class="body">• 无限应用集成</text>
+    <text x="520" y="186" class="body">• 群组视频通话</text>
+    <text x="520" y="208" class="body">• 高级身份验证</text>
+    <text x="520" y="230" class="body">• 合规与安全功能</text>
+  </g>
+
+  <g filter="url(#plg-01-shadow)">
+    <rect x="120" y="320" width="720" height="60" rx="14" fill="#ECFDF3" stroke="#86EFAC" />
+    <text x="480" y="356" text-anchor="middle" class="highlight">关键洞察：消息搜索限制随使用时间增长，升级动机自然产生</text>
+  </g>
+</svg>

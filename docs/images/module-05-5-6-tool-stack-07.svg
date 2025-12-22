@@ -1,0 +1,48 @@
+<svg width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="ts-07-title ts-07-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ts-07-title">中国 GTM 工具选型考量</title>
+  <desc id="ts-07-desc">中国市场下工具选型的四个关键考量维度。</desc>
+  <defs>
+    <linearGradient id="ts-07-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ts-07-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="328" rx="18" fill="url(#ts-07-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">中国 GTM 工具选型考量</text>
+
+  <g filter="url(#ts-07-shadow)">
+    <rect x="60" y="80" width="400" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="80" width="400" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="220" width="400" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="220" width="400" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="110" class="section">数据合规</text>
+    <text x="80" y="136" class="body">• 数据本地化要求</text>
+    <text x="80" y="158" class="body">• 个人信息保护法</text>
+    <text x="80" y="180" class="body">• 跨境数据传输限制</text>
+
+    <text x="520" y="110" class="section">生态整合</text>
+    <text x="520" y="136" class="body">• 与微信/企业微信集成</text>
+    <text x="520" y="158" class="body">• 与钉钉/飞书集成</text>
+    <text x="520" y="180" class="body">• 与本土支付/财务系统集成</text>
+
+    <text x="80" y="250" class="section">本地支持</text>
+    <text x="80" y="276" class="body">• 中文界面和文档</text>
+    <text x="80" y="298" class="body">• 本地客服支持</text>
+    <text x="80" y="320" class="body">• 理解中国市场特点</text>
+
+    <text x="520" y="250" class="section">成本效益</text>
+    <text x="520" y="276" class="body">• 人民币计价</text>
+    <text x="520" y="298" class="body">• 适合中国企业的定价模式</text>
+    <text x="520" y="320" class="body">• 更灵活的付费方式</text>
+  </g>
+</svg>

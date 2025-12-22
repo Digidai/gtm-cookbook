@@ -1,0 +1,49 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="ai-11-title ai-11-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ai-11-title">中国 AI GTM 生态特点</title>
+  <desc id="ai-11-desc">中国 AI GTM 的优势、挑战与独特机会。</desc>
+  <defs>
+    <linearGradient id="ai-11-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ai-11-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#ai-11-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">中国 AI GTM 生态特点</text>
+
+  <g filter="url(#ai-11-shadow)">
+    <rect x="60" y="90" width="260" height="280" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="350" y="90" width="260" height="280" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="640" y="90" width="260" height="280" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="60" y="90" width="260" height="6" rx="3" fill="#22C55E" />
+    <rect x="350" y="90" width="260" height="6" rx="3" fill="#F59E0B" />
+    <rect x="640" y="90" width="260" height="6" rx="3" fill="#3B82F6" />
+
+    <text x="80" y="125" class="section">优势</text>
+    <text x="80" y="150" class="body">• 微信生态数据丰富</text>
+    <text x="80" y="172" class="body">• 本土 AI 大模型崛起</text>
+    <text x="80" y="194" class="body">• 企业数字化基础提升</text>
+    <text x="80" y="216" class="body">• 政策支持 AI 发展</text>
+
+    <text x="370" y="125" class="section">挑战</text>
+    <text x="370" y="150" class="body">• 数据合规要求严格</text>
+    <text x="370" y="172" class="body">• 跨平台数据打通困难</text>
+    <text x="370" y="194" class="body">• 中小企业 AI 预算有限</text>
+    <text x="370" y="216" class="body">• AI 人才供给紧张</text>
+
+    <text x="660" y="125" class="section">独特机会</text>
+    <text x="660" y="150" class="body">• 私域流量 + AI 个性化触达</text>
+    <text x="660" y="172" class="body">• 企业微信 + AI 客户服务</text>
+    <text x="660" y="194" class="body">• 短视频/直播 + AI 内容生成</text>
+    <text x="660" y="216" class="body">• 本土大模型应用</text>
+  </g>
+</svg>

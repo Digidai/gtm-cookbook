@@ -1,0 +1,78 @@
+<svg width="960" height="500" viewBox="0 0 960 500" role="img" aria-labelledby="chasm-05-title chasm-05-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-05-title">HubSpot 市场扩展路径</title>
+  <desc id="chasm-05-desc">HubSpot 从 VSB 到 Enterprise 的四阶段扩展路径，包含产品、ACV 与销售模式演进。</desc>
+  <defs>
+    <linearGradient id="chasm-05-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-05-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .phase { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .label { font: 600 11px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .grid { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="468" rx="18" fill="url(#chasm-05-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">HubSpot 市场扩展路径</text>
+
+  <g filter="url(#chasm-05-shadow)">
+    <rect x="60" y="80" width="840" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="60" y1="130" x2="900" y2="130" class="grid" />
+    <line x1="60" y1="200" x2="900" y2="200" class="grid" />
+    <line x1="60" y1="270" x2="900" y2="270" class="grid" />
+    <line x1="60" y1="340" x2="900" y2="340" class="grid" />
+
+    <line x1="270" y1="80" x2="270" y2="440" class="grid" />
+    <line x1="480" y1="80" x2="480" y2="440" class="grid" />
+    <line x1="690" y1="80" x2="690" y2="440" class="grid" />
+
+    <text x="90" y="110" class="phase">Phase 1</text>
+    <text x="300" y="110" class="phase">Phase 2</text>
+    <text x="510" y="110" class="phase">Phase 3</text>
+    <text x="720" y="110" class="phase">Phase 4</text>
+
+    <text x="90" y="128" class="label">2006-2012</text>
+    <text x="300" y="128" class="label">2012-2016</text>
+    <text x="510" y="128" class="label">2016-2020</text>
+    <text x="720" y="128" class="label">2020+</text>
+
+    <text x="90" y="160" class="cell">VSB / 很小企业</text>
+    <text x="90" y="182" class="cell">1-10 人</text>
+
+    <text x="300" y="160" class="cell">SMB / 小企业</text>
+    <text x="300" y="182" class="cell">10-200 人</text>
+
+    <text x="510" y="160" class="cell">MM / 中型</text>
+    <text x="510" y="182" class="cell">200-2000 人</text>
+
+    <text x="720" y="160" class="cell">Enterprise</text>
+    <text x="720" y="182" class="cell">2000+ 人</text>
+
+    <text x="90" y="230" class="cell">产品：单一营销工具</text>
+    <text x="90" y="252" class="cell">+ 免费 CRM</text>
+
+    <text x="300" y="230" class="cell">产品：Marketing Hub</text>
+    <text x="300" y="252" class="cell">+ CMS</text>
+
+    <text x="510" y="230" class="cell">产品：多 Hub 组合</text>
+    <text x="510" y="252" class="cell">+ 专业服务</text>
+
+    <text x="720" y="230" class="cell">产品：Enterprise 版</text>
+
+    <text x="90" y="300" class="cell">ACV：$2-5K</text>
+    <text x="300" y="300" class="cell">ACV：$5-20K</text>
+    <text x="510" y="300" class="cell">ACV：$20-100K</text>
+    <text x="720" y="300" class="cell">ACV：$100K+</text>
+
+    <text x="90" y="370" class="cell">销售模式：自助</text>
+    <text x="300" y="370" class="cell">销售模式：Inside Sales</text>
+    <text x="510" y="370" class="cell">销售模式：Field Sales</text>
+    <text x="720" y="370" class="cell">销售模式：Enterprise Sales</text>
+  </g>
+</svg>

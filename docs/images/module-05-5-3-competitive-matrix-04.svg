@@ -1,0 +1,67 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="cm-04-title cm-04-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cm-04-title">定位地图示例</title>
+  <desc id="cm-04-desc">用价格与功能维度展示竞争者与自身定位的二维地图，并列出常见维度组合。</desc>
+  <defs>
+    <linearGradient id="cm-04-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="cm-04-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .axis { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .point { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .note { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #94A3B8; stroke-width: 1.5; }
+      .grid { stroke: #E2E8F0; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#cm-04-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">定位地图示例</text>
+
+  <g filter="url(#cm-04-shadow)">
+    <rect x="80" y="90" width="800" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <line x1="120" y1="220" x2="840" y2="220" class="line" />
+    <line x1="480" y1="120" x2="480" y2="320" class="line" />
+
+    <line x1="320" y1="120" x2="320" y2="320" class="grid" stroke-dasharray="4 6" />
+    <line x1="640" y1="120" x2="640" y2="320" class="grid" stroke-dasharray="4 6" />
+    <line x1="120" y1="170" x2="840" y2="170" class="grid" stroke-dasharray="4 6" />
+    <line x1="120" y1="270" x2="840" y2="270" class="grid" stroke-dasharray="4 6" />
+
+    <text x="480" y="114" text-anchor="middle" class="axis">高价/企业级</text>
+    <text x="480" y="338" text-anchor="middle" class="axis">低价/SMB</text>
+    <text x="110" y="224" text-anchor="end" class="axis">简单/易用</text>
+    <text x="850" y="224" text-anchor="start" class="axis">复杂/功能全</text>
+
+    <circle cx="700" cy="150" r="6" fill="#2563EB" />
+    <text x="712" y="146" class="point">A</text>
+    <text x="712" y="164" class="note">(全功能)</text>
+
+    <circle cx="620" cy="220" r="6" fill="#F97316" />
+    <text x="632" y="216" class="point">B</text>
+    <text x="632" y="234" class="note">(定制化)</text>
+
+    <circle cx="480" cy="300" r="6" fill="#10B981" />
+    <text x="492" y="296" class="point">C</text>
+    <text x="492" y="314" class="note">(低价)</text>
+
+    <circle cx="430" cy="210" r="6" fill="#0F172A" />
+    <text x="442" y="206" class="point">我们</text>
+    <text x="442" y="224" class="note">(最佳平衡点)</text>
+  </g>
+
+  <g filter="url(#cm-04-shadow)">
+    <rect x="80" y="370" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="402" class="axis">选择你的定位维度</text>
+    <text x="100" y="428" class="note">常见维度组合：</text>
+    <text x="100" y="452" class="note">• 价格 vs 功能</text>
+    <text x="300" y="452" class="note">• 易用性 vs 定制化</text>
+    <text x="100" y="476" class="note">• 垂直专精 vs 通用平台</text>
+    <text x="300" y="476" class="note">• 本地 vs 云端</text>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="metrics-cn-scorecard-title metrics-cn-scorecard-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-cn-scorecard-title">中国 SaaS 健康度评估卡</title>
+  <desc id="metrics-cn-scorecard-desc">展示中国 SaaS 常用健康指标在红线、及格、良好、优秀四个区间的评估卡。</desc>
+  <defs>
+    <linearGradient id="metrics-cn-scorecard-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-cn-scorecard-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .cell { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#metrics-cn-scorecard-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">中国 SaaS 健康度评估卡</text>
+
+  <g filter="url(#metrics-cn-scorecard-shadow)">
+    <rect x="60" y="90" width="840" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="280" y="122" width="155" height="228" fill="#FEE2E2" />
+    <rect x="435" y="122" width="155" height="228" fill="#FEF3C7" />
+    <rect x="590" y="122" width="155" height="228" fill="#E0F2FE" />
+    <rect x="745" y="122" width="155" height="228" fill="#DCFCE7" />
+
+    <line x1="60" y1="122" x2="900" y2="122" stroke="#E2E8F0" />
+    <line x1="60" y1="154" x2="900" y2="154" stroke="#F1F5F9" />
+    <line x1="60" y1="186" x2="900" y2="186" stroke="#F1F5F9" />
+    <line x1="60" y1="218" x2="900" y2="218" stroke="#F1F5F9" />
+    <line x1="60" y1="250" x2="900" y2="250" stroke="#F1F5F9" />
+    <line x1="60" y1="282" x2="900" y2="282" stroke="#F1F5F9" />
+    <line x1="60" y1="314" x2="900" y2="314" stroke="#F1F5F9" />
+
+    <line x1="280" y1="90" x2="280" y2="350" stroke="#E2E8F0" />
+    <line x1="435" y1="90" x2="435" y2="350" stroke="#E2E8F0" />
+    <line x1="590" y1="90" x2="590" y2="350" stroke="#E2E8F0" />
+    <line x1="745" y1="90" x2="745" y2="350" stroke="#E2E8F0" />
+
+    <text x="80" y="112" class="header">指标</text>
+    <text x="310" y="112" class="header">红线</text>
+    <text x="465" y="112" class="header">及格</text>
+    <text x="620" y="112" class="header">良好</text>
+    <text x="780" y="112" class="header">优秀</text>
+
+    <text x="80" y="144" class="cell">LTV:CAC</text>
+    <text x="310" y="144" class="cell">&lt; 1.5</text>
+    <text x="465" y="144" class="cell">1.5-2.5</text>
+    <text x="620" y="144" class="cell">2.5-4</text>
+    <text x="780" y="144" class="cell">&gt; 4</text>
+
+    <text x="80" y="176" class="cell">CAC Payback（月）</text>
+    <text x="310" y="176" class="cell">&gt; 24</text>
+    <text x="465" y="176" class="cell">18-24</text>
+    <text x="620" y="176" class="cell">12-18</text>
+    <text x="780" y="176" class="cell">&lt; 12</text>
+
+    <text x="80" y="208" class="cell">NRR</text>
+    <text x="310" y="208" class="cell">&lt; 85%</text>
+    <text x="465" y="208" class="cell">85-95%</text>
+    <text x="620" y="208" class="cell">95-105%</text>
+    <text x="780" y="208" class="cell">&gt; 105%</text>
+
+    <text x="80" y="240" class="cell">GRR</text>
+    <text x="310" y="240" class="cell">&lt; 75%</text>
+    <text x="465" y="240" class="cell">75-85%</text>
+    <text x="620" y="240" class="cell">85-90%</text>
+    <text x="780" y="240" class="cell">&gt; 90%</text>
+
+    <text x="80" y="272" class="cell">毛利率</text>
+    <text x="310" y="272" class="cell">&lt; 50%</text>
+    <text x="465" y="272" class="cell">50-60%</text>
+    <text x="620" y="272" class="cell">60-70%</text>
+    <text x="780" y="272" class="cell">&gt; 70%</text>
+
+    <text x="80" y="304" class="cell">ARR 增长率</text>
+    <text x="310" y="304" class="cell">&lt; 20%</text>
+    <text x="465" y="304" class="cell">20-40%</text>
+    <text x="620" y="304" class="cell">40-80%</text>
+    <text x="780" y="304" class="cell">&gt; 80%</text>
+
+    <text x="80" y="336" class="cell">Rule of 40</text>
+    <text x="310" y="336" class="cell">&lt; 15%</text>
+    <text x="465" y="336" class="cell">15-30%</text>
+    <text x="620" y="336" class="cell">30-45%</text>
+    <text x="780" y="336" class="cell">&gt; 45%</text>
+  </g>
+
+  <g filter="url(#metrics-cn-scorecard-shadow)">
+    <rect x="60" y="370" width="840" height="110" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="398" class="note">综合评估：</text>
+    <text x="80" y="420" class="note">• 有 2 个以上指标在“红线”：需要立即调整</text>
+    <text x="80" y="442" class="note">• 大部分指标在“及格”：有改进空间 ｜ “良好”：健康发展 ｜ “优秀”：可以加速投入</text>
+  </g>
+</svg>

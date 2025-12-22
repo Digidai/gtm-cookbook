@@ -1,0 +1,42 @@
+<svg width="960" height="220" viewBox="0 0 960 220" role="img" aria-labelledby="revops-09-title revops-09-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-09-title">RevOps 分析能力成熟度</title>
+  <desc id="revops-09-desc">从手动 Excel 到 BI 工具，再到实时仪表板与自动推送/异常告警的成熟度进阶。</desc>
+  <defs>
+    <linearGradient id="revops-09-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-09-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="revops-09-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 16px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .section { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="188" rx="18" fill="url(#revops-09-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#revops-09-shadow)">
+    <rect x="60" y="60" width="240" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="360" y="60" width="240" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="660" y="60" width="240" height="100" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+
+    <text x="180" y="96" text-anchor="middle" class="section">Level 1</text>
+    <text x="180" y="118" text-anchor="middle" class="body">手动 Excel</text>
+
+    <text x="480" y="96" text-anchor="middle" class="section">Level 2</text>
+    <text x="480" y="118" text-anchor="middle" class="body">BI 工具</text>
+
+    <text x="780" y="90" text-anchor="middle" class="section">Level 3</text>
+    <text x="780" y="112" text-anchor="middle" class="body">实时仪表板</text>
+    <text x="780" y="134" text-anchor="middle" class="body">+ 自动推送 + 异常告警</text>
+  </g>
+
+  <line x1="300" y1="110" x2="360" y2="110" stroke="#64748B" stroke-width="2" marker-end="url(#revops-09-arrow)" />
+  <line x1="600" y1="110" x2="660" y2="110" stroke="#64748B" stroke-width="2" marker-end="url(#revops-09-arrow)" />
+</svg>

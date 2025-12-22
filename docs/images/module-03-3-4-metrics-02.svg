@@ -1,0 +1,52 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="metrics-cac-title metrics-cac-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-cac-title">CAC 优化杠杆</title>
+  <desc id="metrics-cac-desc">通过降低营销成本、提高销售效率与提升转化率三大杠杆优化 CAC。</desc>
+  <defs>
+    <linearGradient id="metrics-cac-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-cac-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .label { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#metrics-cac-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">CAC 优化杠杆</text>
+
+  <g filter="url(#metrics-cac-shadow)">
+    <rect x="60" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="90" width="6" height="360" rx="6" fill="#2563EB" />
+    <text x="80" y="124" class="section">降低营销成本</text>
+    <text x="80" y="158" class="body">• 提高营销渠道效率（更精准投放）</text>
+    <text x="80" y="182" class="body">• 增加有机流量占比（SEO、内容、口碑）</text>
+    <text x="80" y="206" class="body">• 提高内容转化率</text>
+  </g>
+
+  <g filter="url(#metrics-cac-shadow)">
+    <rect x="350" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="350" y="90" width="6" height="360" rx="6" fill="#0EA5A4" />
+    <text x="370" y="124" class="section">提高销售效率</text>
+    <text x="370" y="158" class="body">• 提高销售生产力（工具与流程）</text>
+    <text x="370" y="182" class="body">• 提高线索质量（更好的资质认证）</text>
+    <text x="370" y="206" class="body">• 缩短销售周期</text>
+    <text x="370" y="230" class="body">• 提高成交率</text>
+  </g>
+
+  <g filter="url(#metrics-cac-shadow)">
+    <rect x="640" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="640" y="90" width="6" height="360" rx="6" fill="#F59E0B" />
+    <text x="660" y="124" class="section">提高转化率</text>
+    <text x="660" y="158" class="body">• 优化漏斗各环节</text>
+    <text x="660" y="182" class="body">• 改善产品 Demo 和试用体验</text>
+    <text x="660" y="206" class="body">• 更好的销售与营销对齐</text>
+  </g>
+
+  <text x="480" y="474" text-anchor="middle" class="label">核心思路：从成本、效率与转化三维度同时降低 CAC</text>
+</svg>

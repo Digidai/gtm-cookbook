@@ -1,0 +1,43 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="ts-05-title ts-05-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ts-05-title">成长阶段推荐工具栈</title>
+  <desc id="ts-05-desc">成长阶段的核心工具栈、预算与原则。</desc>
+  <defs>
+    <linearGradient id="ts-05-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ts-05-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#ts-05-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">成长阶段推荐工具栈</text>
+
+  <g filter="url(#ts-05-shadow)">
+    <rect x="80" y="90" width="520" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="120" class="section">核心工具栈</text>
+    <text x="100" y="148" class="body">CRM: HubSpot Pro / Salesforce Essentials</text>
+    <text x="100" y="172" class="body">Marketing: HubSpot Marketing / ActiveCampaign</text>
+    <text x="100" y="196" class="body">Sales Engagement: Apollo.io / Reply.io</text>
+    <text x="100" y="220" class="body">Product Analytics: Mixpanel / Amplitude</text>
+    <text x="100" y="244" class="body">Support: Intercom / Zendesk</text>
+    <text x="100" y="268" class="body">BI: Metabase / Looker</text>
+
+    <rect x="640" y="90" width="240" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="660" y="120" class="section">月预算</text>
+    <text x="660" y="148" class="note">$2,000-5,000</text>
+
+    <rect x="640" y="230" width="240" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="660" y="260" class="section">原则</text>
+    <text x="660" y="286" class="note">• 建立核心自动化流程</text>
+    <text x="660" y="308" class="note">• 统一数据模型</text>
+    <text x="660" y="330" class="note">• 可扩展性考量</text>
+  </g>
+</svg>

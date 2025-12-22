@@ -1,0 +1,63 @@
+<svg width="960" height="400" viewBox="0 0 960 400" role="img" aria-labelledby="revops-08-title revops-08-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-08-title">North Star Metrics 层级</title>
+  <desc id="revops-08-desc">公司级北极星指标到部门级与团队/个人级执行指标的层级关系。</desc>
+  <defs>
+    <linearGradient id="revops-08-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-08-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="revops-08-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .muted { font: 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="368" rx="18" fill="url(#revops-08-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#revops-08-shadow)">
+    <rect x="280" y="50" width="400" height="70" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="80" text-anchor="middle" class="title">North Star Metrics</text>
+    <text x="480" y="102" text-anchor="middle" class="body">公司级，如 ARR</text>
+  </g>
+
+  <line x1="480" y1="120" x2="480" y2="150" stroke="#64748B" stroke-width="2" marker-end="url(#revops-08-arrow)" />
+
+  <g filter="url(#revops-08-shadow)">
+    <rect x="120" y="160" width="200" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="380" y="160" width="200" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="640" y="160" width="200" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="220" y="190" text-anchor="middle" class="section">获客指标</text>
+    <text x="220" y="212" text-anchor="middle" class="muted">CAC, MQL</text>
+    <text x="480" y="190" text-anchor="middle" class="section">转化指标</text>
+    <text x="480" y="212" text-anchor="middle" class="muted">转化率</text>
+    <text x="740" y="190" text-anchor="middle" class="section">留存指标</text>
+    <text x="740" y="212" text-anchor="middle" class="muted">NRR, GRR</text>
+  </g>
+
+  <line x1="220" y1="240" x2="220" y2="265" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#revops-08-arrow)" />
+  <line x1="480" y1="240" x2="480" y2="265" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#revops-08-arrow)" />
+  <line x1="740" y1="240" x2="740" y2="265" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#revops-08-arrow)" />
+
+  <g filter="url(#revops-08-shadow)">
+    <rect x="120" y="275" width="200" height="80" rx="14" fill="#F8FAFF" stroke="#DBEAFE" />
+    <rect x="380" y="275" width="200" height="80" rx="14" fill="#F8FAFF" stroke="#DBEAFE" />
+    <rect x="640" y="275" width="200" height="80" rx="14" fill="#F8FAFF" stroke="#DBEAFE" />
+    <text x="220" y="305" text-anchor="middle" class="section">执行指标 1</text>
+    <text x="220" y="328" text-anchor="middle" class="muted">MQL 量, CPL</text>
+    <text x="480" y="305" text-anchor="middle" class="section">执行指标 2</text>
+    <text x="480" y="328" text-anchor="middle" class="muted">跟进率, 成交率</text>
+    <text x="740" y="305" text-anchor="middle" class="section">执行指标 3</text>
+    <text x="740" y="328" text-anchor="middle" class="muted">健康分, NPS</text>
+  </g>
+
+  <text x="840" y="246" text-anchor="end" class="muted">部门级</text>
+  <text x="840" y="360" text-anchor="end" class="muted">团队 / 个人级</text>
+</svg>

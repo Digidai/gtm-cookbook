@@ -1,0 +1,71 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="module04-index-title module04-index-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="module04-index-title">GTM 案例矩阵（含中国案例）</title>
+  <desc id="module04-index-desc">按 GTM Motion（PLG/SLG）与目标市场（SMB/Mid-Market/Enterprise）划分的案例矩阵。</desc>
+  <defs>
+    <linearGradient id="module04-index-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="module04-index-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .header { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .china { fill: #0EA5A4; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#module04-index-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">GTM 案例矩阵（含中国案例）</text>
+
+  <text x="520" y="78" text-anchor="middle" class="label">GTM Motion</text>
+  <text x="95" y="140" text-anchor="middle" class="label">目标市场</text>
+
+  <g filter="url(#module04-index-shadow)">
+    <rect x="200" y="90" width="320" height="40" rx="10" fill="#E0F2FE" stroke="#BAE6FD" />
+    <rect x="530" y="90" width="320" height="40" rx="10" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="360" y="116" text-anchor="middle" class="header">PLG</text>
+    <text x="690" y="116" text-anchor="middle" class="header">SLG</text>
+  </g>
+
+  <g filter="url(#module04-index-shadow)">
+    <rect x="60" y="140" width="120" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="230" width="120" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="320" width="120" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="120" y="190" text-anchor="middle" class="header">SMB</text>
+    <text x="120" y="280" text-anchor="middle" class="header">Mid-Market</text>
+    <text x="120" y="370" text-anchor="middle" class="header">Enterprise</text>
+  </g>
+
+  <g filter="url(#module04-index-shadow)">
+    <rect x="200" y="140" width="320" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="530" y="140" width="320" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="200" y="230" width="320" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="530" y="230" width="320" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="200" y="320" width="320" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="530" y="320" width="320" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="220" y="170" class="cell">Slack · Notion</text>
+    <text x="220" y="192" class="cell">Figma · Canva</text>
+
+    <text x="550" y="170" class="cell">HubSpot</text>
+    <text x="550" y="192" class="cell china">有赞</text>
+
+    <text x="220" y="260" class="cell">Zoom · Dropbox</text>
+    <text x="220" y="282" class="cell">(PLG / PLS)</text>
+
+    <text x="550" y="260" class="cell">Salesforce</text>
+    <text x="550" y="282" class="cell">Workday</text>
+    <text x="550" y="304" class="cell china">北森</text>
+
+    <text x="220" y="350" class="cell china">飞书</text>
+
+    <text x="550" y="350" class="cell">ServiceNow</text>
+  </g>
+
+  <text x="480" y="462" text-anchor="middle" class="note">中国案例：飞书（PLG/PLS）、北森（企业级 SLG）、有赞（跨越鸿沟）</text>
+</svg>

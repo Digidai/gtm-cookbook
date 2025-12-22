@@ -724,9 +724,7 @@ PLG 与 SLG 的混合模式，被 McKinsey 认为是 GTM 的未来趋势。
 在 SAM 中，你实际可以获取的市场份额。SOM 是最现实的市场规模估计，考虑了竞争、资源和执行能力。
 
 **TAM → SAM → SOM 的关系**：
-```
-TAM（总市场）> SAM（可服务市场）> SOM（可获取市场）
-```
+![TAM → SAM → SOM 的关系](../images/appendix-glossary-tam-sam-som.svg)
 
 ### SQL（Sales Qualified Lead）
 **销售合格线索**
@@ -956,31 +954,19 @@ AI 原生公司试用转付费率 56%，传统 SaaS 仅 32%（ICONIQ 2025）。
 ## 核心框架速查
 
 ### Geoffrey Moore 技术采纳生命周期
-```
-创新者(2.5%) → 早期采用者(13.5%) → [鸿沟] → 早期主流(34%) → 晚期主流(34%) → 落后者(16%)
-```
+![创新者(2.5%) 早期采用者(13.5%) [鸿沟] 早期主流(34%) 晚期主流(34%) 落后者(16%)](../images/appendix-glossary-01.svg)
 
 ### Geoffrey Moore 四阶段市场演进
-```
-Early Market → Bowling Alley → Tornado → Main Street
-早期市场    →   保龄球道   →  龙卷风  →   主街
-```
+![Early Market Bowling Alley Tornado Main Street](../images/appendix-glossary-02.svg)
 
 ### April Dunford 定位五要素
-```
-竞争替代品 → 独特属性 → 客户价值 → 目标客户 → 市场类别
-```
+![竞争替代品 独特属性 客户价值 目标客户 市场类别](../images/appendix-glossary-03.svg)
 
 ### Lincoln Murphy ICP 七标准
-```
-Ready → Willing → Able → Successful → Profitable → Expansion → Advocacy
-```
+![Ready Willing Able Successful Profitable Expansion Advocacy](../images/appendix-glossary-04.svg)
 
 ### GTM 核心四问
-```
-WHO → WHAT → HOW → WHY NOW
-谁  → 什么 → 如何 → 为何是现在
-```
+![WHO WHAT HOW WHY NOW](../images/appendix-glossary-05.svg)
 
 ---
 

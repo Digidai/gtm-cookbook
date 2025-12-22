@@ -1,0 +1,52 @@
+<svg width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="cn-best-title cn-best-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cn-best-title">中国 SaaS 定价最佳实践</title>
+  <desc id="cn-best-desc">价值先行、价格管控、服务独立定价与扩展收入路径。</desc>
+  <defs>
+    <linearGradient id="cn-best-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="cn-best-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="588" rx="18" fill="url(#cn-best-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">中国 SaaS 定价最佳实践</text>
+
+  <g filter="url(#cn-best-shadow)">
+    <rect x="80" y="80" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="110" class="step">1. 价值先行，而非价格先行</text>
+    <text x="110" y="134" class="body">• 量化产品价值（ROI、效率提升、成本节约）</text>
+    <text x="110" y="156" class="body">• 销售过程中先讲价值，后谈价格</text>
+    <text x="110" y="178" class="body">• 让客户认识到“便宜没好货”</text>
+  </g>
+
+  <g filter="url(#cn-best-shadow)">
+    <rect x="80" y="220" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="250" class="step">2. 建立价格管控体系</text>
+    <text x="110" y="274" class="body">• 标准价格表 + 明确折扣权限</text>
+    <text x="110" y="296" class="body">• 折扣审批流程</text>
+    <text x="110" y="318" class="body">• 同类客户价格一致性检查</text>
+  </g>
+
+  <g filter="url(#cn-best-shadow)">
+    <rect x="80" y="360" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="390" class="step">3. 专业服务独立定价</text>
+    <text x="110" y="414" class="body">• 实施、培训、定制开发单独收费</text>
+    <text x="110" y="436" class="body">• 让客户理解服务价值</text>
+    <text x="110" y="458" class="body">• 避免“软件包含一切”的预期</text>
+  </g>
+
+  <g filter="url(#cn-best-shadow)">
+    <rect x="80" y="500" width="800" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="530" class="step">4. 设计扩展收入路径</text>
+    <text x="110" y="554" class="body">• 模块化产品、按需购买 · 按用量/按席位计费</text>
+    <text x="110" y="576" class="body">• 清晰升级路径</text>
+  </g>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="vanwest-title vanwest-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="vanwest-title">Van Westendorp 分析结果示例</title>
+  <desc id="vanwest-desc">四条感知价格曲线与可接受价格区间示意。</desc>
+  <defs>
+    <linearGradient id="vanwest-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="vanwest-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .axis { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .label { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .curve1 { stroke: #60A5FA; stroke-width: 2; fill: none; }
+      .curve2 { stroke: #93C5FD; stroke-width: 2; fill: none; }
+      .curve3 { stroke: #F59E0B; stroke-width: 2; fill: none; }
+      .curve4 { stroke: #EF4444; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#vanwest-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Van Westendorp 分析结果示例</text>
+
+  <g filter="url(#vanwest-shadow)">
+    <rect x="80" y="80" width="800" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+  </g>
+
+  <line x1="120" y1="100" x2="120" y2="300" stroke="#CBD5E1" stroke-width="1.5" />
+  <line x1="120" y1="300" x2="840" y2="300" stroke="#CBD5E1" stroke-width="1.5" />
+
+  <text x="90" y="110" class="axis">100%</text>
+  <text x="90" y="210" class="axis">50%</text>
+  <text x="96" y="300" class="axis">0%</text>
+
+  <text x="140" y="320" class="axis">$50</text>
+  <text x="300" y="320" class="axis">$100</text>
+  <text x="460" y="320" class="axis">$150</text>
+  <text x="620" y="320" class="axis">$200</text>
+  <text x="780" y="320" class="axis">$250</text>
+
+  <rect x="300" y="100" width="320" height="200" fill="#DBEAFE" opacity="0.35" />
+  <text x="460" y="118" text-anchor="middle" class="label">可接受区间 $100-$200</text>
+
+  <path d="M140 110 C260 140 380 200 500 260" class="curve1" />
+  <path d="M160 120 C280 160 400 220 520 280" class="curve2" />
+  <path d="M360 280 C480 220 600 160 720 120" class="curve3" />
+  <path d="M400 300 C520 230 640 170 760 110" class="curve4" />
+
+  <text x="200" y="110" class="label">太便宜</text>
+  <text x="240" y="140" class="label">便宜</text>
+  <text x="640" y="140" class="label">开始贵</text>
+  <text x="700" y="110" class="label">太贵</text>
+
+  <circle cx="460" cy="220" r="5" fill="#0F172A" />
+  <text x="460" y="350" text-anchor="middle" class="label">最优价格点：$150</text>
+</svg>

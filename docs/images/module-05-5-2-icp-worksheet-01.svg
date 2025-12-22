@@ -1,0 +1,51 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="icp-01-title icp-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="icp-01-title">ICP 的战略价值</title>
+  <desc id="icp-01-desc">对比没有清晰 ICP 的问题与具备清晰 ICP 的收益，并列出关键决策影响。</desc>
+  <defs>
+    <linearGradient id="icp-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="icp-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .vs { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#icp-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">ICP 的战略价值</text>
+
+  <g filter="url(#icp-01-shadow)">
+    <rect x="60" y="80" width="400" height="160" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="80" width="400" height="160" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="110" class="section">没有清晰 ICP 的问题</text>
+    <text x="80" y="136" class="body">• 营销信息模糊</text>
+    <text x="80" y="158" class="body">• 销售浪费时间</text>
+    <text x="80" y="180" class="body">• CAC 居高不下</text>
+    <text x="80" y="202" class="body">• 产品方向不明</text>
+    <text x="80" y="224" class="body">• 客户流失率高</text>
+
+    <text x="520" y="110" class="section">有清晰 ICP 的好处</text>
+    <text x="520" y="136" class="body">• 精准定向，高转化</text>
+    <text x="520" y="158" class="body">• 销售聚焦高质量</text>
+    <text x="520" y="180" class="body">• CAC 持续优化</text>
+    <text x="520" y="202" class="body">• 产品迭代有依据</text>
+    <text x="520" y="224" class="body">• NRR 持续提升</text>
+
+    <rect x="60" y="260" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="292" class="section">ICP 影响的关键决策</text>
+    <text x="80" y="318" class="body">• 营销：在哪些渠道投放？用什么内容？</text>
+    <text x="80" y="340" class="body">• 销售：优先跟进哪些线索？如何定制方案？</text>
+    <text x="80" y="362" class="body">• 产品：优先开发什么功能？如何定价？</text>
+    <text x="80" y="384" class="body">• 客户成功：什么是成功的标志？如何减少流失？</text>
+
+    <rect x="455" y="150" width="50" height="26" rx="13" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="480" y="168" text-anchor="middle" class="vs">VS</text>
+  </g>
+</svg>

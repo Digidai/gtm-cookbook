@@ -1,0 +1,57 @@
+<svg width="960" height="780" viewBox="0 0 960 780" role="img" aria-labelledby="partner-types-title partner-types-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="partner-types-title">战略合作类型</title>
+  <desc id="partner-types-desc">技术集成、联合销售、联合营销、贴牌合作与 ISV 合作项目五种类型。</desc>
+  <defs>
+    <linearGradient id="partner-types-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="partner-types-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .type { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="748" rx="18" fill="url(#partner-types-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">战略合作类型</text>
+
+  <g filter="url(#partner-types-shadow)">
+    <rect x="80" y="80" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="112" class="type">1. Technology Integration 技术集成</text>
+    <text x="110" y="136" class="body">• 产品间 API / 数据集成，互相增强价值</text>
+    <text x="110" y="158" class="note">例：Slack + Salesforce；Stripe + Shopify</text>
+  </g>
+
+  <g filter="url(#partner-types-shadow)">
+    <rect x="80" y="210" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="242" class="type">2. Co-selling 联合销售</text>
+    <text x="110" y="266" class="body">• 销售团队联合作战，共同覆盖客户与分享收益</text>
+    <text x="110" y="288" class="note">例：Microsoft + SAP 联合大客户项目</text>
+  </g>
+
+  <g filter="url(#partner-types-shadow)">
+    <rect x="80" y="340" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="372" class="type">3. Co-marketing 联合营销</text>
+    <text x="110" y="396" class="body">• 联合内容创作、活动与互相推广</text>
+    <text x="110" y="418" class="note">例：HubSpot + Google 联合营销活动</text>
+  </g>
+
+  <g filter="url(#partner-types-shadow)">
+    <rect x="80" y="470" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="502" class="type">4. OEM / White Label 贴牌合作</text>
+    <text x="110" y="526" class="body">• 产品嵌入伙伴产品，可能不显示自有品牌</text>
+    <text x="110" y="548" class="note">例：Twilio 被嵌入各类应用</text>
+  </g>
+
+  <g filter="url(#partner-types-shadow)">
+    <rect x="80" y="600" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="632" class="type">5. ISV Partner Program ISV 合作项目</text>
+    <text x="110" y="656" class="body">• 成为大平台 ISV 合作伙伴，获取平台资源和客户</text>
+    <text x="110" y="678" class="note">例：Salesforce AppExchange 合作伙伴</text>
+  </g>
+</svg>

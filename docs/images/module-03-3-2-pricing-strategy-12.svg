@@ -1,0 +1,57 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="value-pricing-title value-pricing-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="value-pricing-title">价值导向定价的逻辑</title>
+  <desc id="value-pricing-desc">对比传统成本加成定价与价值导向定价流程，并列出前提条件。</desc>
+  <defs>
+    <linearGradient id="value-pricing-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="value-pricing-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="value-pricing-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .flow { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#value-pricing-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">价值导向定价的逻辑</text>
+
+  <g filter="url(#value-pricing-shadow)">
+    <rect x="60" y="80" width="840" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="110" class="flow">传统定价思路：</text>
+    <text x="220" y="110" class="body">成本</text>
+    <line x1="260" y1="108" x2="300" y2="108" class="line" marker-end="url(#value-pricing-arrow)" />
+    <text x="310" y="110" class="body">加上利润</text>
+    <line x1="380" y1="108" x2="420" y2="108" class="line" marker-end="url(#value-pricing-arrow)" />
+    <text x="430" y="110" class="body">定价</text>
+    <line x1="470" y1="108" x2="510" y2="108" class="line" marker-end="url(#value-pricing-arrow)" />
+    <text x="520" y="110" class="body">找愿意付这个价的客户</text>
+  </g>
+
+  <g filter="url(#value-pricing-shadow)">
+    <rect x="60" y="190" width="840" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="220" class="flow">价值导向定价：</text>
+    <text x="220" y="220" class="body">客户价值</text>
+    <line x1="280" y1="218" x2="320" y2="218" class="line" marker-end="url(#value-pricing-arrow)" />
+    <text x="330" y="220" class="body">支付意愿</text>
+    <line x1="390" y1="218" x2="430" y2="218" class="line" marker-end="url(#value-pricing-arrow)" />
+    <text x="440" y="220" class="body">定价</text>
+    <line x1="480" y1="218" x2="520" y2="218" class="line" marker-end="url(#value-pricing-arrow)" />
+    <text x="530" y="220" class="body">确保成本支持</text>
+  </g>
+
+  <g filter="url(#value-pricing-shadow)">
+    <rect x="60" y="300" width="840" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="330" class="flow">价值导向定价的前提</text>
+    <text x="90" y="355" class="body">1. 清楚产品为客户创造的价值</text>
+    <text x="90" y="377" class="body">2. 价值可以被量化</text>
+    <text x="90" y="399" class="body">3. 客户能感知到价值</text>
+  </g>
+</svg>

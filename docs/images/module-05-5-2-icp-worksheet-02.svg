@@ -1,0 +1,54 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="icp-02-title icp-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="icp-02-title">ICP vs Buyer Persona</title>
+  <desc id="icp-02-desc">对比 ICP 与 Buyer Persona 的定义范围与关注要素。</desc>
+  <defs>
+    <linearGradient id="icp-02-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="icp-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="icp-02-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94A3B8" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#icp-02-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">ICP vs Buyer Persona</text>
+
+  <g filter="url(#icp-02-shadow)">
+    <rect x="60" y="80" width="400" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="80" width="400" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="112" class="section">ICP (Ideal Customer Profile)</text>
+    <text x="80" y="134" class="sub">理想客户画像</text>
+    <text x="80" y="160" class="body">描述的是：公司</text>
+    <text x="80" y="186" class="body">• 公司规模</text>
+    <text x="80" y="208" class="body">• 行业</text>
+    <text x="80" y="230" class="body">• 收入/融资</text>
+    <text x="80" y="252" class="body">• 技术栈</text>
+    <text x="80" y="274" class="body">• 成长阶段</text>
+
+    <text x="520" y="112" class="section">Buyer Persona</text>
+    <text x="520" y="134" class="sub">买家角色</text>
+    <text x="520" y="160" class="body">描述的是：个人</text>
+    <text x="520" y="186" class="body">• 职位/角色</text>
+    <text x="520" y="208" class="body">• 目标/KPI</text>
+    <text x="520" y="230" class="body">• 痛点/挑战</text>
+    <text x="520" y="252" class="body">• 决策风格</text>
+    <text x="520" y="274" class="body">• 信息获取渠道</text>
+
+    <rect x="60" y="320" width="840" height="60" rx="14" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="140" y="352" class="body">先定义 ICP（什么样的公司）</text>
+    <text x="560" y="352" class="body">再定义 Buyer Persona（公司里的什么人）</text>
+  </g>
+
+  <path d="M420 350 L530 350" stroke="#94A3B8" stroke-width="2" marker-end="url(#icp-02-arrow)" />
+</svg>

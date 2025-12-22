@@ -1,0 +1,56 @@
+<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="revops-18-title revops-18-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-18-title">Notion PQL 评分模型</title>
+  <desc id="revops-18-desc">基于产品使用信号、账户特征与意图信号的 PQL 打分与阈值。</desc>
+  <defs>
+    <linearGradient id="revops-18-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-18-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .badge { font: 600 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .highlight { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0EA5A4; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#revops-18-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Notion PQL 评分模型</text>
+
+  <g filter="url(#revops-18-shadow)">
+    <rect x="60" y="80" width="840" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="98" width="140" height="24" rx="12" fill="#E0F2FE" />
+    <text x="150" y="114" text-anchor="middle" class="badge">60% 权重</text>
+    <text x="240" y="114" class="section">产品使用信号</text>
+    <text x="80" y="146" class="body">• 活跃用户数 / 工作区成员数  +30 分</text>
+    <text x="80" y="168" class="body">• 页面创建数量  +15 分</text>
+    <text x="80" y="190" class="body">• 高级功能使用（Database、Template） +10 分</text>
+    <text x="520" y="168" class="body">• 协作行为（共享、评论） +5 分</text>
+  </g>
+
+  <g filter="url(#revops-18-shadow)">
+    <rect x="60" y="240" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="258" width="140" height="24" rx="12" fill="#E0F2FE" />
+    <text x="150" y="274" text-anchor="middle" class="badge">25% 权重</text>
+    <text x="240" y="274" class="section">账户特征</text>
+    <text x="80" y="306" class="body">• 公司域名邮箱（vs 个人邮箱） +10 分</text>
+    <text x="80" y="328" class="body">• 公司规模（通过域名反查） +10 分</text>
+    <text x="520" y="306" class="body">• 行业匹配 ICP +5 分</text>
+  </g>
+
+  <g filter="url(#revops-18-shadow)">
+    <rect x="60" y="380" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="398" width="140" height="24" rx="12" fill="#E0F2FE" />
+    <text x="150" y="414" text-anchor="middle" class="badge">15% 权重</text>
+    <text x="240" y="414" class="section">意图信号</text>
+    <text x="80" y="446" class="body">• 访问定价页 +8 分</text>
+    <text x="80" y="468" class="body">• 查看企业版功能 +5 分</text>
+    <text x="520" y="446" class="body">• 填写“联系销售”表单 +2 分</text>
+  </g>
+
+  <text x="480" y="530" text-anchor="middle" class="highlight">PQL 阈值：≥ 70 分 → 路由给销售团队</text>
+</svg>

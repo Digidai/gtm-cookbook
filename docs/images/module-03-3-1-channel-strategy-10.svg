@@ -1,0 +1,78 @@
+<svg width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="partner-framework-title partner-framework-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="partner-framework-title">合作成功的 PARTNER 框架</title>
+  <desc id="partner-framework-desc">Purpose、Alignment、Responsibility、Timeline、Negotiation、Enablement、Review 七要素。</desc>
+  <defs>
+    <linearGradient id="partner-framework-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="partner-framework-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .tag { font: 700 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="608" rx="18" fill="url(#partner-framework-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">合作成功的 PARTNER 框架</text>
+
+  <g filter="url(#partner-framework-shadow)">
+    <rect x="80" y="80" width="800" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="92" y="96" width="46" height="24" rx="12" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="115" y="112" text-anchor="middle" class="tag">P</text>
+    <text x="150" y="110" class="label">Purpose 共同目标</text>
+    <text x="420" y="110" class="body">明确双方目标 · 量化成功指标</text>
+  </g>
+
+  <g filter="url(#partner-framework-shadow)">
+    <rect x="80" y="160" width="800" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="92" y="176" width="46" height="24" rx="12" fill="#DCFCE7" stroke="#86EFAC" />
+    <text x="115" y="192" text-anchor="middle" class="tag">A</text>
+    <text x="150" y="190" class="label">Alignment 对齐</text>
+    <text x="420" y="190" class="body">执行计划对齐 · 资源投入对齐</text>
+  </g>
+
+  <g filter="url(#partner-framework-shadow)">
+    <rect x="80" y="240" width="800" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="92" y="256" width="46" height="24" rx="12" fill="#FEF3C7" stroke="#FCD34D" />
+    <text x="115" y="272" text-anchor="middle" class="tag">R</text>
+    <text x="150" y="270" class="label">Responsibility 责任分工</text>
+    <text x="420" y="270" class="body">谁负责什么 · 清晰分工边界</text>
+  </g>
+
+  <g filter="url(#partner-framework-shadow)">
+    <rect x="80" y="320" width="800" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="92" y="336" width="46" height="24" rx="12" fill="#EDE9FE" stroke="#C4B5FD" />
+    <text x="115" y="352" text-anchor="middle" class="tag">T</text>
+    <text x="150" y="350" class="label">Timeline 时间表</text>
+    <text x="420" y="350" class="body">关键里程碑 · 定期回顾节点</text>
+  </g>
+
+  <g filter="url(#partner-framework-shadow)">
+    <rect x="80" y="400" width="800" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="92" y="416" width="46" height="24" rx="12" fill="#FCE7F3" stroke="#FBCFE8" />
+    <text x="115" y="432" text-anchor="middle" class="tag">N</text>
+    <text x="150" y="430" class="label">Negotiation 协议</text>
+    <text x="420" y="430" class="body">商业条款 · 法律保护</text>
+  </g>
+
+  <g filter="url(#partner-framework-shadow)">
+    <rect x="80" y="480" width="800" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="92" y="496" width="46" height="24" rx="12" fill="#FFE4E6" stroke="#FDA4AF" />
+    <text x="115" y="512" text-anchor="middle" class="tag">E</text>
+    <text x="150" y="510" class="label">Enablement 赋能</text>
+    <text x="420" y="510" class="body">团队培训 · 工具与资源支持</text>
+  </g>
+
+  <g filter="url(#partner-framework-shadow)">
+    <rect x="80" y="560" width="800" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="92" y="576" width="46" height="24" rx="12" fill="#F1F5F9" stroke="#CBD5E1" />
+    <text x="115" y="592" text-anchor="middle" class="tag">R</text>
+    <text x="150" y="590" class="label">Review 回顾</text>
+    <text x="420" y="590" class="body">定期绩效评估 · 问题解决与优化</text>
+  </g>
+</svg>

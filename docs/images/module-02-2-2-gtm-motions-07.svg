@@ -1,0 +1,60 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="pls-title pls-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="pls-title">Product-Led Sales 运作模式</title>
+  <desc id="pls-desc">PLG 引流产生 PQL 信号，经信号识别后分流为自助转化与销售介入转化。</desc>
+  <defs>
+    <linearGradient id="pls-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="pls-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="pls-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
+      .label { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .muted { fill: #64748B; }
+      .accent-blue { fill: #2563EB; }
+      .accent-amber { fill: #F59E0B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#pls-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Product-Led Sales 运作模式</text>
+
+  <g filter="url(#pls-shadow)">
+    <rect x="60" y="80" width="840" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="108" class="section accent-blue">PLG 引流阶段</text>
+    <text x="80" y="132" class="label">自助注册 → 免费使用 → 体验价值 → 产生 PQL 信号</text>
+  </g>
+
+  <line x1="480" y1="170" x2="480" y2="200" stroke="#64748B" stroke-width="2" marker-end="url(#pls-arrow)" />
+
+  <g filter="url(#pls-shadow)">
+    <rect x="100" y="200" width="760" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="120" y="228" class="section">信号识别层</text>
+    <text x="120" y="252" class="label">使用行为 + 账户特征 + 意图信号 → PQL 评分 → 销售优先级排序</text>
+  </g>
+
+  <line x1="320" y1="290" x2="320" y2="320" stroke="#64748B" stroke-width="2" marker-end="url(#pls-arrow)" />
+  <line x1="640" y1="290" x2="640" y2="320" stroke="#64748B" stroke-width="2" marker-end="url(#pls-arrow)" />
+
+  <g filter="url(#pls-shadow)">
+    <rect x="100" y="320" width="360" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="120" y="350" class="section accent-blue">Self-Serve 转化</text>
+    <text x="120" y="374" class="label">小账户 / 个人用户</text>
+    <text x="120" y="396" class="label">低 ACV</text>
+    <text x="120" y="418" class="label muted">自助升级</text>
+  </g>
+
+  <g filter="url(#pls-shadow)">
+    <rect x="500" y="320" width="360" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="520" y="350" class="section accent-amber">Sales 介入转化</text>
+    <text x="520" y="374" class="label">大账户 / 企业客户</text>
+    <text x="520" y="396" class="label">高 ACV</text>
+    <text x="520" y="418" class="label muted">销售跟进</text>
+  </g>
+</svg>

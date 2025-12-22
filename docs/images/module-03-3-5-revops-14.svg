@@ -1,0 +1,47 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="revops-14-title revops-14-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-14-title">RevOps 人才能力模型</title>
+  <desc id="revops-14-desc">包含技术能力、业务能力与软技能三大维度的 RevOps 人才模型。</desc>
+  <defs>
+    <linearGradient id="revops-14-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-14-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#revops-14-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">RevOps 人才能力模型</text>
+
+  <g filter="url(#revops-14-shadow)">
+    <rect x="60" y="90" width="400" height="190" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="90" width="400" height="190" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="122" class="section">技术能力</text>
+    <text x="80" y="150" class="body">• CRM / MAP 管理</text>
+    <text x="80" y="172" class="body">• SQL / 数据分析</text>
+    <text x="80" y="194" class="body">• 集成平台</text>
+    <text x="80" y="216" class="body">• 自动化工具</text>
+
+    <text x="520" y="122" class="section">业务能力</text>
+    <text x="520" y="150" class="body">• GTM 流程理解</text>
+    <text x="520" y="172" class="body">• 销售 / 营销 / CS 业务知识</text>
+    <text x="520" y="194" class="body">• 指标体系设计</text>
+    <text x="520" y="216" class="body">• 项目管理</text>
+  </g>
+
+  <g filter="url(#revops-14-shadow)">
+    <rect x="60" y="300" width="840" height="90" rx="16" fill="#F8FAFF" stroke="#DBEAFE" />
+    <text x="80" y="332" class="section">软技能</text>
+    <text x="80" y="358" class="body">• 跨部门沟通与影响力</text>
+    <text x="320" y="358" class="body">• 问题解决与根因分析</text>
+    <text x="560" y="358" class="body">• 流程思维与细节导向</text>
+    <text x="80" y="380" class="body">• 变革管理</text>
+  </g>
+</svg>

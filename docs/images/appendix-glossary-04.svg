@@ -1,0 +1,52 @@
+<svg width="840" height="100" viewBox="0 0 840 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .step { fill: #F8FAFC; stroke: #E2E8F0; stroke-width: 1; }
+      .step-success { fill: #F0FDF4; stroke: #86EFAC; }
+      .text { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 500; fill: #334155; text-anchor: middle; }
+      .arrow-line { stroke: #CBD5E1; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <g transform="translate(20, 30)">
+    <!-- Ready -->
+    <rect x="0" y="0" width="80" height="40" rx="4" class="step" />
+    <text x="40" y="25" class="text">Ready</text>
+    <path d="M80,20 H100" class="arrow-line" />
+    <path d="M95,15 L100,20 L95,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Willing -->
+    <rect x="100" y="0" width="80" height="40" rx="4" class="step" />
+    <text x="140" y="25" class="text">Willing</text>
+    <path d="M180,20 H200" class="arrow-line" />
+    <path d="M195,15 L200,20 L195,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Able -->
+    <rect x="200" y="0" width="80" height="40" rx="4" class="step" />
+    <text x="240" y="25" class="text">Able</text>
+    <path d="M280,20 H300" class="arrow-line" />
+    <path d="M295,15 L300,20 L295,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Successful -->
+    <rect x="300" y="0" width="100" height="40" rx="4" class="step-success" />
+    <text x="350" y="25" class="text" style="fill: #15803D;">Successful</text>
+    <path d="M400,20 H420" class="arrow-line" />
+    <path d="M415,15 L420,20 L415,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Profitable -->
+    <rect x="420" y="0" width="100" height="40" rx="4" class="step" />
+    <text x="470" y="25" class="text">Profitable</text>
+    <path d="M520,20 H540" class="arrow-line" />
+    <path d="M535,15 L540,20 L535,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Expansion -->
+    <rect x="540" y="0" width="100" height="40" rx="4" class="step" />
+    <text x="590" y="25" class="text">Expansion</text>
+    <path d="M640,20 H660" class="arrow-line" />
+    <path d="M655,15 L660,20 L655,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- Advocacy -->
+    <rect x="660" y="0" width="100" height="40" rx="4" class="step" />
+    <text x="710" y="25" class="text">Advocacy</text>
+  </g>
+</svg>

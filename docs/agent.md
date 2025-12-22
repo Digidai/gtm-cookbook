@@ -88,63 +88,7 @@
 
 ## 项目结构
 
-```
-GTM/
-├── .vitepress/                 # VitePress 配置
-│   └── config.mts             # 站点配置（中文化）
-│
-├── docs/                       # 文档源目录
-│   ├── index.md               # 首页
-│   ├── agent.md               # 本文件 - 写作管理指南
-│   │
-│   ├── module-01/             # 模块一：GTM 基础认知与战略意义
-│   │   ├── index.md           # 模块概览
-│   │   ├── 1.1-gtm-definition.md
-│   │   ├── 1.2-gtm-importance.md
-│   │   ├── 1.3-gtm-scenarios.md
-│   │   └── 1.4-gtm-core-questions.md
-│   │
-│   ├── module-02/             # 模块二：GTM 核心方法论与框架
-│   │   ├── index.md
-│   │   ├── 2.1-crossing-the-chasm.md
-│   │   ├── 2.2-gtm-motions.md
-│   │   ├── 2.3-icp-methodology.md
-│   │   ├── 2.4-value-proposition.md
-│   │   └── 2.5-positioning.md
-│   │
-│   ├── module-03/             # 模块三：GTM 执行体系与运营
-│   │   ├── index.md
-│   │   ├── 3.1-channel-strategy.md
-│   │   ├── 3.2-pricing-strategy.md
-│   │   ├── 3.3-sales-marketing-alignment.md
-│   │   ├── 3.4-metrics.md
-│   │   └── 3.5-revops.md
-│   │
-│   ├── module-04/             # 模块四：GTM 实战案例深度解析
-│   │   ├── index.md
-│   │   ├── 4.1-plg-cases.md
-│   │   ├── 4.2-slg-cases.md
-│   │   ├── 4.3-chasm-cases.md
-│   │   └── 4.4-ai-gtm.md
-│   │
-│   ├── module-05/             # 模块五：GTM 执行工具包
-│   │   ├── index.md
-│   │   ├── 5.1-strategy-template.md
-│   │   ├── 5.2-icp-worksheet.md
-│   │   ├── 5.3-competitive-matrix.md
-│   │   ├── 5.4-funnel-checklist.md
-│   │   ├── 5.5-milestone-plan.md
-│   │   ├── 5.6-tool-stack.md
-│   │   └── 5.7-value-proposition-worksheet.md
-│   │
-│   └── appendix/              # 附录
-│       ├── index.md           # 附录概览
-│       ├── glossary.md        # 术语表
-│       ├── reading-list.md    # 推荐阅读
-│       └── resources.md       # 参考资源
-│
-└── package.json               # 项目配置
-```
+![GTM/](images/agent-01.svg)
 
 ---
 

@@ -1,0 +1,59 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="slg-07-title slg-07-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-07-title">Workday vs 传统 ERP</title>
+  <desc id="slg-07-desc">对比传统 ERP 与 Workday，并说明关键切入时机。</desc>
+  <defs>
+    <linearGradient id="slg-07-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-07-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .row { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#slg-07-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Workday vs 传统 ERP</text>
+
+  <g filter="url(#slg-07-shadow)">
+    <rect x="60" y="80" width="840" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="480" y1="80" x2="480" y2="300" class="row" />
+    <line x1="60" y1="120" x2="900" y2="120" class="row" />
+    <line x1="60" y1="160" x2="900" y2="160" class="row" />
+    <line x1="60" y1="200" x2="900" y2="200" class="row" />
+    <line x1="60" y1="240" x2="900" y2="240" class="row" />
+    <line x1="60" y1="280" x2="900" y2="280" class="row" />
+
+    <text x="270" y="108" text-anchor="middle" class="header">传统 ERP（Oracle / SAP）</text>
+    <text x="690" y="108" text-anchor="middle" class="header">Workday</text>
+
+    <text x="270" y="148" text-anchor="middle" class="cell">本地部署，需要 IT 资源</text>
+    <text x="690" y="148" text-anchor="middle" class="cell">真正云端，无需本地维护</text>
+
+    <text x="270" y="188" text-anchor="middle" class="cell">升级痛苦（每次大项目）</text>
+    <text x="690" y="188" text-anchor="middle" class="cell">持续自动更新</text>
+
+    <text x="270" y="228" text-anchor="middle" class="cell">高度定制，难以维护</text>
+    <text x="690" y="228" text-anchor="middle" class="cell">最佳实践内置，配置化</text>
+
+    <text x="270" y="268" text-anchor="middle" class="cell">多年实施周期</text>
+    <text x="690" y="268" text-anchor="middle" class="cell">6-12 月上线</text>
+
+    <text x="270" y="308" text-anchor="middle" class="cell">高额前期投入</text>
+    <text x="690" y="308" text-anchor="middle" class="cell">可预测的订阅费用</text>
+  </g>
+
+  <g filter="url(#slg-07-shadow)">
+    <rect x="60" y="320" width="840" height="100" rx="16" fill="#FFF7ED" stroke="#FED7AA" />
+    <text x="80" y="350" class="header">关键时机：传统 ERP 的升级周期</text>
+    <text x="80" y="374" class="note">• 很多公司的 ERP 已经 10-15 年未升级</text>
+    <text x="420" y="374" class="note">• 面临“升级还是换掉”的选择</text>
+    <text x="80" y="396" class="note">• Workday 提供“换掉”的选项</text>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="cm-01-title cm-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cm-01-title">竞争分析的战略价值</title>
+  <desc id="cm-01-desc">竞争分析帮助回答的五个关键问题及对应要点。</desc>
+  <defs>
+    <linearGradient id="cm-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="cm-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .num { font: 700 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .q { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#cm-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">竞争分析的战略价值</text>
+
+  <g filter="url(#cm-01-shadow)">
+    <rect x="80" y="90" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="90" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="80" y="190" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="190" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="290" y="290" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <circle cx="110" cy="120" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="110" y="124" text-anchor="middle" class="num">1</text>
+    <text x="135" y="118" class="q">我们的竞争对手是谁？</text>
+    <text x="135" y="142" class="body">直接竞争者 vs 间接竞争者 vs 替代品</text>
+
+    <circle cx="530" cy="120" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="530" y="124" text-anchor="middle" class="num">2</text>
+    <text x="555" y="118" class="q">我们如何差异化？</text>
+    <text x="555" y="142" class="body">产品、定价、服务、品牌</text>
+
+    <circle cx="110" cy="220" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="110" y="224" text-anchor="middle" class="num">3</text>
+    <text x="135" y="218" class="q">我们应该如何定位？</text>
+    <text x="135" y="242" class="body">正面竞争 vs 品类创造 vs 垂直聚焦</text>
+
+    <circle cx="530" cy="220" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="530" y="224" text-anchor="middle" class="num">4</text>
+    <text x="555" y="218" class="q">客户为什么选择我们/竞品？</text>
+    <text x="555" y="242" class="body">Win/Loss 分析</text>
+
+    <circle cx="320" cy="320" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="320" y="324" text-anchor="middle" class="num">5</text>
+    <text x="345" y="318" class="q">销售如何应对竞品？</text>
+    <text x="345" y="342" class="body">Battle Cards / Competitive Playbook</text>
+  </g>
+</svg>

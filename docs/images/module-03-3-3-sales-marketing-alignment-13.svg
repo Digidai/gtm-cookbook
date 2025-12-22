@@ -1,0 +1,52 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="abm-title abm-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="abm-title">Salesforce ABM 协作模式</title>
+  <desc id="abm-desc">目标客户选择、个性化触达、机会推进的三阶段协作。</desc>
+  <defs>
+    <linearGradient id="abm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="abm-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="abm-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#abm-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Salesforce ABM 协作模式</text>
+
+  <g filter="url(#abm-shadow)">
+    <rect x="80" y="80" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="110" class="step">目标客户选择（共同）</text>
+    <text x="110" y="134" class="body">销售提供：战略客户列表、客户洞察、关系图谱</text>
+    <text x="110" y="156" class="body">营销提供：意图数据、技术栈数据、企业画像</text>
+    <text x="110" y="178" class="body">共同产出：Top 100 目标账户列表</text>
+  </g>
+
+  <line x1="480" y1="200" x2="480" y2="230" class="line" marker-end="url(#abm-arrow)" />
+
+  <g filter="url(#abm-shadow)">
+    <rect x="80" y="230" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="260" class="step">个性化触达（协作）</text>
+    <text x="110" y="284" class="body">营销负责：定制内容、广告定向、活动邀请</text>
+    <text x="110" y="306" class="body">销售负责：个人触达、关系建立、需求发现</text>
+    <text x="110" y="328" class="body">协作机制：每周 ABM 同步会</text>
+  </g>
+
+  <line x1="480" y1="350" x2="480" y2="380" class="line" marker-end="url(#abm-arrow)" />
+
+  <g filter="url(#abm-shadow)">
+    <rect x="80" y="380" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="410" class="step">机会推进（销售主导、营销支持）</text>
+    <text x="110" y="434" class="body">销售主导：关系推进、商务谈判、方案定制</text>
+    <text x="110" y="456" class="body">营销支持：高管活动、定制内容、竞品分析</text>
+  </g>
+</svg>

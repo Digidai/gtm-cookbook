@@ -1,0 +1,44 @@
+<svg width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="chasm-02-title chasm-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-02-title">传统方式 vs HubSpot 方式</title>
+  <desc id="chasm-02-desc">对比传统市场打法与 HubSpot 跨越鸿沟的方法。</desc>
+  <defs>
+    <linearGradient id="chasm-02-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .header { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .row { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="228" rx="18" fill="url(#chasm-02-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#chasm-02-shadow)">
+    <rect x="80" y="40" width="800" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="480" y1="40" x2="480" y2="220" class="row" />
+    <line x1="80" y1="80" x2="880" y2="80" class="row" />
+    <line x1="80" y1="115" x2="880" y2="115" class="row" />
+    <line x1="80" y1="150" x2="880" y2="150" class="row" />
+    <line x1="80" y1="185" x2="880" y2="185" class="row" />
+
+    <text x="280" y="70" text-anchor="middle" class="header">传统方式</text>
+    <text x="680" y="70" text-anchor="middle" class="header">HubSpot 方式</text>
+
+    <text x="280" y="103" text-anchor="middle" class="cell">满足现有需求</text>
+    <text x="680" y="103" text-anchor="middle" class="cell">创造新需求</text>
+
+    <text x="280" y="138" text-anchor="middle" class="cell">在现有品类竞争</text>
+    <text x="680" y="138" text-anchor="middle" class="cell">定义新品类</text>
+
+    <text x="280" y="173" text-anchor="middle" class="cell">与同类产品比功能</text>
+    <text x="680" y="173" text-anchor="middle" class="cell">与旧方式比理念</text>
+
+    <text x="280" y="208" text-anchor="middle" class="cell">抢夺存量市场</text>
+    <text x="680" y="208" text-anchor="middle" class="cell">创造增量市场</text>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg width="960" height="720" viewBox="0 0 960 720" role="img" aria-labelledby="pricing-errors-title pricing-errors-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="pricing-errors-title">SaaS 定价常见错误</title>
+  <desc id="pricing-errors-desc">五种常见错误及其问题。</desc>
+  <defs>
+    <linearGradient id="pricing-errors-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="pricing-errors-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .error { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #B91C1C; }
+      .quote { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="688" rx="18" fill="url(#pricing-errors-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">SaaS 定价常见错误</text>
+
+  <g filter="url(#pricing-errors-shadow)">
+    <rect x="80" y="80" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="110" class="error">错误 1：成本加成定价</text>
+    <text x="110" y="134" class="quote">“我们的成本是 X，加上 30% 毛利，定价就是 1.3X”</text>
+    <text x="110" y="156" class="body">问题：忽略客户价值与支付意愿</text>
+  </g>
+
+  <g filter="url(#pricing-errors-shadow)">
+    <rect x="80" y="205" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="235" class="error">错误 2：跟随竞品定价</text>
+    <text x="110" y="259" class="quote">“竞品卖 $100，我们卖 $90”</text>
+    <text x="110" y="281" class="body">问题：陷入价格战，忽略差异化价值</text>
+  </g>
+
+  <g filter="url(#pricing-errors-shadow)">
+    <rect x="80" y="330" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="360" class="error">错误 3：定价一成不变</text>
+    <text x="110" y="384" class="quote">“我们 3 年前定的价格，一直没变”</text>
+    <text x="110" y="406" class="body">问题：产品价值增加却未调整定价</text>
+  </g>
+
+  <g filter="url(#pricing-errors-shadow)">
+    <rect x="80" y="455" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="485" class="error">错误 4：过度复杂</text>
+    <text x="110" y="509" class="quote">“我们有 15 个定价维度和 20 个套餐”</text>
+    <text x="110" y="531" class="body">问题：客户困惑，销售难以解释</text>
+  </g>
+
+  <g filter="url(#pricing-errors-shadow)">
+    <rect x="80" y="580" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="610" class="error">错误 5：定价过低</text>
+    <text x="110" y="634" class="quote">“我们怕定价高了卖不出去”</text>
+    <text x="110" y="656" class="body">问题：低价暗示低质量且难以支撑服务</text>
+  </g>
+</svg>

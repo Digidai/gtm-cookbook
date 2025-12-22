@@ -1,0 +1,45 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="metrics-payback-title metrics-payback-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-payback-title">CAC Payback 示例</title>
+  <desc id="metrics-payback-desc">基于 CAC、MRR 与毛利率计算 CAC Payback 时间，并给出解读。</desc>
+  <defs>
+    <linearGradient id="metrics-payback-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-payback-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .formula { font: 600 13px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .highlight { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0EA5A4; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#metrics-payback-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">CAC Payback 示例</text>
+
+  <g filter="url(#metrics-payback-shadow)">
+    <rect x="60" y="90" width="380" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="122" class="section">假设数据</text>
+    <text x="80" y="152" class="body">• CAC：$12,000</text>
+    <text x="80" y="176" class="body">• MRR：$1,000</text>
+    <text x="80" y="200" class="body">• 毛利率：80%</text>
+  </g>
+
+  <g filter="url(#metrics-payback-shadow)">
+    <rect x="520" y="90" width="380" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="540" y="122" class="section">计算过程</text>
+    <text x="540" y="152" class="formula">CAC Payback = $12,000 / ($1,000 × 80%)</text>
+    <text x="540" y="178" class="formula">= $12,000 / $800</text>
+    <text x="540" y="204" class="formula">= 15 个月</text>
+    <text x="540" y="238" class="highlight">回收期：15 个月</text>
+  </g>
+
+  <g filter="url(#metrics-payback-shadow)">
+    <rect x="60" y="310" width="840" height="70" rx="14" fill="#F0FDFA" stroke="#99F6E4" />
+    <text x="80" y="352" class="body">解读：需要 15 个月才能收回获客成本</text>
+  </g>
+</svg>

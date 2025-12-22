@@ -1,0 +1,42 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="stripe-pricing-title stripe-pricing-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="stripe-pricing-title">Stripe 混合定价模式</title>
+  <desc id="stripe-pricing-desc">基础用量定价、增值订阅/用量组合与企业协商三层结构。</desc>
+  <defs>
+    <linearGradient id="stripe-pricing-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="stripe-pricing-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .tier { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#stripe-pricing-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Stripe 混合定价模式</text>
+
+  <g filter="url(#stripe-pricing-shadow)">
+    <rect x="120" y="80" width="720" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="160" y="110" class="tier">基础层：用量定价</text>
+    <text x="160" y="134" class="body">支付处理：2.9% + $0.30 / 笔交易</text>
+    <text x="160" y="156" class="body">（核心服务，按使用付费）</text>
+  </g>
+
+  <g filter="url(#stripe-pricing-shadow)">
+    <rect x="120" y="220" width="720" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="160" y="250" class="tier">增值层：订阅 / 用量组合</text>
+    <text x="160" y="274" class="body">Stripe Billing：0.5% 账单金额</text>
+    <text x="160" y="296" class="body">Stripe Radar（反欺诈）：$0.05/交易</text>
+    <text x="160" y="318" class="body">Stripe Atlas（公司注册）：$500 一次性</text>
+  </g>
+
+  <g filter="url(#stripe-pricing-shadow)">
+    <rect x="120" y="380" width="720" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="160" y="410" class="tier">企业层：协商定价</text>
+    <text x="160" y="434" class="body">大客户定制费率 · 专属支持 · 定制集成</text>
+  </g>
+</svg>

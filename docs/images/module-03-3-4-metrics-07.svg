@@ -1,0 +1,71 @@
+<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="metrics-funnel-title metrics-funnel-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-funnel-title">B2B 销售漏斗转化率基准</title>
+  <desc id="metrics-funnel-desc">从访客到客户的 B2B 销售漏斗，标注典型转化率与阶段数量区间。</desc>
+  <defs>
+    <linearGradient id="metrics-funnel-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-funnel-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="metrics-funnel-arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .stage { font: 600 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .count { font: 600 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .rate { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .arrow { stroke: #64748B; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#metrics-funnel-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">B2B 销售漏斗转化率基准</text>
+
+  <g filter="url(#metrics-funnel-shadow)">
+    <rect x="130" y="90" width="700" height="44" rx="12" fill="#DBEAFE" stroke="#BFDBFE" />
+    <rect x="200" y="148" width="560" height="44" rx="12" fill="#E0F2FE" stroke="#BAE6FD" />
+    <rect x="250" y="206" width="460" height="44" rx="12" fill="#ECFEFF" stroke="#A5F3FC" />
+    <rect x="300" y="264" width="360" height="44" rx="12" fill="#ECFDF3" stroke="#BBF7D0" />
+    <rect x="340" y="322" width="280" height="44" rx="12" fill="#FFF7ED" stroke="#FED7AA" />
+    <rect x="380" y="380" width="200" height="44" rx="12" fill="#FEF2F2" stroke="#FECACA" />
+  </g>
+
+  <text x="150" y="118" class="stage">Website Visitor</text>
+  <text x="810" y="118" text-anchor="end" class="count">100,000</text>
+
+  <text x="220" y="176" class="stage">Lead</text>
+  <text x="740" y="176" text-anchor="end" class="count">2,000 - 5,000</text>
+
+  <text x="270" y="234" class="stage">MQL</text>
+  <text x="690" y="234" text-anchor="end" class="count">500 - 2,000</text>
+
+  <text x="320" y="292" class="stage">SQL</text>
+  <text x="640" y="292" text-anchor="end" class="count">150 - 700</text>
+
+  <text x="360" y="350" class="stage">Opportunity</text>
+  <text x="600" y="350" text-anchor="end" class="count">75 - 500</text>
+
+  <text x="400" y="408" class="stage">Customer</text>
+  <text x="560" y="408" text-anchor="end" class="count">15 - 150</text>
+
+  <line x1="480" y1="134" x2="480" y2="148" class="arrow" marker-end="url(#metrics-funnel-arrow)" />
+  <text x="520" y="144" class="rate">2-5%</text>
+
+  <line x1="480" y1="192" x2="480" y2="206" class="arrow" marker-end="url(#metrics-funnel-arrow)" />
+  <text x="520" y="202" class="rate">20-40%</text>
+
+  <line x1="480" y1="250" x2="480" y2="264" class="arrow" marker-end="url(#metrics-funnel-arrow)" />
+  <text x="520" y="260" class="rate">25-35%</text>
+
+  <line x1="480" y1="308" x2="480" y2="322" class="arrow" marker-end="url(#metrics-funnel-arrow)" />
+  <text x="520" y="318" class="rate">50-70%</text>
+
+  <line x1="480" y1="366" x2="480" y2="380" class="arrow" marker-end="url(#metrics-funnel-arrow)" />
+  <text x="520" y="376" class="rate">20-30%</text>
+
+  <text x="480" y="470" text-anchor="middle" class="note">注：以上为参考基准，实际因行业、产品、GTM Motion 差异很大</text>
+</svg>

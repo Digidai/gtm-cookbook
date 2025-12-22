@@ -1,0 +1,59 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="slg-03-title slg-03-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-03-title">Salesforce 生态系统</title>
+  <desc id="slg-03-desc">以 Salesforce 核心平台为中心，连接 ISV、SI 与 AppExchange，并展示规模数据。</desc>
+  <defs>
+    <linearGradient id="slg-03-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-03-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="slg-03-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .metric { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#slg-03-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Salesforce 生态系统</text>
+
+  <g filter="url(#slg-03-shadow)">
+    <rect x="330" y="80" width="300" height="70" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="110" text-anchor="middle" class="section">Salesforce</text>
+    <text x="480" y="132" text-anchor="middle" class="body">核心平台</text>
+  </g>
+
+  <line x1="480" y1="150" x2="220" y2="190" stroke="#64748B" stroke-width="1.8" marker-end="url(#slg-03-arrow)" />
+  <line x1="480" y1="150" x2="480" y2="190" stroke="#64748B" stroke-width="1.8" marker-end="url(#slg-03-arrow)" />
+  <line x1="480" y1="150" x2="740" y2="190" stroke="#64748B" stroke-width="1.8" marker-end="url(#slg-03-arrow)" />
+
+  <g filter="url(#slg-03-shadow)">
+    <rect x="120" y="200" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="380" y="200" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="640" y="200" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="220" y="230" text-anchor="middle" class="section">ISV</text>
+    <text x="220" y="252" text-anchor="middle" class="body">独立软件供应商</text>
+
+    <text x="480" y="230" text-anchor="middle" class="section">SI</text>
+    <text x="480" y="252" text-anchor="middle" class="body">系统集成商</text>
+
+    <text x="740" y="230" text-anchor="middle" class="section">AppExchange</text>
+    <text x="740" y="252" text-anchor="middle" class="body">应用市场</text>
+  </g>
+
+  <g filter="url(#slg-03-shadow)">
+    <rect x="120" y="310" width="720" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="140" y="340" class="section">生态数据</text>
+    <text x="140" y="364" class="metric">• 7,000+ 应用</text>
+    <text x="320" y="364" class="metric">• 1,700+ ISV 合作伙伴</text>
+    <text x="560" y="364" class="metric">• 11M+ 次安装</text>
+    <text x="140" y="386" class="metric">• 数百万开发者</text>
+  </g>
+</svg>

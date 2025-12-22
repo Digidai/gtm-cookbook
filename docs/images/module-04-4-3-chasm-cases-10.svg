@@ -1,0 +1,40 @@
+<svg width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="chasm-10-title chasm-10-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-10-title">PLG（底层渗透）</title>
+  <desc id="chasm-10-desc">通过用户数据和使用量信号，驱动销售团队转向企业级合同。</desc>
+  <defs>
+    <linearGradient id="chasm-10-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-10-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="chasm-10-arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 16px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.6; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="288" rx="18" fill="url(#chasm-10-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">PLG（底层渗透）</text>
+
+  <g filter="url(#chasm-10-shadow)">
+    <rect x="300" y="70" width="360" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="300" y="150" width="360" height="80" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="300" y="250" width="360" height="50" rx="12" fill="#ECFDF3" stroke="#86EFAC" />
+
+    <text x="480" y="98" text-anchor="middle" class="body">用户数据 / 使用量信号</text>
+
+    <text x="480" y="182" text-anchor="middle" class="body">销售团队（SLG）</text>
+    <text x="480" y="204" text-anchor="middle" class="body">识别高潜力账户 · 主动触达 IT / 采购</text>
+
+    <text x="480" y="282" text-anchor="middle" class="body">企业级合同</text>
+  </g>
+
+  <line x1="480" y1="130" x2="480" y2="150" class="line" marker-end="url(#chasm-10-arrow)" />
+  <line x1="480" y1="230" x2="480" y2="250" class="line" marker-end="url(#chasm-10-arrow)" />
+</svg>

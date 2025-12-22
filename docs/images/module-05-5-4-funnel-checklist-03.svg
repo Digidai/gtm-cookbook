@@ -1,0 +1,42 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="fc-03-title fc-03-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="fc-03-title">关键指标计算公式</title>
+  <desc id="fc-03-desc">CAC、LTV、LTV:CAC 与 Magic Number 等关键指标计算公式及健康基准。</desc>
+  <defs>
+    <linearGradient id="fc-03-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="fc-03-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .formula { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#fc-03-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">关键指标计算公式</text>
+
+  <g filter="url(#fc-03-shadow)">
+    <rect x="80" y="90" width="520" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="120" class="section">指标公式</text>
+    <text x="100" y="146" class="formula">CAC = (销售费用 + 营销费用) / 新增客户数</text>
+    <text x="100" y="170" class="formula">CAC Payback = CAC / (ARPU × 毛利率)</text>
+    <text x="100" y="194" class="formula">LTV = ARPU × 毛利率 × 客户生命周期</text>
+    <text x="100" y="218" class="formula">= ARPU × 毛利率 / 月流失率</text>
+    <text x="100" y="242" class="formula">LTV:CAC = LTV / CAC</text>
+    <text x="100" y="266" class="formula">Magic Number = (本季度 ARR - 上季度 ARR) / 上季度销售营销费用</text>
+
+    <rect x="620" y="90" width="260" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="640" y="120" class="section">健康基准</text>
+    <text x="640" y="150" class="note">• LTV:CAC &gt; 3:1（好）</text>
+    <text x="640" y="172" class="note">  &gt; 5:1（优秀）</text>
+    <text x="640" y="198" class="note">• CAC Payback &lt; 12 月（好）</text>
+    <text x="640" y="220" class="note">  &lt; 6 月（优秀）</text>
+    <text x="640" y="246" class="note">• Magic Number &gt; 0.7（高效）</text>
+    <text x="640" y="268" class="note">  &gt; 1.0（非常高效）</text>
+  </g>
+</svg>

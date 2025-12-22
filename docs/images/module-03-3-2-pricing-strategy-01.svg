@@ -1,0 +1,58 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="pricing-lever-title pricing-lever-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="pricing-lever-title">定价的杠杆效应</title>
+  <desc id="pricing-lever-desc">1% 的定价提升带来最大的利润增长，对比销量和成本杠杆。</desc>
+  <defs>
+    <linearGradient id="pricing-lever-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="pricing-lever-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .label { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .note { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#pricing-lever-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">定价的杠杆效应</text>
+
+  <g filter="url(#pricing-lever-shadow)">
+    <rect x="60" y="80" width="320" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="110" class="section">假设一家 SaaS 公司</text>
+    <text x="90" y="136" class="body">• 收入：$10M ARR</text>
+    <text x="90" y="160" class="body">• 毛利率：70%</text>
+    <text x="90" y="184" class="body">• 营业利润率：10%</text>
+    <text x="90" y="220" class="section">提升 1% 时利润变化</text>
+  </g>
+
+  <g filter="url(#pricing-lever-shadow)">
+    <rect x="420" y="80" width="480" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="450" y="110" class="label">定价提升 1%</text>
+    <rect x="560" y="100" width="260" height="12" rx="6" fill="#E0F2FE" />
+    <rect x="560" y="100" width="260" height="12" rx="6" fill="#38BDF8" />
+    <text x="830" y="110" class="label">+7%</text>
+
+    <text x="450" y="150" class="label">销量提升 1%</text>
+    <rect x="560" y="140" width="260" height="12" rx="6" fill="#E0F2FE" />
+    <rect x="560" y="140" width="137" height="12" rx="6" fill="#60A5FA" />
+    <text x="830" y="150" class="label">+3.7%</text>
+
+    <text x="450" y="190" class="label">可变成本降低 1%</text>
+    <rect x="560" y="180" width="260" height="12" rx="6" fill="#E0F2FE" />
+    <rect x="560" y="180" width="85" height="12" rx="6" fill="#93C5FD" />
+    <text x="830" y="190" class="label">+2.3%</text>
+
+    <text x="450" y="230" class="label">固定成本降低 1%</text>
+    <rect x="560" y="220" width="260" height="12" rx="6" fill="#E0F2FE" />
+    <rect x="560" y="220" width="48" height="12" rx="6" fill="#BAE6FD" />
+    <text x="830" y="230" class="label">+1.3%</text>
+  </g>
+
+  <text x="60" y="340" class="body">结论：定价是最强的利润杠杆，1% 定价提升通常带来 7% 利润增长</text>
+  <text x="60" y="362" class="note">来源：麦肯锡定价研究</text>
+</svg>

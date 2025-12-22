@@ -1,0 +1,44 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="plg-06-title plg-06-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="plg-06-title">Figma 自传播路径</title>
+  <desc id="plg-06-desc">设计师 A 创建并分享，带动同事 B 试用并扩散，形成病毒式传播。</desc>
+  <defs>
+    <linearGradient id="plg-06-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="plg-06-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="plg-06-arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .step { font: 600 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .line { stroke: #64748B; stroke-width: 1.6; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#plg-06-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#plg-06-shadow)">
+    <rect x="280" y="50" width="400" height="44" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="280" y="110" width="400" height="44" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="280" y="170" width="400" height="44" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="280" y="230" width="400" height="44" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="280" y="290" width="400" height="44" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="280" y="350" width="400" height="44" rx="12" fill="#ECFDF3" stroke="#86EFAC" />
+
+    <text x="480" y="78" text-anchor="middle" class="step">设计师 A 创建设计</text>
+    <text x="480" y="138" text-anchor="middle" class="step">分享链接给同事 B 查看</text>
+    <text x="480" y="198" text-anchor="middle" class="step">B 发现 Figma 好用</text>
+    <text x="480" y="258" text-anchor="middle" class="step">B 开始使用 Figma</text>
+    <text x="480" y="318" text-anchor="middle" class="step">B 分享给更多人</text>
+    <text x="480" y="378" text-anchor="middle" class="step">病毒传播形成</text>
+  </g>
+
+  <line x1="480" y1="94" x2="480" y2="110" class="line" marker-end="url(#plg-06-arrow)" />
+  <line x1="480" y1="154" x2="480" y2="170" class="line" marker-end="url(#plg-06-arrow)" />
+  <line x1="480" y1="214" x2="480" y2="230" class="line" marker-end="url(#plg-06-arrow)" />
+  <line x1="480" y1="274" x2="480" y2="290" class="line" marker-end="url(#plg-06-arrow)" />
+  <line x1="480" y1="334" x2="480" y2="350" class="line" marker-end="url(#plg-06-arrow)" />
+</svg>

@@ -1,0 +1,42 @@
+<svg width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="revops-03-title revops-03-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-03-title">数据质量管理流程</title>
+  <desc id="revops-03-desc">通过录入规范、自动化检查与定期审计三步保障数据质量。</desc>
+  <defs>
+    <linearGradient id="revops-03-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-03-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="288" rx="18" fill="url(#revops-03-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">数据质量管理流程</text>
+
+  <g filter="url(#revops-03-shadow)">
+    <rect x="60" y="80" width="260" height="190" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="350" y="80" width="260" height="190" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="640" y="80" width="260" height="190" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="112" class="section">录入规范</text>
+    <text x="80" y="140" class="body">• 必填字段</text>
+    <text x="80" y="162" class="body">• 标准格式</text>
+    <text x="80" y="184" class="body">• 选项限制</text>
+
+    <text x="370" y="112" class="section">自动化检查</text>
+    <text x="370" y="140" class="body">• 格式校验</text>
+    <text x="370" y="162" class="body">• 去重检测</text>
+    <text x="370" y="184" class="body">• 异常告警</text>
+
+    <text x="660" y="112" class="section">定期审计</text>
+    <text x="660" y="140" class="body">• 月度数据</text>
+    <text x="660" y="162" class="body">• 质量报告</text>
+    <text x="660" y="184" class="body">• 治理行动</text>
+  </g>
+</svg>

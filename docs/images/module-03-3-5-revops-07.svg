@@ -1,0 +1,51 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="revops-07-title revops-07-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-07-title">工具选型评分卡</title>
+  <desc id="revops-07-desc">从功能匹配、集成能力、易用性、供应商与成本效益五个维度评估工具选型。</desc>
+  <defs>
+    <linearGradient id="revops-07-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-07-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .row-title { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .row-desc { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .badge { font: 600 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#revops-07-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">工具选型评分卡</text>
+
+  <g filter="url(#revops-07-shadow)">
+    <rect x="60" y="80" width="840" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="80" y="100" width="120" height="28" rx="14" fill="#E0F2FE" />
+    <text x="140" y="118" text-anchor="middle" class="badge">30%</text>
+    <text x="220" y="118" class="row-title">功能匹配度</text>
+    <text x="220" y="140" class="row-desc">是否满足核心需求？是否有不需要的复杂功能？</text>
+
+    <rect x="80" y="158" width="120" height="28" rx="14" fill="#E0F2FE" />
+    <text x="140" y="176" text-anchor="middle" class="badge">25%</text>
+    <text x="220" y="176" class="row-title">集成能力</text>
+    <text x="220" y="198" class="row-desc">是否有现成集成？API 是否完善？</text>
+
+    <rect x="80" y="216" width="120" height="28" rx="14" fill="#E0F2FE" />
+    <text x="140" y="234" text-anchor="middle" class="badge">20%</text>
+    <text x="220" y="234" class="row-title">易用性</text>
+    <text x="220" y="256" class="row-desc">学习曲线如何？用户是否愿意使用？</text>
+
+    <rect x="80" y="274" width="120" height="28" rx="14" fill="#E0F2FE" />
+    <text x="140" y="292" text-anchor="middle" class="badge">15%</text>
+    <text x="220" y="292" class="row-title">供应商</text>
+    <text x="220" y="314" class="row-desc">公司实力？客户支持？产品路线图？</text>
+
+    <rect x="80" y="332" width="120" height="28" rx="14" fill="#E0F2FE" />
+    <text x="140" y="350" text-anchor="middle" class="badge">10%</text>
+    <text x="220" y="350" class="row-title">成本效益</text>
+    <text x="220" y="372" class="row-desc">价格是否合理？ROI 预期？</text>
+  </g>
+</svg>

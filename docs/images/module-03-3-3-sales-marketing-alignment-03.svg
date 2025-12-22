@@ -1,0 +1,50 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="icp-workshop-title icp-workshop-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="icp-workshop-title">ICP 对齐工作坊</title>
+  <desc id="icp-workshop-desc">收集数据、共同讨论、文档化传达的三步工作坊。</desc>
+  <defs>
+    <linearGradient id="icp-workshop-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="icp-workshop-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="icp-workshop-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#icp-workshop-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">ICP 对齐工作坊</text>
+
+  <g filter="url(#icp-workshop-shadow)">
+    <rect x="80" y="80" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="110" class="step">步骤 1：收集数据</text>
+    <text x="110" y="134" class="body">• 分析历史成交客户特征 · 识别高 LTV 客户共性</text>
+    <text x="110" y="156" class="body">• 收集销售一线反馈</text>
+  </g>
+
+  <line x1="480" y1="190" x2="480" y2="220" class="line" marker-end="url(#icp-workshop-arrow)" />
+
+  <g filter="url(#icp-workshop-shadow)">
+    <rect x="80" y="220" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="250" class="step">步骤 2：共同讨论</text>
+    <text x="110" y="274" class="body">• 营销 + 销售领导共同参与</text>
+    <text x="110" y="296" class="body">• 基于数据讨论，达成一致并记录</text>
+  </g>
+
+  <line x1="480" y1="330" x2="480" y2="360" class="line" marker-end="url(#icp-workshop-arrow)" />
+
+  <g filter="url(#icp-workshop-shadow)">
+    <rect x="80" y="360" width="800" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="390" class="step">步骤 3：文档化并传达</text>
+    <text x="110" y="414" class="body">• 书面的 ICP 定义 · 全员培训</text>
+    <text x="110" y="436" class="body">• 定期回顾和更新</text>
+  </g>
+</svg>

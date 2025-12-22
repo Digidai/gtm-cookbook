@@ -1,0 +1,88 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="gtm-team-title gtm-team-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="gtm-team-title">GTM 跨职能协作关系</title>
+  <desc id="gtm-team-desc">GTM 战略统筹产品、市场、销售三个职能，并最终汇聚到客户成功与服务环节。</desc>
+  <defs>
+    <linearGradient id="gtm-team-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="gtm-team-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="gtm-team-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .top-title { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #FFFFFF; }
+      .section-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
+      .item { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .accent-teal { fill: #0EA5A4; }
+      .accent-amber { fill: #F59E0B; }
+      .accent-orange { fill: #F97316; }
+      .accent-green { fill: #10B981; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#gtm-team-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#gtm-team-shadow)">
+    <rect x="330" y="30" width="300" height="56" rx="14" fill="#2563EB" />
+    <text x="480" y="64" text-anchor="middle" class="top-title">GTM 战略</text>
+  </g>
+
+  <line x1="480" y1="86" x2="190" y2="120" stroke="#64748B" stroke-width="2" marker-end="url(#gtm-team-arrow)" />
+  <line x1="480" y1="86" x2="480" y2="120" stroke="#64748B" stroke-width="2" marker-end="url(#gtm-team-arrow)" />
+  <line x1="480" y1="86" x2="770" y2="120" stroke="#64748B" stroke-width="2" marker-end="url(#gtm-team-arrow)" />
+
+  <g filter="url(#gtm-team-shadow)">
+    <rect x="80" y="120" width="220" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="120" width="6" height="150" rx="6" fill="#0EA5A4" />
+    <text x="98" y="146" class="section-title accent-teal">产品</text>
+    <circle cx="104" cy="172" r="3" fill="#0EA5A4" />
+    <text x="114" y="176" class="item">功能路线</text>
+    <circle cx="104" cy="194" r="3" fill="#0EA5A4" />
+    <text x="114" y="198" class="item">用户体验</text>
+    <circle cx="104" cy="216" r="3" fill="#0EA5A4" />
+    <text x="114" y="220" class="item">定价输入</text>
+  </g>
+
+  <g filter="url(#gtm-team-shadow)">
+    <rect x="370" y="120" width="220" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="370" y="120" width="6" height="150" rx="6" fill="#F59E0B" />
+    <text x="388" y="146" class="section-title accent-amber">市场</text>
+    <circle cx="394" cy="172" r="3" fill="#F59E0B" />
+    <text x="404" y="176" class="item">需求生成</text>
+    <circle cx="394" cy="194" r="3" fill="#F59E0B" />
+    <text x="404" y="198" class="item">品牌建设</text>
+    <circle cx="394" cy="216" r="3" fill="#F59E0B" />
+    <text x="404" y="220" class="item">内容策略</text>
+  </g>
+
+  <g filter="url(#gtm-team-shadow)">
+    <rect x="660" y="120" width="220" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="660" y="120" width="6" height="150" rx="6" fill="#F97316" />
+    <text x="678" y="146" class="section-title accent-orange">销售</text>
+    <circle cx="684" cy="172" r="3" fill="#F97316" />
+    <text x="694" y="176" class="item">客户转化</text>
+    <circle cx="684" cy="194" r="3" fill="#F97316" />
+    <text x="694" y="198" class="item">关系管理</text>
+    <circle cx="684" cy="216" r="3" fill="#F97316" />
+    <text x="694" y="220" class="item">反馈收集</text>
+  </g>
+
+  <line x1="190" y1="270" x2="190" y2="310" stroke="#64748B" stroke-width="2" marker-end="url(#gtm-team-arrow)" />
+  <line x1="480" y1="270" x2="480" y2="310" stroke="#64748B" stroke-width="2" marker-end="url(#gtm-team-arrow)" />
+  <line x1="770" y1="270" x2="770" y2="310" stroke="#64748B" stroke-width="2" marker-end="url(#gtm-team-arrow)" />
+
+  <g filter="url(#gtm-team-shadow)">
+    <rect x="90" y="310" width="780" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="90" y="310" width="6" height="90" rx="6" fill="#10B981" />
+    <text x="110" y="340" class="section-title accent-green">客户成功 / 服务</text>
+    <circle cx="120" cy="366" r="3" fill="#10B981" />
+    <text x="130" y="370" class="item">交付与实施</text>
+    <circle cx="310" cy="366" r="3" fill="#10B981" />
+    <text x="320" y="370" class="item">留存与扩展</text>
+    <circle cx="500" cy="366" r="3" fill="#10B981" />
+    <text x="510" y="370" class="item">口碑与推荐</text>
+  </g>
+</svg>

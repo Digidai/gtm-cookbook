@@ -1,0 +1,53 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="st-01-title st-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="st-01-title">一页纸战略的价值</title>
+  <desc id="st-01-desc">用三步价值链说明一页纸战略的好处，并列出适用场景。</desc>
+  <defs>
+    <linearGradient id="st-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="st-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="st-01-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94A3B8" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#st-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">一页纸战略的价值</text>
+
+  <g filter="url(#st-01-shadow)">
+    <rect x="80" y="80" width="220" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="370" y="80" width="220" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="660" y="80" width="220" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="110" y="112" class="section">强迫简化</text>
+    <text x="110" y="136" class="body">把复杂战略</text>
+    <text x="110" y="156" class="body">浓缩为核心</text>
+
+    <text x="400" y="112" class="section">便于沟通</text>
+    <text x="400" y="136" class="body">5 分钟讲清楚</text>
+    <text x="400" y="156" class="body">GTM 战略</text>
+
+    <text x="690" y="112" class="section">统一认知</text>
+    <text x="690" y="136" class="body">团队同一</text>
+    <text x="690" y="156" class="body">行动方向</text>
+
+    <rect x="80" y="220" width="800" height="160" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="252" class="section">适用场景</text>
+    <text x="110" y="278" class="body">• 新产品/功能发布的 GTM 规划</text>
+    <text x="110" y="300" class="body">• 进入新市场/新地区的战略制定</text>
+    <text x="110" y="322" class="body">• 季度/年度 GTM 战略评审</text>
+    <text x="110" y="344" class="body">• 投资者/董事会沟通材料</text>
+    <text x="110" y="366" class="body">• 跨部门战略对齐会议</text>
+  </g>
+
+  <path d="M300 135 L360 135" stroke="#94A3B8" stroke-width="2" marker-end="url(#st-01-arrow)" />
+  <path d="M590 135 L650 135" stroke="#94A3B8" stroke-width="2" marker-end="url(#st-01-arrow)" />
+</svg>

@@ -1,0 +1,48 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="metrics-nrr-drivers-title metrics-nrr-drivers-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-nrr-drivers-title">高 NRR 的驱动因素</title>
+  <desc id="metrics-nrr-drivers-desc">从产品、客户成功与销售三个维度总结高 NRR 的关键驱动因素。</desc>
+  <defs>
+    <linearGradient id="metrics-nrr-drivers-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-nrr-drivers-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#metrics-nrr-drivers-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">高 NRR 的驱动因素</text>
+
+  <g filter="url(#metrics-nrr-drivers-shadow)">
+    <rect x="60" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="90" width="6" height="360" rx="6" fill="#6366F1" />
+    <text x="80" y="124" class="section">产品因素</text>
+    <text x="80" y="158" class="body">• 自然扩展路径（用户/功能/数据）</text>
+    <text x="80" y="182" class="body">• Usage-based 定价模型</text>
+    <text x="80" y="206" class="body">• 产品黏性高、切换成本高</text>
+  </g>
+
+  <g filter="url(#metrics-nrr-drivers-shadow)">
+    <rect x="350" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="350" y="90" width="6" height="360" rx="6" fill="#0EA5A4" />
+    <text x="370" y="124" class="section">客户成功因素</text>
+    <text x="370" y="158" class="body">• 主动的客户成功管理</text>
+    <text x="370" y="182" class="body">• 清晰的价值实现路径</text>
+    <text x="370" y="206" class="body">• 及时识别和处理风险</text>
+  </g>
+
+  <g filter="url(#metrics-nrr-drivers-shadow)">
+    <rect x="640" y="90" width="260" height="360" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="640" y="90" width="6" height="360" rx="6" fill="#F59E0B" />
+    <text x="660" y="124" class="section">销售因素</text>
+    <text x="660" y="158" class="body">• 专职扩展销售团队</text>
+    <text x="660" y="182" class="body">• 清晰的扩展销售 Playbook</text>
+    <text x="660" y="206" class="body">• 与客户成功紧密配合</text>
+  </g>
+</svg>

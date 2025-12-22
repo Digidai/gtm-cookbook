@@ -1,0 +1,60 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="cm-02-title cm-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cm-02-title">竞争分析完整框架</title>
+  <desc id="cm-02-desc">竞争分析从识别竞争者到情报更新的八步流程框架。</desc>
+  <defs>
+    <linearGradient id="cm-02-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="cm-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="cm-02-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#94A3B8" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .line { stroke: #94A3B8; stroke-width: 2; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#cm-02-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">竞争分析完整框架</text>
+
+  <g filter="url(#cm-02-shadow)">
+    <rect x="80" y="90" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="125" class="step">1. 竞争者识别</text>
+
+    <rect x="80" y="170" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="205" class="step">2. 竞争定位矩阵</text>
+
+    <rect x="340" y="170" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="360" y="205" class="step">3. 功能对比</text>
+
+    <rect x="600" y="170" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="620" y="205" class="step">4. SWOT 分析</text>
+
+    <rect x="80" y="250" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="285" class="step">5. 差异化策略</text>
+
+    <rect x="340" y="250" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="360" y="285" class="step">6. Win/Loss 分析</text>
+
+    <rect x="80" y="330" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="365" class="step">7. 竞争应对 Playbook</text>
+
+    <rect x="340" y="330" width="220" height="60" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="360" y="365" class="step">8. 情报更新机制</text>
+  </g>
+
+  <path d="M190 150 L190 168" class="line" marker-end="url(#cm-02-arrow)" />
+  <path d="M190 230 L190 248" class="line" marker-end="url(#cm-02-arrow)" />
+  <path d="M190 310 L190 328" class="line" marker-end="url(#cm-02-arrow)" />
+
+  <path d="M300 200 L330 200" class="line" marker-end="url(#cm-02-arrow)" />
+  <path d="M560 200 L590 200" class="line" marker-end="url(#cm-02-arrow)" />
+
+  <path d="M300 280 L330 280" class="line" marker-end="url(#cm-02-arrow)" />
+  <path d="M300 360 L330 360" class="line" marker-end="url(#cm-02-arrow)" />
+</svg>

@@ -1,0 +1,41 @@
+<svg width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="ts-08-title ts-08-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ts-08-title">中小企业起步工具栈</title>
+  <desc id="ts-08-desc">中小企业起步阶段的推荐工具栈、预算与适用范围。</desc>
+  <defs>
+    <linearGradient id="ts-08-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ts-08-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="328" rx="18" fill="url(#ts-08-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">中小企业起步工具栈</text>
+
+  <g filter="url(#ts-08-shadow)">
+    <rect x="80" y="80" width="600" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="110" class="section">推荐组合</text>
+    <text x="100" y="138" class="body">CRM：简道云 / 悟空 CRM（免费版）</text>
+    <text x="100" y="160" class="body">客服：美洽 / 企业微信自带</text>
+    <text x="100" y="182" class="body">营销：企业微信 + 微盛基础版</text>
+    <text x="100" y="204" class="body">分析：百度统计 + 简单埋点</text>
+    <text x="100" y="226" class="body">协作：钉钉 / 飞书 / 企业微信</text>
+
+    <rect x="700" y="80" width="180" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="720" y="112" class="section">总预算</text>
+    <text x="720" y="138" class="note">￥2,000-5,000/月</text>
+
+    <rect x="700" y="190" width="180" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="720" y="222" class="section">适合</text>
+    <text x="720" y="248" class="note">50 人以下团队</text>
+    <text x="720" y="268" class="note">$100 万以下 ARR</text>
+  </g>
+</svg>

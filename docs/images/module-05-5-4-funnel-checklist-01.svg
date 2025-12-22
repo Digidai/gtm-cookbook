@@ -1,0 +1,57 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="fc-01-title fc-01-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="fc-01-title">漏斗诊断的价值</title>
+  <desc id="fc-01-desc">漏斗诊断的四个关键问题与诊断结果用途。</desc>
+  <defs>
+    <linearGradient id="fc-01-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="fc-01-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .num { font: 700 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .q { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#fc-01-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">漏斗诊断的价值</text>
+
+  <g filter="url(#fc-01-shadow)">
+    <rect x="80" y="90" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="90" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="190" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="190" width="380" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <circle cx="110" cy="120" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="110" y="124" text-anchor="middle" class="num">1</text>
+    <text x="135" y="118" class="q">我们的获客效率如何？</text>
+    <text x="135" y="142" class="body">CAC、LTV:CAC、Magic Number</text>
+
+    <circle cx="530" cy="120" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="530" y="124" text-anchor="middle" class="num">2</text>
+    <text x="555" y="118" class="q">瓶颈在哪里？</text>
+    <text x="555" y="142" class="body">哪个阶段转化率最低？哪里流失最多？</text>
+
+    <circle cx="110" cy="220" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="110" y="224" text-anchor="middle" class="num">3</text>
+    <text x="135" y="218" class="q">应该优先改进什么？</text>
+    <text x="135" y="242" class="body">资源分配、改进优先级</text>
+
+    <circle cx="530" cy="220" r="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="530" y="224" text-anchor="middle" class="num">4</text>
+    <text x="555" y="218" class="q">趋势如何？</text>
+    <text x="555" y="242" class="body">指标是在改善还是恶化？</text>
+
+    <rect x="80" y="290" width="800" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="320" class="section">诊断结果的用途</text>
+    <text x="100" y="344" class="body">• 发现问题根因</text>
+    <text x="260" y="344" class="body">• 制定改进计划</text>
+    <text x="420" y="344" class="body">• 资源分配决策</text>
+    <text x="580" y="344" class="body">• 预测业绩走势</text>
+  </g>
+</svg>

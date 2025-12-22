@@ -1,0 +1,45 @@
+<svg width="960" height="440" viewBox="0 0 960 440" role="img" aria-labelledby="metrics-magic-title metrics-magic-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-magic-title">Magic Number 计算</title>
+  <desc id="metrics-magic-desc">基于净新增 ARR 与上季度销售营销支出计算 Magic Number，并给出解读。</desc>
+  <defs>
+    <linearGradient id="metrics-magic-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-magic-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .formula { font: 600 13px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .highlight { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #2563EB; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="408" rx="18" fill="url(#metrics-magic-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Magic Number 计算</text>
+
+  <g filter="url(#metrics-magic-shadow)">
+    <rect x="60" y="90" width="380" height="190" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="122" class="section">假设数据</text>
+    <text x="80" y="152" class="body">• Q2 净新增 ARR：$800,000</text>
+    <text x="80" y="176" class="body">• Q1 销售营销支出：$1,000,000</text>
+  </g>
+
+  <g filter="url(#metrics-magic-shadow)">
+    <rect x="520" y="90" width="380" height="190" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="540" y="122" class="section">计算过程</text>
+    <text x="540" y="152" class="formula">Magic Number = $800,000 / $1,000,000</text>
+    <text x="540" y="178" class="formula">= 0.8</text>
+    <text x="540" y="212" class="highlight">Magic Number = 0.8</text>
+  </g>
+
+  <g filter="url(#metrics-magic-shadow)">
+    <rect x="60" y="300" width="840" height="100" rx="14" fill="#F8FAFF" stroke="#DBEAFE" />
+    <text x="80" y="330" class="section">解读</text>
+    <text x="80" y="356" class="body">• 每投入 $1 销售营销费用，产生 $0.8 新增 ARR</text>
+    <text x="80" y="380" class="body">• Magic Number = 0.8，处于健康区间，可考虑适度加大投入</text>
+  </g>
+</svg>

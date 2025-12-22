@@ -1,0 +1,68 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="st-04-title st-04-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="st-04-title">GTM 战略一页纸 - SalesHub</title>
+  <desc id="st-04-desc">SalesHub 的一页纸 GTM 战略示例，包含目标市场、价值主张、GTM Motion、定价、关键指标与资源。</desc>
+  <defs>
+    <linearGradient id="st-04-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="st-04-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#st-04-bg)" stroke="#E2E8F0" />
+  <text x="480" y="46" text-anchor="middle" class="title">GTM 战略一页纸 - SalesHub</text>
+  <text x="480" y="68" text-anchor="middle" class="sub">v1.0 | 2024-Q1</text>
+
+  <g filter="url(#st-04-shadow)">
+    <rect x="60" y="100" width="400" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="100" width="400" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="60" y="230" width="400" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="230" width="400" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="60" y="360" width="400" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="360" width="400" height="110" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="130" class="section">【目标市场】</text>
+    <text x="80" y="154" class="body">• ICP: 50-200人 SaaS 公司</text>
+    <text x="80" y="176" class="body">• 销售团队 10-30 人</text>
+    <text x="80" y="198" class="body">• TAM: $5B | SAM: $500M</text>
+    <text x="80" y="220" class="body">• 首年 SOM: $5M</text>
+
+    <text x="520" y="130" class="section">【价值主张】</text>
+    <text x="520" y="154" class="body">• 定位: 为成长期 SaaS 设计的</text>
+    <text x="520" y="176" class="body">  销售协作平台</text>
+    <text x="520" y="198" class="body">• 差异化: AI 驱动的销售预测</text>
+    <text x="520" y="220" class="body">  + 原生 Slack 集成</text>
+
+    <text x="80" y="260" class="section">【GTM Motion】</text>
+    <text x="80" y="284" class="body">• Hybrid: PLG + SLG</text>
+    <text x="80" y="306" class="body">• Self-serve: 60%</text>
+    <text x="80" y="328" class="body">• Sales-assist: 40%</text>
+
+    <text x="520" y="260" class="section">【定价】</text>
+    <text x="520" y="284" class="body">• Freemium</text>
+    <text x="520" y="306" class="body">• Pro ($49/seat/mo)</text>
+    <text x="520" y="328" class="body">• Team ($99) / Enterprise</text>
+    <text x="520" y="350" class="body">• 试用: 14 天 Pro 功能</text>
+    <text x="520" y="372" class="body">• 目标 Free -> Paid: 5%</text>
+
+    <text x="80" y="390" class="section">【关键指标】</text>
+    <text x="80" y="414" class="body">• 北极星: Weekly Active Teams</text>
+    <text x="80" y="436" class="body">• 目标: Q4 500 付费客户</text>
+    <text x="80" y="458" class="body">• ARR: $2M | NRR: &gt;110%</text>
+
+    <text x="520" y="390" class="section">【资源】</text>
+    <text x="520" y="414" class="body">• 团队: 5 人 (Mkt 2, Sales 2, Ops 1)</text>
+    <text x="520" y="436" class="body">• 预算: $500K/年</text>
+    <text x="520" y="458" class="body">• 人员 60% / 营销 30% / 工具 10%</text>
+  </g>
+</svg>

@@ -1,0 +1,55 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="ai-05-title ai-05-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ai-05-title">AI-Native vs 传统公司增速对比</title>
+  <desc id="ai-05-desc">对比 AI-Native 与传统公司在不同 ARR 区间的 YoY 增速。</desc>
+  <defs>
+    <linearGradient id="ai-05-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ai-05-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 11px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .axis { stroke: #CBD5F5; stroke-width: 1.2; }
+      .ai { fill: #2563EB; }
+      .trad { fill: #94A3B8; }
+      .legend { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .source { font: 11px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #94A3B8; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#ai-05-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">AI-Native vs 传统公司增速对比</text>
+
+  <g filter="url(#ai-05-shadow)">
+    <rect x="80" y="70" width="800" height="280" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <line x1="140" y1="90" x2="140" y2="320" class="axis" />
+    <line x1="140" y1="320" x2="820" y2="320" class="axis" />
+
+    <text x="110" y="100" class="label">100%</text>
+    <text x="110" y="140" class="label">80%</text>
+    <text x="110" y="180" class="label">60%</text>
+    <text x="110" y="220" class="label">40%</text>
+    <text x="110" y="260" class="label">20%</text>
+    <text x="115" y="320" class="label">0%</text>
+
+    <rect x="240" y="120" width="60" height="200" class="ai" />
+    <rect x="320" y="200" width="60" height="120" class="trad" />
+
+    <rect x="520" y="140" width="60" height="180" class="ai" />
+    <rect x="600" y="220" width="60" height="100" class="trad" />
+
+    <text x="270" y="342" text-anchor="middle" class="legend">$1-10M ARR</text>
+    <text x="550" y="342" text-anchor="middle" class="legend">$10-50M ARR</text>
+
+    <rect x="700" y="100" width="14" height="14" class="ai" />
+    <text x="720" y="112" class="legend">AI-Native</text>
+    <rect x="700" y="124" width="14" height="14" class="trad" />
+    <text x="720" y="136" class="legend">Traditional</text>
+  </g>
+
+  <text x="80" y="382" class="source">来源：ICONIQ Growth 2024</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="chasm-14-title chasm-14-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-14-title">有赞行业扩展路径</title>
+  <desc id="chasm-14-desc">有赞从美妆母婴等高复购行业扩展到全行业的阶段路径与特征。</desc>
+  <defs>
+    <linearGradient id="chasm-14-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-14-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .phase { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .label { font: 600 11px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .grid { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#chasm-14-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">有赞行业扩展路径</text>
+
+  <g filter="url(#chasm-14-shadow)">
+    <rect x="60" y="80" width="840" height="320" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="270" y1="80" x2="270" y2="400" class="grid" />
+    <line x1="480" y1="80" x2="480" y2="400" class="grid" />
+    <line x1="690" y1="80" x2="690" y2="400" class="grid" />
+    <line x1="60" y1="140" x2="900" y2="140" class="grid" />
+    <line x1="60" y1="260" x2="900" y2="260" class="grid" />
+
+    <text x="90" y="110" class="phase">Phase 1</text>
+    <text x="300" y="110" class="phase">Phase 2</text>
+    <text x="510" y="110" class="phase">Phase 3</text>
+    <text x="720" y="110" class="phase">Phase 4</text>
+
+    <text x="90" y="128" class="label">2014-2016</text>
+    <text x="300" y="128" class="label">2016-2018</text>
+    <text x="510" y="128" class="label">2018-2020</text>
+    <text x="720" y="128" class="label">2020+</text>
+
+    <text x="90" y="170" class="cell">• 美妆护肤</text>
+    <text x="90" y="192" class="cell">• 母婴亲子</text>
+    <text x="90" y="214" class="cell">• 食品生鲜</text>
+
+    <text x="300" y="170" class="cell">• 餐饮</text>
+    <text x="300" y="192" class="cell">• 零售</text>
+    <text x="300" y="214" class="cell">• 服装</text>
+
+    <text x="510" y="170" class="cell">• 教育培训</text>
+    <text x="510" y="192" class="cell">• 酒旅</text>
+    <text x="510" y="214" class="cell">• 本地生活</text>
+
+    <text x="720" y="170" class="cell">• 全行业</text>
+    <text x="720" y="192" class="cell">• 大客户</text>
+    <text x="720" y="214" class="cell">• 品牌连锁</text>
+
+    <text x="90" y="292" class="label">特点</text>
+    <text x="90" y="314" class="cell">• 高复购 · 强社交 · KOL 带货</text>
+
+    <text x="300" y="292" class="label">特点</text>
+    <text x="300" y="314" class="cell">• 门店场景 · 线上线下一体化</text>
+
+    <text x="510" y="292" class="label">特点</text>
+    <text x="510" y="314" class="cell">• 服务场景 · 预约/核销 · 会员管理</text>
+
+    <text x="720" y="292" class="label">特点</text>
+    <text x="720" y="314" class="cell">• 复杂需求 · 定制化 · 专业服务</text>
+  </g>
+</svg>

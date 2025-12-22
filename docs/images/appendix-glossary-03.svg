@@ -1,0 +1,42 @@
+<svg width="800" height="100" viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .box { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; }
+      .text { font-family: system-ui, sans-serif; font-size: 13px; font-weight: 500; fill: #334155; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <g transform="translate(20, 30)">
+    <!-- 1 -->
+    <rect x="0" y="0" width="120" height="40" rx="20" class="box" />
+    <text x="60" y="25" class="text">竞争替代品</text>
+    
+    <path d="M120,20 H150" stroke="#CBD5E1" stroke-width="1.5" />
+    <path d="M145,15 L150,20 L145,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- 2 -->
+    <rect x="150" y="0" width="120" height="40" rx="20" class="box" />
+    <text x="210" y="25" class="text">独特属性</text>
+    
+    <path d="M270,20 H300" stroke="#CBD5E1" stroke-width="1.5" />
+    <path d="M295,15 L300,20 L295,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- 3 -->
+    <rect x="300" y="0" width="120" height="40" rx="20" class="box" />
+    <text x="360" y="25" class="text">客户价值</text>
+
+    <path d="M420,20 H450" stroke="#CBD5E1" stroke-width="1.5" />
+    <path d="M445,15 L450,20 L445,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- 4 -->
+    <rect x="450" y="0" width="120" height="40" rx="20" class="box" />
+    <text x="510" y="25" class="text">目标客户</text>
+
+    <path d="M570,20 H600" stroke="#CBD5E1" stroke-width="1.5" />
+    <path d="M595,15 L600,20 L595,25" fill="none" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" />
+
+    <!-- 5 -->
+    <rect x="600" y="0" width="120" height="40" rx="20" class="box" />
+    <text x="660" y="25" class="text">市场类别</text>
+  </g>
+</svg>

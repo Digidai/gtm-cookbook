@@ -1,0 +1,62 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="chasm-17-title chasm-17-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-17-title">整体产品差距清单</title>
+  <desc id="chasm-17-desc">用于填写核心产品与整体产品差距的练习模板。</desc>
+  <defs>
+    <linearGradient id="chasm-17-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-17-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 600 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .muted { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .line { stroke: #CBD5F5; stroke-width: 1.4; }
+      .box { stroke: #94A3B8; stroke-width: 1.2; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#chasm-17-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#chasm-17-shadow)">
+    <rect x="60" y="50" width="840" height="320" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="86" class="label">核心产品（你已有的）：</text>
+    <line x1="260" y1="90" x2="860" y2="90" class="line" />
+
+    <text x="80" y="130" class="label">整体产品需要的（还缺的）：</text>
+
+    <text x="120" y="168" class="muted">产品功能</text>
+    <text x="420" y="168" class="muted">服务</text>
+    <text x="680" y="168" class="muted">生态</text>
+
+    <rect x="100" y="182" width="14" height="14" class="box" />
+    <rect x="100" y="208" width="14" height="14" class="box" />
+    <rect x="100" y="234" width="14" height="14" class="box" />
+    <line x1="122" y1="192" x2="300" y2="192" class="line" />
+    <line x1="122" y1="218" x2="300" y2="218" class="line" />
+    <line x1="122" y1="244" x2="300" y2="244" class="line" />
+
+    <rect x="400" y="182" width="14" height="14" class="box" />
+    <rect x="400" y="208" width="14" height="14" class="box" />
+    <rect x="400" y="234" width="14" height="14" class="box" />
+    <line x1="422" y1="192" x2="600" y2="192" class="line" />
+    <line x1="422" y1="218" x2="600" y2="218" class="line" />
+    <line x1="422" y1="244" x2="600" y2="244" class="line" />
+
+    <rect x="660" y="182" width="14" height="14" class="box" />
+    <rect x="660" y="208" width="14" height="14" class="box" />
+    <rect x="660" y="234" width="14" height="14" class="box" />
+    <line x1="682" y1="192" x2="860" y2="192" class="line" />
+    <line x1="682" y1="218" x2="860" y2="218" class="line" />
+    <line x1="682" y1="244" x2="860" y2="244" class="line" />
+
+    <text x="80" y="296" class="label">最关键的差距：</text>
+    <line x1="200" y1="300" x2="860" y2="300" class="line" />
+
+    <text x="80" y="334" class="label">填补计划：</text>
+    <line x1="170" y1="338" x2="860" y2="338" class="line" />
+  </g>
+</svg>

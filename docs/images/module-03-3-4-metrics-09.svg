@@ -1,0 +1,48 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="metrics-nrr-title metrics-nrr-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-nrr-title">NRR 计算示例</title>
+  <desc id="metrics-nrr-desc">以期初 ARR、扩展收入、流失和降级收入计算 NRR，并给出解读。</desc>
+  <defs>
+    <linearGradient id="metrics-nrr-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-nrr-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .formula { font: 600 13px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .highlight { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0EA5A4; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#metrics-nrr-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">NRR 计算示例</text>
+
+  <g filter="url(#metrics-nrr-shadow)">
+    <rect x="60" y="90" width="380" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="122" class="section">假设数据（年度）</text>
+    <text x="80" y="152" class="body">• 期初 ARR：$10,000,000</text>
+    <text x="80" y="176" class="body">• 扩展收入：$1,500,000</text>
+    <text x="80" y="200" class="body">• 流失收入：$800,000</text>
+    <text x="80" y="224" class="body">• 降级收入：$200,000</text>
+  </g>
+
+  <g filter="url(#metrics-nrr-shadow)">
+    <rect x="520" y="90" width="380" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="540" y="122" class="section">计算过程</text>
+    <text x="540" y="152" class="formula">($10M + $1.5M - $0.8M - $0.2M) / $10M</text>
+    <text x="540" y="178" class="formula">= $10.5M / $10M</text>
+    <text x="540" y="204" class="formula">= 105%</text>
+    <text x="540" y="236" class="highlight">NRR = 105%</text>
+  </g>
+
+  <g filter="url(#metrics-nrr-shadow)">
+    <rect x="60" y="330" width="840" height="150" rx="16" fill="#F0FDFA" stroke="#99F6E4" />
+    <text x="80" y="362" class="section">解读</text>
+    <text x="80" y="392" class="body">• 即使不获取新客户，收入也增长 5%</text>
+    <text x="80" y="416" class="body">• 扩展收入 &gt; 流失 + 降级，说明客户成功做得好</text>
+  </g>
+</svg>

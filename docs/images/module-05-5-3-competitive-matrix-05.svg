@@ -1,0 +1,60 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="cm-05-title cm-05-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cm-05-title">三种定位策略</title>
+  <desc id="cm-05-desc">Head-to-Head、Category Creation 与 Niche Focus 三种定位策略对比。</desc>
+  <defs>
+    <linearGradient id="cm-05-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="cm-05-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .foot { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#cm-05-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">三种定位策略</text>
+
+  <g filter="url(#cm-05-shadow)">
+    <rect x="60" y="90" width="260" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="350" y="90" width="260" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="640" y="90" width="260" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="60" y="90" width="260" height="6" rx="3" fill="#3B82F6" />
+    <rect x="350" y="90" width="260" height="6" rx="3" fill="#F59E0B" />
+    <rect x="640" y="90" width="260" height="6" rx="3" fill="#10B981" />
+
+    <text x="80" y="118" class="section">Head-to-Head</text>
+    <text x="80" y="138" class="sub">正面竞争</text>
+    <text x="80" y="164" class="body">在现有品类中成为最好</text>
+    <text x="80" y="192" class="body">适合：</text>
+    <text x="80" y="214" class="body">• 有明显优势</text>
+    <text x="80" y="236" class="body">• 资源充足</text>
+    <text x="80" y="258" class="body">风险：高</text>
+
+    <text x="370" y="118" class="section">Category Creation</text>
+    <text x="370" y="138" class="sub">品类创造</text>
+    <text x="370" y="164" class="body">创造新的品类，成为定义者</text>
+    <text x="370" y="192" class="body">适合：</text>
+    <text x="370" y="214" class="body">• 有颠覆性创新</text>
+    <text x="370" y="236" class="body">• 市场教育能力强</text>
+    <text x="370" y="258" class="body">风险：最高</text>
+
+    <text x="660" y="118" class="section">Niche Focus</text>
+    <text x="660" y="138" class="sub">垂直聚焦</text>
+    <text x="660" y="164" class="body">在细分市场中成为第一</text>
+    <text x="660" y="192" class="body">适合：</text>
+    <text x="660" y="214" class="body">• 资源有限</text>
+    <text x="660" y="236" class="body">• 垂直专业能力</text>
+    <text x="660" y="258" class="body">风险：中</text>
+
+    <rect x="60" y="350" width="840" height="60" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="386" class="foot">我们选择的策略：[ ] Head-to-Head   [ ] Category Creation   [ ] Niche</text>
+  </g>
+</svg>

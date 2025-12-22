@@ -1,0 +1,62 @@
+<svg width="960" height="720" viewBox="0 0 960 720" role="img" aria-labelledby="channel-pillars-title channel-pillars-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="channel-pillars-title">渠道销售成功的四大支柱</title>
+  <desc id="channel-pillars-desc">从招募、赋能、激励到管理，构成渠道销售的四大支柱。</desc>
+  <defs>
+    <linearGradient id="channel-pillars-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="channel-pillars-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="channel-pillars-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="688" rx="18" fill="url(#channel-pillars-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">渠道销售成功的四大支柱</text>
+
+  <g filter="url(#channel-pillars-shadow)">
+    <rect x="80" y="80" width="800" height="130" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="110" class="step">1. 渠道招募</text>
+    <text x="110" y="134" class="body">• 明确合作伙伴画像（规模、能力、客户群）</text>
+    <text x="110" y="156" class="body">• 清晰价值主张（为什么与你合作）</text>
+    <text x="110" y="178" class="body">• 结构化招募流程与严格准入标准</text>
+  </g>
+
+  <line x1="480" y1="210" x2="480" y2="240" class="line" marker-end="url(#channel-pillars-arrow)" />
+
+  <g filter="url(#channel-pillars-shadow)">
+    <rect x="80" y="240" width="800" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="270" class="step">2. 渠道赋能</text>
+    <text x="110" y="294" class="body">• 产品培训与认证 · 销售工具与材料</text>
+    <text x="110" y="316" class="body">• Demo 环境与试用账号</text>
+    <text x="110" y="338" class="body">• 销售 Playbook、最佳实践与技术支持</text>
+  </g>
+
+  <line x1="480" y1="380" x2="480" y2="410" class="line" marker-end="url(#channel-pillars-arrow)" />
+
+  <g filter="url(#channel-pillars-shadow)">
+    <rect x="80" y="410" width="800" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="440" class="step">3. 渠道激励</text>
+    <text x="110" y="464" class="body">• 竞争力分成比例与阶梯式返点</text>
+    <text x="110" y="486" class="body">• 季度/年度激励计划与 SPIFs</text>
+    <text x="110" y="508" class="body">• 市场开发基金（MDF）</text>
+  </g>
+
+  <line x1="480" y1="550" x2="480" y2="580" class="line" marker-end="url(#channel-pillars-arrow)" />
+
+  <g filter="url(#channel-pillars-shadow)">
+    <rect x="80" y="580" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="610" class="step">4. 渠道管理</text>
+    <text x="110" y="634" class="body">• 专职渠道经理与定期业务回顾（QBR）</text>
+    <text x="110" y="656" class="body">• Pipeline 联合管理 · 绩效评估与冲突解决</text>
+  </g>
+</svg>

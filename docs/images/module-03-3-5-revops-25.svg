@@ -1,0 +1,53 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="revops-25-title revops-25-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-25-title">RevOps 成熟度模型</title>
+  <desc id="revops-25-desc">从 Level 1 初级到 Level 4 卓越的 RevOps 成熟度演进路径。</desc>
+  <defs>
+    <linearGradient id="revops-25-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-25-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#revops-25-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">RevOps 成熟度模型</text>
+
+  <g filter="url(#revops-25-shadow)">
+    <rect x="80" y="80" width="800" height="90" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="110" y="110" class="section">Level 4：卓越</text>
+    <text x="110" y="136" class="body">• AI 增强运营，预测性分析</text>
+    <text x="110" y="156" class="body">• 实时优化，自适应流程</text>
+    <text x="480" y="136" class="body">• RevOps 是战略合作伙伴</text>
+  </g>
+
+  <g filter="url(#revops-25-shadow)">
+    <rect x="110" y="190" width="770" height="90" rx="16" fill="#ECFDF3" stroke="#86EFAC" />
+    <text x="140" y="220" class="section">Level 3：成熟</text>
+    <text x="140" y="246" class="body">• 统一 RevOps 职能</text>
+    <text x="140" y="266" class="body">• 数据驱动决策</text>
+    <text x="420" y="246" class="body">• 跨部门流程优化</text>
+  </g>
+
+  <g filter="url(#revops-25-shadow)">
+    <rect x="140" y="300" width="740" height="90" rx="16" fill="#FFF7ED" stroke="#FED7AA" />
+    <text x="170" y="330" class="section">Level 2：发展中</text>
+    <text x="170" y="356" class="body">• 开始协调运营</text>
+    <text x="170" y="376" class="body">• 部分数据打通</text>
+    <text x="420" y="356" class="body">• 运营角色仍分散</text>
+  </g>
+
+  <g filter="url(#revops-25-shadow)">
+    <rect x="170" y="410" width="710" height="70" rx="16" fill="#FEF2F2" stroke="#FECACA" />
+    <text x="200" y="438" class="section">Level 1：初级</text>
+    <text x="200" y="462" class="body">• 各部门独立运营</text>
+    <text x="420" y="462" class="body">• 数据孤岛严重</text>
+    <text x="640" y="462" class="body">• 无专职运营角色</text>
+  </g>
+</svg>

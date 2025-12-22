@@ -1,0 +1,52 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="ai-09-title ai-09-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ai-09-title">AI RevOps 应用场景</title>
+  <desc id="ai-09-desc">AI 在收入运营中的应用：数据清洗、预测报告、流程优化与智能洞察。</desc>
+  <defs>
+    <linearGradient id="ai-09-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ai-09-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#ai-09-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">AI RevOps 应用场景</text>
+
+  <g filter="url(#ai-09-shadow)">
+    <rect x="60" y="80" width="400" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="80" width="400" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="240" width="400" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="240" width="400" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="110" class="section">数据清洗</text>
+    <text x="80" y="136" class="body">• 数据去重</text>
+    <text x="80" y="158" class="body">• 数据补全</text>
+    <text x="80" y="180" class="body">• 异常检测</text>
+    <text x="80" y="202" class="body">• 数据映射</text>
+
+    <text x="520" y="110" class="section">预测报告</text>
+    <text x="520" y="136" class="body">• 收入预测</text>
+    <text x="520" y="158" class="body">• Pipeline 预测</text>
+    <text x="520" y="180" class="body">• 指标预警</text>
+    <text x="520" y="202" class="body">• 趋势分析</text>
+
+    <text x="80" y="270" class="section">流程优化</text>
+    <text x="80" y="296" class="body">• 瓶颈识别</text>
+    <text x="80" y="318" class="body">• 自动化建议</text>
+    <text x="80" y="340" class="body">• 最佳实践推荐</text>
+    <text x="80" y="362" class="body">• SLA 监控</text>
+
+    <text x="520" y="270" class="section">智能洞察</text>
+    <text x="520" y="296" class="body">• 根因分析</text>
+    <text x="520" y="318" class="body">• 异常解释</text>
+    <text x="520" y="340" class="body">• 优化建议</text>
+    <text x="520" y="362" class="body">• 仪表板自动生成</text>
+  </g>
+</svg>

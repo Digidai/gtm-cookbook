@@ -1,0 +1,39 @@
+<svg width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="metrics-churn-title metrics-churn-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-churn-title">年流失率换算公式</title>
+  <desc id="metrics-churn-desc">展示月流失率转换为年流失率的公式与示例。</desc>
+  <defs>
+    <linearGradient id="metrics-churn-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-churn-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .formula { font: 700 16px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .header { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .cell { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="268" rx="18" fill="url(#metrics-churn-bg)" stroke="#E2E8F0" />
+
+  <text x="480" y="54" text-anchor="middle" class="title">月流失率 → 年流失率</text>
+  <text x="480" y="86" text-anchor="middle" class="formula">年流失率 ≈ 1 - (1 - 月流失率)<tspan baseline-shift="super" font-size="11">12</tspan></text>
+
+  <g filter="url(#metrics-churn-shadow)">
+    <rect x="200" y="110" width="560" height="140" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="230" y="140" class="header">月流失率</text>
+    <text x="520" y="140" class="header">年流失率（近似）</text>
+
+    <text x="230" y="170" class="cell">2%</text>
+    <text x="520" y="170" class="cell">21.5%</text>
+
+    <text x="230" y="198" class="cell">3%</text>
+    <text x="520" y="198" class="cell">30.6%</text>
+
+    <text x="230" y="226" class="cell">5%</text>
+    <text x="520" y="226" class="cell">46.0%</text>
+  </g>
+</svg>

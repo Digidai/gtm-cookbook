@@ -1,0 +1,51 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="dunford-title dunford-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="dunford-title">April Dunford 定位公式</title>
+  <desc id="dunford-desc">定位公式的七个句式与对应的业务问题。</desc>
+  <defs>
+    <linearGradient id="dunford-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="dunford-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .head { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .cell-strong { font: 700 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#dunford-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">April Dunford 定位公式</text>
+
+  <g filter="url(#dunford-shadow)">
+    <rect x="80" y="90" width="800" height="280" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="90" width="320" height="32" rx="16" fill="#E0F2FE" stroke="#BAE6FD" />
+    <rect x="400" y="90" width="480" height="32" rx="16" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="240" y="112" text-anchor="middle" class="head">定位公式</text>
+    <text x="640" y="112" text-anchor="middle" class="head">业务问题</text>
+
+    <text x="110" y="145" class="cell-strong">For [目标客户]</text>
+    <text x="420" y="145" class="cell">你服务谁？</text>
+
+    <text x="110" y="175" class="cell-strong">Who [有这个问题/需求]</text>
+    <text x="420" y="175" class="cell">他们的痛点是什么？</text>
+
+    <text x="110" y="205" class="cell-strong">Our [产品/服务]</text>
+    <text x="420" y="205" class="cell">你提供什么？</text>
+
+    <text x="110" y="235" class="cell-strong">Is a [品类]</text>
+    <text x="420" y="235" class="cell">属于什么品类？（决定参照系）</text>
+
+    <text x="110" y="265" class="cell-strong">That [关键利益/差异化]</text>
+    <text x="420" y="265" class="cell">核心价值是什么？</text>
+
+    <text x="110" y="295" class="cell-strong">Unlike [竞争替代品]</text>
+    <text x="420" y="295" class="cell">与谁竞争？</text>
+
+    <text x="110" y="325" class="cell-strong">We [独特差异点]</text>
+    <text x="420" y="325" class="cell">你的独特之处是什么？</text>
+  </g>
+</svg>

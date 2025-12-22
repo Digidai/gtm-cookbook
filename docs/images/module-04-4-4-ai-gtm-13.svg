@@ -1,0 +1,52 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="ai-13-title ai-13-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ai-13-title">企业微信 AI 应用场景</title>
+  <desc id="ai-13-desc">企业微信在获客、培育、转化与服务阶段的 AI 应用与代表工具。</desc>
+  <defs>
+    <linearGradient id="ai-13-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ai-13-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .footer { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#ai-13-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">企业微信 AI 应用场景</text>
+
+  <g filter="url(#ai-13-shadow)">
+    <rect x="60" y="80" width="400" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="80" width="400" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="230" width="400" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="230" width="400" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="110" class="section">获客阶段</text>
+    <text x="80" y="136" class="body">• AI 分析客户来源</text>
+    <text x="80" y="158" class="body">• 智能分配销售</text>
+    <text x="80" y="180" class="body">• 客户画像自动生成</text>
+
+    <text x="520" y="110" class="section">培育阶段</text>
+    <text x="520" y="136" class="body">• 智能标签自动打标</text>
+    <text x="520" y="158" class="body">• AI 推荐培育内容</text>
+    <text x="520" y="180" class="body">• 智能触达时机</text>
+
+    <text x="80" y="260" class="section">转化阶段</text>
+    <text x="80" y="286" class="body">• 商机预测</text>
+    <text x="80" y="308" class="body">• 智能话术推荐</text>
+    <text x="80" y="330" class="body">• 下步行动建议</text>
+
+    <text x="520" y="260" class="section">服务阶段</text>
+    <text x="520" y="286" class="body">• AI 客服机器人</text>
+    <text x="520" y="308" class="body">• 流失预警</text>
+    <text x="520" y="330" class="body">• 个性化服务推荐</text>
+
+    <rect x="60" y="384" width="840" height="44" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="80" y="412" class="footer">代表工具：微盛 SCRM、尘锋 SCRM、企微云、语雀客服</text>
+  </g>
+</svg>

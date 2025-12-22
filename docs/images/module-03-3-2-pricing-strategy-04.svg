@@ -1,0 +1,41 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="snowflake-title snowflake-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="snowflake-title">Snowflake 的用量定价</title>
+  <desc id="snowflake-desc">以 Credits 为计费单位的用量定价结构与优势。</desc>
+  <defs>
+    <linearGradient id="snowflake-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="snowflake-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .formula { font: 700 14px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#snowflake-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Snowflake 的用量定价</text>
+
+  <g filter="url(#snowflake-shadow)">
+    <rect x="60" y="80" width="400" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="110" class="section">计费单位</text>
+    <text x="90" y="134" class="body">Credits（计算信用点）</text>
+    <text x="90" y="168" class="section">计费构成</text>
+    <text x="90" y="196" class="formula">总费用 = 计算费用 + 存储费用</text>
+    <text x="90" y="222" class="body">计算费用 = Credits 使用量 × 单价</text>
+    <text x="90" y="244" class="body">存储费用 = 存储 TB × 单价</text>
+  </g>
+
+  <g filter="url(#snowflake-shadow)">
+    <rect x="500" y="80" width="400" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="530" y="110" class="section">为什么有效</text>
+    <text x="530" y="136" class="body">• 用得越多，付得越多（与价值对齐）</text>
+    <text x="530" y="160" class="body">• 入门门槛低，可小规模开始</text>
+    <text x="530" y="184" class="body">• 随业务增长自然扩展</text>
+    <text x="530" y="208" class="body">• 净收入留存率 &gt; 170%</text>
+  </g>
+</svg>

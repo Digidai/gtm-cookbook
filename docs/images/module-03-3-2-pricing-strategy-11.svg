@@ -1,0 +1,79 @@
+<svg width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="pricing-tree-title pricing-tree-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="pricing-tree-title">定价模型选择决策树</title>
+  <desc id="pricing-tree-desc">从价值相关性出发选择 Usage-based、Seat-based、Tiered 或 Flat-rate，并考虑 Freemium。</desc>
+  <defs>
+    <linearGradient id="pricing-tree-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="pricing-tree-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="pricing-tree-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .q { font: 700 13px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .a { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .out { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="568" rx="18" fill="url(#pricing-tree-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">定价模型选择决策树</text>
+
+  <g filter="url(#pricing-tree-shadow)">
+    <rect x="180" y="80" width="600" height="60" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="112" text-anchor="middle" class="q">问题 1：使用量与价值是否强相关？</text>
+  </g>
+
+  <g filter="url(#pricing-tree-shadow)">
+    <rect x="80" y="190" width="260" height="60" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="210" y="222" text-anchor="middle" class="out">考虑 Usage-Based / Hybrid</text>
+  </g>
+
+  <g filter="url(#pricing-tree-shadow)">
+    <rect x="620" y="190" width="260" height="60" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="750" y="222" text-anchor="middle" class="q">问题 2：用户数与价值相关吗？</text>
+  </g>
+
+  <g filter="url(#pricing-tree-shadow)">
+    <rect x="560" y="300" width="260" height="60" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="690" y="332" text-anchor="middle" class="out">考虑 Seat-Based</text>
+  </g>
+
+  <g filter="url(#pricing-tree-shadow)">
+    <rect x="620" y="390" width="260" height="60" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="750" y="422" text-anchor="middle" class="q">问题 3：客户差异大吗？</text>
+  </g>
+
+  <g filter="url(#pricing-tree-shadow)">
+    <rect x="520" y="480" width="180" height="60" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="610" y="512" text-anchor="middle" class="out">考虑 Tiered</text>
+  </g>
+
+  <g filter="url(#pricing-tree-shadow)">
+    <rect x="740" y="480" width="180" height="60" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="830" y="512" text-anchor="middle" class="out">考虑 Flat-Rate</text>
+  </g>
+
+  <line x1="380" y1="140" x2="210" y2="190" class="line" marker-end="url(#pricing-tree-arrow)" />
+  <line x1="580" y1="140" x2="750" y2="190" class="line" marker-end="url(#pricing-tree-arrow)" />
+  <text x="320" y="160" class="a">是</text>
+  <text x="640" y="160" class="a">否</text>
+
+  <line x1="750" y1="250" x2="690" y2="300" class="line" marker-end="url(#pricing-tree-arrow)" />
+  <line x1="750" y1="250" x2="750" y2="390" class="line" marker-end="url(#pricing-tree-arrow)" />
+  <text x="700" y="270" class="a">是</text>
+  <text x="770" y="270" class="a">否</text>
+
+  <line x1="750" y1="450" x2="610" y2="480" class="line" marker-end="url(#pricing-tree-arrow)" />
+  <line x1="750" y1="450" x2="830" y2="480" class="line" marker-end="url(#pricing-tree-arrow)" />
+  <text x="690" y="470" class="a">是</text>
+  <text x="810" y="470" class="a">否</text>
+
+  <text x="80" y="520" class="a">叠加问题：是否需要低门槛获客？</text>
+  <text x="80" y="542" class="a">是：考虑 Freemium 或免费试用</text>
+</svg>

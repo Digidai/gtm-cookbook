@@ -1,0 +1,74 @@
+<svg width="960" height="620" viewBox="0 0 960 620" role="img" aria-labelledby="vp-feedback-title vp-feedback-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="vp-feedback-title">价值主张销售反馈表</title>
+  <desc id="vp-feedback-desc">销售在客户沟通后记录价值主张版本、反应与结果的表单。</desc>
+  <defs>
+    <linearGradient id="vp-feedback-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="vp-feedback-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .text { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #CBD5E1; stroke-width: 1.5; }
+      .box { stroke: #64748B; stroke-width: 1.5; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="588" rx="18" fill="url(#vp-feedback-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">价值主张销售反馈表</text>
+
+  <g filter="url(#vp-feedback-shadow)">
+    <rect x="60" y="80" width="840" height="500" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="90" y="120" class="label">销售代表：</text>
+    <line x1="160" y1="124" x2="380" y2="124" class="line" />
+    <text x="430" y="120" class="label">日期：</text>
+    <line x1="470" y1="124" x2="620" y2="124" class="line" />
+
+    <text x="90" y="155" class="label">客户公司：</text>
+    <line x1="160" y1="159" x2="380" y2="159" class="line" />
+    <text x="430" y="155" class="label">客户角色：</text>
+    <line x1="510" y1="159" x2="700" y2="159" class="line" />
+
+    <text x="90" y="200" class="label">1. 使用的价值主张版本：</text>
+    <rect x="110" y="218" width="12" height="12" class="box" />
+    <text x="130" y="228" class="text">版本 A</text>
+    <rect x="200" y="218" width="12" height="12" class="box" />
+    <text x="220" y="228" class="text">版本 B</text>
+    <rect x="290" y="218" width="12" height="12" class="box" />
+    <text x="310" y="228" class="text">版本 C</text>
+
+    <text x="90" y="270" class="label">2. 客户对价值主张的初始反应：</text>
+    <rect x="110" y="288" width="12" height="12" class="box" />
+    <text x="130" y="298" class="text">非常感兴趣</text>
+    <rect x="260" y="288" width="12" height="12" class="box" />
+    <text x="280" y="298" class="text">有些兴趣</text>
+    <rect x="390" y="288" width="12" height="12" class="box" />
+    <text x="410" y="298" class="text">无感</text>
+    <rect x="470" y="288" width="12" height="12" class="box" />
+    <text x="490" y="298" class="text">质疑</text>
+
+    <text x="90" y="340" class="label">3. 最能引起客户共鸣的价值点：</text>
+    <line x1="110" y1="360" x2="860" y2="360" class="line" />
+    <line x1="110" y1="384" x2="860" y2="384" class="line" />
+
+    <text x="90" y="430" class="label">4. 客户提出的主要异议/疑问：</text>
+    <line x1="110" y1="450" x2="860" y2="450" class="line" />
+    <line x1="110" y1="474" x2="860" y2="474" class="line" />
+
+    <text x="90" y="520" class="label">5. 结果：</text>
+    <rect x="140" y="512" width="12" height="12" class="box" />
+    <text x="160" y="522" class="text">进入下一阶段</text>
+    <rect x="290" y="512" width="12" height="12" class="box" />
+    <text x="310" y="522" class="text">暂缓</text>
+    <rect x="370" y="512" width="12" height="12" class="box" />
+    <text x="390" y="522" class="text">流失</text>
+
+    <text x="90" y="552" class="text">流失原因（如适用）：</text>
+    <line x1="210" y1="556" x2="860" y2="556" class="line" />
+  </g>
+</svg>

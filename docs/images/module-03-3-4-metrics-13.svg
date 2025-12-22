@@ -1,0 +1,64 @@
+<svg width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="metrics-dd-title metrics-dd-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-dd-title">Datadog 高 NRR 的驱动因素</title>
+  <desc id="metrics-dd-desc">总结 Datadog 高 NRR 的四大驱动：用量计费、多产品平台、Land & Expand 与高切换成本。</desc>
+  <defs>
+    <linearGradient id="metrics-dd-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-dd-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .pill { font: 600 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .flow { font: 600 11px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="568" rx="18" fill="url(#metrics-dd-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Datadog 高 NRR 的驱动因素</text>
+
+  <g filter="url(#metrics-dd-shadow)">
+    <rect x="60" y="90" width="840" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="118" class="section">1. Usage-Based 定价模型</text>
+    <text x="80" y="146" class="body">• 按主机数、日志量、APM Span 数计费</text>
+    <text x="80" y="166" class="body">• 无需主动销售即可扩展</text>
+    <text x="520" y="146" class="flow">客户业务增长 → 用量增长 → 收入自然增长</text>
+  </g>
+
+  <g filter="url(#metrics-dd-shadow)">
+    <rect x="60" y="210" width="840" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="238" class="section">2. 多产品平台战略</text>
+    <text x="80" y="266" class="body">• 从单一监控扩展到 14+ 产品线</text>
+    <rect x="420" y="252" width="90" height="24" rx="12" fill="#E0F2FE" />
+    <rect x="520" y="252" width="70" height="24" rx="12" fill="#E0F2FE" />
+    <rect x="600" y="252" width="60" height="24" rx="12" fill="#E0F2FE" />
+    <rect x="670" y="252" width="80" height="24" rx="12" fill="#E0F2FE" />
+    <rect x="760" y="252" width="50" height="24" rx="12" fill="#E0F2FE" />
+    <text x="465" y="268" text-anchor="middle" class="pill">Infrastructure</text>
+    <text x="555" y="268" text-anchor="middle" class="pill">APM</text>
+    <text x="630" y="268" text-anchor="middle" class="pill">Logs</text>
+    <text x="710" y="268" text-anchor="middle" class="pill">Security</text>
+    <text x="785" y="268" text-anchor="middle" class="pill">...</text>
+    <text x="80" y="286" class="body">• 客户平均使用 4+ 产品，最大客户 10+ 产品</text>
+  </g>
+
+  <g filter="url(#metrics-dd-shadow)">
+    <rect x="60" y="330" width="840" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="358" class="section">3. Land &amp; Expand 策略</text>
+    <text x="80" y="386" class="body">• 从一个团队开始，扩展到全公司</text>
+    <text x="80" y="406" class="body">• 平均起始 ACV $10K → 成熟客户 $500K+</text>
+    <text x="600" y="386" class="body">• 专职 Expansion 团队</text>
+  </g>
+
+  <g filter="url(#metrics-dd-shadow)">
+    <rect x="60" y="450" width="840" height="100" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="478" class="section">4. 高切换成本</text>
+    <text x="80" y="506" class="body">• 深度集成到客户技术栈</text>
+    <text x="80" y="526" class="body">• 历史数据和告警规则迁移成本高</text>
+    <text x="500" y="506" class="body">• 团队使用习惯形成</text>
+  </g>
+</svg>

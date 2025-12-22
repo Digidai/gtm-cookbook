@@ -1,0 +1,57 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="yonyou-title yonyou-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="yonyou-title">用友 BIP 生态合作模式</title>
+  <desc id="yonyou-desc">ISV 生态、实施生态与销售生态协同在平台之上。</desc>
+  <defs>
+    <linearGradient id="yonyou-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="yonyou-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .column-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .platform { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#yonyou-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">用友 BIP 生态合作模式</text>
+
+  <g filter="url(#yonyou-shadow)">
+    <rect x="80" y="90" width="240" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="200" y="122" text-anchor="middle" class="column-title">ISV 生态</text>
+    <text x="110" y="150" class="body">• 行业 ISV</text>
+    <text x="110" y="172" class="body">• 行业应用</text>
+    <text x="110" y="194" class="body">• API 集成</text>
+    <text x="110" y="216" class="body">• 联合方案</text>
+  </g>
+
+  <g filter="url(#yonyou-shadow)">
+    <rect x="360" y="90" width="240" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="122" text-anchor="middle" class="column-title">实施生态</text>
+    <text x="390" y="150" class="body">• 实施商</text>
+    <text x="390" y="172" class="body">• 项目实施</text>
+    <text x="390" y="194" class="body">• 定制开发</text>
+    <text x="390" y="216" class="body">• 运维服务</text>
+  </g>
+
+  <g filter="url(#yonyou-shadow)">
+    <rect x="640" y="90" width="240" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="760" y="122" text-anchor="middle" class="column-title">销售生态</text>
+    <text x="670" y="150" class="body">• 渠道商</text>
+    <text x="670" y="172" class="body">• 客户覆盖</text>
+    <text x="670" y="194" class="body">• 售前咨询</text>
+    <text x="670" y="216" class="body">• 关系维护</text>
+  </g>
+
+  <g filter="url(#yonyou-shadow)">
+    <rect x="180" y="330" width="600" height="130" rx="18" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="362" text-anchor="middle" class="platform">用友 BIP 平台</text>
+    <text x="240" y="392" class="body">• 统一客户管理</text>
+    <text x="240" y="414" class="body">• 生态协同系统</text>
+    <text x="240" y="436" class="body">• 渠道赋能平台</text>
+  </g>
+</svg>

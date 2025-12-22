@@ -1,0 +1,78 @@
+<svg width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="lm-title lm-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="lm-title">Lincoln Murphy 理想客户 7 标准</title>
+  <desc id="lm-desc">Ready、Willing、Able、Successful、Profitable、Expansion、Advocacy 七个判断标准。</desc>
+  <defs>
+    <linearGradient id="lm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="lm-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="lm-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .desc { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="568" rx="18" fill="url(#lm-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Lincoln Murphy 理想客户 7 标准</text>
+
+  <g filter="url(#lm-shadow)">
+    <rect x="120" y="80" width="720" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="150" y="110" class="step">Ready（准备度）</text>
+    <text x="360" y="110" class="desc">客户知道自己有问题吗？</text>
+  </g>
+
+  <line x1="480" y1="132" x2="480" y2="150" stroke="#64748B" stroke-width="2" marker-end="url(#lm-arrow)" />
+
+  <g filter="url(#lm-shadow)">
+    <rect x="120" y="150" width="720" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="150" y="180" class="step">Willing（意愿度）</text>
+    <text x="360" y="180" class="desc">客户愿意解决这个问题吗？</text>
+  </g>
+
+  <line x1="480" y1="202" x2="480" y2="220" stroke="#64748B" stroke-width="2" marker-end="url(#lm-arrow)" />
+
+  <g filter="url(#lm-shadow)">
+    <rect x="120" y="220" width="720" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="150" y="250" class="step">Able（能力）</text>
+    <text x="360" y="250" class="desc">客户有预算、权限和实施能力吗？</text>
+  </g>
+
+  <line x1="480" y1="272" x2="480" y2="290" stroke="#64748B" stroke-width="2" marker-end="url(#lm-arrow)" />
+
+  <g filter="url(#lm-shadow)">
+    <rect x="120" y="290" width="720" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="150" y="320" class="step">Successful（成功）</text>
+    <text x="360" y="320" class="desc">客户能从你的产品中获得成功吗？</text>
+  </g>
+
+  <line x1="480" y1="342" x2="480" y2="360" stroke="#64748B" stroke-width="2" marker-end="url(#lm-arrow)" />
+
+  <g filter="url(#lm-shadow)">
+    <rect x="120" y="360" width="720" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="150" y="390" class="step">Profitable（盈利）</text>
+    <text x="360" y="390" class="desc">服务这个客户对你是盈利的吗？</text>
+  </g>
+
+  <line x1="480" y1="412" x2="480" y2="430" stroke="#64748B" stroke-width="2" marker-end="url(#lm-arrow)" />
+
+  <g filter="url(#lm-shadow)">
+    <rect x="120" y="430" width="720" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="150" y="460" class="step">Expansion（扩展潜力）</text>
+    <text x="360" y="460" class="desc">客户有扩展或升级的潜力吗？</text>
+  </g>
+
+  <line x1="480" y1="482" x2="480" y2="500" stroke="#64748B" stroke-width="2" marker-end="url(#lm-arrow)" />
+
+  <g filter="url(#lm-shadow)">
+    <rect x="120" y="500" width="720" height="52" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="150" y="530" class="step">Advocacy（推荐潜力）</text>
+    <text x="360" y="530" class="desc">客户愿意推荐或成为案例吗？</text>
+  </g>
+</svg>

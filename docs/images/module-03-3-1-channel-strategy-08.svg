@@ -1,0 +1,50 @@
+<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="channel-maturity-title channel-maturity-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="channel-maturity-title">渠道项目成熟度阶段</title>
+  <desc id="channel-maturity-desc">渠道项目从直销为主到渠道扩展，再到渠道主导的三阶段。</desc>
+  <defs>
+    <linearGradient id="channel-maturity-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="channel-maturity-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="channel-maturity-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .stage { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#channel-maturity-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">渠道项目成熟度阶段</text>
+
+  <g filter="url(#channel-maturity-shadow)">
+    <rect x="80" y="90" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="120" class="stage">阶段 1：直销为主（Year 0-1）</text>
+    <text x="110" y="145" class="body">• 直销验证产品与销售流程 · 少量试点渠道合作</text>
+    <text x="110" y="167" class="body">• 建立渠道项目基础设施 · 渠道收入占比 &lt; 10%</text>
+  </g>
+
+  <line x1="480" y1="210" x2="480" y2="240" class="line" marker-end="url(#channel-maturity-arrow)" />
+
+  <g filter="url(#channel-maturity-shadow)">
+    <rect x="80" y="240" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="270" class="stage">阶段 2：渠道扩展（Year 1-2）</text>
+    <text x="110" y="295" class="body">• 积极招募和培养渠道 · 完善渠道赋能体系</text>
+    <text x="110" y="317" class="body">• 建立渠道管理团队 · 渠道收入占比 10-30%</text>
+  </g>
+
+  <line x1="480" y1="360" x2="480" y2="390" class="line" marker-end="url(#channel-maturity-arrow)" />
+
+  <g filter="url(#channel-maturity-shadow)">
+    <rect x="80" y="390" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="420" class="stage">阶段 3：渠道主导（Year 2+）</text>
+    <text x="110" y="445" class="body">• 渠道成为主要销售渠道 · 分级管理（Gold/Silver/Bronze）</text>
+    <text x="110" y="467" class="body">• 成熟的渠道生态 · 渠道收入占比 &gt; 50%</text>
+  </g>
+</svg>

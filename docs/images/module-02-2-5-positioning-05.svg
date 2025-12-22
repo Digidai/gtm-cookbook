@@ -1,0 +1,63 @@
+<svg width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="cat-steps-title cat-steps-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cat-steps-title">品类创造四步框架</title>
+  <desc id="cat-steps-desc">定义品类、教育市场、建立社区、主导品类的四步流程。</desc>
+  <defs>
+    <linearGradient id="cat-steps-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="cat-steps-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="cat-steps-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .step { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="608" rx="18" fill="url(#cat-steps-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">品类创造四步框架</text>
+
+  <g filter="url(#cat-steps-shadow)">
+    <rect x="100" y="90" width="760" height="110" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="140" y="120" class="step">Step 1: 定义品类</text>
+    <text x="140" y="146" class="body">• 品类名称：简洁、好记、能体现价值</text>
+    <text x="140" y="168" class="body">• 品类问题：这个品类解决什么问题？</text>
+    <text x="140" y="190" class="body">• 品类边界：什么属于/不属于这个品类？</text>
+  </g>
+
+  <line x1="480" y1="200" x2="480" y2="230" class="line" marker-end="url(#cat-steps-arrow)" />
+
+  <g filter="url(#cat-steps-shadow)">
+    <rect x="100" y="230" width="760" height="110" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="140" y="260" class="step">Step 2: 教育市场</text>
+    <text x="140" y="286" class="body">• 内容营销：博客、白皮书、研究报告</text>
+    <text x="140" y="308" class="body">• 思想领导力：演讲、播客、行业活动</text>
+    <text x="140" y="330" class="body">• 分析师关系：让 Gartner、Forrester 认可品类</text>
+  </g>
+
+  <line x1="480" y1="340" x2="480" y2="370" class="line" marker-end="url(#cat-steps-arrow)" />
+
+  <g filter="url(#cat-steps-shadow)">
+    <rect x="100" y="370" width="760" height="110" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="140" y="400" class="step">Step 3: 建立社区</text>
+    <text x="140" y="426" class="body">• 用户社区：让早期用户成为传播者</text>
+    <text x="140" y="448" class="body">• 合作伙伴：吸引其他公司加入生态</text>
+    <text x="140" y="470" class="body">• 行业活动：举办品类相关的会议</text>
+  </g>
+
+  <line x1="480" y1="480" x2="480" y2="510" class="line" marker-end="url(#cat-steps-arrow)" />
+
+  <g filter="url(#cat-steps-shadow)">
+    <rect x="100" y="510" width="760" height="110" rx="18" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="140" y="540" class="step">Step 4: 主导品类</text>
+    <text x="140" y="566" class="body">• 持续创新：保持产品领先</text>
+    <text x="140" y="588" class="body">• 标准制定：定义品类最佳实践</text>
+    <text x="140" y="610" class="body">• 应对竞争：竞争者进入时保持领导地位</text>
+  </g>
+</svg>

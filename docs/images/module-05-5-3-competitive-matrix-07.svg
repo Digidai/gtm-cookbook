@@ -1,0 +1,49 @@
+<svg width="960" height="360" viewBox="0 0 960 360" role="img" aria-labelledby="cm-07-title cm-07-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cm-07-title">竞争应对最佳实践</title>
+  <desc id="cm-07-desc">竞争应对中的推荐做法与避免做法，以及核心原则。</desc>
+  <defs>
+    <linearGradient id="cm-07-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="cm-07-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="328" rx="18" fill="url(#cm-07-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">竞争应对最佳实践</text>
+
+  <g filter="url(#cm-07-shadow)">
+    <rect x="60" y="80" width="400" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="80" width="400" height="200" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <rect x="60" y="80" width="400" height="6" rx="3" fill="#22C55E" />
+    <rect x="500" y="80" width="400" height="6" rx="3" fill="#EF4444" />
+
+    <text x="80" y="112" class="section">✅ DO（推荐做法）</text>
+    <text x="80" y="138" class="body">• 聚焦客户问题和价值</text>
+    <text x="80" y="160" class="body">• 用数据和案例说话</text>
+    <text x="80" y="182" class="body">• 承认劣势，展示改进计划</text>
+    <text x="80" y="204" class="body">• 强调差异化而非全面优势</text>
+    <text x="80" y="226" class="body">• 提供客户证言和案例</text>
+    <text x="80" y="248" class="body">• 展示未来产品路线图</text>
+
+    <text x="520" y="112" class="section">❌ DON'T（避免做法）</text>
+    <text x="520" y="138" class="body">• 贬低竞争对手</text>
+    <text x="520" y="160" class="body">• 承诺未开发的功能</text>
+    <text x="520" y="182" class="body">• 打无底线的价格战</text>
+    <text x="520" y="204" class="body">• 编造或夸大数据</text>
+    <text x="520" y="226" class="body">• 忽视客户的真实需求</text>
+    <text x="520" y="248" class="body">• 过度销售</text>
+
+    <rect x="60" y="292" width="840" height="40" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="80" y="318" class="note">核心原则："我们擅长 X"，而不是 "他们不擅长 Y"</text>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="cm-03-title cm-03-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cm-03-title">竞争者分类</title>
+  <desc id="cm-03-desc">直接竞争者、间接竞争者与替代品的定义与示例。</desc>
+  <defs>
+    <linearGradient id="cm-03-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="cm-03-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .sub { font: 11px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#cm-03-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">竞争者分类</text>
+
+  <g filter="url(#cm-03-shadow)">
+    <rect x="80" y="90" width="250" height="150" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="355" y="90" width="250" height="150" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="630" y="90" width="250" height="150" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="100" y="120" class="section">直接竞争者</text>
+    <text x="100" y="140" class="sub">Direct Competitors</text>
+    <text x="100" y="168" class="body">• 相同产品类别</text>
+    <text x="100" y="190" class="body">• 相同目标客户</text>
+    <text x="100" y="212" class="body">• 解决相同问题</text>
+
+    <text x="375" y="120" class="section">间接竞争者</text>
+    <text x="375" y="140" class="sub">Indirect Competitors</text>
+    <text x="375" y="168" class="body">• 不同产品类别</text>
+    <text x="375" y="190" class="body">• 相同目标客户</text>
+    <text x="375" y="212" class="body">• 解决相同问题</text>
+
+    <text x="650" y="120" class="section">替代品</text>
+    <text x="650" y="140" class="sub">Substitutes</text>
+    <text x="650" y="168" class="body">• 完全不同</text>
+    <text x="650" y="190" class="body">• 解决相同</text>
+    <text x="650" y="212" class="body">  问题</text>
+
+    <rect x="80" y="260" width="800" height="120" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="292" class="section">示例（CRM 产品）</text>
+    <text x="100" y="318" class="body">• 直接：Salesforce、HubSpot、Pipedrive</text>
+    <text x="100" y="340" class="body">• 间接：ERP 系统的 CRM 模块、定制开发</text>
+    <text x="100" y="362" class="body">• 替代品：Excel、纸笔、不管理客户关系</text>
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="slg-10-title slg-10-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-10-title">北森目标客户定位</title>
+  <desc id="slg-10-desc">按客户规模划分北森目标市场，并说明聚焦大客户的原因。</desc>
+  <defs>
+    <linearGradient id="slg-10-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-10-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .row { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="448" rx="18" fill="url(#slg-10-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">北森目标客户定位</text>
+
+  <g filter="url(#slg-10-shadow)">
+    <rect x="60" y="80" width="840" height="170" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="60" y1="120" x2="900" y2="120" class="row" />
+    <line x1="60" y1="170" x2="900" y2="170" class="row" />
+    <line x1="240" y1="80" x2="240" y2="250" class="row" />
+
+    <text x="90" y="108" class="header">客户规模</text>
+    <text x="260" y="108" class="header">目标级别</text>
+
+    <text x="90" y="148" class="cell">5000+ 员工</text>
+    <text x="260" y="148" class="cell">★★★★★ 核心目标：大型企业集团</text>
+    <text x="260" y="168" class="cell">行业龙头、上市公司、500 强</text>
+
+    <text x="90" y="208" class="cell">500 - 5000 员工</text>
+    <text x="260" y="208" class="cell">★★★☆☆ 重要目标：中大型企业</text>
+    <text x="260" y="228" class="cell">快速成长企业、行业领先者</text>
+
+    <text x="90" y="240" class="cell">&lt; 500 员工</text>
+    <text x="260" y="240" class="cell">☆☆☆☆☆ 非核心：小企业（市场上有更多选择）</text>
+  </g>
+
+  <g filter="url(#slg-10-shadow)">
+    <rect x="60" y="270" width="840" height="170" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="300" class="header">聚焦大客户的原因</text>
+    <text x="80" y="328" class="note">• 大企业 HR 需求复杂，需要一体化解决方案</text>
+    <text x="80" y="352" class="note">• 高 ACV 支撑深度服务和长期投入</text>
+    <text x="80" y="376" class="note">• 品牌效应：大客户背书带来行业影响力</text>
+    <text x="80" y="400" class="note">• 长期价值：大企业续约稳定，LTV 高</text>
+  </g>
+</svg>

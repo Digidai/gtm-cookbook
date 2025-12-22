@@ -1,0 +1,55 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="metrics-velocity-title metrics-velocity-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-velocity-title">Pipeline Velocity 计算</title>
+  <desc id="metrics-velocity-desc">以商机数量、客单价、成交率和销售周期计算 Pipeline Velocity，并给出提升杠杆。</desc>
+  <defs>
+    <linearGradient id="metrics-velocity-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-velocity-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .formula { font: 600 13px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .highlight { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #2563EB; }
+      .chip { font: 600 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#metrics-velocity-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Pipeline Velocity 计算</text>
+
+  <g filter="url(#metrics-velocity-shadow)">
+    <rect x="60" y="90" width="380" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="122" class="section">假设数据</text>
+    <text x="80" y="152" class="body">• 当前 Pipeline 商机数：100 个</text>
+    <text x="80" y="176" class="body">• 平均客单价：$50,000</text>
+    <text x="80" y="200" class="body">• 历史成交率：25%</text>
+    <text x="80" y="224" class="body">• 平均销售周期：90 天</text>
+  </g>
+
+  <g filter="url(#metrics-velocity-shadow)">
+    <rect x="520" y="90" width="380" height="220" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="540" y="122" class="section">计算过程</text>
+    <text x="540" y="152" class="formula">(100 × $50,000 × 25%) / 90</text>
+    <text x="540" y="176" class="formula">= $1,250,000 / 90</text>
+    <text x="540" y="200" class="formula">= $13,889 / 天</text>
+    <text x="540" y="232" class="highlight">≈ $416,667 / 月</text>
+  </g>
+
+  <g filter="url(#metrics-velocity-shadow)">
+    <rect x="60" y="330" width="840" height="150" rx="16" fill="#F8FAFF" stroke="#DBEAFE" />
+    <text x="80" y="362" class="section">提高 Velocity 的杠杆</text>
+    <rect x="80" y="384" width="170" height="34" rx="17" fill="#E0F2FE" />
+    <rect x="260" y="384" width="170" height="34" rx="17" fill="#E0F2FE" />
+    <rect x="440" y="384" width="170" height="34" rx="17" fill="#E0F2FE" />
+    <rect x="620" y="384" width="170" height="34" rx="17" fill="#E0F2FE" />
+    <text x="165" y="406" text-anchor="middle" class="chip">增加商机数量</text>
+    <text x="345" y="406" text-anchor="middle" class="chip">提高客单价</text>
+    <text x="525" y="406" text-anchor="middle" class="chip">提升成交率</text>
+    <text x="705" y="406" text-anchor="middle" class="chip">缩短销售周期</text>
+  </g>
+</svg>

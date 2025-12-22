@@ -1,0 +1,74 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="module01-path-title module01-path-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="module01-path-title">模块一学习路径</title>
+  <desc id="module01-path-desc">模块一学习路径：1.1 本质定义、1.2 重要性、1.3 适用场景，汇聚到 1.4 核心四问，并进入模块二方法论。</desc>
+  <defs>
+    <linearGradient id="module01-path-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="module01-path-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="module01-path-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; }
+      .sub { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .pill { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .accent-blue { fill: #2563EB; }
+      .accent-teal { fill: #0EA5A4; }
+      .accent-amber { fill: #F59E0B; }
+      .accent-indigo { fill: #6366F1; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#module01-path-bg)" stroke="#E2E8F0" />
+  <text x="480" y="46" text-anchor="middle" class="title">模块一：GTM 基础认知</text>
+
+  <g filter="url(#module01-path-shadow)">
+    <rect x="80" y="90" width="230" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="80" y="90" width="6" height="90" rx="6" fill="#2563EB" />
+    <text x="100" y="118" class="section accent-blue">1.1 本质定义</text>
+    <text x="100" y="140" class="sub">GTM 是什么</text>
+  </g>
+
+  <g filter="url(#module01-path-shadow)">
+    <rect x="365" y="90" width="230" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="365" y="90" width="6" height="90" rx="6" fill="#0EA5A4" />
+    <text x="385" y="118" class="section accent-teal">1.2 重要性</text>
+    <text x="385" y="140" class="sub">为什么重要</text>
+  </g>
+
+  <g filter="url(#module01-path-shadow)">
+    <rect x="650" y="90" width="230" height="90" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="650" y="90" width="6" height="90" rx="6" fill="#F59E0B" />
+    <text x="670" y="118" class="section accent-amber">1.3 适用场景</text>
+    <text x="670" y="140" class="sub">何时需要</text>
+  </g>
+
+  <line x1="310" y1="135" x2="365" y2="135" stroke="#64748B" stroke-width="2" marker-end="url(#module01-path-arrow)" />
+  <line x1="595" y1="135" x2="650" y2="135" stroke="#64748B" stroke-width="2" marker-end="url(#module01-path-arrow)" />
+
+  <line x1="195" y1="180" x2="195" y2="210" stroke="#64748B" stroke-width="2" marker-end="url(#module01-path-arrow)" />
+  <line x1="480" y1="180" x2="480" y2="210" stroke="#64748B" stroke-width="2" marker-end="url(#module01-path-arrow)" />
+  <line x1="765" y1="180" x2="765" y2="210" stroke="#64748B" stroke-width="2" marker-end="url(#module01-path-arrow)" />
+
+  <line x1="195" y1="210" x2="480" y2="210" stroke="#94A3B8" stroke-width="2" />
+  <line x1="765" y1="210" x2="480" y2="210" stroke="#94A3B8" stroke-width="2" />
+
+  <g filter="url(#module01-path-shadow)">
+    <rect x="295" y="230" width="370" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="295" y="230" width="6" height="90" rx="6" fill="#6366F1" />
+    <text x="315" y="258" class="section accent-indigo">1.4 核心四问</text>
+    <text x="315" y="280" class="sub">WHO / WHAT / HOW / WHY NOW</text>
+  </g>
+
+  <line x1="480" y1="320" x2="480" y2="350" stroke="#64748B" stroke-width="2" marker-end="url(#module01-path-arrow)" />
+
+  <g filter="url(#module01-path-shadow)">
+    <rect x="360" y="352" width="240" height="42" rx="20" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="480" y="379" text-anchor="middle" class="pill">进入模块二：方法论</text>
+  </g>
+</svg>

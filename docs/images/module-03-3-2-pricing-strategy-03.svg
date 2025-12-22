@@ -1,0 +1,66 @@
+<svg width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="pricing-map-title pricing-map-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="pricing-map-title">SaaS 定价模型图谱</title>
+  <desc id="pricing-map-desc">以收入可预测性和价值对齐程度为轴的定价模型参考。</desc>
+  <defs>
+    <linearGradient id="pricing-map-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="pricing-map-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="pricing-map-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .axis { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .card-title { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-sub { font: 12px/1.3 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="488" rx="18" fill="url(#pricing-map-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">SaaS 定价模型图谱</text>
+
+  <text x="200" y="90" class="axis">收入可预测性 高</text>
+  <line x1="200" y1="96" x2="760" y2="96" class="line" marker-end="url(#pricing-map-arrow)" />
+  <text x="780" y="90" class="axis">低</text>
+
+  <g filter="url(#pricing-map-shadow)">
+    <rect x="120" y="120" width="170" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="205" y="148" text-anchor="middle" class="card-title">Flat-Rate</text>
+    <text x="205" y="170" text-anchor="middle" class="card-sub">固定订阅 $X/月</text>
+  </g>
+
+  <g filter="url(#pricing-map-shadow)">
+    <rect x="310" y="120" width="170" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="395" y="148" text-anchor="middle" class="card-title">Seat-Based</text>
+    <text x="395" y="170" text-anchor="middle" class="card-sub">按席位 $X/用户/月</text>
+  </g>
+
+  <g filter="url(#pricing-map-shadow)">
+    <rect x="500" y="120" width="170" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="585" y="148" text-anchor="middle" class="card-title">Tiered</text>
+    <text x="585" y="170" text-anchor="middle" class="card-sub">基础/专业/企业</text>
+  </g>
+
+  <g filter="url(#pricing-map-shadow)">
+    <rect x="690" y="120" width="170" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="775" y="148" text-anchor="middle" class="card-title">Usage-Based</text>
+    <text x="775" y="170" text-anchor="middle" class="card-sub">按用量 $X/单位</text>
+  </g>
+
+  <text x="200" y="270" class="axis">与价值对齐程度 低</text>
+  <line x1="200" y1="276" x2="760" y2="276" class="line" marker-end="url(#pricing-map-arrow)" />
+  <text x="780" y="270" class="axis">高</text>
+
+  <g filter="url(#pricing-map-shadow)">
+    <rect x="370" y="300" width="220" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="480" y="332" text-anchor="middle" class="card-title">Freemium</text>
+    <text x="480" y="354" text-anchor="middle" class="card-sub">免费 + 付费</text>
+    <text x="480" y="376" text-anchor="middle" class="card-sub">基础免费 · 高级付费</text>
+    <text x="480" y="398" text-anchor="middle" class="card-sub">（获客模型）</text>
+  </g>
+</svg>

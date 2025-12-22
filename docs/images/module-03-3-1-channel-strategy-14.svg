@@ -1,0 +1,50 @@
+<svg width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="marketplace-gtm-title marketplace-gtm-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="marketplace-gtm-title">Marketplace GTM 策略</title>
+  <desc id="marketplace-gtm-desc">从交易到联合销售，再到深度合作的三层次进阶。</desc>
+  <defs>
+    <linearGradient id="marketplace-gtm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="marketplace-gtm-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="marketplace-gtm-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .level { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="528" rx="18" fill="url(#marketplace-gtm-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Marketplace GTM 策略</text>
+
+  <g filter="url(#marketplace-gtm-shadow)">
+    <rect x="80" y="90" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="120" class="level">层次 1：Transact 交易</text>
+    <text x="110" y="144" class="body">• 在市场上列出产品 · 支持市场内交易</text>
+    <text x="110" y="166" class="body">• 基础产品展示 · 目标：让客户能买到</text>
+  </g>
+
+  <line x1="480" y1="210" x2="480" y2="240" class="line" marker-end="url(#marketplace-gtm-arrow)" />
+
+  <g filter="url(#marketplace-gtm-shadow)">
+    <rect x="80" y="240" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="270" class="level">层次 2：Co-sell 联合销售</text>
+    <text x="110" y="294" class="body">• 与云厂商销售团队建立关系 · 共享机会</text>
+    <text x="110" y="316" class="body">• 联合客户拜访 · 目标：借力云厂商销售</text>
+  </g>
+
+  <line x1="480" y1="360" x2="480" y2="390" class="line" marker-end="url(#marketplace-gtm-arrow)" />
+
+  <g filter="url(#marketplace-gtm-shadow)">
+    <rect x="80" y="390" width="800" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="110" y="420" class="level">层次 3：Build with 深度合作</text>
+    <text x="110" y="444" class="body">• 产品深度集成云服务 · 成为推荐方案</text>
+    <text x="110" y="466" class="body">• 获得市场推广资源 · 目标：成为生态首选</text>
+  </g>
+</svg>

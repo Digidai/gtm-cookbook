@@ -1,0 +1,61 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="mp-04-title mp-04-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="mp-04-title">风险评分 = 可能性 × 影响</title>
+  <desc id="mp-04-desc">通过可能性与影响构建 3x3 风险矩阵，并给出应对策略。</desc>
+  <defs>
+    <linearGradient id="mp-04-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="mp-04-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .axis { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .cell { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .grid { stroke: #E2E8F0; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#mp-04-bg)" stroke="#E2E8F0" />
+  <text x="480" y="44" text-anchor="middle" class="title">风险评分 = 可能性 × 影响</text>
+
+  <g filter="url(#mp-04-shadow)">
+    <rect x="120" y="70" width="420" height="210" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="260" y1="70" x2="260" y2="280" class="grid" />
+    <line x1="400" y1="70" x2="400" y2="280" class="grid" />
+    <line x1="120" y1="140" x2="540" y2="140" class="grid" />
+    <line x1="120" y1="210" x2="540" y2="210" class="grid" />
+
+    <text x="190" y="120" text-anchor="middle" class="cell">中</text>
+    <text x="330" y="120" text-anchor="middle" class="cell">高</text>
+    <text x="470" y="120" text-anchor="middle" class="cell">紧急</text>
+
+    <text x="190" y="190" text-anchor="middle" class="cell">低</text>
+    <text x="330" y="190" text-anchor="middle" class="cell">中</text>
+    <text x="470" y="190" text-anchor="middle" class="cell">高</text>
+
+    <text x="190" y="260" text-anchor="middle" class="cell">观察</text>
+    <text x="330" y="260" text-anchor="middle" class="cell">低</text>
+    <text x="470" y="260" text-anchor="middle" class="cell">中</text>
+  </g>
+
+  <text x="120" y="68" class="axis">影响</text>
+  <text x="180" y="92" class="axis">低</text>
+  <text x="320" y="92" class="axis">中</text>
+  <text x="460" y="92" class="axis">高</text>
+
+  <text x="80" y="140" class="axis">可能性高</text>
+  <text x="80" y="210" class="axis">可能性中</text>
+  <text x="80" y="280" class="axis">可能性低</text>
+
+  <g filter="url(#mp-04-shadow)">
+    <rect x="580" y="70" width="320" height="210" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="600" y="100" class="axis">应对策略</text>
+    <text x="600" y="128" class="note">• 紧急：立即制定应对计划，分配专人跟踪</text>
+    <text x="600" y="152" class="note">• 高：制定应对计划，定期监控</text>
+    <text x="600" y="176" class="note">• 中：关注并准备应对方案</text>
+    <text x="600" y="200" class="note">• 低/观察：定期检查</text>
+  </g>
+</svg>

@@ -1,0 +1,71 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="vp-canvas-title vp-canvas-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="vp-canvas-title">价值主张画布</title>
+  <desc id="vp-canvas-desc">左侧为客户画像（任务、痛点、收益），右侧为价值地图（产品/服务、解痛方案、创益方案），中间强调匹配度。</desc>
+  <defs>
+    <linearGradient id="vp-canvas-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="vp-canvas-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .item { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .accent-blue { fill: #2563EB; }
+      .accent-amber { fill: #F59E0B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#vp-canvas-bg)" stroke="#E2E8F0" />
+  <text x="480" y="46" text-anchor="middle" class="title">价值主张画布</text>
+
+  <g filter="url(#vp-canvas-shadow)">
+    <rect x="60" y="80" width="360" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="60" y="80" width="6" height="300" rx="6" class="accent-blue" />
+    <text x="78" y="110" class="section accent-blue">客户画像</text>
+    <text x="78" y="128" class="label">Customer Profile</text>
+
+    <rect x="90" y="150" width="300" height="60" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="110" y="176" class="section">任务 Jobs</text>
+    <text x="110" y="196" class="item">客户要完成的目标</text>
+
+    <rect x="90" y="220" width="300" height="60" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="110" y="246" class="section">痛点 Pains</text>
+    <text x="110" y="266" class="item">阻碍与风险</text>
+
+    <rect x="90" y="290" width="300" height="60" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="110" y="316" class="section">收益 Gains</text>
+    <text x="110" y="336" class="item">期望的收益与改善</text>
+  </g>
+
+  <g filter="url(#vp-canvas-shadow)">
+    <rect x="540" y="80" width="360" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="540" y="80" width="6" height="300" rx="6" class="accent-amber" />
+    <text x="558" y="110" class="section accent-amber">价值地图</text>
+    <text x="558" y="128" class="label">Value Map</text>
+
+    <rect x="570" y="150" width="300" height="60" rx="12" fill="#FFF7ED" stroke="#FED7AA" />
+    <text x="590" y="176" class="section">产品 / 服务</text>
+    <text x="590" y="196" class="item">你提供的核心能力</text>
+
+    <rect x="570" y="220" width="300" height="60" rx="12" fill="#FFF7ED" stroke="#FED7AA" />
+    <text x="590" y="246" class="section">解痛方案</text>
+    <text x="590" y="266" class="item">如何缓解痛点</text>
+
+    <rect x="570" y="290" width="300" height="60" rx="12" fill="#FFF7ED" stroke="#FED7AA" />
+    <text x="590" y="316" class="section">创益方案</text>
+    <text x="590" y="336" class="item">如何创造额外收益</text>
+  </g>
+
+  <g filter="url(#vp-canvas-shadow)">
+    <circle cx="480" cy="230" r="46" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="480" y="224" text-anchor="middle" class="section">Fit</text>
+    <text x="480" y="246" text-anchor="middle" class="label">价值匹配</text>
+  </g>
+
+  <line x1="420" y1="230" x2="434" y2="230" stroke="#94A3B8" stroke-width="2" />
+  <line x1="526" y1="230" x2="540" y2="230" stroke="#94A3B8" stroke-width="2" />
+</svg>

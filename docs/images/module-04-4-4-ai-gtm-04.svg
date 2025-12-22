@@ -1,0 +1,41 @@
+<svg width="960" height="280" viewBox="0 0 960 280" role="img" aria-labelledby="ai-04-title ai-04-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ai-04-title">传统细分 vs AI 细分</title>
+  <desc id="ai-04-desc">传统按单维度分群，AI 结合多维度信号形成微细分。</desc>
+  <defs>
+    <linearGradient id="ai-04-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ai-04-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .header { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #64748B; }
+      .row { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="248" rx="18" fill="url(#ai-04-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#ai-04-shadow)">
+    <rect x="80" y="50" width="800" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="480" y1="50" x2="480" y2="230" class="row" />
+    <line x1="80" y1="90" x2="880" y2="90" class="row" />
+    <line x1="80" y1="150" x2="880" y2="150" class="row" />
+
+    <text x="280" y="78" text-anchor="middle" class="header">传统细分</text>
+    <text x="680" y="78" text-anchor="middle" class="header">AI 细分</text>
+
+    <text x="280" y="118" text-anchor="middle" class="cell">行业 / 规模 / 地区</text>
+    <text x="680" y="118" text-anchor="middle" class="cell">行业 × 规模 × 成熟度</text>
+
+    <text x="680" y="140" text-anchor="middle" class="cell">× 技术栈 × 增长阶段</text>
+    <text x="680" y="162" text-anchor="middle" class="cell">× 组织结构 × 决策模式</text>
+    <text x="680" y="184" text-anchor="middle" class="cell">× 购买信号 × 时机</text>
+
+    <text x="280" y="210" text-anchor="middle" class="note">几十个细分群</text>
+    <text x="680" y="210" text-anchor="middle" class="note">数百个微细分群</text>
+  </g>
+</svg>

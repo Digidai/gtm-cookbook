@@ -1,0 +1,61 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="metrics-nrr-breakdown-title metrics-nrr-breakdown-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-nrr-breakdown-title">NRR 拆解分析示例</title>
+  <desc id="metrics-nrr-breakdown-desc">期初 ARR 1B，通过扩展 +350M、流失 -50M 形成期末 ARR 1.3B，NRR 130%。</desc>
+  <defs>
+    <linearGradient id="metrics-nrr-breakdown-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-nrr-breakdown-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="metrics-nrr-breakdown-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .metric { font: 700 16px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#metrics-nrr-breakdown-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">NRR 拆解分析（示例）</text>
+
+  <g filter="url(#metrics-nrr-breakdown-shadow)">
+    <rect x="70" y="90" width="200" height="70" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="290" y="90" width="200" height="70" rx="14" fill="#ECFDF3" stroke="#86EFAC" />
+    <rect x="510" y="90" width="200" height="70" rx="14" fill="#FEF2F2" stroke="#FCA5A5" />
+    <rect x="730" y="90" width="200" height="70" rx="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="170" y="120" text-anchor="middle" class="section">期初 ARR</text>
+    <text x="170" y="144" text-anchor="middle" class="metric">$1B</text>
+    <text x="390" y="120" text-anchor="middle" class="section">扩展收入</text>
+    <text x="390" y="144" text-anchor="middle" class="metric">+ $350M</text>
+    <text x="610" y="120" text-anchor="middle" class="section">流失/降级</text>
+    <text x="610" y="144" text-anchor="middle" class="metric">- $50M</text>
+    <text x="830" y="120" text-anchor="middle" class="section">期末 ARR</text>
+    <text x="830" y="144" text-anchor="middle" class="metric">$1.3B</text>
+  </g>
+
+  <line x1="270" y1="125" x2="290" y2="125" stroke="#64748B" stroke-width="2" marker-end="url(#metrics-nrr-breakdown-arrow)" />
+  <line x1="490" y1="125" x2="510" y2="125" stroke="#64748B" stroke-width="2" marker-end="url(#metrics-nrr-breakdown-arrow)" />
+  <line x1="710" y1="125" x2="730" y2="125" stroke="#64748B" stroke-width="2" marker-end="url(#metrics-nrr-breakdown-arrow)" />
+
+  <g filter="url(#metrics-nrr-breakdown-shadow)">
+    <rect x="70" y="190" width="400" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="222" class="section">扩展收入构成（+35%）</text>
+    <text x="90" y="250" class="body">• Usage 增长：+ $200M（+20%）</text>
+    <text x="90" y="272" class="body">• 产品采纳：+ $100M（+10%）</text>
+    <text x="90" y="294" class="body">• 席位扩展：+ $50M（+5%）</text>
+  </g>
+
+  <g filter="url(#metrics-nrr-breakdown-shadow)">
+    <rect x="490" y="190" width="400" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="510" y="222" class="section">流失构成（-5%）</text>
+    <text x="510" y="250" class="body">• Logo Churn：- $30M（-3%）</text>
+    <text x="510" y="272" class="body">• Contraction：- $20M（-2%）</text>
+  </g>
+
+  <text x="480" y="404" text-anchor="middle" class="section">NRR = 130%</text>
+</svg>

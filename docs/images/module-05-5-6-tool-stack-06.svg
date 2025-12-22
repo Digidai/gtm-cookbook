@@ -1,0 +1,48 @@
+<svg width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="ts-06-title ts-06-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ts-06-title">规模化阶段推荐工具栈</title>
+  <desc id="ts-06-desc">规模化阶段的完整工具栈、预算与原则。</desc>
+  <defs>
+    <linearGradient id="ts-06-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ts-06-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="448" rx="18" fill="url(#ts-06-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">规模化阶段推荐工具栈</text>
+
+  <g filter="url(#ts-06-shadow)">
+    <rect x="80" y="90" width="520" height="320" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="120" class="section">完整工具栈</text>
+    <text x="100" y="146" class="body">CRM: Salesforce / HubSpot Enterprise</text>
+    <text x="100" y="168" class="body">Marketing: Marketo / HubSpot Enterprise</text>
+    <text x="100" y="190" class="body">Sales Engagement: Outreach / Salesloft</text>
+    <text x="100" y="212" class="body">Conversation Intel: Gong / Chorus</text>
+    <text x="100" y="234" class="body">ABM: 6sense / Demandbase</text>
+    <text x="100" y="256" class="body">Customer Success: Gainsight / ChurnZero</text>
+    <text x="100" y="278" class="body">Data: ZoomInfo / Clearbit</text>
+    <text x="100" y="300" class="body">Revenue Intel: Clari</text>
+    <text x="100" y="322" class="body">CDP: Segment</text>
+    <text x="100" y="344" class="body">BI: Looker / Tableau</text>
+
+    <rect x="640" y="90" width="240" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="660" y="120" class="section">月预算</text>
+    <text x="660" y="148" class="note">$15,000-50,000+</text>
+
+    <rect x="640" y="230" width="240" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="660" y="260" class="section">原则</text>
+    <text x="660" y="286" class="note">• 数据一致性和治理</text>
+    <text x="660" y="308" class="note">• 流程标准化和优化</text>
+    <text x="660" y="330" class="note">• 高级分析和预测</text>
+    <text x="660" y="352" class="note">• 专业运营团队支持</text>
+  </g>
+</svg>

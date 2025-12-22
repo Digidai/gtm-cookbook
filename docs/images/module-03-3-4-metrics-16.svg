@@ -1,0 +1,53 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="metrics-okta-title metrics-okta-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="metrics-okta-title">Okta 客户结构演进</title>
+  <desc id="metrics-okta-desc">对比 Okta 2018 与 2024 客户结构，展示大客户占比上升与 ACV 提升。</desc>
+  <defs>
+    <linearGradient id="metrics-okta-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="metrics-okta-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 600 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#metrics-okta-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">Okta 客户结构演进</text>
+
+  <g filter="url(#metrics-okta-shadow)">
+    <rect x="140" y="90" width="280" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="280" y="122" text-anchor="middle" class="section">2018 客户结构</text>
+    <rect x="240" y="140" width="80" height="220" rx="8" fill="#F8FAFF" stroke="#DBEAFE" />
+    <rect x="240" y="140" width="80" height="77" rx="8" fill="#93C5FD" />
+    <rect x="240" y="217" width="80" height="73" fill="#A7F3D0" />
+    <rect x="240" y="290" width="80" height="70" fill="#FDE68A" />
+    <text x="330" y="164" class="label">Enterprise 35%</text>
+    <text x="330" y="240" class="label">Mid-Market 33%</text>
+    <text x="330" y="312" class="label">SMB 32%</text>
+  </g>
+
+  <g filter="url(#metrics-okta-shadow)">
+    <rect x="540" y="90" width="280" height="240" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="680" y="122" text-anchor="middle" class="section">2024 客户结构</text>
+    <rect x="640" y="140" width="80" height="220" rx="8" fill="#F8FAFF" stroke="#DBEAFE" />
+    <rect x="640" y="140" width="80" height="121" rx="8" fill="#60A5FA" />
+    <rect x="640" y="261" width="80" height="55" fill="#86EFAC" />
+    <rect x="640" y="316" width="80" height="44" fill="#FCD34D" />
+    <text x="730" y="170" class="label">Enterprise 55%</text>
+    <text x="730" y="246" class="label">Mid-Market 25%</text>
+    <text x="730" y="316" class="label">SMB 20%</text>
+  </g>
+
+  <g filter="url(#metrics-okta-shadow)">
+    <rect x="80" y="350" width="800" height="80" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="378" class="body">• 大客户 ARR 占比从 68% 提升到 79%</text>
+    <text x="100" y="400" class="body">• 平均 ACV 从 $15K 增长到 $60K（+300%）</text>
+    <text x="520" y="378" class="body">• 销售团队从 SMB 为主转向 Enterprise 为主</text>
+  </g>
+</svg>

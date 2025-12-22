@@ -1,0 +1,65 @@
+<svg width="960" height="760" viewBox="0 0 960 760" role="img" aria-labelledby="marketplace-title marketplace-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="marketplace-title">主要 B2B Marketplace</title>
+  <desc id="marketplace-desc">AWS、Azure、GCP 与 Salesforce AppExchange 的关键特征对比。</desc>
+  <defs>
+    <linearGradient id="marketplace-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="marketplace-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="728" rx="18" fill="url(#marketplace-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">主要 B2B Marketplace</text>
+
+  <g filter="url(#marketplace-shadow)">
+    <rect x="60" y="80" width="400" height="170" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="110" class="card-title">AWS Marketplace</text>
+    <text x="90" y="134" class="body">• 最大的云软件市场（4,000+ 产品）</text>
+    <text x="90" y="156" class="body">• 支持复杂采购与私有报价</text>
+    <text x="90" y="178" class="body">• 可用 AWS 预算采购</text>
+    <text x="90" y="200" class="note">佣金：约 3-5%</text>
+  </g>
+
+  <g filter="url(#marketplace-shadow)">
+    <rect x="500" y="80" width="400" height="170" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="530" y="110" class="card-title">Azure Marketplace</text>
+    <text x="530" y="134" class="body">• 微软生态，强调企业合规</text>
+    <text x="530" y="156" class="body">• 与 Azure 消费承诺绑定</text>
+    <text x="530" y="178" class="body">• 企业级采购支持</text>
+    <text x="530" y="200" class="note">佣金：约 3%</text>
+  </g>
+
+  <g filter="url(#marketplace-shadow)">
+    <rect x="60" y="270" width="400" height="170" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="300" class="card-title">Google Cloud Marketplace</text>
+    <text x="90" y="324" class="body">• GCP 生态，云原生产品优先</text>
+    <text x="90" y="346" class="body">• 与 GCP 消费绑定</text>
+    <text x="90" y="368" class="body">• 技术适配要求高</text>
+    <text x="90" y="390" class="note">佣金：约 3%</text>
+  </g>
+
+  <g filter="url(#marketplace-shadow)">
+    <rect x="500" y="270" width="400" height="170" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="530" y="300" class="card-title">Salesforce AppExchange</text>
+    <text x="530" y="324" class="body">• CRM 生态领导者（7,000+ 应用）</text>
+    <text x="530" y="346" class="body">• 需要基于 Salesforce 平台构建</text>
+    <text x="530" y="368" class="body">• 强平台耦合</text>
+    <text x="530" y="390" class="note">佣金：15-25%</text>
+  </g>
+
+  <g filter="url(#marketplace-shadow)">
+    <rect x="60" y="470" width="840" height="120" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="500" class="card-title">其他重要市场</text>
+    <text x="90" y="526" class="body">• HubSpot App Marketplace · Atlassian Marketplace</text>
+    <text x="90" y="548" class="body">• Shopify App Store · Slack App Directory</text>
+  </g>
+</svg>

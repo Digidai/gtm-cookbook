@@ -1,0 +1,63 @@
+<svg width="960" height="760" viewBox="0 0 960 760" role="img" aria-labelledby="sla-template-title sla-template-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="sla-template-title">销售与营销 SLA 模板</title>
+  <desc id="sla-template-desc">包含共同目标、营销承诺、销售承诺与 Review 机制的模板。</desc>
+  <defs>
+    <linearGradient id="sla-template-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="sla-template-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #CBD5E1; stroke-width: 1.5; }
+      .box { stroke: #64748B; stroke-width: 1.5; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="728" rx="18" fill="url(#sla-template-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">销售与营销 SLA 模板</text>
+
+  <g filter="url(#sla-template-shadow)">
+    <rect x="60" y="80" width="840" height="640" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="90" y="115" class="section">第一部分：共同目标</text>
+    <text x="90" y="138" class="body">• 季度收入目标：$_______</text>
+    <text x="90" y="160" class="body">• 所需 Pipeline：$_______（按 Win Rate 推算）</text>
+    <text x="90" y="182" class="body">• 所需 MQL：_______ 个（按转化率推算）</text>
+
+    <text x="90" y="220" class="section">第二部分：营销承诺</text>
+    <text x="90" y="242" class="body">1. 每月交付 _____ 个 MQL</text>
+    <text x="90" y="264" class="body">2. MQL 质量标准：</text>
+    <rect x="110" y="284" width="12" height="12" class="box" />
+    <text x="130" y="295" class="body">公司规模 &gt; _____ 员工</text>
+    <rect x="110" y="306" width="12" height="12" class="box" />
+    <text x="130" y="317" class="body">行业属于：_____________</text>
+    <rect x="110" y="328" width="12" height="12" class="box" />
+    <text x="130" y="339" class="body">职位级别：_____________</text>
+    <rect x="110" y="350" width="12" height="12" class="box" />
+    <text x="130" y="361" class="body">行为分数 &gt; _____</text>
+    <text x="90" y="382" class="body">3. 信息完整度 &gt; ____%</text>
+    <text x="90" y="404" class="body">4. 线索产生后 _____ 小时内进入 CRM</text>
+
+    <text x="90" y="442" class="section">第三部分：销售承诺</text>
+    <text x="90" y="464" class="body">1. 收到 MQL 后 _____ 小时内首次跟进</text>
+    <text x="90" y="486" class="body">2. 每个 MQL 至少 _____ 次跟进尝试</text>
+    <text x="90" y="508" class="body">3. 每周更新 CRM 中线索状态</text>
+    <text x="90" y="530" class="body">4. 48 小时内可退回不合格线索（需注明原因）</text>
+    <text x="90" y="552" class="body">5. 每月提供线索质量反馈报告</text>
+
+    <text x="90" y="590" class="section">第四部分：Review 机制</text>
+    <text x="90" y="612" class="body">• 周会：漏斗数据 Review</text>
+    <text x="90" y="634" class="body">• 月会：SLA 完成情况、质量分析</text>
+    <text x="90" y="656" class="body">• 季会：SLA 指标调整</text>
+
+    <text x="90" y="690" class="body">营销负责人：______________</text>
+    <text x="380" y="690" class="body">日期：_______</text>
+    <text x="90" y="712" class="body">销售负责人：______________</text>
+    <text x="380" y="712" class="body">日期：_______</text>
+  </g>
+</svg>

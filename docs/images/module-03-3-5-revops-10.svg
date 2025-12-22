@@ -1,0 +1,40 @@
+<svg width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="revops-10-title revops-10-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="revops-10-title">案例：某 B2B SaaS 公司（ARR $20M，200 人）</title>
+  <desc id="revops-10-desc">展示 RevOps 投入与产出，以及 ROI 计算结果。</desc>
+  <defs>
+    <linearGradient id="revops-10-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="revops-10-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 18px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .highlight { font: 700 16px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0EA5A4; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="288" rx="18" fill="url(#revops-10-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">案例：某 B2B SaaS 公司（ARR $20M，200 人）</text>
+
+  <g filter="url(#revops-10-shadow)">
+    <rect x="60" y="70" width="390" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="510" y="70" width="390" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="102" class="section">投入</text>
+    <text x="80" y="128" class="body">• RevOps 团队：3 人（$450K/年）</text>
+    <text x="80" y="150" class="body">• 工具成本：$100K/年</text>
+    <text x="80" y="172" class="body">• 总投入：$550K/年</text>
+
+    <text x="530" y="102" class="section">产出</text>
+    <text x="530" y="128" class="body">• AE 人效提升 15% → $600K 增量收入</text>
+    <text x="530" y="150" class="body">• 漏斗转化率 +10% → $400K 增量收入</text>
+    <text x="530" y="172" class="body">• 工具整合 → $80K 成本节约</text>
+    <text x="530" y="196" class="body">• 总产出：$1,080K/年</text>
+  </g>
+
+  <text x="480" y="270" text-anchor="middle" class="highlight">ROI = (1,080 - 550) / 550 = 96%</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="slg-12-title slg-12-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-12-title">SLG 成功要素模型</title>
+  <desc id="slg-12-desc">企业级价值驱动销售机器、客户成功与扩展动能，形成可持续增长。</desc>
+  <defs>
+    <linearGradient id="slg-12-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-12-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="slg-12-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#slg-12-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">SLG 成功要素模型</text>
+
+  <g filter="url(#slg-12-shadow)">
+    <rect x="280" y="70" width="400" height="80" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="100" text-anchor="middle" class="section">Enterprise Value</text>
+    <text x="480" y="124" text-anchor="middle" class="body">企业级价值</text>
+  </g>
+
+  <line x1="480" y1="150" x2="480" y2="175" stroke="#64748B" stroke-width="2" marker-end="url(#slg-12-arrow)" />
+
+  <g filter="url(#slg-12-shadow)">
+    <rect x="140" y="185" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="380" y="185" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="620" y="185" width="200" height="90" rx="14" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="240" y="215" text-anchor="middle" class="section">Sales Machine</text>
+    <text x="240" y="237" text-anchor="middle" class="body">销售机器</text>
+
+    <text x="480" y="215" text-anchor="middle" class="section">Customer Success</text>
+    <text x="480" y="237" text-anchor="middle" class="body">客户成功</text>
+
+    <text x="720" y="215" text-anchor="middle" class="section">Expand Motion</text>
+    <text x="720" y="237" text-anchor="middle" class="body">扩展动能</text>
+  </g>
+
+  <line x1="240" y1="275" x2="240" y2="300" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#slg-12-arrow)" />
+  <line x1="480" y1="275" x2="480" y2="300" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#slg-12-arrow)" />
+  <line x1="720" y1="275" x2="720" y2="300" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#slg-12-arrow)" />
+
+  <g filter="url(#slg-12-shadow)">
+    <rect x="280" y="310" width="400" height="70" rx="16" fill="#ECFDF3" stroke="#86EFAC" />
+    <text x="480" y="340" text-anchor="middle" class="section">Sustainable Growth</text>
+    <text x="480" y="362" text-anchor="middle" class="body">可持续增长</text>
+  </g>
+</svg>

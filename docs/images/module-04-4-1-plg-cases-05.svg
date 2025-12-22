@@ -1,0 +1,39 @@
+<svg width="960" height="240" viewBox="0 0 960 240" role="img" aria-labelledby="plg-05-title plg-05-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="plg-05-title">传统本地化 vs Notion 本地化</title>
+  <desc id="plg-05-desc">对比传统本地化与 Notion 通过社区驱动的本地化方式。</desc>
+  <defs>
+    <linearGradient id="plg-05-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="plg-05-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .header { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .row { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="208" rx="18" fill="url(#plg-05-bg)" stroke="#E2E8F0" />
+
+  <g filter="url(#plg-05-shadow)">
+    <rect x="80" y="50" width="800" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="480" y1="50" x2="480" y2="190" class="row" />
+    <line x1="80" y1="90" x2="880" y2="90" class="row" />
+    <line x1="80" y1="130" x2="880" y2="130" class="row" />
+
+    <text x="280" y="78" text-anchor="middle" class="header">传统本地化</text>
+    <text x="680" y="78" text-anchor="middle" class="header">Notion 本地化</text>
+
+    <text x="280" y="116" text-anchor="middle" class="cell">公司翻译产品</text>
+    <text x="680" y="116" text-anchor="middle" class="cell">社区翻译产品</text>
+
+    <text x="280" y="156" text-anchor="middle" class="cell">公司做本地营销</text>
+    <text x="680" y="156" text-anchor="middle" class="cell">Ambassador 做本地推广</text>
+
+    <text x="280" y="186" text-anchor="middle" class="cell">公司建本地团队</text>
+    <text x="680" y="186" text-anchor="middle" class="cell">社区先行，公司后跟</text>
+  </g>
+</svg>

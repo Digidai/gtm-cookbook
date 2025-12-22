@@ -1,0 +1,52 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="chasm-07-title chasm-07-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="chasm-07-title">视频会议市场竞争格局</title>
+  <desc id="chasm-07-desc">企业级与 SMB/个人市场的竞品与痛点，以及 Zoom 的机会点。</desc>
+  <defs>
+    <linearGradient id="chasm-07-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="chasm-07-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .highlight { font: 600 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0EA5A4; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#chasm-07-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">视频会议市场竞争格局</text>
+
+  <g filter="url(#chasm-07-shadow)">
+    <rect x="60" y="80" width="400" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="500" y="80" width="400" height="260" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="110" class="header">企业级（Enterprise）</text>
+    <text x="80" y="138" class="body">• Cisco WebEx（市场领导者）</text>
+    <text x="80" y="160" class="body">• Microsoft（Skype for Business）</text>
+    <text x="80" y="182" class="body">• GoToMeeting</text>
+    <text x="80" y="204" class="body">• BlueJeans</text>
+    <text x="80" y="236" class="header">特点</text>
+    <text x="80" y="258" class="body">• 功能丰富但复杂</text>
+    <text x="80" y="280" class="body">• 需要 IT 支持</text>
+    <text x="80" y="302" class="body">• 采购流程复杂</text>
+
+    <text x="520" y="110" class="header">SMB / 个人</text>
+    <text x="520" y="138" class="body">• Skype</text>
+    <text x="520" y="160" class="body">• Google Hangouts</text>
+    <text x="520" y="182" class="body">• 免费工具</text>
+    <text x="520" y="236" class="header">特点</text>
+    <text x="520" y="258" class="body">• 免费但不够专业</text>
+    <text x="520" y="280" class="body">• 质量不稳定</text>
+    <text x="520" y="302" class="body">• 功能有限</text>
+  </g>
+
+  <g filter="url(#chasm-07-shadow)">
+    <rect x="240" y="360" width="480" height="60" rx="14" fill="#ECFDF3" stroke="#86EFAC" />
+    <text x="480" y="386" text-anchor="middle" class="header">Zoom 机会</text>
+    <text x="480" y="408" text-anchor="middle" class="highlight">企业级功能 + 消费级体验</text>
+  </g>
+</svg>

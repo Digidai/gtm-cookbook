@@ -1,0 +1,43 @@
+<svg width="960" height="380" viewBox="0 0 960 380" role="img" aria-labelledby="ts-10-title ts-10-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ts-10-title">规模化工具栈</title>
+  <desc id="ts-10-desc">规模化阶段的工具栈组合、预算与适用范围。</desc>
+  <defs>
+    <linearGradient id="ts-10-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ts-10-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .section { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .body { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="348" rx="18" fill="url(#ts-10-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">规模化工具栈</text>
+
+  <g filter="url(#ts-10-shadow)">
+    <rect x="80" y="80" width="600" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="100" y="110" class="section">推荐组合</text>
+    <text x="100" y="138" class="body">CRM：销售易企业版 / Salesforce（中国区）</text>
+    <text x="100" y="160" class="body">MA/SCRM：致趣百川 / Convertlab</text>
+    <text x="100" y="182" class="body">获客：探迹企业版 / ZoomInfo（如有需要）</text>
+    <text x="100" y="204" class="body">客服：容联云 / 智齿企业版</text>
+    <text x="100" y="226" class="body">分析：神策企业版 / 火山引擎</text>
+    <text x="100" y="248" class="body">BI：帆软企业版 / Tableau（中国区）</text>
+    <text x="100" y="270" class="body">CDP：Convertlab / 神策 CDP</text>
+
+    <rect x="700" y="80" width="180" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="720" y="112" class="section">总预算</text>
+    <text x="720" y="138" class="note">￥20,000-100,000/月</text>
+
+    <rect x="700" y="190" width="180" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="720" y="222" class="section">适合</text>
+    <text x="720" y="248" class="note">200+ 人团队</text>
+    <text x="720" y="268" class="note">$500 万+ ARR</text>
+  </g>
+</svg>

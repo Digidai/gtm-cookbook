@@ -1,0 +1,70 @@
+<svg width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="niche-path-title niche-path-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="niche-path-title">垂直聚焦的扩展路径</title>
+  <desc id="niche-path-desc">在垂直市场内通过产品扩展、相邻细分市场或上下游延伸实现增长。</desc>
+  <defs>
+    <linearGradient id="niche-path-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="niche-path-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="niche-path-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 700 13px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .pill { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .line { stroke: #64748B; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="388" rx="18" fill="url(#niche-path-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">垂直聚焦的扩展路径</text>
+
+  <g filter="url(#niche-path-shadow)">
+    <rect x="60" y="80" width="840" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="110" class="label">路径 1：产品扩展（同一细分市场内）</text>
+    <rect x="120" y="128" width="90" height="28" rx="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="165" y="147" text-anchor="middle" class="pill">CRM</text>
+    <line x1="210" y1="142" x2="250" y2="142" class="line" marker-end="url(#niche-path-arrow)" />
+    <rect x="250" y="128" width="110" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="305" y="147" text-anchor="middle" class="pill">内容管理</text>
+    <line x1="360" y1="142" x2="400" y2="142" class="line" marker-end="url(#niche-path-arrow)" />
+    <rect x="400" y="128" width="110" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="455" y="147" text-anchor="middle" class="pill">数据管理</text>
+    <line x1="510" y1="142" x2="550" y2="142" class="line" marker-end="url(#niche-path-arrow)" />
+    <rect x="550" y="128" width="190" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="645" y="147" text-anchor="middle" class="pill">临床试验（Veeva）</text>
+  </g>
+
+  <g filter="url(#niche-path-shadow)">
+    <rect x="60" y="190" width="840" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="220" class="label">路径 2：相邻细分市场</text>
+    <rect x="120" y="238" width="80" height="28" rx="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="160" y="257" text-anchor="middle" class="pill">医疗</text>
+    <line x1="200" y1="252" x2="230" y2="252" class="line" marker-end="url(#niche-path-arrow)" />
+    <rect x="230" y="238" width="90" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="275" y="257" text-anchor="middle" class="pill">生物技术</text>
+    <line x1="320" y1="252" x2="350" y2="252" class="line" marker-end="url(#niche-path-arrow)" />
+    <rect x="350" y="238" width="90" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="395" y="257" text-anchor="middle" class="pill">医疗器械</text>
+    <line x1="440" y1="252" x2="470" y2="252" class="line" marker-end="url(#niche-path-arrow)" />
+    <rect x="470" y="238" width="150" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="545" y="257" text-anchor="middle" class="pill">消费健康</text>
+  </g>
+
+  <g filter="url(#niche-path-shadow)">
+    <rect x="60" y="300" width="840" height="90" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="90" y="330" class="label">路径 3：向上游/下游延伸</text>
+    <rect x="120" y="348" width="100" height="28" rx="14" fill="#E0F2FE" stroke="#BAE6FD" />
+    <text x="170" y="367" text-anchor="middle" class="pill">餐厅 POS</text>
+    <line x1="220" y1="362" x2="250" y2="362" class="line" marker-end="url(#niche-path-arrow)" />
+    <rect x="250" y="348" width="130" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="315" y="367" text-anchor="middle" class="pill">供应链管理</text>
+    <line x1="380" y1="362" x2="410" y2="362" class="line" marker-end="url(#niche-path-arrow)" />
+    <rect x="410" y="348" width="180" height="28" rx="14" fill="#F1F5F9" stroke="#E2E8F0" />
+    <text x="500" y="367" text-anchor="middle" class="pill">食客端应用（Toast）</text>
+  </g>
+</svg>

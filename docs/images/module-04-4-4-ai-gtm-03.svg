@@ -1,0 +1,66 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="ai-03-title ai-03-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="ai-03-title">AI 线索评分数据源</title>
+  <desc id="ai-03-desc">第一方与第三方数据输入 AI 模型，输出购买意向、最佳时机与推荐动作。</desc>
+  <defs>
+    <linearGradient id="ai-03-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="ai-03-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <marker id="ai-03-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#64748B" />
+    </marker>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .chip { font: 600 11px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #1E293B; }
+      .line { stroke: #64748B; stroke-width: 1.6; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#ai-03-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">AI 线索评分数据源</text>
+
+  <g filter="url(#ai-03-shadow)">
+    <rect x="60" y="80" width="320" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="580" y="80" width="320" height="230" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+
+    <text x="80" y="110" class="header">第一方数据</text>
+    <text x="80" y="136" class="cell">• 网站行为（浏览、停留）</text>
+    <text x="80" y="158" class="cell">• 邮件互动（打开、点击）</text>
+    <text x="80" y="180" class="cell">• 产品使用（功能、频率）</text>
+    <text x="80" y="202" class="cell">• 表单提交（内容、频率）</text>
+    <text x="80" y="224" class="cell">• 销售互动（会议、通话）</text>
+
+    <text x="600" y="110" class="header">第三方数据</text>
+    <text x="600" y="136" class="cell">• 公司数据（规模、行业、增长）</text>
+    <text x="600" y="158" class="cell">• 技术栈数据（使用什么工具）</text>
+    <text x="600" y="180" class="cell">• 招聘数据（岗位需求）</text>
+    <text x="600" y="202" class="cell">• 融资数据（最近融资）</text>
+    <text x="600" y="224" class="cell">• 新闻数据（公司动态）</text>
+  </g>
+
+  <line x1="380" y1="190" x2="440" y2="190" class="line" marker-end="url(#ai-03-arrow)" />
+  <line x1="580" y1="190" x2="520" y2="190" class="line" marker-end="url(#ai-03-arrow)" />
+
+  <g filter="url(#ai-03-shadow)">
+    <rect x="420" y="150" width="120" height="80" rx="16" fill="#E0F2FE" stroke="#7DD3FC" />
+    <text x="480" y="180" text-anchor="middle" class="header">AI 模型</text>
+    <text x="480" y="202" text-anchor="middle" class="cell">预测分数</text>
+  </g>
+
+  <line x1="480" y1="230" x2="480" y2="280" class="line" marker-end="url(#ai-03-arrow)" />
+
+  <g filter="url(#ai-03-shadow)">
+    <rect x="160" y="300" width="640" height="80" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="190" y="320" width="160" height="40" rx="20" fill="#F1F5F9" />
+    <rect x="400" y="320" width="160" height="40" rx="20" fill="#F1F5F9" />
+    <rect x="610" y="320" width="160" height="40" rx="20" fill="#F1F5F9" />
+    <text x="270" y="345" text-anchor="middle" class="chip">购买意向 / Score</text>
+    <text x="480" y="345" text-anchor="middle" class="chip">最佳时机 / Timing</text>
+    <text x="690" y="345" text-anchor="middle" class="chip">推荐动作 / Action</text>
+  </g>
+</svg>

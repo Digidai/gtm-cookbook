@@ -1,0 +1,60 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="slg-11-title slg-11-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="slg-11-title">北森客户扩展路径</title>
+  <desc id="slg-11-desc">从招聘云起步，逐年扩展到多模块与核心 HR，ACV 累计提升并由多因素驱动 NRR。</desc>
+  <defs>
+    <linearGradient id="slg-11-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="slg-11-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .header { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .cell { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .note { font: 12px/1.6 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
+      .row { stroke: #E2E8F0; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#slg-11-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">北森客户扩展路径</text>
+
+  <g filter="url(#slg-11-shadow)">
+    <rect x="60" y="80" width="840" height="180" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="60" y1="120" x2="900" y2="120" class="row" />
+    <line x1="60" y1="170" x2="900" y2="170" class="row" />
+    <line x1="270" y1="80" x2="270" y2="260" class="row" />
+    <line x1="480" y1="80" x2="480" y2="260" class="row" />
+    <line x1="690" y1="80" x2="690" y2="260" class="row" />
+
+    <text x="100" y="108" class="header">第一年</text>
+    <text x="310" y="108" class="header">第二年</text>
+    <text x="520" y="108" class="header">第三年+</text>
+    <text x="730" y="108" class="header">长期价值</text>
+
+    <text x="100" y="150" class="cell">招聘云</text>
+    <text x="310" y="150" class="cell">+ 测评云</text>
+    <text x="520" y="150" class="cell">+ 绩效云</text>
+    <text x="730" y="150" class="cell">全模块覆盖</text>
+
+    <text x="100" y="198" class="cell">$80K</text>
+    <text x="310" y="198" class="cell">+ $40K</text>
+    <text x="520" y="198" class="cell">+ $50K</text>
+    <text x="730" y="198" class="cell">+ Core HR</text>
+
+    <text x="100" y="238" class="cell">初始 ACV $80K</text>
+    <text x="310" y="238" class="cell">累计 ACV $120K</text>
+    <text x="520" y="238" class="cell">累计 ACV $170K</text>
+    <text x="730" y="238" class="cell">累计 ACV $250K+</text>
+  </g>
+
+  <g filter="url(#slg-11-shadow)">
+    <rect x="60" y="280" width="840" height="150" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="80" y="310" class="header">NRR 驱动因素</text>
+    <text x="80" y="338" class="note">• 模块扩展：客户购买更多模块</text>
+    <text x="80" y="362" class="note">• 员工增长：按员工数计费，客户增长带动收入</text>
+    <text x="80" y="386" class="note">• 价格调整：续约时适度涨价</text>
+  </g>
+</svg>

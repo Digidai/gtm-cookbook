@@ -1,0 +1,68 @@
+<svg width="960" height="380" viewBox="0 0 960 380" role="img" aria-labelledby="mp-05-title mp-05-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="mp-05-title">Week 1-2 3-4 5-6 7-8 9-10 11-12 13-14 15-16</title>
+  <desc id="mp-05-desc">16 周里程碑甘特图示例与关键节点。</desc>
+  <defs>
+    <linearGradient id="mp-05-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="mp-05-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .header { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .label { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .note { font: 12px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .grid { stroke: #E2E8F0; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="348" rx="18" fill="url(#mp-05-bg)" stroke="#E2E8F0" />
+
+  <text x="280" y="42" text-anchor="middle" class="header">Week 1-2</text>
+  <text x="360" y="42" text-anchor="middle" class="header">3-4</text>
+  <text x="440" y="42" text-anchor="middle" class="header">5-6</text>
+  <text x="520" y="42" text-anchor="middle" class="header">7-8</text>
+  <text x="600" y="42" text-anchor="middle" class="header">9-10</text>
+  <text x="680" y="42" text-anchor="middle" class="header">11-12</text>
+  <text x="760" y="42" text-anchor="middle" class="header">13-14</text>
+  <text x="840" y="42" text-anchor="middle" class="header">15-16</text>
+
+  <g filter="url(#mp-05-shadow)">
+    <rect x="80" y="60" width="840" height="250" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+    <line x1="240" y1="60" x2="240" y2="310" class="grid" />
+    <line x1="320" y1="60" x2="320" y2="310" class="grid" />
+    <line x1="400" y1="60" x2="400" y2="310" class="grid" />
+    <line x1="480" y1="60" x2="480" y2="310" class="grid" />
+    <line x1="560" y1="60" x2="560" y2="310" class="grid" />
+    <line x1="640" y1="60" x2="640" y2="310" class="grid" />
+    <line x1="720" y1="60" x2="720" y2="310" class="grid" />
+    <line x1="800" y1="60" x2="800" y2="310" class="grid" />
+
+    <text x="100" y="90" class="label">M1 调研</text>
+    <rect x="240" y="78" width="160" height="18" rx="6" fill="#DBEAFE" />
+
+    <text x="100" y="118" class="label">M2 战略</text>
+    <rect x="320" y="106" width="160" height="18" rx="6" fill="#E0F2FE" />
+
+    <text x="100" y="146" class="label">M3 准备</text>
+    <rect x="400" y="134" width="240" height="18" rx="6" fill="#EDE9FE" />
+
+    <text x="100" y="174" class="label">M4 软发布</text>
+    <rect x="560" y="162" width="80" height="18" rx="6" fill="#FEF3C7" />
+
+    <text x="100" y="202" class="label">M5 正式发布</text>
+    <rect x="640" y="190" width="80" height="18" rx="6" fill="#FDE68A" />
+
+    <text x="100" y="230" class="label">M6 首批客户</text>
+    <rect x="640" y="218" width="160" height="18" rx="6" fill="#DCFCE7" />
+
+    <text x="100" y="258" class="label">M7 PMF 验证</text>
+    <rect x="720" y="246" width="160" height="18" rx="6" fill="#BBF7D0" />
+
+    <text x="100" y="286" class="label">M8 规模化准备</text>
+    <rect x="800" y="274" width="80" height="18" rx="6" fill="#A7F3D0" />
+  </g>
+
+  <text x="100" y="340" class="note">关键节点：◆ M3 发布就绪  ◆ M5 正式发布  ◆ M7 PMF 验证</text>
+</svg>

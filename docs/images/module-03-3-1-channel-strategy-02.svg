@@ -1,0 +1,43 @@
+<svg width="960" height="460" viewBox="0 0 960 460" role="img" aria-labelledby="channel-mismatch-title channel-mismatch-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="channel-mismatch-title">渠道错配的后果</title>
+  <desc id="channel-mismatch-desc">三种常见渠道错配导致的失败结果。</desc>
+  <defs>
+    <linearGradient id="channel-mismatch-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EEF2F7" />
+    </linearGradient>
+    <filter id="channel-mismatch-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+    <style>
+      .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .card-title { font: 700 14px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #B91C1C; }
+      .body { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #334155; }
+      .result { font: 12px/1.5 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #991B1B; }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="428" rx="18" fill="url(#channel-mismatch-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">渠道错配的后果</text>
+
+  <g filter="url(#channel-mismatch-shadow)">
+    <rect x="80" y="80" width="800" height="100" rx="16" fill="#FFFFFF" stroke="#FECACA" />
+    <text x="110" y="112" class="card-title">错误 1：高 ACV 产品走低触达渠道</text>
+    <text x="110" y="136" class="body">产品：$100K+ 企业软件 · 渠道：纯自助购买</text>
+    <text x="110" y="158" class="result">结果：转化率极低，客户无法自行理解复杂价值</text>
+  </g>
+
+  <g filter="url(#channel-mismatch-shadow)">
+    <rect x="80" y="200" width="800" height="100" rx="16" fill="#FFFFFF" stroke="#FECACA" />
+    <text x="110" y="232" class="card-title">错误 2：低 ACV 产品走高成本渠道</text>
+    <text x="110" y="256" class="body">产品：$50/月 SaaS 工具 · 渠道：企业销售团队</text>
+    <text x="110" y="278" class="result">结果：CAC &gt; LTV，越卖越亏</text>
+  </g>
+
+  <g filter="url(#channel-mismatch-shadow)">
+    <rect x="80" y="320" width="800" height="100" rx="16" fill="#FFFFFF" stroke="#FECACA" />
+    <text x="110" y="352" class="card-title">错误 3：过早进入渠道销售</text>
+    <text x="110" y="376" class="body">阶段：产品未验证，销售 Playbook 不成熟</text>
+    <text x="110" y="398" class="result">结果：渠道无法成功销售，关系破裂</text>
+  </g>
+</svg>
