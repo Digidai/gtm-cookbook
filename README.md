@@ -7,9 +7,9 @@
 ## 快速开始
 
 ### 写作者指南
-**开始写作前，请先阅读 [agent.md](./agent.md)**
+**开始写作前，请先阅读 [docs/agent.md](./docs/agent.md)**
 
-`agent.md` 包含：
+`docs/agent.md` 包含：
 - 写作流程与规范
 - 项目结构说明
 - 写作进度追踪
@@ -17,7 +17,7 @@
 
 ### 快速命令
 ```
-请阅读 agent.md，然后开始写作 [文件名]
+请阅读 docs/agent.md，然后开始写作 [文件名]
 ```
 
 ## 部署到 GitHub Pages
@@ -61,16 +61,18 @@ VITEPRESS_BASE=/你的仓库名/ npm run build
 
 ```
 GTM/
-├── agent.md          # 写作管理指南（核心文件）
 ├── README.md         # 本文件
-│
-├── module-01/        # 模块一：GTM 基础认知与战略意义
-├── module-02/        # 模块二：GTM 核心方法论与框架
-├── module-03/        # 模块三：GTM 执行体系与运营
-├── module-04/        # 模块四：GTM 实战案例深度解析
-├── module-05/        # 模块五：GTM 执行工具包
-│
-└── appendix/         # 附录：术语表、推荐阅读、参考资源
+├── docs/             # 课程内容（VitePress 源目录）
+│   ├── agent.md      # 写作管理指南（核心文件）
+│   ├── index.md      # 站点首页
+│   ├── module-01/    # 模块一：GTM 基础认知与战略意义
+│   ├── module-02/    # 模块二：GTM 核心方法论与框架
+│   ├── module-03/    # 模块三：GTM 执行体系与运营
+│   ├── module-04/    # 模块四：GTM 实战案例深度解析
+│   ├── module-05/    # 模块五：GTM 执行工具包
+│   └── appendix/     # 附录：术语表、推荐阅读、参考资源
+├── .vitepress/       # VitePress 配置
+└── src/              # Cloudflare Pages Functions
 ```
 
 ## 模块概览
@@ -109,14 +111,14 @@ GTM/
 
 ## 当前进度
 
-详见 [agent.md](./agent.md) 中的"写作进度追踪"章节。
+详见 [docs/agent.md](./docs/agent.md) 中的"写作进度追踪"章节。
 
 ## 贡献指南
 
-1. 阅读 `agent.md` 了解写作规范
+1. 阅读 `docs/agent.md` 了解写作规范
 2. 选择待写作的章节
 3. 按照文档模板撰写内容
-4. 更新 `agent.md` 中的进度状态
+4. 更新 `docs/agent.md` 中的进度状态
 
 ## 案例资源
 
