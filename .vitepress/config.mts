@@ -200,11 +200,11 @@ const base = normalizeBase(
   process.env.VITEPRESS_BASE ||
   (process.env.CF_PAGES ? '/' : process.env.DEPLOY_TARGET === 'cloudflare' ? '/' : '/gtm-cookbook/')
 )
-const defaultSiteUrl = process.env.CF_PAGES ? 'https://genedai.space' : undefined
+const defaultSiteUrl = 'https://genedai.space'
 const siteUrl = normalizeSiteUrl(
   process.env.SITE_URL ||
-  defaultSiteUrl ||
-  process.env.CF_PAGES_URL
+  process.env.CF_PAGES_URL ||
+  defaultSiteUrl
 )
 const sitemapHostname = siteUrl ? resolveSitemapHostname(siteUrl, base) : undefined
 
