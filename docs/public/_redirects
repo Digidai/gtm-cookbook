@@ -1,3 +1,6 @@
+/ /index.html 200
+/*.html /:splat.html 200
+
 /module-01 /module-01/index.html 200
 /module-01/ /module-01/index.html 200
 /module-01/* /module-01/:splat.html 200
