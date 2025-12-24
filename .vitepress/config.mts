@@ -138,6 +138,7 @@ export default defineConfig({
   srcDir: 'docs',
   lang: 'zh-CN',
   base,
+  cleanUrls: true,
 
   head: [
     ['meta', { name: 'author', content: 'GTM Team' }],
