@@ -111,7 +111,17 @@ function getSidebar() {
       .sort()
 
     if (appendixFiles.length > 0) {
-      const appendixItems = appendixFiles.map(file => {
+      const appendixItems: any[] = []
+      const appendixIndexPath = path.join(appendixPath, 'index.md')
+      if (fs.existsSync(appendixIndexPath)) {
+        appendixItems.push({
+          text: '附录概览',
+          link: `/appendix/`
+        })
+      }
+
+      const appendixContentFiles = appendixFiles.filter(file => file !== 'index.md')
+      const appendixContentItems = appendixContentFiles.map(file => {
         const fullPath = path.join(appendixPath, file)
         let text = extractTitle(fullPath)
         if (!text) {
@@ -123,6 +133,8 @@ function getSidebar() {
           link: `/appendix/${file}`
         }
       })
+
+      appendixItems.push(...appendixContentItems)
 
       sidebar.push({
         text: moduleNames['appendix'] || '附录',
