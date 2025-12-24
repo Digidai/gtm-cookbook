@@ -1,51 +1,43 @@
-<svg width="960" height="240" viewBox="0 0 960 240" role="img" aria-labelledby="position-title position-desc" xmlns="http://www.w3.org/2000/svg">
-  <title id="position-title">April Dunford 定位公式</title>
-  <desc id="position-desc">定位声明模板：For [目标客户] who [有这个问题]，Our [产品] is a [类别]，That [提供这个价值]，Unlike [竞争对手]，We [差异化优势]。</desc>
+<svg width="960" height="240" viewBox="0 0 960 240" role="img" aria-labelledby="pos-02-title pos-02-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="pos-02-title">April Dunford 定位公式</title>
+  <desc id="pos-02-desc">展示定位公式的七个关键元素，帮助快速组织定位表达。</desc>
   <defs>
-    <linearGradient id="position-bg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="pos-02-bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#F8FAFC" />
       <stop offset="100%" stop-color="#EEF2F7" />
     </linearGradient>
-    <filter id="position-shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <filter id="pos-02-shadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0F172A" flood-opacity="0.12" />
     </filter>
     <style>
       .title { font: 700 20px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .line { font: 600 14px/1.4 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
-      .pill { fill: #E0F2FE; stroke: #BAE6FD; }
-      .pill-text { font: 600 12px/1 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .token { font: 700 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #0F172A; }
+      .hint { font: 12px/1.2 "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif; fill: #475569; }
     </style>
   </defs>
 
-  <rect x="16" y="16" width="928" height="208" rx="18" fill="url(#position-bg)" stroke="#E2E8F0" />
-  <text x="480" y="46" text-anchor="middle" class="title">April Dunford 定位公式</text>
+  <rect x="16" y="16" width="928" height="208" rx="18" fill="url(#pos-02-bg)" stroke="#E2E8F0" />
+  <text x="480" y="48" text-anchor="middle" class="title">April Dunford 定位公式</text>
 
-  <g filter="url(#position-shadow)">
-    <rect x="80" y="70" width="800" height="140" rx="16" fill="#FFFFFF" stroke="#E2E8F0" />
+  <g filter="url(#pos-02-shadow)">
+    <rect x="60" y="80" width="170" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="250" y="80" width="150" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="420" y="80" width="150" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="590" y="80" width="150" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
 
-    <text x="120" y="104" class="line">For</text>
-    <rect x="160" y="88" width="120" height="24" rx="12" class="pill" />
-    <text x="220" y="105" text-anchor="middle" class="pill-text">目标客户</text>
-    <text x="300" y="104" class="line">who</text>
-    <rect x="340" y="88" width="140" height="24" rx="12" class="pill" />
-    <text x="410" y="105" text-anchor="middle" class="pill-text">有这个问题</text>
+    <text x="145" y="106" text-anchor="middle" class="token">For [目标客户]</text>
+    <text x="325" y="106" text-anchor="middle" class="token">Who [问题]</text>
+    <text x="495" y="106" text-anchor="middle" class="token">Our [产品]</text>
+    <text x="665" y="106" text-anchor="middle" class="token">Is a [品类]</text>
 
-    <text x="120" y="134" class="line">Our</text>
-    <rect x="160" y="118" width="90" height="24" rx="12" class="pill" />
-    <text x="205" y="135" text-anchor="middle" class="pill-text">产品</text>
-    <text x="270" y="134" class="line">is a</text>
-    <rect x="320" y="118" width="90" height="24" rx="12" class="pill" />
-    <text x="365" y="135" text-anchor="middle" class="pill-text">类别</text>
+    <rect x="140" y="140" width="170" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="330" y="140" width="170" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
+    <rect x="520" y="140" width="170" height="44" rx="10" fill="#FFFFFF" stroke="#E2E8F0" />
 
-    <text x="120" y="164" class="line">That</text>
-    <rect x="170" y="148" width="160" height="24" rx="12" class="pill" />
-    <text x="250" y="165" text-anchor="middle" class="pill-text">提供这个价值</text>
-
-    <text x="120" y="194" class="line">Unlike</text>
-    <rect x="190" y="178" width="120" height="24" rx="12" class="pill" />
-    <text x="250" y="195" text-anchor="middle" class="pill-text">竞争对手</text>
-    <text x="330" y="194" class="line">We</text>
-    <rect x="360" y="178" width="140" height="24" rx="12" class="pill" />
-    <text x="430" y="195" text-anchor="middle" class="pill-text">差异化优势</text>
+    <text x="225" y="166" text-anchor="middle" class="token">That [价值]</text>
+    <text x="415" y="166" text-anchor="middle" class="token">Unlike [竞品]</text>
+    <text x="605" y="166" text-anchor="middle" class="token">We [差异化]</text>
   </g>
+
+  <text x="480" y="206" text-anchor="middle" class="hint">用一句话清晰说明：面向谁、解决什么、为何选择你</text>
 </svg>
