@@ -2,12 +2,57 @@ import { defineConfig } from 'vitepress'
 import fs from 'fs'
 import path from 'path'
 
+const siteTitle = 'GTM 市场战略指南'
+const siteDescription = 'Go-To-Market 市场进入战略完整教程'
+
 function normalizeBase(value?: string): string {
   if (!value || value.trim() === '') return '/'
   let base = value.trim()
   if (!base.startsWith('/')) base = `/${base}`
   if (!base.endsWith('/')) base = `${base}/`
   return base
+}
+
+function normalizeSiteUrl(value?: string): string | undefined {
+  if (!value || value.trim() === '') return undefined
+  return value.trim().replace(/\/+$/, '')
+}
+
+function resolvePagePath(relativePath: string): { path: string; isIndex: boolean } {
+  const normalized = relativePath.replace(/\\/g, '/')
+  let pathValue = normalized.replace(/\.md$/, '')
+  const isRootIndex = pathValue === 'index'
+  const isNestedIndex = pathValue.endsWith('/index')
+  const isIndex = isRootIndex || isNestedIndex
+
+  if (isRootIndex) pathValue = ''
+  if (isNestedIndex) pathValue = pathValue.slice(0, -'/index'.length)
+
+  return { path: pathValue, isIndex }
+}
+
+function buildCanonicalUrl(siteUrl: string, basePath: string, relativePath: string): string {
+  const { path: pagePath, isIndex } = resolvePagePath(relativePath)
+  const normalizedSite = siteUrl.replace(/\/+$/, '')
+  const normalizedBase = basePath === '/' ? '' : basePath.replace(/\/+$/, '')
+  const siteWithBase = normalizedBase && normalizedSite.endsWith(normalizedBase)
+    ? normalizedSite
+    : `${normalizedSite}${normalizedBase}`
+
+  const finalPath = isIndex ? (pagePath ? `${pagePath}/` : '') : pagePath
+  const normalizedPath = finalPath.replace(/^\/+/, '')
+
+  if (!normalizedPath) return `${siteWithBase}/`
+  return `${siteWithBase}/${normalizedPath}`
+}
+
+function resolveSitemapHostname(siteUrl: string, basePath: string): string {
+  const normalizedSite = siteUrl.replace(/\/+$/, '')
+  const normalizedBase = basePath === '/' ? '' : basePath.replace(/\/+$/, '')
+  if (normalizedBase && normalizedSite.endsWith(normalizedBase)) {
+    return normalizedSite.slice(0, -normalizedBase.length)
+  }
+  return normalizedSite
 }
 
 // 模块名称中文映射
@@ -155,19 +200,50 @@ const base = normalizeBase(
   process.env.VITEPRESS_BASE ||
   (process.env.CF_PAGES ? '/' : process.env.DEPLOY_TARGET === 'cloudflare' ? '/' : '/gtm-cookbook/')
 )
+const siteUrl = normalizeSiteUrl(process.env.SITE_URL || process.env.CF_PAGES_URL)
+const sitemapHostname = siteUrl ? resolveSitemapHostname(siteUrl, base) : undefined
 
 export default defineConfig({
-  title: "GTM 市场战略指南",
-  description: "Go-To-Market 市场进入战略完整教程",
+  title: siteTitle,
+  description: siteDescription,
   srcDir: 'docs',
   lang: 'zh-CN',
   base,
   cleanUrls: true,
+  sitemap: sitemapHostname ? { hostname: sitemapHostname } : undefined,
 
   head: [
     ['meta', { name: 'author', content: 'GTM Team' }],
-    ['meta', { name: 'keywords', content: 'GTM, Go-To-Market, 市场战略, SaaS, PLG, SLG' }]
+    ['meta', { name: 'keywords', content: 'GTM, Go-To-Market, 市场战略, SaaS, PLG, SLG' }],
+    ['meta', { name: 'robots', content: 'index,follow' }],
+    ['meta', { name: 'theme-color', content: '#0f172a' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: `${base}favicon.ico` }],
+    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: `${base}favicon.ico` }]
   ],
+  transformHead: ({ pageData }) => {
+    const title = pageData.title || siteTitle
+    const description = pageData.frontmatter.description || pageData.description || siteDescription
+    const metaTitle = title === siteTitle ? title : `${title} | ${siteTitle}`
+
+    const tags: any[] = [
+      ['meta', { property: 'og:title', content: metaTitle }],
+      ['meta', { property: 'og:description', content: description }],
+      ['meta', { property: 'og:site_name', content: siteTitle }],
+      ['meta', { property: 'og:type', content: 'website' }],
+      ['meta', { property: 'og:locale', content: 'zh_CN' }],
+      ['meta', { name: 'twitter:card', content: 'summary' }],
+      ['meta', { name: 'twitter:title', content: metaTitle }],
+      ['meta', { name: 'twitter:description', content: description }]
+    ]
+
+    if (siteUrl) {
+      const canonical = buildCanonicalUrl(siteUrl, base, pageData.relativePath)
+      tags.push(['link', { rel: 'canonical', href: canonical }])
+      tags.push(['meta', { property: 'og:url', content: canonical }])
+    }
+
+    return tags
+  },
 
   themeConfig: {
     nav: [
