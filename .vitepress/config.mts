@@ -63,11 +63,21 @@ function getSidebar() {
   modules.forEach(moduleDir => {
     const modulePath = path.join(docsDir, moduleDir)
     const files = fs.readdirSync(modulePath)
-      .filter(file => file.endsWith('.md') && file !== 'index.md')
+      .filter(file => file.endsWith('.md'))
       .sort()
 
     if (files.length > 0) {
-      const items = files.map(file => {
+      const items: any[] = []
+      const indexPath = path.join(modulePath, 'index.md')
+      if (fs.existsSync(indexPath)) {
+        items.push({
+          text: '模块概览',
+          link: `/${moduleDir}/`
+        })
+      }
+
+      const contentFiles = files.filter(file => file !== 'index.md')
+      const contentItems = contentFiles.map(file => {
         const fullPath = path.join(modulePath, file)
         // 优先使用 markdown 文件中的标题
         let text = extractTitle(fullPath)
@@ -82,6 +92,8 @@ function getSidebar() {
           link: `/${moduleDir}/${file}`
         }
       })
+
+      items.push(...contentItems)
 
       sidebar.push({
         text: moduleNames[moduleDir] || moduleDir,
