@@ -4,6 +4,7 @@ import path from 'path'
 
 const siteTitle = 'GTM 市场战略指南'
 const siteDescription = 'Go-To-Market 市场进入战略完整教程'
+const ogImageName = 'og-cover.png'
 
 function normalizeBase(value?: string): string {
   if (!value || value.trim() === '') return '/'
@@ -134,7 +135,7 @@ function getSidebar() {
 
         return {
           text: text,
-          link: `/${moduleDir}/${file}`
+          link: `/${moduleDir}/${file.replace(/\.md$/, '')}`
         }
       })
 
@@ -175,7 +176,7 @@ function getSidebar() {
 
         return {
           text: text,
-          link: `/appendix/${file}`
+          link: `/appendix/${file.replace(/\.md$/, '')}`
         }
       })
 
@@ -236,15 +237,21 @@ export default defineConfig({
       ['meta', { property: 'og:site_name', content: siteTitle }],
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { property: 'og:locale', content: 'zh_CN' }],
-      ['meta', { name: 'twitter:card', content: 'summary' }],
+      ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
       ['meta', { name: 'twitter:title', content: metaTitle }],
       ['meta', { name: 'twitter:description', content: description }]
     ]
 
     if (siteUrl) {
       const canonical = buildCanonicalUrl(siteUrl, base, pageData.relativePath)
+      const ogImage = `${siteUrl}${base}${ogImageName}`
       tags.push(['link', { rel: 'canonical', href: canonical }])
       tags.push(['meta', { property: 'og:url', content: canonical }])
+      tags.push(['meta', { property: 'og:image', content: ogImage }])
+      tags.push(['meta', { property: 'og:image:width', content: '1200' }])
+      tags.push(['meta', { property: 'og:image:height', content: '630' }])
+      tags.push(['meta', { property: 'og:image:alt', content: siteTitle }])
+      tags.push(['meta', { name: 'twitter:image', content: ogImage }])
     }
 
     return tags

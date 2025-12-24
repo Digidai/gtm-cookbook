@@ -194,8 +194,8 @@
 
 ## 延伸阅读
 
-- [术语表](./glossary.md)
-- [参考资源](./resources.md)
+- [术语表](./glossary)
+- [参考资源](./resources)
 
 ---
 

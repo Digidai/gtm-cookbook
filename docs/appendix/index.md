@@ -22,9 +22,9 @@
 
 | 资源 | 说明 | 文件 |
 |------|------|------|
-| 术语表 | GTM 领域核心术语定义 | [glossary.md](./glossary.md) |
-| 推荐阅读 | GTM 相关经典书籍推荐 | [reading-list.md](./reading-list.md) |
-| 参考资源 | 在线资源、工具、社区 | [resources.md](./resources.md) |
+| 术语表 | GTM 领域核心术语定义 | [glossary.md](./glossary) |
+| 推荐阅读 | GTM 相关经典书籍推荐 | [reading-list.md](./reading-list) |
+| 参考资源 | 在线资源、工具、社区 | [resources.md](./resources) |
 
 ---
 
@@ -42,7 +42,7 @@
 | LTV | Lifetime Value | 客户生命周期价值 |
 | NRR | Net Revenue Retention | 净收入留存率 |
 
-> 完整术语列表请查看 [术语表](./glossary.md)
+> 完整术语列表请查看 [术语表](./glossary)
 
 ---
 
@@ -57,7 +57,7 @@
 4. **The Mom Test** - Rob Fitzpatrick
 5. **Predictable Revenue** - Aaron Ross
 
-> 完整书单请查看 [推荐阅读](./reading-list.md)
+> 完整书单请查看 [推荐阅读](./reading-list)
 
 ---
 
@@ -83,9 +83,9 @@
 
 ## 延伸阅读
 
-- [术语表](./glossary.md)
-- [推荐阅读](./reading-list.md)
-- [参考资源](./resources.md)
+- [术语表](./glossary)
+- [推荐阅读](./reading-list)
+- [参考资源](./resources)
 
 ---
 

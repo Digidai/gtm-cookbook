@@ -138,7 +138,7 @@ Geoffrey Moore 提出的概念，指早期采用者（Early Adopters）和早期
 
 **形成原因**：早期采用者愿意为创新承担风险，而主流市场需要成熟、完整、有参考案例的解决方案。
 
-→ 详见 [2.1 跨越鸿沟](../module-02/2.1-crossing-the-chasm.md)
+→ 详见 [2.1 跨越鸿沟](../module-02/2.1-crossing-the-chasm)
 
 ### Churn（流失）
 **客户流失 / 收入流失**
@@ -300,7 +300,7 @@ Geoffrey Moore 提出的概念，指早期采用者（Early Adopters）和早期
 - **Sales Strategy**：聚焦销售流程和团队
 - **GTM Strategy**：整合产品、营销、销售、客户成功的完整体系
 
-→ 详见 [1.1 GTM 的本质定义](../module-01/1.1-gtm-definition.md)
+→ 详见 [1.1 GTM 的本质定义](../module-01/1.1-gtm-definition)
 
 ### GTM Motion
 **GTM 运动模式 / 增长引擎类型**
@@ -315,7 +315,7 @@ Geoffrey Moore 提出的概念，指早期采用者（Early Adopters）和早期
 | CLG | 社区驱动增长 | 用户社区和口碑传播 | 各层级 |
 | PLS | 产品驱动销售 | PLG 获客 + 销售收割 | 混合 |
 
-→ 详见 [2.2 GTM Motion 类型深度解析](../module-02/2.2-gtm-motions.md)
+→ 详见 [2.2 GTM Motion 类型深度解析](../module-02/2.2-gtm-motions)
 
 ---
 
@@ -349,7 +349,7 @@ Geoffrey Moore 提出的概念，指早期采用者（Early Adopters）和早期
 - Buyer Persona 描述的是个人决策者的特征
 - 先定义 ICP，再在 ICP 内识别 Buyer Persona
 
-→ 详见 [2.3 ICP 构建方法论](../module-02/2.3-icp-methodology.md)
+→ 详见 [2.3 ICP 构建方法论](../module-02/2.3-icp-methodology)
 
 ### Inbound Marketing
 **集客营销 / 入站营销**
@@ -571,7 +571,7 @@ Pipeline Velocity = (商机数量 × 成交率 × 平均交易额) ÷ 销售周�
 - AI 原生公司试用转付费率：56%
 - 传统 SaaS 公司试用转付费率：32%
 
-→ 详见 [2.2 GTM Motion 类型深度解析](../module-02/2.2-gtm-motions.md)
+→ 详见 [2.2 GTM Motion 类型深度解析](../module-02/2.2-gtm-motions)
 
 ### PLS（Product-Led Sales）
 **产品驱动销售**
@@ -608,7 +608,7 @@ PLG 与 SLG 的混合模式，被 McKinsey 认为是 GTM 的未来趋势。
 4. 目标客户的特征是什么？
 5. 你属于哪个市场类别？
 
-→ 详见 [2.5 市场定位策略类型](../module-02/2.5-positioning.md)
+→ 详见 [2.5 市场定位策略类型](../module-02/2.5-positioning)
 
 ### PQL（Product Qualified Lead）
 **产品合格线索**
@@ -656,7 +656,7 @@ PLG 与 SLG 的混合模式，被 McKinsey 认为是 GTM 的未来趋势。
 - 传统模式：Sales Ops、Marketing Ops、CS Ops 各自为政
 - RevOps 模式：统一团队、统一数据、统一目标
 
-→ 详见 [3.5 RevOps 体系](../module-03/3.5-revops.md)
+→ 详见 [3.5 RevOps 体系](../module-03/3.5-revops)
 
 ### ROI（Return on Investment）
 **投资回报率**
@@ -732,7 +732,7 @@ PLG 与 SLG 的混合模式，被 McKinsey 认为是 GTM 的未来趋势。
 - AI 原生 SLG 公司销售周期：20 周
 - 传统 SaaS SLG 公司销售周期：25 周
 
-→ 详见 [2.2 GTM Motion 类型深度解析](../module-02/2.2-gtm-motions.md)
+→ 详见 [2.2 GTM Motion 类型深度解析](../module-02/2.2-gtm-motions)
 
 ### SOM（Serviceable Obtainable Market）
 **可获取市场**
@@ -797,7 +797,7 @@ PLG 与 SLG 的混合模式，被 McKinsey 认为是 GTM 的未来趋势。
 
 **鸿沟位置**：位于 Early Adopters 和 Early Majority 之间。
 
-→ 详见 [2.1 跨越鸿沟](../module-02/2.1-crossing-the-chasm.md)
+→ 详见 [2.1 跨越鸿沟](../module-02/2.1-crossing-the-chasm)
 
 ### Time to Value（TTV）
 **价值实现时间**
@@ -880,7 +880,7 @@ Geoffrey Moore 四阶段模型中的第三阶段。在这个阶段，产品获�
 - **客户侧**：Customer Jobs（待完成的任务）、Pains（痛点）、Gains（期望收益）
 - **产品侧**：Products & Services（产品服务）、Pain Relievers（痛点解决）、Gain Creators（收益创造）
 
-→ 详见 [2.4 价值主张设计](../module-02/2.4-value-proposition.md)
+→ 详见 [2.4 价值主张设计](../module-02/2.4-value-proposition)
 
 ### VAR（Value-Added Reseller）
 **增值经销商**
@@ -1000,8 +1000,8 @@ AI 原生公司试用转付费率 56%，传统 SaaS 仅 32%（ICONIQ 2025）。
 
 ## 延伸阅读
 
-- [推荐阅读](./reading-list.md)
-- [参考资源](./resources.md)
+- [推荐阅读](./reading-list)
+- [参考资源](./resources)
 
 ---
 

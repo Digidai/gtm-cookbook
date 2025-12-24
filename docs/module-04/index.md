@@ -35,10 +35,10 @@
 
 | 章节 | 标题 | 核心案例 | 时长 |
 |------|------|----------|------|
-| 4.1 | [PLG 经典案例](./4.1-plg-cases.md) | Slack、Notion、Figma、**飞书** | 45分钟 |
-| 4.2 | [SLG 经典案例](./4.2-slg-cases.md) | Salesforce、Workday、ServiceNow、**北森** | 30分钟 |
-| 4.3 | [跨越鸿沟案例](./4.3-chasm-cases.md) | HubSpot、Zoom、**有赞** | 30分钟 |
-| 4.4 | [AI 时代 GTM 新范式](./4.4-ai-gtm.md) | AI-Native 公司特征与趋势、**中国 AI GTM 工具** | 15分钟 |
+| 4.1 | [PLG 经典案例](./4.1-plg-cases) | Slack、Notion、Figma、**飞书** | 45分钟 |
+| 4.2 | [SLG 经典案例](./4.2-slg-cases) | Salesforce、Workday、ServiceNow、**北森** | 30分钟 |
+| 4.3 | [跨越鸿沟案例](./4.3-chasm-cases) | HubSpot、Zoom、**有赞** | 30分钟 |
+| 4.4 | [AI 时代 GTM 新范式](./4.4-ai-gtm) | AI-Native 公司特征与趋势、**中国 AI GTM 工具** | 15分钟 |
 
 ---
 
@@ -83,9 +83,9 @@
 
 ## 延伸阅读
 
-- [术语表](../appendix/glossary.md)
-- [推荐阅读](../appendix/reading-list.md)
-- [参考资源](../appendix/resources.md)
+- [术语表](../appendix/glossary)
+- [推荐阅读](../appendix/reading-list)
+- [参考资源](../appendix/resources)
 
 ---
 

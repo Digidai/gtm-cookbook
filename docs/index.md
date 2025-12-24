@@ -72,9 +72,9 @@ features:
 
 ## 延伸阅读
 
-- [术语表](./appendix/glossary.md)
-- [推荐阅读](./appendix/reading-list.md)
-- [参考资源](./appendix/resources.md)
+- [术语表](./appendix/glossary)
+- [推荐阅读](./appendix/reading-list)
+- [参考资源](./appendix/resources)
 
 ---
 

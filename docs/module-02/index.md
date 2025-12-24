@@ -56,11 +56,11 @@
 
 | 章节 | 标题 | 核心内容 | 时长 |
 |------|------|----------|------|
-| 2.1 | [技术采纳生命周期与跨越鸿沟](./2.1-crossing-the-chasm.md) | Geoffrey Moore 理论、五类用户群体、鸿沟本质、四阶段 Playbook | 60分钟 |
-| 2.2 | [GTM Motion 类型深度解析](./2.2-gtm-motions.md) | PLG/SLG/MLG/CLG 特点对比、Product-Led Sales、选择框架 | 60分钟 |
-| 2.3 | [ICP 构建方法论](./2.3-icp-methodology.md) | ICP 六大维度、Lincoln Murphy 7 标准、构建流程 | 45分钟 |
-| 2.4 | [价值主张设计](./2.4-value-proposition.md) | 价值主张画布、April Dunford 定位公式、常见错误 | 45分钟 |
-| 2.5 | [市场定位策略](./2.5-positioning.md) | 正面竞争/品类创造/垂直聚焦三大策略、选择框架 | 30分钟 |
+| 2.1 | [技术采纳生命周期与跨越鸿沟](./2.1-crossing-the-chasm) | Geoffrey Moore 理论、五类用户群体、鸿沟本质、四阶段 Playbook | 60分钟 |
+| 2.2 | [GTM Motion 类型深度解析](./2.2-gtm-motions) | PLG/SLG/MLG/CLG 特点对比、Product-Led Sales、选择框架 | 60分钟 |
+| 2.3 | [ICP 构建方法论](./2.3-icp-methodology) | ICP 六大维度、Lincoln Murphy 7 标准、构建流程 | 45分钟 |
+| 2.4 | [价值主张设计](./2.4-value-proposition) | 价值主张画布、April Dunford 定位公式、常见错误 | 45分钟 |
+| 2.5 | [市场定位策略](./2.5-positioning) | 正面竞争/品类创造/垂直聚焦三大策略、选择框架 | 30分钟 |
 
 ---
 
@@ -178,9 +178,9 @@
 
 ## 延伸阅读
 
-- [术语表](../appendix/glossary.md)
-- [推荐阅读](../appendix/reading-list.md)
-- [参考资源](../appendix/resources.md)
+- [术语表](../appendix/glossary)
+- [推荐阅读](../appendix/reading-list)
+- [参考资源](../appendix/resources)
 
 ---
 

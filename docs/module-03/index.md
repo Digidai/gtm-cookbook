@@ -36,11 +36,11 @@
 
 | 章节 | 标题 | 核心内容 | 时长 |
 |------|------|----------|------|
-| 3.1 | [GTM 渠道策略](./3.1-channel-strategy.md) | 直销/渠道/合作伙伴/Marketplace | 40分钟 |
-| 3.2 | [定价策略](./3.2-pricing-strategy.md) | SaaS 定价模型、定价制定要素 | 35分钟 |
-| 3.3 | [销售与营销对齐](./3.3-sales-marketing-alignment.md) | 对齐点、SLA、常见问题 | 35分钟 |
-| 3.4 | [GTM 核心指标体系](./3.4-metrics.md) | 获客/漏斗/客户成功指标 | 40分钟 |
-| 3.5 | [RevOps 体系](./3.5-revops.md) | RevOps 职能与价值 | 30分钟 |
+| 3.1 | [GTM 渠道策略](./3.1-channel-strategy) | 直销/渠道/合作伙伴/Marketplace | 40分钟 |
+| 3.2 | [定价策略](./3.2-pricing-strategy) | SaaS 定价模型、定价制定要素 | 35分钟 |
+| 3.3 | [销售与营销对齐](./3.3-sales-marketing-alignment) | 对齐点、SLA、常见问题 | 35分钟 |
+| 3.4 | [GTM 核心指标体系](./3.4-metrics) | 获客/漏斗/客户成功指标 | 40分钟 |
+| 3.5 | [RevOps 体系](./3.5-revops) | RevOps 职能与价值 | 30分钟 |
 
 ---
 
@@ -85,9 +85,9 @@
 
 ## 延伸阅读
 
-- [术语表](../appendix/glossary.md)
-- [推荐阅读](../appendix/reading-list.md)
-- [参考资源](../appendix/resources.md)
+- [术语表](../appendix/glossary)
+- [推荐阅读](../appendix/reading-list)
+- [参考资源](../appendix/resources)
 
 ---
 

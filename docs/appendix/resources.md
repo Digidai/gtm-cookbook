@@ -207,8 +207,8 @@
 
 ## 延伸阅读
 
-- [术语表](./glossary.md)
-- [推荐阅读](./reading-list.md)
+- [术语表](./glossary)
+- [推荐阅读](./reading-list)
 
 ---
 
