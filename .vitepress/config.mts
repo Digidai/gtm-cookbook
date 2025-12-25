@@ -231,10 +231,27 @@ export default defineConfig({
       'name': 'GTM Cookbook',
       'description': 'Go-To-Market 完整实战手册，从战略到执行系统掌握市场进入方法论',
       'url': 'https://genedai.space',
+      'image': 'https://genedai.space/og-cover.png',
       'author': {
         '@type': 'Organization',
         'name': 'Digidai',
-        'url': 'https://github.com/Digidai'
+        'url': 'https://github.com/Digidai',
+        'logo': {
+          '@type': 'ImageObject',
+          'url': 'https://genedai.space/logo.png',
+          'width': 512,
+          'height': 512
+        }
+      },
+      'publisher': {
+        '@type': 'Organization',
+        'name': 'Digidai',
+        'logo': {
+          '@type': 'ImageObject',
+          'url': 'https://genedai.space/logo.png',
+          'width': 512,
+          'height': 512
+        }
       },
       'inLanguage': 'zh-CN',
       'isAccessibleForFree': true,
