@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Digidai/gtm-cookbook/actions/workflows/deploy-gh-pages.yml"><img src="https://github.com/Digidai/gtm-cookbook/actions/workflows/deploy-gh-pages.yml/badge.svg" alt="Deploy"></a>
+  <a href="https://github.com/Digidai/gtm-cookbook/actions/workflows/deploy.yml"><img src="https://github.com/Digidai/gtm-cookbook/actions/workflows/deploy.yml/badge.svg" alt="Deploy"></a>
   <a href="https://github.com/Digidai/gtm-cookbook/stargazers"><img src="https://img.shields.io/github/stars/Digidai/gtm-cookbook?style=flat-square&logo=github&color=yellow" alt="Stars"></a>
   <a href="https://github.com/Digidai/gtm-cookbook/network/members"><img src="https://img.shields.io/github/forks/Digidai/gtm-cookbook?style=flat-square&logo=github" alt="Forks"></a>
   <a href="https://github.com/Digidai/gtm-cookbook/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Digidai/gtm-cookbook?style=flat-square" alt="License"></a>
