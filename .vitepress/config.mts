@@ -219,12 +219,27 @@ export default defineConfig({
   sitemap: sitemapHostname ? { hostname: sitemapHostname } : undefined,
 
   head: [
-    ['meta', { name: 'author', content: 'GTM Team' }],
+    ['meta', { name: 'author', content: 'Digidai' }],
     ['meta', { name: 'keywords', content: 'GTM, Go-To-Market, 市场战略, SaaS, PLG, SLG, 产品增长, B2B, 创业, 增长黑客, ICP, 价值主张, 定位策略, RevOps' }],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'theme-color', content: '#0f172a' }],
     ['link', { rel: 'icon', type: 'image/x-icon', href: `${base}favicon.ico` }],
-    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: `${base}favicon.ico` }]
+    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: `${base}favicon.ico` }],
+    ['script', { type: 'application/ld+json' }, JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      'name': 'GTM Cookbook',
+      'description': 'Go-To-Market 完整实战手册，从战略到执行系统掌握市场进入方法论',
+      'url': 'https://genedai.space',
+      'author': {
+        '@type': 'Organization',
+        'name': 'Digidai',
+        'url': 'https://github.com/Digidai'
+      },
+      'inLanguage': 'zh-CN',
+      'isAccessibleForFree': true,
+      'license': 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+    })]
   ],
   transformHead: ({ pageData }) => {
     const title = pageData.title || siteTitle

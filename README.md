@@ -232,21 +232,49 @@ GTM/
 
 ### GTM Cookbook - The Complete Go-To-Market Guide
 
-A comprehensive Go-To-Market playbook covering strategy, methodology, execution, and real-world case studies. Originally written in Chinese with 13+ hours of learning content.
+A comprehensive Go-To-Market handbook covering strategy, methodology, execution, and real-world case studies. Originally written in Chinese with 13+ hours of structured learning content.
 
-**Key Features:**
-- 5 core modules + appendix
-- 25 in-depth chapters
-- 249 custom SVG visualizations
-- 20+ case studies (US & China)
-- 7 ready-to-use templates
+#### Why This Cookbook?
 
-**Quick Start:**
+> GTM (Go-To-Market) is not a marketing plan—it's the **operating system for market entry**.
+
+Many startups and product teams struggle after achieving "product-market fit"—they don't know how to systematically bring their product to market. This cookbook helps you:
+
+- 🎯 **Build systematic understanding**: Understand the essence of GTM
+- 🔧 **Master core methodologies**: Crossing the Chasm, PLG/SLG, ICP, Value Proposition
+- 📊 **Construct execution systems**: Channels, Pricing, Sales Alignment, RevOps
+- 💼 **Learn from real cases**: Slack, Notion, Figma, Salesforce, and 20+ more
+
+#### Content Overview
+
+| Module | Topic | Duration |
+|:---:|------|:---:|
+| **01** | GTM Fundamentals | 2h |
+| **02** | Core Methodologies (Chasm, PLG/SLG, ICP, Positioning) | 4h |
+| **03** | Execution Systems (Channels, Pricing, Metrics, RevOps) | 3h |
+| **04** | Case Studies (PLG, SLG, AI GTM) | 2h |
+| **05** | Toolkit (7 ready-to-use templates) | 2h |
+
+**Total: 13 hours + 249 SVG visualizations**
+
+#### Key Methodologies
+
+- **Geoffrey Moore** - Crossing the Chasm
+- **Lincoln Murphy** - ICP 7 Criteria
+- **April Dunford** - Obviously Awesome (Positioning)
+- **OpenView Partners** - PLG Flywheel
+
+#### Quick Start
+
 ```bash
 git clone https://github.com/Digidai/gtm-cookbook.git && cd gtm-cookbook && npm i && npm run dev
 ```
 
 **Read Online:** [genedai.space](https://genedai.space)
+
+#### License
+
+This project is licensed under [CC BY-NC-SA 4.0](LICENSE).
 
 ---
 

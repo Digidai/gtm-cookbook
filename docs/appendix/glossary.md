@@ -1,3 +1,7 @@
+---
+description: GTM 专业术语表，涵盖 CAC、LTV、NRR、ICP、PLG、SLG 等 40+ 常用术语的定义和应用场景
+---
+
 # 术语表（Glossary）
 
 > **学习目标**：掌握 GTM 常用术语定义并能在实战中正确使用
