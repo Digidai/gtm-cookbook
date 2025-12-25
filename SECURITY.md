@@ -12,7 +12,7 @@ GTM Playbook 是一个纯静态文档项目，不涉及：
 
 如果你发现任何安全相关问题，请通过以下方式报告：
 
-1. **GitHub Issues**：[创建 Issue](https://github.com/daidai2025/GTM/issues/new)
+1. **GitHub Issues**：[创建 Issue](https://github.com/Digidai/gtm-cookbook/issues/new)
 
 ## 安全最佳实践
 

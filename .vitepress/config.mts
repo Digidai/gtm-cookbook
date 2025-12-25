@@ -220,7 +220,7 @@ export default defineConfig({
 
   head: [
     ['meta', { name: 'author', content: 'GTM Team' }],
-    ['meta', { name: 'keywords', content: 'GTM, Go-To-Market, 市场战略, SaaS, PLG, SLG' }],
+    ['meta', { name: 'keywords', content: 'GTM, Go-To-Market, 市场战略, SaaS, PLG, SLG, 产品增长, B2B, 创业, 增长黑客, ICP, 价值主张, 定位策略, RevOps' }],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'theme-color', content: '#0f172a' }],
     ['link', { rel: 'icon', type: 'image/x-icon', href: `${base}favicon.ico` }],
@@ -271,7 +271,9 @@ export default defineConfig({
       level: [2, 3]
     },
 
-    socialLinks: [],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/Digidai/gtm-cookbook' }
+    ],
 
     search: {
       provider: 'local',

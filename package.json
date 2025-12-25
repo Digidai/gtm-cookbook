@@ -22,12 +22,12 @@
   "homepage": "https://gtm-playbook.pages.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daidai2025/GTM.git"
+    "url": "https://github.com/Digidai/gtm-cookbook.git"
   },
   "bugs": {
-    "url": "https://github.com/daidai2025/GTM/issues"
+    "url": "https://github.com/Digidai/gtm-cookbook/issues"
   },
-  "author": "daidai2025",
+  "author": "Digidai",
   "license": "CC-BY-NC-SA-4.0",
   "scripts": {
     "dev": "vitepress dev docs",

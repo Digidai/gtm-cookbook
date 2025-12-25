@@ -8,7 +8,7 @@
 
 如果你发现了错误或有改进建议：
 
-1. 检查 [Issues](https://github.com/daidai2025/GTM/issues) 中是否已有类似问题
+1. 检查 [Issues](https://github.com/Digidai/gtm-cookbook/issues) 中是否已有类似问题
 2. 如果没有，创建一个新的 Issue，包含：
    - 清晰的标题
    - 详细描述（包括截图或链接）
@@ -38,8 +38,8 @@
 
 ```bash
 # 1. Fork 仓库并克隆到本地
-git clone https://github.com/YOUR_USERNAME/GTM.git
-cd GTM
+git clone https://github.com/YOUR_USERNAME/gtm-cookbook.git
+cd gtm-cookbook
 
 # 2. 创建功能分支
 git checkout -b feature/your-feature-name
@@ -115,8 +115,8 @@ npm run preview
 
 ## 问题讨论
 
-- 一般问题：[GitHub Discussions](https://github.com/daidai2025/GTM/discussions)
-- 紧急问题：[GitHub Issues](https://github.com/daidai2025/GTM/issues)
+- 一般问题：[GitHub Discussions](https://github.com/Digidai/gtm-cookbook/discussions)
+- 紧急问题：[GitHub Issues](https://github.com/Digidai/gtm-cookbook/issues)
 
 ## 致谢
 

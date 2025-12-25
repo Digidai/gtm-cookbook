@@ -16,11 +16,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/daidai2025/GTM/stargazers"><img src="https://img.shields.io/github/stars/daidai2025/GTM?style=flat-square&logo=github&color=yellow" alt="Stars"></a>
-  <a href="https://github.com/daidai2025/GTM/network/members"><img src="https://img.shields.io/github/forks/daidai2025/GTM?style=flat-square&logo=github" alt="Forks"></a>
-  <a href="https://github.com/daidai2025/GTM/blob/main/LICENSE"><img src="https://img.shields.io/github/license/daidai2025/GTM?style=flat-square" alt="License"></a>
-  <a href="https://github.com/daidai2025/GTM/commits/main"><img src="https://img.shields.io/github/last-commit/daidai2025/GTM?style=flat-square" alt="Last Commit"></a>
-  <a href="https://github.com/daidai2025/GTM/issues"><img src="https://img.shields.io/github/issues/daidai2025/GTM?style=flat-square" alt="Issues"></a>
+  <a href="https://github.com/Digidai/gtm-cookbook/actions/workflows/deploy-gh-pages.yml"><img src="https://github.com/Digidai/gtm-cookbook/actions/workflows/deploy-gh-pages.yml/badge.svg" alt="Deploy"></a>
+  <a href="https://github.com/Digidai/gtm-cookbook/stargazers"><img src="https://img.shields.io/github/stars/Digidai/gtm-cookbook?style=flat-square&logo=github&color=yellow" alt="Stars"></a>
+  <a href="https://github.com/Digidai/gtm-cookbook/network/members"><img src="https://img.shields.io/github/forks/Digidai/gtm-cookbook?style=flat-square&logo=github" alt="Forks"></a>
+  <a href="https://github.com/Digidai/gtm-cookbook/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Digidai/gtm-cookbook?style=flat-square" alt="License"></a>
+  <a href="https://github.com/Digidai/gtm-cookbook/commits/main"><img src="https://img.shields.io/github/last-commit/Digidai/gtm-cookbook?style=flat-square" alt="Last Commit"></a>
+  <a href="https://github.com/Digidai/gtm-cookbook/issues"><img src="https://img.shields.io/github/issues/Digidai/gtm-cookbook?style=flat-square" alt="Issues"></a>
 </p>
 
 ---
@@ -109,8 +110,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/daidai2025/GTM.git
-cd GTM
+git clone https://github.com/Digidai/gtm-cookbook.git
+cd gtm-cookbook
 
 # 安装依赖
 npm install
@@ -187,7 +188,7 @@ GTM/
 
 **贡献方式：**
 
-- 🐛 报告 Bug 或提出建议：[Issues](https://github.com/daidai2025/GTM/issues)
+- 🐛 报告 Bug 或提出建议：[Issues](https://github.com/Digidai/gtm-cookbook/issues)
 - 📝 改进文档内容：Fork & PR
 - 🌟 Star 支持项目：帮助更多人发现这份资源
 - 💬 分享给同事朋友
@@ -208,14 +209,14 @@ GTM/
 
 如果这份手册对你有帮助，请给一个 Star！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=daidai2025/GTM&type=Date)](https://star-history.com/#daidai2025/GTM&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Digidai/gtm-cookbook&type=Date)](https://star-history.com/#Digidai/gtm-cookbook&Date)
 
 ---
 
 ## 📬 联系方式
 
-- **问题反馈**：[GitHub Issues](https://github.com/daidai2025/GTM/issues)
-- **贡献讨论**：[GitHub Discussions](https://github.com/daidai2025/GTM/discussions)
+- **问题反馈**：[GitHub Issues](https://github.com/Digidai/gtm-cookbook/issues)
+- **贡献讨论**：[GitHub Discussions](https://github.com/Digidai/gtm-cookbook/discussions)
 
 ---
 
@@ -242,7 +243,7 @@ A comprehensive Go-To-Market playbook covering strategy, methodology, execution,
 
 **Quick Start:**
 ```bash
-git clone https://github.com/daidai2025/GTM.git && cd GTM && npm i && npm run dev
+git clone https://github.com/Digidai/gtm-cookbook.git && cd gtm-cookbook && npm i && npm run dev
 ```
 
 **Read Online:** [gtm-playbook.pages.dev](https://gtm-playbook.pages.dev)

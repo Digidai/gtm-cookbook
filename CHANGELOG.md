@@ -89,9 +89,9 @@
 
 ---
 
-[Unreleased]: https://github.com/daidai2025/GTM/compare/v1.3.0...HEAD
-[1.3.0]: https://github.com/daidai2025/GTM/compare/v1.2.0...v1.3.0
-[1.2.0]: https://github.com/daidai2025/GTM/compare/v1.1.0...v1.2.0
-[1.1.0]: https://github.com/daidai2025/GTM/compare/v1.0.0...v1.1.0
-[1.0.0]: https://github.com/daidai2025/GTM/compare/v0.1.0...v1.0.0
-[0.1.0]: https://github.com/daidai2025/GTM/releases/tag/v0.1.0
+[Unreleased]: https://github.com/Digidai/gtm-cookbook/compare/v1.3.0...HEAD
+[1.3.0]: https://github.com/Digidai/gtm-cookbook/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/Digidai/gtm-cookbook/compare/v1.1.0...v1.2.0
+[1.1.0]: https://github.com/Digidai/gtm-cookbook/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/Digidai/gtm-cookbook/compare/v0.1.0...v1.0.0
+[0.1.0]: https://github.com/Digidai/gtm-cookbook/releases/tag/v0.1.0
