@@ -1,159 +1,254 @@
-# GTM（Go-to-Market）专业培训材料
+<p align="center">
+  <img src="docs/public/og-cover.png" alt="GTM Playbook" width="600">
+</p>
 
-## 项目概述
+<h1 align="center">GTM Playbook</h1>
 
-本项目是一套完整的 GTM（Go-to-Market）专业培训材料，涵盖五大模块和实战工具包，总培训时长约 13 小时。
+<p align="center">
+  <strong>Go-To-Market 完整实战手册</strong><br>
+  从战略到执行，系统掌握市场进入方法论
+</p>
 
-## 快速开始
+<p align="center">
+  <a href="#english">English</a> •
+  <a href="#中文">中文</a> •
+  <a href="https://gtm-playbook.pages.dev">在线阅读</a>
+</p>
 
-### 写作者指南
-**开始写作前，请先阅读 [docs/agent.md](./docs/agent.md)**
+<p align="center">
+  <a href="https://github.com/daidai2025/GTM/stargazers"><img src="https://img.shields.io/github/stars/daidai2025/GTM?style=flat-square&logo=github&color=yellow" alt="Stars"></a>
+  <a href="https://github.com/daidai2025/GTM/network/members"><img src="https://img.shields.io/github/forks/daidai2025/GTM?style=flat-square&logo=github" alt="Forks"></a>
+  <a href="https://github.com/daidai2025/GTM/blob/main/LICENSE"><img src="https://img.shields.io/github/license/daidai2025/GTM?style=flat-square" alt="License"></a>
+  <a href="https://github.com/daidai2025/GTM/commits/main"><img src="https://img.shields.io/github/last-commit/daidai2025/GTM?style=flat-square" alt="Last Commit"></a>
+  <a href="https://github.com/daidai2025/GTM/issues"><img src="https://img.shields.io/github/issues/daidai2025/GTM?style=flat-square" alt="Issues"></a>
+</p>
 
-`docs/agent.md` 包含：
-- 写作流程与规范
-- 项目结构说明
-- 写作进度追踪
-- 关键概念速查
+---
 
-### 快速命令
-```
-请阅读 docs/agent.md，然后开始写作 [文件名]
-```
+## 为什么选择这份手册？
 
-## 部署到 GitHub Pages
+> GTM（Go-To-Market）不是营销计划，而是**市场进入的操作系统**。
 
-本项目是 VitePress 静态站点，已提供 GitHub Actions 工作流 `./.github/workflows/deploy-gh-pages.yml`。
+许多创业公司和产品团队在「产品-市场匹配」之后陷入困境——他们不知道如何系统地将产品推向市场。这份手册帮助你：
 
-### 从头部署
-1. 新建 GitHub 仓库并推送代码（默认分支为 `main`）。
-2. GitHub → Settings → Pages → Source 选择 `GitHub Actions`。
-3. 推送后自动触发构建与发布。
+- 🎯 **建立系统认知**：理解 GTM 的本质，避免常见误区
+- 🔧 **掌握核心方法论**：跨越鸿沟、PLG/SLG、ICP 构建、价值主张设计
+- 📊 **构建执行体系**：渠道策略、定价模型、销售对齐、RevOps
+- 💼 **借鉴实战案例**：Slack、Notion、飞书、北森等 20+ 中美标杆企业
 
-### 项目站点 vs 用户/组织站点
-- 项目站点（`https://<user>.github.io/<repo>/`）：工作流已设置 `VITEPRESS_BASE=/<repo>/`。
-- 用户/组织站点（`https://<user>.github.io/`）：将工作流中的 `VITEPRESS_BASE` 改为 `/`。
+---
 
-本地验证示例（项目站点）：
-```
-VITEPRESS_BASE=/你的仓库名/ npm run build
-```
+## 📚 内容概览
 
-## 部署到 Cloudflare Pages
+| 模块 | 主题 | 核心内容 | 时长 |
+|:---:|------|----------|:---:|
+| **01** | GTM 基础认知 | GTM 定义、战略意义、应用场景、核心四问 | 2h |
+| **02** | 核心方法论 | 跨越鸿沟、GTM Motion、ICP 构建、价值主张、市场定位 | 4h |
+| **03** | 执行体系 | 渠道策略、定价策略、销售对齐、指标体系、RevOps | 3h |
+| **04** | 实战案例 | PLG 案例、SLG 案例、跨越鸿沟、AI 时代新机遇 | 2h |
+| **05** | 工具包 | 7 套即用模板：战略规划、ICP 定义、竞争矩阵等 | 2h |
+| **附录** | 支撑资源 | 40+ 术语表、推荐阅读、参考资源 | - |
 
-已包含 `wrangler.toml` 和 `wrangler.pages.json`，输出目录为 `.vitepress/dist`。
+**总计：13 小时系统学习 + 249 张可视化图表**
 
-### 从头部署（Cloudflare Dashboard）
-1. Cloudflare → Pages → Create a project → 连接 Git 仓库。
-2. Build command：`npm ci && npm run build`
-3. Build output directory：`.vitepress/dist`
-4. 环境变量（可选）：`VITEPRESS_BASE=/` 或 `VITEPRESS_BASE=/子路径/`
+---
 
-### 使用 Wrangler 部署
-1. 登录：`npx wrangler login`
-2. 构建：`npm run build`
-3. 部署：`npx wrangler pages deploy .vitepress/dist --project-name gtm-cookbook`
+## 🏆 项目亮点
 
-### 绑定自定义域名
-1. 确保域名已托管到 Cloudflare DNS。
-2. Cloudflare → Pages → 选择项目 → Custom Domains → 添加域名（如 `docs.example.com`）。
+<table>
+<tr>
+<td width="50%">
 
-## 项目结构
+### 📖 系统完整
+- 5 大模块 + 附录
+- 25 个深度章节
+- 49,000+ 字专业内容
+- 覆盖战略→执行全链路
 
-```
-GTM/
-├── README.md         # 本文件
-├── docs/             # 课程内容（VitePress 源目录）
-│   ├── agent.md      # 写作管理指南（核心文件）
-│   ├── index.md      # 站点首页
-│   ├── module-01/    # 模块一：GTM 基础认知与战略意义
-│   ├── module-02/    # 模块二：GTM 核心方法论与框架
-│   ├── module-03/    # 模块三：GTM 执行体系与运营
-│   ├── module-04/    # 模块四：GTM 实战案例深度解析
-│   ├── module-05/    # 模块五：GTM 执行工具包
-│   └── appendix/     # 附录：术语表、推荐阅读、参考资源
-├── .vitepress/       # VitePress 配置
-└── src/              # Cloudflare Pages Functions
-```
+</td>
+<td width="50%">
 
-## 模块概览
+### 🎨 可视化丰富
+- 249 个定制 SVG 图表
+- 支持暗色/亮色模式
+- 全局搜索（中文优化）
+- 响应式设计
 
-| 模块 | 主题 | 时长 | 教学方式 |
-|------|------|------|----------|
-| 模块一 | GTM 基础认知与战略意义 | 2小时 | 讲授+讨论 |
-| 模块二 | GTM 核心方法论与框架 | 4小时 | 讲授+案例分析 |
-| 模块三 | GTM 执行体系与运营 | 3小时 | 讲授+工具演示 |
-| 模块四 | GTM 实战案例深度解析 | 2小时 | 案例研讨 |
-| 模块五 | GTM 执行工具包 | 2小时 | 工作坊 |
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-## 目标读者
+### 🌏 中美案例并行
+- **美国**：Slack、Notion、Figma、Stripe、Datadog
+- **中国**：飞书、北森、纷享销客、有赞、销售易
 
-- 产品经理
-- 市场营销人员
-- 销售团队
-- 创业者
-- 企业战略人员
+</td>
+<td width="50%">
 
-## 核心内容
-
-### 核心框架
-- Geoffrey Moore 跨越鸿沟理论
-- GTM Motion（PLG/SLG/MLG/CLG/Hybrid）
-- ICP 构建方法论
-- 价值主张画布
-- April Dunford 定位公式
-
-### 实战工具
+### 🛠️ 即用工具
 - GTM 战略规划模板
 - ICP 定义工作表
 - 竞争定位矩阵
 - 漏斗诊断检查表
-- GTM 里程碑规划表
+- 里程碑规划表
 
-## 当前进度
-
-详见 [docs/agent.md](./docs/agent.md) 中的"写作进度追踪"章节。
-
-## 贡献指南
-
-1. 阅读 `docs/agent.md` 了解写作规范
-2. 选择待写作的章节
-3. 按照文档模板撰写内容
-4. 更新 `docs/agent.md` 中的进度状态
-
-## 案例资源
-
-本培训材料包含丰富的中美两地案例，帮助学员全面理解 GTM 最佳实践：
-
-### 美国标杆案例
-
-| 模块 | 美国案例 |
-|------|----------|
-| 模块二 | Slack、Datadog、Stripe、Figma 的 ICP 演进 |
-| 模块三 | HubSpot Smarketing、Salesforce ABM、Drift 实时对齐 |
-| 模块三 | Datadog NRR 130%+、Snowflake Consumption、Okta 上移市场、Zoom Rule of 40 |
-| 模块三 | Stripe 数据驱动 RevOps、Notion PLG RevOps、HubSpot RevOps 组织 |
-| 模块四 | Slack PLG、Salesforce SLG、HubSpot 跨越鸿沟 |
-
-### 中国本土案例
-
-| 模块 | 中国案例 |
-|------|----------|
-| 模块二 | 飞书定位战略、纷享销客价值主张、有赞 ICP 演进 |
-| 模块三 | 纷享销客对齐实践、北森 NRR 提升、销售易 RevOps |
-| 模块三 | 阿里云渠道生态、有赞定价演进、中国 SaaS 指标基准 |
-| 模块四 | 飞书 PLG 增长、北森企业级 SLG、有赞跨越鸿沟 |
-| 模块五 | 中国本土 GTM 工具栈（销售易、纷享销客、探迹等） |
-
-## 版本历史
-
-| 版本 | 日期 | 说明 |
-|------|------|------|
-| v0.1 | 2024-12-06 | 项目结构初始化，创建所有章节骨架 |
-| v1.0 | 2024-12-07 | 全部模块初稿完成 |
-| v1.1 | 2024-12-07 | 审校完成，增加中国本土案例 |
-| v1.2 | 2024-12-07 | 增加美国标杆案例，内容校验完成 |
+</td>
+</tr>
+</table>
 
 ---
 
-**项目维护者**：[待填写]
-**最后更新**：2024-12-07
+## 🚀 快速开始
+
+### 在线阅读
+
+访问 **[gtm-playbook.pages.dev](https://gtm-playbook.pages.dev)** 开始学习
+
+### 本地运行
+
+```bash
+# 克隆仓库
+git clone https://github.com/daidai2025/GTM.git
+cd GTM
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+```
+
+访问 `http://localhost:5173` 查看文档
+
+---
+
+## 📁 项目结构
+
+```
+GTM/
+├── docs/                    # 文档源文件
+│   ├── index.md             # 首页
+│   ├── module-01/           # 模块一：基础认知（4 章）
+│   ├── module-02/           # 模块二：核心方法论（5 章）
+│   ├── module-03/           # 模块三：执行体系（5 章）
+│   ├── module-04/           # 模块四：实战案例（4 章）
+│   ├── module-05/           # 模块五：工具包（7 个工具）
+│   ├── appendix/            # 附录：术语表、推荐阅读
+│   └── images/              # 249 个 SVG 可视化图表
+├── .vitepress/              # VitePress 配置
+├── .github/                 # GitHub Actions 自动部署
+└── package.json
+```
+
+---
+
+## 🎓 适合人群
+
+| 角色 | 推荐模块 | 学习目标 |
+|------|----------|----------|
+| **产品经理** | 模块二、五 | 理解如何将产品推向市场 |
+| **市场营销** | 模块一、二、三 | 掌握 GTM 战略与执行框架 |
+| **销售负责人** | 模块三、四 | 了解 GTM Motion 与渠道策略 |
+| **创业者/CEO** | 全部 | 系统学习市场进入方法论 |
+| **投资人** | 模块二、四 | 评估企业的 GTM 能力 |
+
+---
+
+## 📖 核心方法论
+
+本手册整合了以下经典方法论：
+
+- **Geoffrey Moore**《跨越鸿沟》- 技术采纳生命周期
+- **Lincoln Murphy** - ICP 7 标准定义法
+- **April Dunford**《显而易见》- 定位公式
+- **OpenView Partners** - PLG 增长飞轮
+- **SiriusDecisions** - 需求瀑布模型
+
+---
+
+## 🗺️ Roadmap
+
+- [x] 核心课程体系（v1.0）
+- [x] 中美双地案例（v1.1）
+- [x] 249 个 SVG 可视化图表（v1.2）
+- [x] SEO 优化 & Clean URLs（v1.3）
+- [ ] 交互式工具（在线 ICP 定义器）
+- [ ] 英文版本
+- [ ] 视频课程配套
+- [ ] 社区讨论区
+- [ ] AI GTM 专题扩展
+
+---
+
+## 🤝 贡献指南
+
+我们欢迎各种形式的贡献！查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解详情。
+
+**贡献方式：**
+
+- 🐛 报告 Bug 或提出建议：[Issues](https://github.com/daidai2025/GTM/issues)
+- 📝 改进文档内容：Fork & PR
+- 🌟 Star 支持项目：帮助更多人发现这份资源
+- 💬 分享给同事朋友
+
+---
+
+## 📜 许可协议
+
+本项目采用 [CC BY-NC-SA 4.0](LICENSE) 许可协议。
+
+- ✅ 可自由分享、修改
+- ✅ 需注明出处
+- ❌ 禁止商业用途
+
+---
+
+## ⭐ Star 历史
+
+如果这份手册对你有帮助，请给一个 Star！
+
+[![Star History Chart](https://api.star-history.com/svg?repos=daidai2025/GTM&type=Date)](https://star-history.com/#daidai2025/GTM&Date)
+
+---
+
+## 📬 联系方式
+
+- **问题反馈**：[GitHub Issues](https://github.com/daidai2025/GTM/issues)
+- **贡献讨论**：[GitHub Discussions](https://github.com/daidai2025/GTM/discussions)
+
+---
+
+<p align="center">
+  <sub>用 ❤️ 构建 | GTM Playbook © 2024-2025</sub>
+</p>
+
+---
+
+<a id="english"></a>
+
+## English
+
+### GTM Playbook - The Complete Go-To-Market Guide
+
+A comprehensive Go-To-Market playbook covering strategy, methodology, execution, and real-world case studies. Originally written in Chinese with 13+ hours of learning content.
+
+**Key Features:**
+- 5 core modules + appendix
+- 25 in-depth chapters
+- 249 custom SVG visualizations
+- 20+ case studies (US & China)
+- 7 ready-to-use templates
+
+**Quick Start:**
+```bash
+git clone https://github.com/daidai2025/GTM.git && cd GTM && npm i && npm run dev
+```
+
+**Read Online:** [gtm-playbook.pages.dev](https://gtm-playbook.pages.dev)
+
+---
+
+<p align="center">
+  <a href="#gtm-playbook">⬆ Back to Top</a>
+</p>

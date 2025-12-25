@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 问题讨论
+    url: https://github.com/daidai2025/GTM/discussions
+    about: 如果不确定是否是 Bug，可以先在讨论区提问
+  - name: 在线文档
+    url: https://gtm-playbook.pages.dev
+    about: 访问在线文档，阅读完整课程内容
