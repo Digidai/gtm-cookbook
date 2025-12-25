@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="docs/public/og-cover.png" alt="GTM Playbook" width="600">
+  <img src="docs/public/og-cover.png" alt="GTM Cookbook" width="600">
 </p>
 
-<h1 align="center">GTM Playbook</h1>
+<h1 align="center">GTM Cookbook</h1>
 
 <p align="center">
   <strong>Go-To-Market 完整实战手册</strong><br>
@@ -221,7 +221,7 @@ GTM/
 ---
 
 <p align="center">
-  <sub>用 ❤️ 构建 | GTM Playbook © 2024-2025</sub>
+  <sub>用 ❤️ 构建 | GTM Cookbook © 2024-2025</sub>
 </p>
 
 ---
@@ -230,7 +230,7 @@ GTM/
 
 ## English
 
-### GTM Playbook - The Complete Go-To-Market Guide
+### GTM Cookbook - The Complete Go-To-Market Guide
 
 A comprehensive Go-To-Market playbook covering strategy, methodology, execution, and real-world case studies. Originally written in Chinese with 13+ hours of learning content.
 
@@ -251,5 +251,5 @@ git clone https://github.com/Digidai/gtm-cookbook.git && cd gtm-cookbook && npm 
 ---
 
 <p align="center">
-  <a href="#gtm-playbook">⬆ Back to Top</a>
+  <a href="#gtm-cookbook">⬆ Back to Top</a>
 </p>

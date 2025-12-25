@@ -45,4 +45,4 @@
 
 ---
 
-**GTM Playbook 社区欢迎你！**
+**GTM Cookbook 社区欢迎你！**
