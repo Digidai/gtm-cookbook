@@ -67,6 +67,54 @@ const moduleNames: Record<string, string> = {
   appendix: '附录'
 }
 
+// 生成面包屑导航数据
+function generateBreadcrumbs(
+  relativePath: string,
+  pageTitle: string,
+  siteUrl: string,
+  basePath: string
+): Array<{ name: string; url: string }> {
+  const breadcrumbs: Array<{ name: string; url: string }> = [
+    { name: '首页', url: `${siteUrl}${basePath}` }
+  ]
+
+  const normalized = relativePath.replace(/\\/g, '/').replace(/\.md$/, '')
+  const parts = normalized.split('/').filter(Boolean)
+
+  if (parts.length === 0 || (parts.length === 1 && parts[0] === 'index')) {
+    return breadcrumbs
+  }
+
+  let currentPath = ''
+  for (let i = 0; i < parts.length; i++) {
+    const part = parts[i]
+    if (part === 'index') continue
+
+    currentPath += `/${part}`
+
+    if (i === parts.length - 1 || (i === parts.length - 2 && parts[parts.length - 1] === 'index')) {
+      // 最后一项使用页面标题
+      breadcrumbs.push({
+        name: pageTitle,
+        url: `${siteUrl}${basePath.replace(/\/$/, '')}${currentPath}`
+      })
+    } else if (moduleNames[part]) {
+      // 模块目录
+      breadcrumbs.push({
+        name: moduleNames[part].replace(/^模块[一二三四五]：/, ''),
+        url: `${siteUrl}${basePath.replace(/\/$/, '')}${currentPath}/`
+      })
+    } else if (part === 'appendix') {
+      breadcrumbs.push({
+        name: '附录',
+        url: `${siteUrl}${basePath.replace(/\/$/, '')}${currentPath}/`
+      })
+    }
+  }
+
+  return breadcrumbs
+}
+
 // 从 markdown 文件提取标题
 function extractTitle(filePath: string): string {
   try {
@@ -226,6 +274,12 @@ export default defineConfig({
   sitemap: sitemapHostname ? { hostname: sitemapHostname } : undefined,
 
   head: [
+    // Resource preloading hints
+    ['link', { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com', crossorigin: '' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+
     // Basic meta
     ['meta', { name: 'author', content: 'Digidai' }],
     [
@@ -260,9 +314,18 @@ export default defineConfig({
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: 'GTM Cookbook',
+        alternateName: ['GTM 市场战略指南', 'Go-To-Market Cookbook'],
         description: 'Go-To-Market 完整实战手册，从战略到执行系统掌握市场进入方法论',
         url: 'https://genedai.space',
         image: 'https://genedai.space/og-cover.png',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: 'https://genedai.space/?search={search_term_string}'
+          },
+          'query-input': 'required name=search_term_string'
+        },
         author: {
           '@type': 'Organization',
           name: 'Digidai',
@@ -272,7 +335,8 @@ export default defineConfig({
             url: 'https://genedai.space/logo.png',
             width: 512,
             height: 512
-          }
+          },
+          sameAs: ['https://github.com/Digidai/gtm-cookbook', 'https://twitter.com/digidai']
         },
         publisher: {
           '@type': 'Organization',
@@ -283,6 +347,43 @@ export default defineConfig({
             width: 512,
             height: 512
           }
+        },
+        inLanguage: 'zh-CN',
+        isAccessibleForFree: true,
+        license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+      })
+    ],
+    // Course Schema for educational content
+    [
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Course',
+        name: 'GTM 市场战略指南',
+        description:
+          'Go-To-Market 完整实战手册，涵盖 GTM 基础认知、核心方法论、执行体系、实战案例和工具模板五大模块',
+        url: 'https://genedai.space',
+        image: 'https://genedai.space/og-cover.png',
+        provider: {
+          '@type': 'Organization',
+          name: 'GTM Cookbook',
+          url: 'https://genedai.space'
+        },
+        educationalLevel: 'Intermediate',
+        teaches: [
+          'Go-To-Market 战略',
+          'PLG 产品驱动增长',
+          'SLG 销售驱动增长',
+          'ICP 理想客户画像',
+          '价值主张设计',
+          'RevOps 收入运营'
+        ],
+        numberOfCredits: 5,
+        hasCourseInstance: {
+          '@type': 'CourseInstance',
+          courseMode: 'online',
+          courseWorkload: 'PT10H'
         },
         inLanguage: 'zh-CN',
         isAccessibleForFree: true,
@@ -319,6 +420,14 @@ export default defineConfig({
       // Canonical URL
       tags.push(['link', { rel: 'canonical', href: canonical }])
 
+      // hreflang for internationalization (primary language is Chinese)
+      tags.push(['link', { rel: 'alternate', hreflang: 'zh-CN', href: canonical }])
+      tags.push(['link', { rel: 'alternate', hreflang: 'zh', href: canonical }])
+      tags.push(['link', { rel: 'alternate', hreflang: 'x-default', href: canonical }])
+
+      // Alternate locale for Open Graph
+      tags.push(['meta', { property: 'og:locale:alternate', content: 'en_US' }])
+
       // Open Graph Image
       tags.push(['meta', { property: 'og:url', content: canonical }])
       tags.push(['meta', { property: 'og:image', content: ogImage }])
@@ -346,9 +455,59 @@ export default defineConfig({
       // Additional social platforms
       tags.push(['meta', { property: 'article:author', content: 'Digidai' }])
 
-      // Article JSON-LD Schema for content pages
+      // Pinterest
+      tags.push(['meta', { name: 'pinterest-rich-pin', content: 'true' }])
+      tags.push([
+        'meta',
+        { property: 'og:see_also', content: 'https://github.com/Digidai/gtm-cookbook' }
+      ])
+
+      // Telegram
+      tags.push(['meta', { name: 'telegram:channel', content: '@gtmcookbook' }])
+
+      // 微博 Weibo
+      tags.push(['meta', { property: 'weibo:article:title', content: metaTitle }])
+      tags.push(['meta', { property: 'weibo:article:description', content: description }])
+
+      // Article timestamps (use lastUpdated from VitePress or current date)
+      const publishDate = '2024-12-01T00:00:00+08:00' // 项目发布日期
+      const modifiedDate = pageData.lastUpdated
+        ? new Date(pageData.lastUpdated).toISOString()
+        : new Date().toISOString()
+      tags.push(['meta', { property: 'article:published_time', content: publishDate }])
+      tags.push(['meta', { property: 'article:modified_time', content: modifiedDate }])
+
+      // Article section and tags
       const isContentPage =
         pageData.relativePath.startsWith('module-') || pageData.relativePath.startsWith('appendix/')
+      if (isContentPage) {
+        tags.push(['meta', { property: 'article:section', content: 'GTM Strategy' }])
+        tags.push(['meta', { property: 'article:tag', content: 'GTM' }])
+        tags.push(['meta', { property: 'article:tag', content: 'Go-To-Market' }])
+        tags.push(['meta', { property: 'article:tag', content: 'SaaS' }])
+        tags.push(['meta', { property: 'article:tag', content: '增长策略' }])
+      }
+
+      // BreadcrumbList Schema
+      const breadcrumbs = generateBreadcrumbs(pageData.relativePath, title, siteUrl, base)
+      if (breadcrumbs.length > 1) {
+        tags.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: breadcrumbs.map((crumb, index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              name: crumb.name,
+              item: crumb.url
+            }))
+          })
+        ])
+      }
+
+      // Article JSON-LD Schema for content pages
       const isIndex = pageData.relativePath.endsWith('index.md')
       if (isContentPage && !isIndex) {
         tags.push([
@@ -376,6 +535,102 @@ export default defineConfig({
             },
             inLanguage: 'zh-CN',
             isAccessibleForFree: true
+          })
+        ])
+      }
+
+      // FAQ Schema for homepage
+      if (pageData.relativePath === 'index.md') {
+        tags.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: '什么是 GTM（Go-To-Market）战略？',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'GTM 即 Go-To-Market，是将产品或服务成功推向目标市场的完整战略，涵盖市场定位、客户获取、销售渠道、定价策略等核心环节。'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'GTM Cookbook 适合什么人学习？',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: '适合产品经理、市场营销人员、销售负责人、创业者和投资人。无论你是初学者还是有经验的从业者，都能从系统化的方法论中获益。'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: 'PLG 和 SLG 有什么区别？',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'PLG（Product-Led Growth）是产品驱动增长，用户可自助使用产品；SLG（Sales-Led Growth）是销售驱动增长，需要销售团队主导成交流程。两者可以结合使用。'
+                }
+              },
+              {
+                '@type': 'Question',
+                name: '如何选择合适的 GTM Motion？',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: '根据产品复杂度、客户规模、ACV（年合同价值）等因素选择。低价简单产品适合 PLG，高价复杂产品适合 SLG，中间地带可采用混合模式。'
+                }
+              }
+            ]
+          })
+        ])
+
+        // ItemList Schema for course modules
+        tags.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'GTM Cookbook 课程模块',
+            description: 'Go-To-Market 市场战略完整课程的五大学习模块',
+            numberOfItems: 5,
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'GTM 基础认知',
+                description: '了解 GTM 的定义、战略意义和核心框架',
+                url: `${siteUrl}${base}module-01/`
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: '核心方法论',
+                description: '掌握跨越鸿沟、PLG/SLG、ICP 构建等核心方法论',
+                url: `${siteUrl}${base}module-02/`
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: '执行体系',
+                description: '学习 GTM 执行框架和运营管理方法',
+                url: `${siteUrl}${base}module-03/`
+              },
+              {
+                '@type': 'ListItem',
+                position: 4,
+                name: '实战案例',
+                description: '深度解析 Slack、Notion、飞书等经典案例',
+                url: `${siteUrl}${base}module-04/`
+              },
+              {
+                '@type': 'ListItem',
+                position: 5,
+                name: '工具模板',
+                description: '提供战略模板、工作表、检查表等实用工具',
+                url: `${siteUrl}${base}module-05/`
+              }
+            ]
           })
         ])
       }
