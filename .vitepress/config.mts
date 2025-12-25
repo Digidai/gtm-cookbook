@@ -219,12 +219,26 @@ export default defineConfig({
   sitemap: sitemapHostname ? { hostname: sitemapHostname } : undefined,
 
   head: [
+    // Basic meta
     ['meta', { name: 'author', content: 'Digidai' }],
     ['meta', { name: 'keywords', content: 'GTM, Go-To-Market, 市场战略, SaaS, PLG, SLG, 产品增长, B2B, 创业, 增长黑客, ICP, 价值主张, 定位策略, RevOps' }],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'theme-color', content: '#0f172a' }],
+
+    // Favicons
     ['link', { rel: 'icon', type: 'image/x-icon', href: `${base}favicon.ico` }],
-    ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: `${base}favicon.ico` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${base}favicon-32x32.png` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: `${base}favicon-16x16.png` }],
+
+    // Apple Touch Icon
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${base}apple-touch-icon.png` }],
+
+    // PWA Manifest
+    ['link', { rel: 'manifest', href: `${base}site.webmanifest` }],
+
+    // Microsoft Tile
+    ['meta', { name: 'msapplication-TileColor', content: '#0f172a' }],
+    ['meta', { name: 'msapplication-config', content: `${base}browserconfig.xml` }],
     ['script', { type: 'application/ld+json' }, JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'WebSite',
@@ -264,12 +278,17 @@ export default defineConfig({
     const metaTitle = title === siteTitle ? title : `${title} | ${siteTitle}`
 
     const tags: any[] = [
+      // Open Graph (Facebook, LinkedIn, etc.)
       ['meta', { property: 'og:title', content: metaTitle }],
       ['meta', { property: 'og:description', content: description }],
-      ['meta', { property: 'og:site_name', content: siteTitle }],
+      ['meta', { property: 'og:site_name', content: 'GTM Cookbook' }],
       ['meta', { property: 'og:type', content: 'website' }],
       ['meta', { property: 'og:locale', content: 'zh_CN' }],
+
+      // Twitter Card
       ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+      ['meta', { name: 'twitter:site', content: '@gtmcookbook' }],
+      ['meta', { name: 'twitter:creator', content: '@digidai' }],
       ['meta', { name: 'twitter:title', content: metaTitle }],
       ['meta', { name: 'twitter:description', content: description }]
     ]
@@ -277,13 +296,31 @@ export default defineConfig({
     if (siteUrl) {
       const canonical = buildCanonicalUrl(siteUrl, base, pageData.relativePath)
       const ogImage = `${siteUrl}${base}${ogImageName}`
+      const twitterImage = `${siteUrl}${base}twitter-card.png`
+
+      // Canonical URL
       tags.push(['link', { rel: 'canonical', href: canonical }])
+
+      // Open Graph Image
       tags.push(['meta', { property: 'og:url', content: canonical }])
       tags.push(['meta', { property: 'og:image', content: ogImage }])
+      tags.push(['meta', { property: 'og:image:secure_url', content: ogImage }])
+      tags.push(['meta', { property: 'og:image:type', content: 'image/png' }])
       tags.push(['meta', { property: 'og:image:width', content: '1200' }])
       tags.push(['meta', { property: 'og:image:height', content: '630' }])
-      tags.push(['meta', { property: 'og:image:alt', content: siteTitle }])
-      tags.push(['meta', { name: 'twitter:image', content: ogImage }])
+      tags.push(['meta', { property: 'og:image:alt', content: 'GTM Cookbook - Go-To-Market 完整实战手册' }])
+
+      // Twitter Image
+      tags.push(['meta', { name: 'twitter:image', content: twitterImage }])
+      tags.push(['meta', { name: 'twitter:image:alt', content: 'GTM Cookbook - Go-To-Market 完整实战手册' }])
+
+      // WeChat / 微信分享
+      tags.push(['meta', { itemprop: 'name', content: metaTitle }])
+      tags.push(['meta', { itemprop: 'description', content: description }])
+      tags.push(['meta', { itemprop: 'image', content: `${siteUrl}${base}wechat-share.png` }])
+
+      // Additional social platforms
+      tags.push(['meta', { property: 'article:author', content: 'Digidai' }])
     }
 
     return tags

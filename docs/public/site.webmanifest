@@ -1,0 +1,29 @@
+{
+  "name": "GTM Cookbook",
+  "short_name": "GTM",
+  "description": "Go-To-Market 完整实战手册，从战略到执行系统掌握市场进入方法论",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "lang": "zh-CN",
+  "categories": ["business", "education"]
+}
