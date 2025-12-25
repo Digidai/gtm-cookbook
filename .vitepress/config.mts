@@ -291,8 +291,20 @@ export default defineConfig({
           'GTM, Go-To-Market, 市场战略, SaaS, PLG, SLG, 产品增长, B2B, 创业, 增长黑客, ICP, 价值主张, 定位策略, RevOps'
       }
     ],
-    ['meta', { name: 'robots', content: 'index,follow' }],
+    ['meta', { name: 'robots', content: 'index,follow,max-image-preview:large,max-snippet:-1' }],
+    ['meta', { name: 'googlebot', content: 'index,follow,max-image-preview:large' }],
     ['meta', { name: 'theme-color', content: '#0f172a' }],
+
+    // Mobile optimization
+    ['meta', { name: 'format-detection', content: 'telephone=no' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: 'GTM Cookbook' }],
+
+    // Geo targeting
+    ['meta', { name: 'geo.region', content: 'CN' }],
+    ['meta', { name: 'geo.placename', content: 'China' }],
+    ['meta', { name: 'content-language', content: 'zh-CN' }],
 
     // Favicons
     ['link', { rel: 'icon', type: 'image/x-icon', href: `${base}favicon.ico` }],
@@ -549,9 +561,45 @@ export default defineConfig({
             },
             articleSection: 'GTM Strategy',
             keywords: ['GTM', 'Go-To-Market', 'SaaS', '增长策略', 'PLG', 'SLG'],
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'h2', '.vp-doc p:first-of-type']
+            },
             inLanguage: 'zh-CN',
             isAccessibleForFree: true,
             license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+          })
+        ])
+
+        // WebPage Schema with additional properties
+        tags.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            '@id': canonical,
+            name: title,
+            description: description,
+            url: canonical,
+            isPartOf: {
+              '@type': 'WebSite',
+              '@id': `${siteUrl}${base}`,
+              name: 'GTM Cookbook'
+            },
+            about: {
+              '@type': 'Thing',
+              name: 'Go-To-Market Strategy'
+            },
+            audience: {
+              '@type': 'Audience',
+              audienceType: '产品经理、市场营销人员、销售负责人、创业者'
+            },
+            inLanguage: 'zh-CN',
+            potentialAction: {
+              '@type': 'ReadAction',
+              target: canonical
+            }
           })
         ])
       }
