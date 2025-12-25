@@ -271,6 +271,7 @@ export default defineConfig({
   lang: 'zh-CN',
   base,
   cleanUrls: true,
+  lastUpdated: true,
   sitemap: sitemapHostname ? { hostname: sitemapHostname } : undefined,
 
   head: [
@@ -647,6 +648,147 @@ export default defineConfig({
                 url: `${siteUrl}${base}module-05/`
               }
             ]
+          })
+        ])
+      }
+
+      // DefinedTermSet Schema for glossary page
+      if (pageData.relativePath === 'appendix/glossary.md') {
+        tags.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'DefinedTermSet',
+            name: 'GTM 术语表',
+            description:
+              'Go-To-Market 专业术语表，涵盖 CAC、LTV、NRR、ICP、PLG、SLG 等 40+ 常用术语的定义和应用场景',
+            url: canonical,
+            inLanguage: 'zh-CN',
+            publisher: {
+              '@type': 'Organization',
+              name: 'GTM Cookbook',
+              url: 'https://genedai.space'
+            },
+            hasDefinedTerm: [
+              { '@type': 'DefinedTerm', name: 'GTM', description: 'Go-To-Market，市场进入战略' },
+              {
+                '@type': 'DefinedTerm',
+                name: 'PLG',
+                description: 'Product-Led Growth，产品驱动增长'
+              },
+              {
+                '@type': 'DefinedTerm',
+                name: 'SLG',
+                description: 'Sales-Led Growth，销售驱动增长'
+              },
+              {
+                '@type': 'DefinedTerm',
+                name: 'ICP',
+                description: 'Ideal Customer Profile，理想客户画像'
+              },
+              {
+                '@type': 'DefinedTerm',
+                name: 'CAC',
+                description: 'Customer Acquisition Cost，客户获取成本'
+              },
+              { '@type': 'DefinedTerm', name: 'LTV', description: 'Lifetime Value，客户终身价值' },
+              {
+                '@type': 'DefinedTerm',
+                name: 'ARR',
+                description: 'Annual Recurring Revenue，年度经常性收入'
+              },
+              {
+                '@type': 'DefinedTerm',
+                name: 'MRR',
+                description: 'Monthly Recurring Revenue，月度经常性收入'
+              },
+              {
+                '@type': 'DefinedTerm',
+                name: 'NRR',
+                description: 'Net Revenue Retention，净收入留存率'
+              },
+              {
+                '@type': 'DefinedTerm',
+                name: 'ACV',
+                description: 'Annual Contract Value，年合同价值'
+              }
+            ]
+          })
+        ])
+      }
+
+      // HowTo Schema for tool/template pages in module-05
+      if (pageData.relativePath.startsWith('module-05/') && !isIndex) {
+        const toolName = title.replace(/^[\d.]+\s*/, '')
+        tags.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: `如何使用 ${toolName}`,
+            description: description,
+            url: canonical,
+            image: ogImage,
+            totalTime: 'PT30M',
+            tool: {
+              '@type': 'HowToTool',
+              name: toolName
+            },
+            supply: {
+              '@type': 'HowToSupply',
+              name: 'GTM 相关数据和信息'
+            },
+            step: [
+              {
+                '@type': 'HowToStep',
+                position: 1,
+                name: '准备阶段',
+                text: '回顾相关模块知识，准备业务数据'
+              },
+              {
+                '@type': 'HowToStep',
+                position: 2,
+                name: '填写模板',
+                text: '按照模板结构填写各项内容'
+              },
+              {
+                '@type': 'HowToStep',
+                position: 3,
+                name: '团队讨论',
+                text: '与团队讨论并达成共识'
+              },
+              {
+                '@type': 'HowToStep',
+                position: 4,
+                name: '定期复盘',
+                text: '设置复盘节奏，持续更新优化'
+              }
+            ],
+            inLanguage: 'zh-CN'
+          })
+        ])
+      }
+
+      // CollectionPage Schema for module index pages
+      if (isContentPage && isIndex) {
+        const moduleName = moduleNames[pageData.relativePath.split('/')[0]] || title
+        tags.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: moduleName,
+            description: description,
+            url: canonical,
+            isPartOf: {
+              '@type': 'Course',
+              name: 'GTM 市场战略指南',
+              url: `${siteUrl}${base}`
+            },
+            inLanguage: 'zh-CN'
           })
         ])
       }
