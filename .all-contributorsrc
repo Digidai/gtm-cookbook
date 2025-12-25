@@ -1,0 +1,22 @@
+{
+  "projectName": "gtm-cookbook",
+  "projectOwner": "Digidai",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["README.md"],
+  "imageSize": 80,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "Digidai",
+      "name": "Digidai",
+      "avatar_url": "https://avatars.githubusercontent.com/u/Digidai",
+      "profile": "https://github.com/Digidai",
+      "contributions": ["content", "doc", "design", "maintenance"]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "contributorsSortAlphabetically": false
+}

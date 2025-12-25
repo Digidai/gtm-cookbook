@@ -71,7 +71,9 @@ const conversions = [
 ]
 
 async function convert() {
-  console.log('Converting SVG to PNG images...\n')
+  console.log('Converting SVG to optimized PNG images...\n')
+
+  let totalSaved = 0
 
   for (const { input, output, width, height } of conversions) {
     const inputPath = path.join(publicDir, input)
@@ -83,16 +85,43 @@ async function convert() {
     }
 
     try {
+      // Get original size if file exists
+      let originalSize = 0
+      if (fs.existsSync(outputPath)) {
+        originalSize = fs.statSync(outputPath).size
+      }
+
       await sharp(inputPath)
         .resize(width, height)
-        .png()
+        .png({
+          compressionLevel: 9, // Maximum compression
+          palette: true, // Use palette-based quantization for smaller files
+          quality: 80, // Quality for palette mode
+          effort: 10 // Maximum effort for compression
+        })
         .toFile(outputPath)
-      console.log(`✓ ${output} (${width}x${height})`)
+
+      const newSize = fs.statSync(outputPath).size
+      const sizeKB = (newSize / 1024).toFixed(1)
+
+      if (originalSize > 0) {
+        const saved = originalSize - newSize
+        totalSaved += saved
+        const percent = ((saved / originalSize) * 100).toFixed(0)
+        console.log(
+          `✓ ${output} (${width}x${height}) - ${sizeKB} KB ${saved > 0 ? `(-${percent}%)` : ''}`
+        )
+      } else {
+        console.log(`✓ ${output} (${width}x${height}) - ${sizeKB} KB`)
+      }
     } catch (err) {
       console.error(`✗ Error converting ${input}:`, err.message)
     }
   }
 
+  if (totalSaved > 0) {
+    console.log(`\nTotal saved: ${(totalSaved / 1024).toFixed(1)} KB`)
+  }
   console.log('\nDone!')
 }
 

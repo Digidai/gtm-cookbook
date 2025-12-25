@@ -195,6 +195,28 @@ GTM/
 
 ---
 
+## 👥 贡献者
+
+感谢所有为 GTM Cookbook 做出贡献的人！
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Digidai"><img src="https://avatars.githubusercontent.com/Digidai?v=4?s=80" width="80px;" alt="Digidai"/><br /><sub><b>Digidai</b></sub></a><br /><a href="#content-Digidai" title="Content">🖋</a> <a href="https://github.com/Digidai/gtm-cookbook/commits?author=Digidai" title="Documentation">📖</a> <a href="#design-Digidai" title="Design">🎨</a> <a href="#maintenance-Digidai" title="Maintenance">🚧</a></td>
+    </tr>
+  </tbody>
+</table>
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+想成为贡献者？查看 [贡献指南](CONTRIBUTING.md) 了解如何参与！
+
+---
+
 ## 📜 许可协议
 
 本项目采用 [CC BY-NC-SA 4.0](LICENSE) 许可协议。
