@@ -520,21 +520,37 @@ export default defineConfig({
             description: description,
             url: canonical,
             image: ogImage,
+            datePublished: publishDate,
+            dateModified: modifiedDate,
+            mainEntityOfPage: {
+              '@type': 'WebPage',
+              '@id': canonical
+            },
             author: {
               '@type': 'Organization',
               name: 'Digidai',
-              url: 'https://github.com/Digidai'
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'GTM Cookbook',
+              url: 'https://github.com/Digidai',
               logo: {
                 '@type': 'ImageObject',
                 url: `${siteUrl}${base}logo.png`
               }
             },
+            publisher: {
+              '@type': 'Organization',
+              name: 'GTM Cookbook',
+              url: 'https://genedai.space',
+              logo: {
+                '@type': 'ImageObject',
+                url: `${siteUrl}${base}logo.png`,
+                width: 512,
+                height: 512
+              }
+            },
+            articleSection: 'GTM Strategy',
+            keywords: ['GTM', 'Go-To-Market', 'SaaS', '增长策略', 'PLG', 'SLG'],
             inLanguage: 'zh-CN',
-            isAccessibleForFree: true
+            isAccessibleForFree: true,
+            license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
           })
         ])
       }
