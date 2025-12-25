@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gtm-cookbook.pages.dev/sitemap.xml
+Sitemap: https://genedai.space/sitemap.xml

@@ -12,7 +12,7 @@
 <p align="center">
   <a href="#english">English</a> •
   <a href="#中文">中文</a> •
-  <a href="https://gtm-cookbook.pages.dev">在线阅读</a>
+  <a href="https://genedai.space">在线阅读</a>
 </p>
 
 <p align="center">
@@ -104,7 +104,7 @@
 
 ### 在线阅读
 
-访问 **[gtm-cookbook.pages.dev](https://gtm-cookbook.pages.dev)** 开始学习
+访问 **[genedai.space](https://genedai.space)** 开始学习
 
 ### 本地运行
 
@@ -246,7 +246,7 @@ A comprehensive Go-To-Market playbook covering strategy, methodology, execution,
 git clone https://github.com/Digidai/gtm-cookbook.git && cd gtm-cookbook && npm i && npm run dev
 ```
 
-**Read Online:** [gtm-cookbook.pages.dev](https://gtm-cookbook.pages.dev)
+**Read Online:** [genedai.space](https://genedai.space)
 
 ---
 
