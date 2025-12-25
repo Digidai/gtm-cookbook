@@ -1,4 +1,5 @@
 ---
+title: "推荐阅读（Reading List）"
 description: GTM 推荐阅读书单，涵盖跨越鸿沟、显而易见等经典著作，建立系统化的 GTM 知识体系
 ---
 

@@ -1,4 +1,5 @@
-<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">ICP Methodology</title>
   <defs>
     <style>
       .circle-base { stroke-width: 2; fill-opacity: 0.2; }

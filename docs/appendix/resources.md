@@ -1,4 +1,5 @@
 ---
+title: "参考资源（Resources）"
 description: GTM 参考资源汇总，包括播客、博客、工具和社区，帮助你持续跟踪 GTM 领域最新动态
 ---
 

@@ -1,4 +1,5 @@
-<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Crossing The Chasm</title>
   <defs>
     <style>
       .ring-core { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }

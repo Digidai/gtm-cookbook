@@ -36,9 +36,10 @@ function buildCanonicalUrl(siteUrl: string, basePath: string, relativePath: stri
   const { path: pagePath, isIndex } = resolvePagePath(relativePath)
   const normalizedSite = siteUrl.replace(/\/+$/, '')
   const normalizedBase = basePath === '/' ? '' : basePath.replace(/\/+$/, '')
-  const siteWithBase = normalizedBase && normalizedSite.endsWith(normalizedBase)
-    ? normalizedSite
-    : `${normalizedSite}${normalizedBase}`
+  const siteWithBase =
+    normalizedBase && normalizedSite.endsWith(normalizedBase)
+      ? normalizedSite
+      : `${normalizedSite}${normalizedBase}`
 
   const finalPath = isIndex ? (pagePath ? `${pagePath}/` : '') : pagePath
   const normalizedPath = finalPath.replace(/^\/+/, '')
@@ -63,7 +64,7 @@ const moduleNames: Record<string, string> = {
   'module-03': '模块三：执行体系',
   'module-04': '模块四：实战案例',
   'module-05': '模块五：工具模板',
-  'appendix': '附录'
+  appendix: '附录'
 }
 
 // 从 markdown 文件提取标题
@@ -90,7 +91,10 @@ function extractTitle(filePath: string): string {
 
 // 从文件名生成简洁标题
 function getTitleFromFilename(filename: string): string {
-  const name = filename.replace('.md', '').replace(/^\d+\.\d+-?/, '').replace(/-/g, ' ')
+  const name = filename
+    .replace('.md', '')
+    .replace(/^\d+\.\d+-?/, '')
+    .replace(/-/g, ' ')
   return name.charAt(0).toUpperCase() + name.slice(1)
 }
 
@@ -100,16 +104,18 @@ function getSidebar() {
   const docsDir = path.join(__dirname, '..', 'docs')
 
   // 读取所有 module- 开头的目录
-  const modules = fs.readdirSync(docsDir)
-    .filter(file => {
+  const modules = fs
+    .readdirSync(docsDir)
+    .filter((file) => {
       return fs.statSync(path.join(docsDir, file)).isDirectory() && file.startsWith('module-')
     })
     .sort()
 
-  modules.forEach(moduleDir => {
+  modules.forEach((moduleDir) => {
     const modulePath = path.join(docsDir, moduleDir)
-    const files = fs.readdirSync(modulePath)
-      .filter(file => file.endsWith('.md'))
+    const files = fs
+      .readdirSync(modulePath)
+      .filter((file) => file.endsWith('.md'))
       .sort()
 
     if (files.length > 0) {
@@ -122,8 +128,8 @@ function getSidebar() {
         })
       }
 
-      const contentFiles = files.filter(file => file !== 'index.md')
-      const contentItems = contentFiles.map(file => {
+      const contentFiles = files.filter((file) => file !== 'index.md')
+      const contentItems = contentFiles.map((file) => {
         const fullPath = path.join(modulePath, file)
         // 优先使用 markdown 文件中的标题
         let text = extractTitle(fullPath)
@@ -152,8 +158,9 @@ function getSidebar() {
   // 添加附录
   const appendixPath = path.join(docsDir, 'appendix')
   if (fs.existsSync(appendixPath)) {
-    const appendixFiles = fs.readdirSync(appendixPath)
-      .filter(file => file.endsWith('.md'))
+    const appendixFiles = fs
+      .readdirSync(appendixPath)
+      .filter((file) => file.endsWith('.md'))
       .sort()
 
     if (appendixFiles.length > 0) {
@@ -166,8 +173,8 @@ function getSidebar() {
         })
       }
 
-      const appendixContentFiles = appendixFiles.filter(file => file !== 'index.md')
-      const appendixContentItems = appendixContentFiles.map(file => {
+      const appendixContentFiles = appendixFiles.filter((file) => file !== 'index.md')
+      const appendixContentItems = appendixContentFiles.map((file) => {
         const fullPath = path.join(appendixPath, file)
         let text = extractTitle(fullPath)
         if (!text) {
@@ -199,14 +206,14 @@ function getSidebar() {
 // 兼容旧的 DEPLOY_TARGET=cloudflare
 const base = normalizeBase(
   process.env.VITEPRESS_BASE ||
-  (process.env.CF_PAGES ? '/' : process.env.DEPLOY_TARGET === 'cloudflare' ? '/' : '/gtm-cookbook/')
+    (process.env.CF_PAGES
+      ? '/'
+      : process.env.DEPLOY_TARGET === 'cloudflare'
+        ? '/'
+        : '/gtm-cookbook/')
 )
 const defaultSiteUrl = 'https://genedai.space'
-const siteUrl = normalizeSiteUrl(
-  process.env.SITE_URL ||
-  process.env.CF_PAGES_URL ||
-  defaultSiteUrl
-)
+const siteUrl = normalizeSiteUrl(process.env.SITE_URL || process.env.CF_PAGES_URL || defaultSiteUrl)
 const sitemapHostname = siteUrl ? resolveSitemapHostname(siteUrl, base) : undefined
 
 export default defineConfig({
@@ -221,7 +228,14 @@ export default defineConfig({
   head: [
     // Basic meta
     ['meta', { name: 'author', content: 'Digidai' }],
-    ['meta', { name: 'keywords', content: 'GTM, Go-To-Market, 市场战略, SaaS, PLG, SLG, 产品增长, B2B, 创业, 增长黑客, ICP, 价值主张, 定位策略, RevOps' }],
+    [
+      'meta',
+      {
+        name: 'keywords',
+        content:
+          'GTM, Go-To-Market, 市场战略, SaaS, PLG, SLG, 产品增长, B2B, 创业, 增长黑客, ICP, 价值主张, 定位策略, RevOps'
+      }
+    ],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'theme-color', content: '#0f172a' }],
 
@@ -239,38 +253,42 @@ export default defineConfig({
     // Microsoft Tile
     ['meta', { name: 'msapplication-TileColor', content: '#0f172a' }],
     ['meta', { name: 'msapplication-config', content: `${base}browserconfig.xml` }],
-    ['script', { type: 'application/ld+json' }, JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      'name': 'GTM Cookbook',
-      'description': 'Go-To-Market 完整实战手册，从战略到执行系统掌握市场进入方法论',
-      'url': 'https://genedai.space',
-      'image': 'https://genedai.space/og-cover.png',
-      'author': {
-        '@type': 'Organization',
-        'name': 'Digidai',
-        'url': 'https://github.com/Digidai',
-        'logo': {
-          '@type': 'ImageObject',
-          'url': 'https://genedai.space/logo.png',
-          'width': 512,
-          'height': 512
-        }
-      },
-      'publisher': {
-        '@type': 'Organization',
-        'name': 'Digidai',
-        'logo': {
-          '@type': 'ImageObject',
-          'url': 'https://genedai.space/logo.png',
-          'width': 512,
-          'height': 512
-        }
-      },
-      'inLanguage': 'zh-CN',
-      'isAccessibleForFree': true,
-      'license': 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
-    })]
+    [
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'GTM Cookbook',
+        description: 'Go-To-Market 完整实战手册，从战略到执行系统掌握市场进入方法论',
+        url: 'https://genedai.space',
+        image: 'https://genedai.space/og-cover.png',
+        author: {
+          '@type': 'Organization',
+          name: 'Digidai',
+          url: 'https://github.com/Digidai',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://genedai.space/logo.png',
+            width: 512,
+            height: 512
+          }
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Digidai',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://genedai.space/logo.png',
+            width: 512,
+            height: 512
+          }
+        },
+        inLanguage: 'zh-CN',
+        isAccessibleForFree: true,
+        license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
+      })
+    ]
   ],
   transformHead: ({ pageData }) => {
     const title = pageData.title || siteTitle
@@ -308,11 +326,17 @@ export default defineConfig({
       tags.push(['meta', { property: 'og:image:type', content: 'image/png' }])
       tags.push(['meta', { property: 'og:image:width', content: '1200' }])
       tags.push(['meta', { property: 'og:image:height', content: '630' }])
-      tags.push(['meta', { property: 'og:image:alt', content: 'GTM Cookbook - Go-To-Market 完整实战手册' }])
+      tags.push([
+        'meta',
+        { property: 'og:image:alt', content: 'GTM Cookbook - Go-To-Market 完整实战手册' }
+      ])
 
       // Twitter Image
       tags.push(['meta', { name: 'twitter:image', content: twitterImage }])
-      tags.push(['meta', { name: 'twitter:image:alt', content: 'GTM Cookbook - Go-To-Market 完整实战手册' }])
+      tags.push([
+        'meta',
+        { name: 'twitter:image:alt', content: 'GTM Cookbook - Go-To-Market 完整实战手册' }
+      ])
 
       // WeChat / 微信分享
       tags.push(['meta', { itemprop: 'name', content: metaTitle }])
@@ -321,6 +345,40 @@ export default defineConfig({
 
       // Additional social platforms
       tags.push(['meta', { property: 'article:author', content: 'Digidai' }])
+
+      // Article JSON-LD Schema for content pages
+      const isContentPage =
+        pageData.relativePath.startsWith('module-') || pageData.relativePath.startsWith('appendix/')
+      const isIndex = pageData.relativePath.endsWith('index.md')
+      if (isContentPage && !isIndex) {
+        tags.push([
+          'script',
+          { type: 'application/ld+json' },
+          JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: title,
+            description: description,
+            url: canonical,
+            image: ogImage,
+            author: {
+              '@type': 'Organization',
+              name: 'Digidai',
+              url: 'https://github.com/Digidai'
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'GTM Cookbook',
+              logo: {
+                '@type': 'ImageObject',
+                url: `${siteUrl}${base}logo.png`
+              }
+            },
+            inLanguage: 'zh-CN',
+            isAccessibleForFree: true
+          })
+        ])
+      }
     }
 
     return tags
@@ -340,9 +398,7 @@ export default defineConfig({
       level: [2, 3]
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/Digidai/gtm-cookbook' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/Digidai/gtm-cookbook' }],
 
     search: {
       provider: 'local',

@@ -1,4 +1,5 @@
-<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Appendix Glossary</title>
   <defs>
     <style>
       .step-bg { fill: #FFFFFF; stroke: #E2E8F0; stroke-width: 1; }

@@ -1,4 +1,5 @@
 ---
+title: "模块四：GTM 实战案例深度解析"
 description: GTM 实战案例模块，深度解析 Slack、Notion、飞书、北森等中美标杆企业的 PLG、SLG 增长路径
 ---
 

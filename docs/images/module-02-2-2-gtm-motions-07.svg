@@ -1,4 +1,5 @@
-<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">GTM Motions</title>
   <defs>
     <style>
       .phase-box { rx: 12; stroke: #E2E8F0; stroke-width: 1; fill: #FFFFFF; filter: url(#shadow); }

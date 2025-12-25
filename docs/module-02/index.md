@@ -1,4 +1,5 @@
 ---
+title: "模块二：GTM 核心方法论与框架"
 description: GTM 核心方法论模块，涵盖跨越鸿沟、PLG/SLG Motion、ICP 构建、价值主张设计和市场定位策略
 ---
 

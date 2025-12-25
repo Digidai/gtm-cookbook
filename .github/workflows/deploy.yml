@@ -23,6 +23,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Code quality checks
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Check code formatting
+        run: npx prettier --check "**/*.{js,mjs,mts,ts,json}"
+
       # Build for GitHub Pages
       - name: Build for GitHub Pages
         run: npm run build

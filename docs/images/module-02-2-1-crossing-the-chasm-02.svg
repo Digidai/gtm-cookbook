@@ -1,4 +1,5 @@
-<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">Crossing The Chasm</title>
   <defs>
     <style>
       .target-circle { fill: none; stroke: #E2E8F0; stroke-width: 2; }

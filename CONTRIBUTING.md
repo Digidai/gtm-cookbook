@@ -113,6 +113,55 @@ npm run preview
 3. 审核通过后合并到 main 分支
 4. 自动部署到线上
 
+## 常见问题排除
+
+### Node.js 版本问题
+
+项目需要 Node.js >= 18.0.0：
+
+```bash
+# 检查版本
+node --version
+
+# 推荐使用 nvm 管理版本
+nvm install 20
+nvm use 20
+```
+
+### npm install 失败
+
+```bash
+# 清理缓存后重试
+rm -rf node_modules package-lock.json
+npm cache clean --force
+npm install
+```
+
+### 开发服务器无法启动
+
+```bash
+# 检查端口 5173 是否被占用
+lsof -i :5173
+
+# 或使用其他端口
+npm run dev -- --port 3000
+```
+
+### 构建失败
+
+```bash
+# 检查 ESLint 错误
+npm run lint
+
+# 检查代码格式
+npm run format
+```
+
+### 图片无法显示
+
+- 确保图片路径使用相对路径（`../images/xxx.svg`）
+- SVG 文件应放在 `docs/images/` 目录
+
 ## 问题讨论
 
 - 一般问题：[GitHub Discussions](https://github.com/Digidai/gtm-cookbook/discussions)

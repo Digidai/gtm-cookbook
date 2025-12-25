@@ -1,4 +1,5 @@
 ---
+title: "附录"
 description: GTM Cookbook 附录，包含 40+ 专业术语表、推荐阅读书单和参考资源链接
 ---
 
