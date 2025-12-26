@@ -1,0 +1,13 @@
+/**
+ * Custom CSS for GTM Cookbook
+ */
+
+:root {
+  --vp-c-brand-1: #3451b2;
+  --vp-c-brand-2: #3a5ccc;
+  --vp-c-brand-3: #5672cd;
+}
+
+.vp-doc table {
+  margin: 0;
+}
