@@ -143,7 +143,7 @@ function normalizeRoute(value) {
 }
 
 function parseSiteData(html) {
-  const match = html.match(/window\.__VP_SITE_DATA__=JSON\.parse\((\"[\s\S]+?\")\);/)
+  const match = html.match(/window\.__VP_SITE_DATA__=JSON\.parse\(("[\s\S]+?")\);/)
   if (!match) return null
   const decoded = JSON.parse(match[1])
   return JSON.parse(decoded)
