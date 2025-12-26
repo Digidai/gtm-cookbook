@@ -149,7 +149,7 @@ function getTitleFromFilename(filename: string): string {
 // 生成侧边栏
 function getSidebar() {
   const sidebar: any[] = []
-  const docsDir = path.join(__dirname, '..', 'docs')
+  const docsDir = path.join(__dirname, '..')
 
   // 读取所有 module- 开头的目录
   const modules = fs
