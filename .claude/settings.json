@@ -4,15 +4,7 @@
     "autoAllowBashIfSandboxed": true
   },
   "permissions": {
-    "allow": [
-      "Edit",
-      "Read",
-      "Bash",
-      "WebFetch",
-      "Write",
-      "Glob",
-      "Grep"
-    ],
+    "allow": ["Edit", "Read", "Bash", "WebFetch", "Write", "Glob", "Grep"],
     "deny": [
       "Bash(rm -rf :*)",
       "Bash(sudo :*)",
