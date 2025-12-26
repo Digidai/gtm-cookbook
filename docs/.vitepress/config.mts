@@ -267,11 +267,12 @@ const sitemapHostname = siteUrl ? resolveSitemapHostname(siteUrl, base) : undefi
 export default defineConfig({
   title: siteTitle,
   description: siteDescription,
-  srcDir: 'docs',
   lang: 'zh-CN',
   base,
   cleanUrls: true,
   lastUpdated: true,
+  // Only enable sitemap if we have a valid hostname.
+  // This prevents 'EmptySitemap' errors during local dev or CI if URL is missing.
   sitemap: sitemapHostname ? { hostname: sitemapHostname } : undefined,
 
   head: [
