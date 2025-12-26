@@ -87,10 +87,10 @@ npm run dev
 访问 `http://localhost:5173` 即可。
 
 ### 方式三：导出 PDF 电子书
-你需要先安装 `puppeteer`：
+你需要先安装 `puppeteer` 和 `pdf-lib`：
 
 ```bash
-npm install puppeteer --save-dev
+npm install puppeteer pdf-lib --save-dev
 npm run export:pdf
 ```
 这将在根目录生成 `GTM-Cookbook.pdf`。
