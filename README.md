@@ -60,7 +60,7 @@
 
 - **🎨 极致阅读体验**：基于 VitePress 构建，支持暗黑模式、全局搜索、响应式布局。
 - **📊 249+ 可视化图表**：将晦涩的理论转化为直观的 SVG 图表，一图胜千言。
-- **🧮 交互式工具**：内置 [CAC 回收期计算器](https://genedai.space/module-05/5.6-tool-stack.html#实用工具演示) 等实用小组件。
+- **🧮 交互式工具**：内置 [CAC 回收期计算器](./docs/module-05/5.6-tool-stack.md#cac-calculator-demo) 等实用小组件。
 - **📥 导出友好**：支持生成 PDF 电子书（详见下文）。
 
 ---
