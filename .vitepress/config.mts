@@ -149,21 +149,21 @@ function getTitleFromFilename(filename: string): string {
 // 生成侧边栏
 function getSidebar() {
   const sidebar: any[] = []
-  const docsDir = path.join(__dirname, '..')
+  const docsDir = path.join(__dirname, '..', 'docs')
 
   // 读取所有 module- 开头的目录
   const modules = fs
     .readdirSync(docsDir)
-    .filter((file: string) => {
+    .filter((file) => {
       return fs.statSync(path.join(docsDir, file)).isDirectory() && file.startsWith('module-')
     })
     .sort()
 
-  modules.forEach((moduleDir: string) => {
+  modules.forEach((moduleDir) => {
     const modulePath = path.join(docsDir, moduleDir)
     const files = fs
       .readdirSync(modulePath)
-      .filter((file: string) => file.endsWith('.md'))
+      .filter((file) => file.endsWith('.md'))
       .sort()
 
     if (files.length > 0) {
@@ -176,8 +176,8 @@ function getSidebar() {
         })
       }
 
-      const contentFiles = files.filter((file: string) => file !== 'index.md')
-      const contentItems = contentFiles.map((file: string) => {
+      const contentFiles = files.filter((file) => file !== 'index.md')
+      const contentItems = contentFiles.map((file) => {
         const fullPath = path.join(modulePath, file)
         // 优先使用 markdown 文件中的标题
         let text = extractTitle(fullPath)
@@ -208,7 +208,7 @@ function getSidebar() {
   if (fs.existsSync(appendixPath)) {
     const appendixFiles = fs
       .readdirSync(appendixPath)
-      .filter((file: string) => file.endsWith('.md'))
+      .filter((file) => file.endsWith('.md'))
       .sort()
 
     if (appendixFiles.length > 0) {
@@ -221,8 +221,8 @@ function getSidebar() {
         })
       }
 
-      const appendixContentFiles = appendixFiles.filter((file: string) => file !== 'index.md')
-      const appendixContentItems = appendixContentFiles.map((file: string) => {
+      const appendixContentFiles = appendixFiles.filter((file) => file !== 'index.md')
+      const appendixContentItems = appendixContentFiles.map((file) => {
         const fullPath = path.join(appendixPath, file)
         let text = extractTitle(fullPath)
         if (!text) {
@@ -267,12 +267,11 @@ const sitemapHostname = siteUrl ? resolveSitemapHostname(siteUrl, base) : undefi
 export default defineConfig({
   title: siteTitle,
   description: siteDescription,
+  srcDir: 'docs',
   lang: 'zh-CN',
   base,
   cleanUrls: true,
   lastUpdated: true,
-  // Only enable sitemap if we have a valid hostname.
-  // This prevents 'EmptySitemap' errors during local dev or CI if URL is missing.
   sitemap: sitemapHostname ? { hostname: sitemapHostname } : undefined,
 
   head: [

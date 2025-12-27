@@ -1,9 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-import { fileURLToPath } from 'url'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
 
 // Adjust root based on where script is run. Assuming run from root.
 const DOCS_ROOT = path.resolve(process.cwd(), 'docs')
@@ -16,7 +12,7 @@ const warnings = []
 function fileExists(filePath) {
   try {
     return fs.existsSync(filePath) && fs.statSync(filePath).isFile()
-  } catch (e) {
+  } catch {
     return false
   }
 }
@@ -88,10 +84,10 @@ function processFile(filePath) {
   const content = fs.readFileSync(filePath, 'utf-8')
 
   // 1. Check Images: ![alt](src)
-  const imgRegex = /!\\\[([^\\]*)\\]\(([^)]+)\\\)/g
+  const imgRegex = /!\[([^\]]*)\]\(([^)]+)\)/g
   let match
   while ((match = imgRegex.exec(content)) !== null) {
-    const [full, alt, src] = match
+    const [, alt, src] = match
     if (!alt) {
       warnings.push(
         `[Alt] ${path.relative(DOCS_ROOT, filePath)}: Missing alt text for image '${src}'`
@@ -115,8 +111,8 @@ function processFile(filePath) {
   // 3. Check Links: [text](href)
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g
   while ((match = linkRegex.exec(content)) !== null) {
-    const [full, text, href] = match
-    if (full.startsWith('!')) continue
+    const [, , href] = match
+    if (match[0].startsWith('!')) continue
     checkLink(href, filePath, 'link')
   }
 }
