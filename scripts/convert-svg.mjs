@@ -87,8 +87,12 @@ async function convert() {
     try {
       // Get original size if file exists
       let originalSize = 0
-      if (fs.existsSync(outputPath)) {
-        originalSize = fs.statSync(outputPath).size
+      try {
+        if (fs.existsSync(outputPath)) {
+          originalSize = fs.statSync(outputPath).size
+        }
+      } catch (error) {
+        console.warn(`Failed to get original size for ${output}:`, error.message)
       }
 
       await sharp(inputPath)
@@ -101,7 +105,14 @@ async function convert() {
         })
         .toFile(outputPath)
 
-      const newSize = fs.statSync(outputPath).size
+      let newSize = 0
+      try {
+        newSize = fs.statSync(outputPath).size
+      } catch (error) {
+        console.error(`Failed to get new size for ${output}:`, error.message)
+        continue
+      }
+
       const sizeKB = (newSize / 1024).toFixed(1)
 
       if (originalSize > 0) {
@@ -115,6 +126,10 @@ async function convert() {
         console.log(`✓ ${output} (${width}x${height}) - ${sizeKB} KB`)
       }
     } catch (err) {
+      if (err.code === 'MODULE_NOT_FOUND' || err.message.includes('sharp')) {
+        console.error(`\n✗ Sharp library not found. Run: npm install sharp\n`)
+        process.exit(1)
+      }
       console.error(`✗ Error converting ${input}:`, err.message)
     }
   }
@@ -125,4 +140,7 @@ async function convert() {
   console.log('\nDone!')
 }
 
-convert()
+convert().catch((error) => {
+  console.error('Fatal error during conversion:', error)
+  process.exit(1)
+})

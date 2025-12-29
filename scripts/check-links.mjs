@@ -8,11 +8,15 @@ const PUBLIC_DIR = path.join(DOCS_ROOT, 'public')
 const errors = []
 const warnings = []
 
-// Helper to check if file exists
-function fileExists(filePath) {
+// Helper to check if file exists and is a regular file
+function isFile(filePath) {
   try {
-    return fs.existsSync(filePath) && fs.statSync(filePath).isFile()
-  } catch {
+    return fs.statSync(filePath).isFile()
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return false
+    }
+    console.warn(`Warning checking file ${filePath}:`, error.message)
     return false
   }
 }
@@ -32,7 +36,7 @@ function resolvePath(linkPath, currentFileDir) {
     // Absolute path relative to project root (docs/ or docs/public/)
     // First check docs/public
     const publicPath = path.join(PUBLIC_DIR, cleanPath)
-    if (fileExists(publicPath)) return { path: publicPath, hash }
+    if (isFile(publicPath)) return { path: publicPath, hash }
 
     // Then check docs/
     absolutePath = path.join(DOCS_ROOT, cleanPath)
@@ -55,24 +59,24 @@ function checkLink(link, filePath, type = 'link') {
   let targetPath = result.path
 
   // Handle Vitepress clean URLs (try adding .md or /index.md)
-  if (!fileExists(targetPath) && type === 'link') {
-    if (fileExists(targetPath + '.md')) {
+  if (!isFile(targetPath) && type === 'link') {
+    if (isFile(targetPath + '.md')) {
       targetPath = targetPath + '.md'
-    } else if (fileExists(path.join(targetPath, 'index.md'))) {
+    } else if (isFile(path.join(targetPath, 'index.md'))) {
       targetPath = path.join(targetPath, 'index.md')
     }
   }
 
   // Handle images (must exist exactly or in public)
   if (type === 'image') {
-    if (!fileExists(targetPath)) {
+    if (!isFile(targetPath)) {
       errors.push(
         `[Image] ${path.relative(DOCS_ROOT, filePath)}: Broken image reference '${link}' (resolved: ${targetPath})`
       )
     }
   } else {
     // Regular links
-    if (!fileExists(targetPath)) {
+    if (!isFile(targetPath)) {
       errors.push(
         `[Link] ${path.relative(DOCS_ROOT, filePath)}: Broken link '${link}' (resolved: ${targetPath})`
       )
@@ -81,52 +85,77 @@ function checkLink(link, filePath, type = 'link') {
 }
 
 function processFile(filePath) {
-  const content = fs.readFileSync(filePath, 'utf-8')
+  try {
+    const content = fs.readFileSync(filePath, 'utf-8')
 
-  // 1. Check Images: ![alt](src)
-  const imgRegex = /!\[([^\]]*)\]\(([^)]+)\)/g
-  let match
-  while ((match = imgRegex.exec(content)) !== null) {
-    const [, alt, src] = match
-    if (!alt) {
-      warnings.push(
-        `[Alt] ${path.relative(DOCS_ROOT, filePath)}: Missing alt text for image '${src}'`
-      )
+    // 1. Check Images: ![alt](src)
+    const imgRegex = /!\[([^\]]*)\]\(([^)]+)\)/g
+    let match
+    while ((match = imgRegex.exec(content)) !== null) {
+      const [, alt, src] = match
+      if (!alt) {
+        warnings.push(
+          `[Alt] ${path.relative(DOCS_ROOT, filePath)}: Missing alt text for image '${src}'`
+        )
+      }
+      checkLink(src, filePath, 'image')
     }
-    checkLink(src, filePath, 'image')
-  }
 
-  // 2. Check HTML Images: <img src="...">
-  const htmlImgRegex = /<img[^>]+src=["']([^"']+)["'][^>]*>/g
-  while ((match = htmlImgRegex.exec(content)) !== null) {
-    const [full, src] = match
-    if (!full.includes('alt=')) {
-      warnings.push(
-        `[Alt] ${path.relative(DOCS_ROOT, filePath)}: Missing alt attribute in HTML img '${src}'`
-      )
+    // 2. Check HTML Images: <img src="...">
+    const htmlImgRegex = /<img[^>]+src=["']([^"']+)["'][^>]*>/g
+    while ((match = htmlImgRegex.exec(content)) !== null) {
+      const [full, src] = match
+      if (!full.includes('alt=')) {
+        warnings.push(
+          `[Alt] ${path.relative(DOCS_ROOT, filePath)}: Missing alt attribute in HTML img '${src}'`
+        )
+      }
+      checkLink(src, filePath, 'image')
     }
-    checkLink(src, filePath, 'image')
-  }
 
-  // 3. Check Links: [text](href)
-  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g
-  while ((match = linkRegex.exec(content)) !== null) {
-    const [, , href] = match
-    if (match[0].startsWith('!')) continue
-    checkLink(href, filePath, 'link')
+    // 3. Check Links: [text](href)
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g
+    while ((match = linkRegex.exec(content)) !== null) {
+      const [, , href] = match
+      if (match[0].startsWith('!')) continue
+      checkLink(href, filePath, 'link')
+    }
+  } catch (error) {
+    console.error(`Error processing file ${filePath}:`, error.message)
   }
 }
 
-function walkDir(dir) {
+function walkDir(dir, depth = 0) {
+  // Prevent infinite recursion
+  const MAX_DEPTH = 50
+  if (depth > MAX_DEPTH) {
+    console.warn(`Maximum depth reached: ${dir}`)
+    return
+  }
+
   if (!fs.existsSync(dir)) return
-  const files = fs.readdirSync(dir)
+
+  let files = []
+  try {
+    files = fs.readdirSync(dir)
+  } catch (error) {
+    console.error(`Error reading directory ${dir}:`, error.message)
+    return
+  }
+
   for (const file of files) {
     const fullPath = path.join(dir, file)
-    const stat = fs.statSync(fullPath)
+    let stat
+    try {
+      stat = fs.statSync(fullPath)
+    } catch (error) {
+      console.warn(`Warning checking ${fullPath}:`, error.message)
+      continue
+    }
 
     if (stat.isDirectory()) {
       if (file !== 'node_modules' && file !== '.vitepress' && file !== 'public') {
-        walkDir(fullPath)
+        walkDir(fullPath, depth + 1)
       }
     } else if (file.endsWith('.md')) {
       processFile(fullPath)

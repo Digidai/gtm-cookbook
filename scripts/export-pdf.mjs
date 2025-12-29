@@ -21,9 +21,6 @@ try {
   console.error('\n❌ Puppeteer is not installed.')
   console.error('To use the PDF export feature, please run:')
   console.error('\nnpm install puppeteer --save-dev\n')
-  if (err instanceof Error && err.message) {
-    console.error(err.message)
-  }
   process.exit(1)
 }
 
@@ -34,9 +31,6 @@ try {
   console.error('\n❌ pdf-lib is not installed.')
   console.error('To use the PDF export feature, please run:')
   console.error('\nnpm install pdf-lib --save-dev\n')
-  if (err instanceof Error && err.message) {
-    console.error(err.message)
-  }
   process.exit(1)
 }
 
@@ -45,8 +39,20 @@ const { PDFDocument } = pdfLib
 const OUTPUT_FILE = process.env.PDF_OUTPUT || 'GTM-Cookbook.pdf'
 const DIST_DIR = path.resolve(process.cwd(), process.env.PDF_DIST_DIR || 'docs/.vitepress/dist')
 const distIndex = path.join(DIST_DIR, 'index.html')
-const hasDist = fs.existsSync(distIndex)
-const distHtml = hasDist ? fs.readFileSync(distIndex, 'utf-8') : ''
+let hasDist = false
+try {
+  hasDist = fs.existsSync(distIndex)
+} catch (error) {
+  console.warn(`Warning: Could not check dist directory: ${error.message}`)
+}
+let distHtml = ''
+if (hasDist) {
+  try {
+    distHtml = fs.readFileSync(distIndex, 'utf-8')
+  } catch (error) {
+    console.warn(`Warning: Failed to read dist index: ${error.message}`)
+  }
+}
 const siteData = distHtml ? parseSiteData(distHtml) : null
 const baseFromSite = siteData?.base ? normalizeBase(siteData.base) : undefined
 
@@ -184,14 +190,25 @@ function getRoutesFromSiteData(data) {
 }
 
 function walkHtmlFiles(dir, files) {
-  const entries = fs.readdirSync(dir, { withFileTypes: true })
+  let entries = []
+  try {
+    entries = fs.readdirSync(dir, { withFileTypes: true })
+  } catch (error) {
+    console.error(`Failed to read directory ${dir}:`, error.message)
+    return
+  }
+
   for (const entry of entries) {
     if (entry.name === 'assets') continue
     const fullPath = path.join(dir, entry.name)
-    if (entry.isDirectory()) {
-      walkHtmlFiles(fullPath, files)
-    } else if (entry.isFile() && entry.name.endsWith('.html')) {
-      files.push(fullPath)
+    try {
+      if (entry.isDirectory()) {
+        walkHtmlFiles(fullPath, files)
+      } else if (entry.isFile() && entry.name.endsWith('.html')) {
+        files.push(fullPath)
+      }
+    } catch (error) {
+      console.warn(`Warning processing ${fullPath}:`, error.message)
     }
   }
 }
@@ -263,37 +280,48 @@ function getFileCandidates(relativePath) {
 function startStaticServer() {
   return new Promise((resolve, reject) => {
     const server = http.createServer((req, res) => {
-      const url = new URL(req.url || '/', 'http://localhost')
-      const relativePath = resolveRequestPath(url.pathname)
-      if (!relativePath) {
-        res.statusCode = 404
-        res.end('Not Found')
-        return
-      }
-
-      const candidates = getFileCandidates(relativePath)
-      const filePath = candidates.find((candidate) => {
-        try {
-          return fs.existsSync(candidate) && fs.statSync(candidate).isFile()
-        } catch {
-          return false
+      try {
+        const url = new URL(req.url || '/', 'http://localhost')
+        const relativePath = resolveRequestPath(url.pathname)
+        if (!relativePath) {
+          res.statusCode = 404
+          res.end('Not Found')
+          return
         }
-      })
 
-      if (!filePath) {
-        res.statusCode = 404
-        res.end('Not Found')
-        return
-      }
+        const candidates = getFileCandidates(relativePath)
+        let filePath = null
+        try {
+          filePath = candidates.find((candidate) => {
+            try {
+              return fs.existsSync(candidate) && fs.statSync(candidate).isFile()
+            } catch {
+              return false
+            }
+          })
+        } catch (error) {
+          console.error('Error checking file candidates:', error.message)
+        }
 
-      const ext = path.extname(filePath).toLowerCase()
-      res.setHeader('Content-Type', CONTENT_TYPES[ext] || 'application/octet-stream')
-      const stream = fs.createReadStream(filePath)
-      stream.on('error', () => {
+        if (!filePath) {
+          res.statusCode = 404
+          res.end('Not Found')
+          return
+        }
+
+        const ext = path.extname(filePath).toLowerCase()
+        res.setHeader('Content-Type', CONTENT_TYPES[ext] || 'application/octet-stream')
+        const stream = fs.createReadStream(filePath)
+        stream.on('error', () => {
+          res.statusCode = 500
+          res.end('Server Error')
+        })
+        stream.pipe(res)
+      } catch (error) {
+        console.error('Request handling error:', error.message)
         res.statusCode = 500
         res.end('Server Error')
-      })
-      stream.pipe(res)
+      }
     })
 
     server.on('error', (error) => reject(error))
@@ -302,22 +330,26 @@ function startStaticServer() {
 }
 
 async function ensureImagesLoaded(page) {
-  await page.evaluate(async () => {
-    const images = Array.from(document.images)
-    for (const img of images) {
-      if (img.loading === 'lazy') img.loading = 'eager'
-    }
-    await Promise.all(
-      images.map((img) => {
-        if (img.complete) return Promise.resolve()
-        return new Promise((resolve) => {
-          const done = () => resolve()
-          img.addEventListener('load', done, { once: true })
-          img.addEventListener('error', done, { once: true })
+  try {
+    await page.evaluate(async () => {
+      const images = Array.from(document.images)
+      for (const img of images) {
+        if (img.loading === 'lazy') img.loading = 'eager'
+      }
+      await Promise.all(
+        images.map((img) => {
+          if (img.complete) return Promise.resolve()
+          return new Promise((resolve) => {
+            const done = () => resolve()
+            img.addEventListener('load', done, { once: true })
+            img.addEventListener('error', done, { once: true })
+          })
         })
-      })
-    )
-  })
+      )
+    })
+  } catch (error) {
+    console.warn('Warning ensuring images loaded:', error.message)
+  }
 }
 
 function buildRouteUrl(route) {
@@ -331,25 +363,38 @@ async function generatePDF() {
 
   let server
   if (shouldStartServer) {
-    server = await startStaticServer()
+    try {
+      server = await startStaticServer()
+    } catch (error) {
+      console.error('Failed to start server:', error.message)
+      process.exit(1)
+    }
   } else if (!process.env.PDF_SITE_URL && !hasDist) {
     console.warn(`⚠️  Build output not found at ${DIST_DIR}`)
-    console.warn('    Run "npm run docs:build" or start the dev server before exporting.')
+    console.warn('    Run "npm run docs:build" or start:dev server before exporting.')
   }
 
   const resolvedSiteData = siteData || (await loadSiteDataFromUrl(SITE_URL))
   const routes = buildRouteList(resolvedSiteData)
   if (routes.length === 0) {
     console.error('❌ No routes found to export.')
+    if (server) await new Promise((resolve) => server.close(resolve))
     process.exit(1)
   }
   console.log(`Found ${routes.length} routes to export.`)
 
   const launchArgs = process.env.CI ? ['--no-sandbox', '--disable-setuid-sandbox'] : []
-  const browser = await puppeteer.default.launch({
-    headless: 'new',
-    args: launchArgs
-  })
+  let browser
+  try {
+    browser = await puppeteer.default.launch({
+      headless: 'new',
+      args: launchArgs
+    })
+  } catch (error) {
+    console.error('Failed to launch browser:', error.message)
+    if (server) await new Promise((resolve) => server.close(resolve))
+    process.exit(1)
+  }
 
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'gtm-pdf-'))
   const pdfParts = []
@@ -370,24 +415,28 @@ async function generatePDF() {
     })
 
     for (let i = 0; i < routes.length; i += 1) {
-      const route = routes[i]
-      const url = buildRouteUrl(route)
-      const outputPath = path.join(tempDir, `${String(i + 1).padStart(3, '0')}.pdf`)
+      try {
+        const route = routes[i]
+        const url = buildRouteUrl(route)
+        const outputPath = path.join(tempDir, `${String(i + 1).padStart(3, '0')}.pdf`)
 
-      console.log(`Rendering ${route} (${i + 1}/${routes.length})`)
-      await page.goto(url, { waitUntil: 'networkidle0' })
-      await page.addStyleTag({ content: PRINT_OVERRIDES })
-      await page.waitForSelector('.vp-doc, .VPHome', { timeout: TIMEOUT })
-      await page.evaluateHandle('document.fonts.ready')
-      await ensureImagesLoaded(page)
-      await page.pdf({
-        path: outputPath,
-        format: 'A4',
-        printBackground: true,
-        margin: MARGIN
-      })
+        console.log(`Rendering ${route} (${i + 1}/${routes.length})`)
+        await page.goto(url, { waitUntil: 'networkidle0' })
+        await page.addStyleTag({ content: PRINT_OVERRIDES })
+        await page.waitForSelector('.vp-doc, .VPHome', { timeout: TIMEOUT })
+        await page.evaluateHandle('document.fonts.ready')
+        await ensureImagesLoaded(page)
+        await page.pdf({
+          path: outputPath,
+          format: 'A4',
+          printBackground: true,
+          margin: MARGIN
+        })
 
-      pdfParts.push(outputPath)
+        pdfParts.push(outputPath)
+      } catch (error) {
+        console.error(`❌ Failed to render ${routes[i]}:`, error.message)
+      }
     }
   } finally {
     await browser.close()
@@ -396,19 +445,36 @@ async function generatePDF() {
     }
   }
 
-  console.log('Merging PDF...')
-  const merged = await PDFDocument.create()
-  for (const pdfPath of pdfParts) {
-    const bytes = fs.readFileSync(pdfPath)
-    const source = await PDFDocument.load(bytes)
-    const pages = await merged.copyPages(source, source.getPageIndices())
-    pages.forEach((page) => merged.addPage(page))
+  if (pdfParts.length === 0) {
+    console.error('❌ No PDF pages were generated successfully.')
+    fs.rmSync(tempDir, { recursive: true, force: true })
+    process.exit(1)
   }
-  const mergedBytes = await merged.save()
-  fs.writeFileSync(OUTPUT_FILE, mergedBytes)
+
+  console.log('Merging PDF...')
+  try {
+    const merged = await PDFDocument.create()
+    for (const pdfPath of pdfParts) {
+      const bytes = fs.readFileSync(pdfPath)
+      const source = await PDFDocument.load(bytes)
+      const pages = await merged.copyPages(source, source.getPageIndices())
+      pages.forEach((page) => merged.addPage(page))
+    }
+    const mergedBytes = await merged.save()
+    fs.writeFileSync(OUTPUT_FILE, mergedBytes)
+  } catch (error) {
+    console.error('Failed to merge PDF:', error.message)
+    fs.rmSync(tempDir, { recursive: true, force: true })
+    process.exit(1)
+  }
+
   fs.rmSync(tempDir, { recursive: true, force: true })
 
   console.log(`✅ PDF exported to ${OUTPUT_FILE}`)
+  console.log(`   Generated ${pdfParts.length}/${routes.length} pages successfully.`)
 }
 
-generatePDF()
+generatePDF().catch((error) => {
+  console.error('Fatal error during PDF generation:', error)
+  process.exit(1)
+})

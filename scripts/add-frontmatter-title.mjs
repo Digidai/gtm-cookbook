@@ -29,7 +29,7 @@ function hasFrontmatterTitle(content) {
 function addTitleToFrontmatter(content, title) {
   const frontmatterMatch = content.match(/^(---\s*\n)([\s\S]*?)(\n---)/)
   if (frontmatterMatch) {
-    // Add title after the opening ---
+    // Add title after opening ---
     const newFrontmatter = `${frontmatterMatch[1]}title: "${title}"\n${frontmatterMatch[2]}${frontmatterMatch[3]}`
     return content.replace(/^---\s*\n[\s\S]*?\n---/, newFrontmatter)
   } else {
@@ -38,46 +38,77 @@ function addTitleToFrontmatter(content, title) {
   }
 }
 
-function processDirectory(dir) {
-  const files = fs.readdirSync(dir)
+function processDirectory(dir, depth = 0) {
+  // Prevent infinite recursion
+  const MAX_DEPTH = 50
+  if (depth > MAX_DEPTH) {
+    console.warn(`⚠️  Maximum depth reached: ${dir}`)
+    return { processed: 0, skipped: 0 }
+  }
+
+  let files = []
+  try {
+    files = fs.readdirSync(dir)
+  } catch (error) {
+    if (error.code === 'EACCES') {
+      console.warn(`⚠️  Permission denied: ${dir}`)
+    } else {
+      console.error(`❌ Error reading directory ${dir}:`, error.message)
+    }
+    return { processed: 0, skipped: 0 }
+  }
+
   let processed = 0
   let skipped = 0
 
   for (const file of files) {
     const filePath = path.join(dir, file)
-    const stat = fs.statSync(filePath)
 
-    if (stat.isDirectory()) {
-      const result = processDirectory(filePath)
-      processed += result.processed
-      skipped += result.skipped
-    } else if (file.endsWith('.md')) {
-      const relativePath = path.relative(docsDir, filePath)
+    try {
+      const stat = fs.statSync(filePath)
 
-      // Skip special files
-      if (skipFiles.includes(file) && !relativePath.includes('/')) {
-        console.log(`⏭️  Skipped: ${relativePath} (special file)`)
-        skipped++
-        continue
+      if (stat.isDirectory()) {
+        const result = processDirectory(filePath, depth + 1)
+        processed += result.processed
+        skipped += result.skipped
+      } else if (file.endsWith('.md')) {
+        const relativePath = path.relative(docsDir, filePath)
+
+        // Skip special files in root only
+        if (skipFiles.includes(file) && !relativePath.includes('/')) {
+          console.log(`⏭️  Skipped: ${relativePath} (special file)`)
+          skipped++
+          continue
+        }
+
+        const content = fs.readFileSync(filePath, 'utf-8')
+
+        // Skip if already has title
+        if (hasFrontmatterTitle(content)) {
+          console.log(`⏭️  Skipped: ${relativePath} (already has title)`)
+          skipped++
+          continue
+        }
+
+        const title = extractTitle(content)
+        if (title) {
+          const newContent = addTitleToFrontmatter(content, title)
+          fs.writeFileSync(filePath, newContent)
+          console.log(`✅ Added title: ${relativePath} → "${title}"`)
+          processed++
+        } else {
+          console.log(`⚠️  No title found: ${relativePath}`)
+          skipped++
+        }
       }
-
-      const content = fs.readFileSync(filePath, 'utf-8')
-
-      // Skip if already has title
-      if (hasFrontmatterTitle(content)) {
-        console.log(`⏭️  Skipped: ${relativePath} (already has title)`)
+    } catch (error) {
+      if (error.code === 'ELOOP') {
+        console.error(`❌ Symbolic link loop detected: ${filePath}`)
+      } else if (error.code === 'EACCES') {
+        console.warn(`⚠️  Permission denied: ${filePath}`)
         skipped++
-        continue
-      }
-
-      const title = extractTitle(content)
-      if (title) {
-        const newContent = addTitleToFrontmatter(content, title)
-        fs.writeFileSync(filePath, newContent)
-        console.log(`✅ Added title: ${relativePath} → "${title}"`)
-        processed++
       } else {
-        console.log(`⚠️  No title found: ${relativePath}`)
+        console.error(`❌ Error processing ${filePath}:`, error.message)
         skipped++
       }
     }

@@ -81,7 +81,14 @@ function addA11yTags(content, title) {
 }
 
 function processDirectory(dir) {
-  const files = fs.readdirSync(dir)
+  let files = []
+  try {
+    files = fs.readdirSync(dir)
+  } catch (error) {
+    console.error(`❌ Error reading directory ${dir}:`, error.message)
+    return { processed: 0, skipped: 0 }
+  }
+
   let processed = 0
   let skipped = 0
 
@@ -89,22 +96,28 @@ function processDirectory(dir) {
     if (!file.endsWith('.svg')) continue
 
     const filePath = path.join(dir, file)
-    const content = fs.readFileSync(filePath, 'utf-8')
 
-    // Skip if already has title
-    if (hasTitleTag(content)) {
-      skipped++
-      continue
-    }
+    try {
+      const content = fs.readFileSync(filePath, 'utf-8')
 
-    const title = extractTitleFromFilename(file)
-    const newContent = addA11yTags(content, title)
+      // Skip if already has title
+      if (hasTitleTag(content)) {
+        skipped++
+        continue
+      }
 
-    if (newContent) {
-      fs.writeFileSync(filePath, newContent)
-      console.log(`✅ ${file}`)
-      processed++
-    } else {
+      const title = extractTitleFromFilename(file)
+      const newContent = addA11yTags(content, title)
+
+      if (newContent) {
+        fs.writeFileSync(filePath, newContent)
+        console.log(`✅ ${file}`)
+        processed++
+      } else {
+        skipped++
+      }
+    } catch (error) {
+      console.error(`❌ Error processing ${file}:`, error.message)
       skipped++
     }
   }

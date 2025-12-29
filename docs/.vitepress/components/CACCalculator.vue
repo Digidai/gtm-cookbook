@@ -15,9 +15,9 @@
         <input type="number" v-model.number="margin" placeholder="e.g. 80" />
       </label>
     </div>
-    
+
     <div class="result-box" :class="statusClass">
-      <div class="result-value">{{ paybackPeriod }} 个月</div>
+      <div class="result-value">{{ displayValue }}</div>
       <div class="result-label">CAC 回收期</div>
       <div class="result-status">{{ statusText }}</div>
     </div>
@@ -32,21 +32,44 @@ const mrr = ref(500)
 const margin = ref(80)
 
 const paybackPeriod = computed(() => {
-  if (mrr.value <= 0 || margin.value <= 0) return 0
+  // Validate inputs
+  if (!cac.value || cac.value <= 0) return null
+  if (!mrr.value || mrr.value <= 0) return null
+  if (!margin.value || margin.value <= 0) return null
+
   const grossMargin = margin.value / 100
+
+  // Additional validation for grossMargin
+  if (grossMargin === 0) return Infinity
+
   const months = cac.value / (mrr.value * grossMargin)
-  return months.toFixed(1)
+
+  // Validate result
+  if (!isFinite(months) || months < 0) return null
+
+  return months
+})
+
+const displayValue = computed(() => {
+  const period = paybackPeriod.value
+  if (period === null) return '--'
+  if (period === Infinity) return '∞'
+  return period.toFixed(1) + ' 个月'
 })
 
 const statusClass = computed(() => {
-  const p = parseFloat(paybackPeriod.value)
+  const p = paybackPeriod.value
+  if (p === null) return 'status-neutral'
+  if (p === Infinity) return 'status-bad'
   if (p <= 12) return 'status-good'
   if (p <= 18) return 'status-ok'
   return 'status-bad'
 })
 
 const statusText = computed(() => {
-  const p = parseFloat(paybackPeriod.value)
+  const p = paybackPeriod.value
+  if (p === null) return '⏳ 请输入有效数据'
+  if (p === Infinity) return '⚠️ 毛利率为 0，无法计算'
   if (p <= 12) return '🚀 优秀 (< 12个月)'
   if (p <= 18) return '✅ 良好 (12-18个月)'
   return '⚠️ 需改进 (> 18个月)'
@@ -117,7 +140,20 @@ input {
   font-size: 0.9em;
 }
 
-.status-good { color: var(--vp-c-green-1); border: 1px solid var(--vp-c-green-soft); }
-.status-ok { color: var(--vp-c-yellow-1); border: 1px solid var(--vp-c-yellow-soft); }
-.status-bad { color: var(--vp-c-red-1); border: 1px solid var(--vp-c-red-soft); }
+.status-good {
+  color: var(--vp-c-green-1);
+  border: 1px solid var(--vp-c-green-soft);
+}
+.status-ok {
+  color: var(--vp-c-yellow-1);
+  border: 1px solid var(--vp-c-yellow-soft);
+}
+.status-bad {
+  color: var(--vp-c-red-1);
+  border: 1px solid var(--vp-c-red-soft);
+}
+.status-neutral {
+  color: var(--vp-c-text-2);
+  border: 1px solid var(--vp-c-divider);
+}
 </style>

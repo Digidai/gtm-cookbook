@@ -152,19 +152,33 @@ function getSidebar() {
   const docsDir = path.join(__dirname, '..')
 
   // 读取所有 module- 开头的目录
-  const modules = fs
-    .readdirSync(docsDir)
-    .filter((file: string) => {
-      return fs.statSync(path.join(docsDir, file)).isDirectory() && file.startsWith('module-')
-    })
-    .sort()
+  let modules: string[] = []
+  try {
+    const allFiles = fs.readdirSync(docsDir)
+    modules = allFiles
+      .filter((file: string) => {
+        try {
+          return fs.statSync(path.join(docsDir, file)).isDirectory() && file.startsWith('module-')
+        } catch {
+          return false
+        }
+      })
+      .sort()
+  } catch (error) {
+    console.error('Failed to read docs directory:', error)
+    return []
+  }
 
   modules.forEach((moduleDir: string) => {
     const modulePath = path.join(docsDir, moduleDir)
-    const files = fs
-      .readdirSync(modulePath)
-      .filter((file: string) => file.endsWith('.md'))
-      .sort()
+    let files: string[] = []
+    try {
+      const allFiles = fs.readdirSync(modulePath)
+      files = allFiles.filter((file: string) => file.endsWith('.md')).sort()
+    } catch (error) {
+      console.error(`Failed to read module directory ${moduleDir}:`, error)
+      return
+    }
 
     if (files.length > 0) {
       const items: any[] = []
@@ -206,10 +220,15 @@ function getSidebar() {
   // 添加附录
   const appendixPath = path.join(docsDir, 'appendix')
   if (fs.existsSync(appendixPath)) {
-    const appendixFiles = fs
-      .readdirSync(appendixPath)
-      .filter((file: string) => file.endsWith('.md'))
-      .sort()
+    let appendixFiles: string[] = []
+    try {
+      const allFiles = fs.readdirSync(appendixPath)
+      appendixFiles = allFiles.filter((file: string) => file.endsWith('.md')).sort()
+    } catch (error) {
+      console.error('Failed to read appendix directory:', error)
+    }
+
+    if (appendixFiles.length > 0) {
 
     if (appendixFiles.length > 0) {
       const appendixItems: any[] = []
