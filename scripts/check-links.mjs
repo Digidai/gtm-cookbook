@@ -11,6 +11,7 @@ const warnings = []
 // Safety limits to prevent resource exhaustion
 const MAX_DEPTH = 50
 const MAX_FILES = 10000
+const MAX_FILE_SIZE = 10 * 1024 * 1024 // 10MB
 let totalFilesProcessed = 0
 
 // Helper to check if file exists and is a regular file
@@ -91,6 +92,22 @@ function checkLink(link, filePath, type = 'link') {
 
 function processFile(filePath) {
   try {
+    // Check file size before reading
+    let stat
+    try {
+      stat = fs.statSync(filePath)
+    } catch (error) {
+      console.error(`Error checking file ${filePath}:`, error.message)
+      return
+    }
+
+    if (stat.size > MAX_FILE_SIZE) {
+      console.warn(
+        `Skipping large file ${path.relative(DOCS_ROOT, filePath)} (${(stat.size / 1024 / 1024).toFixed(2)}MB)`
+      )
+      return
+    }
+
     const content = fs.readFileSync(filePath, 'utf-8')
 
     // 1. Check Images: ![alt](src)

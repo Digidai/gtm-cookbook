@@ -132,7 +132,10 @@ function extractTitle(filePath: string): string {
       return headingMatch[1].replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     }
   } catch (e) {
-    // 忽略错误
+    console.warn(
+      `Warning: Could not read title from ${filePath}:`,
+      e instanceof Error ? e.message : e
+    )
   }
   return ''
 }
@@ -158,8 +161,13 @@ function getSidebar() {
     modules = allFiles
       .filter((file: string) => {
         try {
-          return fs.statSync(path.join(docsDir, file)).isDirectory() && file.startsWith('module-')
-        } catch {
+          const fullPath = path.join(docsDir, file)
+          return fs.statSync(fullPath).isDirectory() && file.startsWith('module-')
+        } catch (statError) {
+          console.warn(
+            `Warning: Could not stat ${file}:`,
+            statError instanceof Error ? statError.message : statError
+          )
           return false
         }
       })

@@ -330,22 +330,32 @@ function startStaticServer() {
 
         const stream = fs.createReadStream(filePath)
 
+        let streamErrored = false
+
         // Handle stream errors
         stream.on('error', (error) => {
+          streamErrored = true
           if (!res.headersSent) {
             res.statusCode = 500
             res.end('Server Error')
           } else {
             console.error('Stream error after headers sent:', error.message)
+            res.destroy()
           }
         })
 
         // Handle response errors
         res.on('error', (error) => {
           console.error('Response error:', error.message)
+          stream.destroy()
         })
 
-        stream.pipe(res)
+        // Only pipe if stream hasn't errored
+        if (!streamErrored) {
+          stream.pipe(res)
+        } else {
+          stream.destroy()
+        }
       } catch (error) {
         console.error('Request handling error:', error.message)
         res.statusCode = 500
@@ -392,7 +402,15 @@ async function generatePDF() {
 
   let server
   let browser
-  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'gtm-pdf-'))
+  let tempDir
+
+  // Create temp directory with error handling
+  try {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'gtm-pdf-'))
+  } catch (error) {
+    console.error('❌ Failed to create temporary directory:', error.message)
+    throw new Error(`Cannot create temp directory: ${error.message}`)
+  }
 
   try {
     if (shouldStartServer) {
@@ -465,6 +483,11 @@ async function generatePDF() {
           pdfParts.push(outputPath)
         } catch (error) {
           console.error(`❌ Failed to render ${routes[i]}:`, error.message)
+          // Re-throw critical errors, log but continue for page-specific errors
+          if (error.message.includes('net::ERR_') || error.message.includes('Navigation timeout')) {
+            console.error(`Critical error encountered, aborting PDF generation`)
+            throw error
+          }
         }
       }
     } finally {

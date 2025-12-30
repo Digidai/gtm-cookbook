@@ -9,8 +9,7 @@ try {
   console.error('\n❌ Sharp is not installed.')
   console.error('To use SVG conversion, please run:')
   console.error('\nnpm install sharp\n')
-  process.exitCode = 1
-  process.exit(1)
+  throw new Error('Sharp library is required for SVG conversion. Install with: npm install sharp')
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
@@ -157,6 +156,5 @@ async function convert() {
 
 convert().catch((error) => {
   console.error('Fatal error during conversion:', error)
-  process.exitCode = 1
-  process.exit(1)
+  throw error
 })

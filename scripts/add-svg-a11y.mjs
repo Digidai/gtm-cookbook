@@ -59,8 +59,8 @@ function addA11yTags(content, title) {
   // Check if SVG tag exists - use more robust regex with multiline support
   const svgMatch = content.match(/<svg\s+([^>]*)>/is)
   if (!svgMatch) {
-    console.warn('Could not find SVG tag')
-    return content
+    console.warn(`Could not find SVG tag, skipping accessibility update`)
+    return null
   }
 
   // Check if already has title
@@ -101,7 +101,14 @@ function processDirectory(dir) {
     const filePath = path.join(dir, file)
 
     try {
-      const content = fs.readFileSync(filePath, 'utf-8')
+      let content
+      try {
+        content = fs.readFileSync(filePath, 'utf-8')
+      } catch (readError) {
+        console.error(`❌ Error reading ${file}:`, readError.message)
+        skipped++
+        continue
+      }
 
       // Skip if already has title
       if (hasTitleTag(content)) {
@@ -113,7 +120,22 @@ function processDirectory(dir) {
       const newContent = addA11yTags(content, title)
 
       if (newContent) {
-        fs.writeFileSync(filePath, newContent)
+        // Atomic write: write to temp file first, then rename
+        const tempPath = `${filePath}.tmp`
+        try {
+          fs.writeFileSync(tempPath, newContent, 'utf-8')
+          fs.renameSync(tempPath, filePath)
+        } catch (writeError) {
+          // Clean up temp file if write/rename fails
+          if (fs.existsSync(tempPath)) {
+            try {
+              fs.unlinkSync(tempPath)
+            } catch {
+              // Ignore cleanup errors
+            }
+          }
+          throw writeError
+        }
         console.log(`✅ ${file}`)
         processed++
       } else {
