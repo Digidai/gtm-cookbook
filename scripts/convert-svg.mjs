@@ -1,7 +1,17 @@
-import sharp from 'sharp'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+
+let sharp
+try {
+  sharp = (await import('sharp')).default
+} catch (err) {
+  console.error('\n❌ Sharp is not installed.')
+  console.error('To use SVG conversion, please run:')
+  console.error('\nnpm install sharp\n')
+  process.exitCode = 1
+  process.exit(1)
+}
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const publicDir = path.join(__dirname, '..', 'docs', 'public')
@@ -142,5 +152,5 @@ async function convert() {
 
 convert().catch((error) => {
   console.error('Fatal error during conversion:', error)
-  process.exit(1)
+  process.exitCode = 1
 })

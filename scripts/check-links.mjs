@@ -8,6 +8,11 @@ const PUBLIC_DIR = path.join(DOCS_ROOT, 'public')
 const errors = []
 const warnings = []
 
+// Safety limits to prevent resource exhaustion
+const MAX_DEPTH = 50
+const MAX_FILES = 10000
+let totalFilesProcessed = 0
+
 // Helper to check if file exists and is a regular file
 function isFile(filePath) {
   try {
@@ -126,10 +131,14 @@ function processFile(filePath) {
 }
 
 function walkDir(dir, depth = 0) {
-  // Prevent infinite recursion
-  const MAX_DEPTH = 50
+  // Prevent infinite recursion and resource exhaustion
   if (depth > MAX_DEPTH) {
     console.warn(`Maximum depth reached: ${dir}`)
+    return
+  }
+
+  if (totalFilesProcessed > MAX_FILES) {
+    console.warn(`Maximum file count reached: ${MAX_FILES}`)
     return
   }
 
@@ -159,6 +168,7 @@ function walkDir(dir, depth = 0) {
       }
     } else if (file.endsWith('.md')) {
       processFile(fullPath)
+      totalFilesProcessed++
     }
   }
 }
@@ -175,8 +185,7 @@ if (errors.length > 0) {
   console.log('\n❌  Errors:')
   errors.forEach((e) => console.error(e))
   console.log(`\nFound ${errors.length} broken links/images.`)
-  process.exit(1)
+  process.exitCode = 1
 } else {
   console.log('\n✅  All links and images look good!')
-  process.exit(0)
 }

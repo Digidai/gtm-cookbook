@@ -93,7 +93,24 @@ function processDirectory(dir, depth = 0) {
         const title = extractTitle(content)
         if (title) {
           const newContent = addTitleToFrontmatter(content, title)
-          fs.writeFileSync(filePath, newContent)
+
+          // Atomic write: write to temp file first, then rename
+          const tempPath = `${filePath}.tmp`
+          try {
+            fs.writeFileSync(tempPath, newContent, 'utf-8')
+            fs.renameSync(tempPath, filePath)
+          } catch (writeError) {
+            // Clean up temp file if write/rename fails
+            if (fs.existsSync(tempPath)) {
+              try {
+                fs.unlinkSync(tempPath)
+              } catch (cleanupError) {
+                // Ignore cleanup errors
+              }
+            }
+            throw writeError
+          }
+
           console.log(`✅ Added title: ${relativePath} → "${title}"`)
           processed++
         } else {

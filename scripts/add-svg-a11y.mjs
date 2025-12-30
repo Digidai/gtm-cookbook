@@ -56,9 +56,12 @@ function hasTitleTag(content) {
 }
 
 function addA11yTags(content, title) {
-  // Check if SVG tag exists
-  const svgMatch = content.match(/<svg([^>]*)>/)
-  if (!svgMatch) return content
+  // Check if SVG tag exists - use more robust regex with multiline support
+  const svgMatch = content.match(/<svg\s+([^>]*)>/is)
+  if (!svgMatch) {
+    console.warn('Could not find SVG tag')
+    return content
+  }
 
   // Check if already has title
   if (hasTitleTag(content)) return null
@@ -76,8 +79,8 @@ function addA11yTags(content, title) {
   const titleTag = `<title id="title">${title}</title>`
 
   // Replace svg tag and add title after it
-  const newSvgTag = `<svg${svgAttrs}>\n  ${titleTag}`
-  return content.replace(/<svg[^>]*>/, newSvgTag)
+  const newSvgTag = `<svg ${svgAttrs.trim()}>\n  ${titleTag}`
+  return content.replace(/<svg\s+[^>]*>/is, newSvgTag)
 }
 
 function processDirectory(dir) {

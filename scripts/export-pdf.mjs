@@ -362,119 +362,137 @@ async function generatePDF() {
   console.log(`Target: ${SITE_URL}`)
 
   let server
-  if (shouldStartServer) {
-    try {
-      server = await startStaticServer()
-    } catch (error) {
-      console.error('Failed to start server:', error.message)
-      process.exit(1)
-    }
-  } else if (!process.env.PDF_SITE_URL && !hasDist) {
-    console.warn(`⚠️  Build output not found at ${DIST_DIR}`)
-    console.warn('    Run "npm run docs:build" or start:dev server before exporting.')
-  }
-
-  const resolvedSiteData = siteData || (await loadSiteDataFromUrl(SITE_URL))
-  const routes = buildRouteList(resolvedSiteData)
-  if (routes.length === 0) {
-    console.error('❌ No routes found to export.')
-    if (server) await new Promise((resolve) => server.close(resolve))
-    process.exit(1)
-  }
-  console.log(`Found ${routes.length} routes to export.`)
-
-  const launchArgs = process.env.CI ? ['--no-sandbox', '--disable-setuid-sandbox'] : []
   let browser
-  try {
-    browser = await puppeteer.default.launch({
-      headless: 'new',
-      args: launchArgs
-    })
-  } catch (error) {
-    console.error('Failed to launch browser:', error.message)
-    if (server) await new Promise((resolve) => server.close(resolve))
-    process.exit(1)
-  }
-
   const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'gtm-pdf-'))
-  const pdfParts = []
 
   try {
-    const page = await browser.newPage()
-    page.setDefaultNavigationTimeout(TIMEOUT)
-    page.setDefaultTimeout(TIMEOUT)
-    await page.setViewport({ width: VIEWPORT_WIDTH, height: VIEWPORT_HEIGHT })
-    await page.emulateMediaType('screen')
-    await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'light' }])
-    await page.evaluateOnNewDocument(() => {
+    if (shouldStartServer) {
       try {
-        localStorage.setItem('vitepress-theme-appearance', 'light')
-      } catch {
-        // ignore
-      }
-    })
-
-    for (let i = 0; i < routes.length; i += 1) {
-      try {
-        const route = routes[i]
-        const url = buildRouteUrl(route)
-        const outputPath = path.join(tempDir, `${String(i + 1).padStart(3, '0')}.pdf`)
-
-        console.log(`Rendering ${route} (${i + 1}/${routes.length})`)
-        await page.goto(url, { waitUntil: 'networkidle0' })
-        await page.addStyleTag({ content: PRINT_OVERRIDES })
-        await page.waitForSelector('.vp-doc, .VPHome', { timeout: TIMEOUT })
-        await page.evaluateHandle('document.fonts.ready')
-        await ensureImagesLoaded(page)
-        await page.pdf({
-          path: outputPath,
-          format: 'A4',
-          printBackground: true,
-          margin: MARGIN
-        })
-
-        pdfParts.push(outputPath)
+        server = await startStaticServer()
       } catch (error) {
-        console.error(`❌ Failed to render ${routes[i]}:`, error.message)
+        console.error('Failed to start server:', error.message)
+        throw error
+      }
+    } else if (!process.env.PDF_SITE_URL && !hasDist) {
+      console.warn(`⚠️  Build output not found at ${DIST_DIR}`)
+      console.warn('    Run "npm run docs:build" or start:dev server before exporting.')
+    }
+
+    const resolvedSiteData = siteData || (await loadSiteDataFromUrl(SITE_URL))
+    const routes = buildRouteList(resolvedSiteData)
+    if (routes.length === 0) {
+      console.error('❌ No routes found to export.')
+      throw new Error('No routes found')
+    }
+    console.log(`Found ${routes.length} routes to export.`)
+
+    const launchArgs = process.env.CI ? ['--no-sandbox', '--disable-setuid-sandbox'] : []
+    try {
+      browser = await puppeteer.default.launch({
+        headless: 'new',
+        args: launchArgs
+      })
+    } catch (error) {
+      console.error('Failed to launch browser:', error.message)
+      throw error
+    }
+
+    const pdfParts = []
+
+    try {
+      const page = await browser.newPage()
+      page.setDefaultNavigationTimeout(TIMEOUT)
+      page.setDefaultTimeout(TIMEOUT)
+      await page.setViewport({ width: VIEWPORT_WIDTH, height: VIEWPORT_HEIGHT })
+      await page.emulateMediaType('screen')
+      await page.emulateMediaFeatures([{ name: 'prefers-color-scheme', value: 'light' }])
+      await page.evaluateOnNewDocument(() => {
+        try {
+          localStorage.setItem('vitepress-theme-appearance', 'light')
+        } catch {
+          // ignore
+        }
+      })
+
+      for (let i = 0; i < routes.length; i += 1) {
+        try {
+          const route = routes[i]
+          const url = buildRouteUrl(route)
+          const outputPath = path.join(tempDir, `${String(i + 1).padStart(3, '0')}.pdf`)
+
+          console.log(`Rendering ${route} (${i + 1}/${routes.length})`)
+          await page.goto(url, { waitUntil: 'networkidle0' })
+          await page.addStyleTag({ content: PRINT_OVERRIDES })
+          await page.waitForSelector('.vp-doc, .VPHome', { timeout: TIMEOUT })
+          await page.evaluateHandle('document.fonts.ready')
+          await ensureImagesLoaded(page)
+          await page.pdf({
+            path: outputPath,
+            format: 'A4',
+            printBackground: true,
+            margin: MARGIN
+          })
+
+          pdfParts.push(outputPath)
+        } catch (error) {
+          console.error(`❌ Failed to render ${routes[i]}:`, error.message)
+        }
+      }
+    } finally {
+      if (browser) {
+        try {
+          await browser.close()
+        } catch (err) {
+          console.warn('Warning closing browser:', err.message)
+        }
       }
     }
-  } finally {
-    await browser.close()
-    if (server) {
-      await new Promise((resolve) => server.close(resolve))
-    }
-  }
 
-  if (pdfParts.length === 0) {
-    console.error('❌ No PDF pages were generated successfully.')
-    fs.rmSync(tempDir, { recursive: true, force: true })
-    process.exit(1)
-  }
-
-  console.log('Merging PDF...')
-  try {
-    const merged = await PDFDocument.create()
-    for (const pdfPath of pdfParts) {
-      const bytes = fs.readFileSync(pdfPath)
-      const source = await PDFDocument.load(bytes)
-      const pages = await merged.copyPages(source, source.getPageIndices())
-      pages.forEach((page) => merged.addPage(page))
+    if (pdfParts.length === 0) {
+      console.error('❌ No PDF pages were generated successfully.')
+      throw new Error('No PDF pages generated')
     }
-    const mergedBytes = await merged.save()
-    fs.writeFileSync(OUTPUT_FILE, mergedBytes)
+
+    console.log('Merging PDF...')
+    try {
+      const merged = await PDFDocument.create()
+      for (const pdfPath of pdfParts) {
+        const bytes = fs.readFileSync(pdfPath)
+        const source = await PDFDocument.load(bytes)
+        const pages = await merged.copyPages(source, source.getPageIndices())
+        pages.forEach((page) => merged.addPage(page))
+      }
+      const mergedBytes = await merged.save()
+      fs.writeFileSync(OUTPUT_FILE, mergedBytes)
+    } catch (error) {
+      console.error('Failed to merge PDF:', error.message)
+      throw error
+    }
+
+    console.log(`✅ PDF exported to ${OUTPUT_FILE}`)
+    console.log(`   Generated ${pdfParts.length}/${routes.length} pages successfully.`)
   } catch (error) {
-    console.error('Failed to merge PDF:', error.message)
-    fs.rmSync(tempDir, { recursive: true, force: true })
-    process.exit(1)
+    console.error('Fatal error during PDF generation:', error.message)
+    throw error
+  } finally {
+    if (server) {
+      try {
+        await new Promise((resolve) => server.close(resolve))
+      } catch (err) {
+        console.warn('Warning closing server:', err.message)
+      }
+    }
+    if (fs.existsSync(tempDir)) {
+      try {
+        fs.rmSync(tempDir, { recursive: true, force: true })
+      } catch (err) {
+        console.warn('Warning cleaning temp dir:', err.message)
+      }
+    }
   }
-
-  fs.rmSync(tempDir, { recursive: true, force: true })
-
-  console.log(`✅ PDF exported to ${OUTPUT_FILE}`)
-  console.log(`   Generated ${pdfParts.length}/${routes.length} pages successfully.`)
 }
 
 generatePDF().catch((error) => {
   console.error('Fatal error during PDF generation:', error)
-  process.exit(1)
+  process.exitCode = 1
 })
