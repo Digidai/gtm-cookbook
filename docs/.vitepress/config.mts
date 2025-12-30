@@ -229,8 +229,6 @@ function getSidebar() {
     }
 
     if (appendixFiles.length > 0) {
-
-    if (appendixFiles.length > 0) {
       const appendixItems: any[] = []
       const appendixIndexPath = path.join(appendixPath, 'index.md')
       if (fs.existsSync(appendixIndexPath)) {

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 let sharp
 try {
   sharp = (await import('sharp')).default
-} catch (err) {
+} catch {
   console.error('\n❌ Sharp is not installed.')
   console.error('To use SVG conversion, please run:')
   console.error('\nnpm install sharp\n')
@@ -139,8 +139,13 @@ async function convert() {
       if (err.code === 'MODULE_NOT_FOUND' || err.message.includes('sharp')) {
         console.error(`\n✗ Sharp library not found. Run: npm install sharp\n`)
         process.exit(1)
+      } else if (err.code === 'ENOENT') {
+        console.error(`✗ Input file not found: ${inputPath}`)
+      } else if (err.code === 'EACCES') {
+        console.error(`✗ Permission denied: ${outputPath}`)
+      } else {
+        console.error(`✗ Error converting ${input} to ${output}:`, err.message)
       }
-      console.error(`✗ Error converting ${input}:`, err.message)
     }
   }
 
@@ -153,4 +158,5 @@ async function convert() {
 convert().catch((error) => {
   console.error('Fatal error during conversion:', error)
   process.exitCode = 1
+  process.exit(1)
 })

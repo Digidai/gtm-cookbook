@@ -104,7 +104,7 @@ function processDirectory(dir, depth = 0) {
             if (fs.existsSync(tempPath)) {
               try {
                 fs.unlinkSync(tempPath)
-              } catch (cleanupError) {
+              } catch {
                 // Ignore cleanup errors
               }
             }

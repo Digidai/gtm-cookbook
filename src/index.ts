@@ -1,5 +1,5 @@
 interface Env {
-  ASSETS: Fetcher
+  ASSETS: { fetch: typeof fetch }
 }
 
 function hasFileExtension(pathname: string): boolean {
@@ -37,9 +37,7 @@ export default {
         if (!pathname.endsWith('/')) {
           candidates.add(`${pathname}.html`)
         }
-        candidates.add(
-          pathname.endsWith('/') ? `${pathname}index.html` : `${pathname}/index.html`
-        )
+        candidates.add(pathname.endsWith('/') ? `${pathname}index.html` : `${pathname}/index.html`)
       }
 
       for (const candidate of candidates) {

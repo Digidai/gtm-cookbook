@@ -17,7 +17,7 @@ import path from 'path'
 let puppeteer
 try {
   puppeteer = await import('puppeteer')
-} catch (err) {
+} catch {
   console.error('\n❌ Puppeteer is not installed.')
   console.error('To use the PDF export feature, please run:')
   console.error('\nnpm install puppeteer --save-dev\n')
@@ -27,7 +27,7 @@ try {
 let pdfLib
 try {
   pdfLib = await import('pdf-lib')
-} catch (err) {
+} catch {
   console.error('\n❌ pdf-lib is not installed.')
   console.error('To use the PDF export feature, please run:')
   console.error('\nnpm install pdf-lib --save-dev\n')
@@ -149,10 +149,15 @@ function normalizeRoute(value) {
 }
 
 function parseSiteData(html) {
-  const match = html.match(/window\.__VP_SITE_DATA__=JSON\.parse\(("[\s\S]+?")\);/)
-  if (!match) return null
-  const decoded = JSON.parse(match[1])
-  return JSON.parse(decoded)
+  try {
+    const match = html.match(/window\.__VP_SITE_DATA__=JSON\.parse\(("[\s\S]+?")\);/)
+    if (!match) return null
+    const decoded = JSON.parse(match[1])
+    return JSON.parse(decoded)
+  } catch (error) {
+    console.error('Failed to parse site data from HTML:', error.message)
+    return null
+  }
 }
 
 async function loadSiteDataFromUrl(url) {
@@ -281,7 +286,18 @@ function startStaticServer() {
   return new Promise((resolve, reject) => {
     const server = http.createServer((req, res) => {
       try {
-        const url = new URL(req.url || '/', 'http://localhost')
+        // Validate and parse URL
+        const urlPath = req.url || '/'
+        let url
+        try {
+          url = new URL(urlPath, 'http://localhost')
+        } catch (error) {
+          console.error('Invalid URL:', urlPath, error.message)
+          res.statusCode = 400
+          res.end('Bad Request')
+          return
+        }
+
         const relativePath = resolveRequestPath(url.pathname)
         if (!relativePath) {
           res.statusCode = 404
@@ -311,11 +327,24 @@ function startStaticServer() {
 
         const ext = path.extname(filePath).toLowerCase()
         res.setHeader('Content-Type', CONTENT_TYPES[ext] || 'application/octet-stream')
+
         const stream = fs.createReadStream(filePath)
-        stream.on('error', () => {
-          res.statusCode = 500
-          res.end('Server Error')
+
+        // Handle stream errors
+        stream.on('error', (error) => {
+          if (!res.headersSent) {
+            res.statusCode = 500
+            res.end('Server Error')
+          } else {
+            console.error('Stream error after headers sent:', error.message)
+          }
         })
+
+        // Handle response errors
+        res.on('error', (error) => {
+          console.error('Response error:', error.message)
+        })
+
         stream.pipe(res)
       } catch (error) {
         console.error('Request handling error:', error.message)
@@ -457,11 +486,29 @@ async function generatePDF() {
     try {
       const merged = await PDFDocument.create()
       for (const pdfPath of pdfParts) {
-        const bytes = fs.readFileSync(pdfPath)
-        const source = await PDFDocument.load(bytes)
-        const pages = await merged.copyPages(source, source.getPageIndices())
-        pages.forEach((page) => merged.addPage(page))
+        try {
+          const bytes = fs.readFileSync(pdfPath)
+
+          // Validate file size
+          if (bytes.length === 0) {
+            console.error(`❌ Empty PDF file: ${pdfPath}`)
+            continue
+          }
+
+          const source = await PDFDocument.load(bytes)
+          const pages = await merged.copyPages(source, source.getPageIndices())
+          pages.forEach((page) => merged.addPage(page))
+        } catch (error) {
+          console.error(`❌ Failed to process ${pdfPath}:`, error.message)
+          continue
+        }
       }
+
+      // Check if we have any pages after merging
+      if (merged.getPageCount() === 0) {
+        throw new Error('No valid PDF pages to merge')
+      }
+
       const mergedBytes = await merged.save()
       fs.writeFileSync(OUTPUT_FILE, mergedBytes)
     } catch (error) {
@@ -495,4 +542,5 @@ async function generatePDF() {
 generatePDF().catch((error) => {
   console.error('Fatal error during PDF generation:', error)
   process.exitCode = 1
+  process.exit(1)
 })
