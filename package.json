@@ -42,6 +42,7 @@
     "check:links": "node scripts/check-links.mjs",
     "export:pdf": "node scripts/export-pdf.mjs",
     "convert:images": "node scripts/convert-svg.mjs",
+    "verify:sitemap": "node scripts/verify-sitemap.mjs",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write \"**/*.{js,mjs,mts,ts,json,css,scss}\"",

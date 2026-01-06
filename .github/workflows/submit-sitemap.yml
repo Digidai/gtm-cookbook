@@ -1,0 +1,88 @@
+name: Submit Sitemap to Google
+
+on:
+  # 每周一次自动运行(推荐时间为周一凌晨,避开高峰期)
+  schedule:
+    - cron: '0 2 * * 1'  # 每周一凌晨 2:00 UTC (周一上午 10:00 CST)
+  # 允许手动触发
+  workflow_dispatch:
+  # 部署后也触发一次
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages & Cloudflare Workers"]
+    types:
+      - completed
+    branches: [main]
+
+jobs:
+  submit-sitemap:
+    runs-on: ubuntu-latest
+    # 只在部署成功后运行
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site to generate fresh sitemap
+        run: npm run build
+        env:
+          # 确保生成正确的 sitemap URL
+          SITE_URL: https://genedai.space
+
+      - name: Verify sitemap exists
+        run: |
+          if [ ! -f "docs/.vitepress/dist/sitemap.xml" ]; then
+            echo "❌ Sitemap not found!"
+            exit 1
+          fi
+          echo "✅ Sitemap generated successfully"
+          echo "📊 Sitemap size: $(wc -c < docs/.vitepress/dist/sitemap.xml) bytes"
+          echo "📝 URL count: $(grep -o '<loc>' docs/.vitepress/dist/sitemap.xml | wc -l)"
+
+      - name: Submit sitemap to Google
+        uses: atymic/sitemap-submitter-action@v2.0.0
+        with:
+          sitemap_url: https://genedai.space/sitemap.xml
+          google_service_account_email: ${{ secrets.GOGLE_SERVICE_ACCOUNT_EMAIL }}
+          google_service_account_key: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          # 等待时间(秒),避免请求过快
+          delay: 1
+
+      - name: Create submission report
+        if: always()
+        run: |
+          echo "## Sitemap 提交报告" > $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **执行时间**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **触发方式**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Sitemap URL**: https://genedai.space/sitemap.xml" >> $GITHUB_STEP_SUMMARY
+          echo "- **仓库**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **提交 ID**: ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 下次自动运行" >> $GITHUB_STEP_SUMMARY
+          echo "每周一凌晨 2:00 UTC (周一上午 10:00 CST)" >> $GITHUB_STEP_SUMMARY
+
+      - name: Wait for Google processing
+        run: |
+          echo "⏳ Sitemap 已提交给 Google"
+          echo "📌 Google 通常需要几分钟到几小时来处理 sitemap"
+          echo "📊 请在 Google Search Console 查看收录状态:"
+          echo "   https://search.google.com/search-console"
+
+      - name: Monitor submission status (optional)
+        if: success()
+        run: |
+          echo "✅ Sitemap 提交成功!"
+          echo ""
+          echo "💡 建议:"
+          echo "  1. 在 Google Search Console 查看索引状态"
+          echo "  2. 检查 coverage 报告了解页面收录情况"
+          echo "  3. 查看 URL inspection 工具确认具体页面状态"
