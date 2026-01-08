@@ -1,5 +1,5 @@
 {
   "name": "gtm-cookbook",
   "compatibility_date": "2025-12-13",
-  "pages_build_output_dir": ".vitepress/dist"
+  "pages_build_output_dir": "docs/.vitepress/dist"
 }
